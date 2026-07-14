@@ -1,0 +1,13 @@
+property_id,property,city,state,unit_count,class,year_built,rent_base
+P01,Cedar Commons,Lakeside,OR,64,B,2004,1650
+P02,Harborview Flats,Lakeside,OR,48,A,2018,2200
+P03,Maple Court,Fairview,WA,72,C,1988,1250
+P04,Birchwood Terrace,Fairview,WA,56,B,2001,1550
+P05,Sunset Ridge,Glenwood,CO,40,A,2015,2050
+P06,Willow Park,Glenwood,CO,88,B,1999,1450
+P07,Aspen Grove,Millbrook,TX,60,B,2007,1350
+P08,Riverbend Lofts,Millbrook,TX,36,A,2020,1900
+P09,Oakhaven Apartments,Northgate,AZ,96,C,1985,1150
+P10,Stonebridge Villas,Northgate,AZ,52,B,2010,1500
+P11,Meadowlark Place,Cedar Falls,MN,44,B,2003,1400
+P12,Ironwood Residences,Cedar Falls,MN,68,A,2017,1750

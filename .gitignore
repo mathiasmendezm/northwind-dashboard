@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Streamlit secrets (never commit real credentials)
+.streamlit/secrets.toml
+
+# Local editor
+.vscode/
+.idea/
+.DS_Store
+
+# NOTE: data/ is intentionally NOT ignored — the synthetic CSVs are committed so
+# the demo runs immediately on clone. Regenerate any time with:
+#   python generate_data.py
