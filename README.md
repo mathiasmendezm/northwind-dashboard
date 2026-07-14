@@ -1,4 +1,4 @@
-# Northwind Residential — Property Operations Dashboard
+# Northwind Residential | Property Operations Dashboard
 
 An executive dashboard for a multifamily property-management operator, built with
 **Streamlit + Plotly** on a **Supabase-ready data layer**. It surfaces occupancy,
