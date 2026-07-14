@@ -1,5 +1,9 @@
 # Northwind Residential | Property Operations Dashboard
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://northwind-dashboard-82q7dco7ckuydu5tfaqwh9.streamlit.app/)
+
+**[Live demo →](https://northwind-dashboard-82q7dco7ckuydu5tfaqwh9.streamlit.app/)**
+
 An executive dashboard for a multifamily property-management operator, built with
 **Streamlit + Plotly** on a **Supabase-ready data layer**. It surfaces occupancy,
 revenue leakage, leasing-funnel conversion, and maintenance operations across a

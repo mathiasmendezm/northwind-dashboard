@@ -183,7 +183,7 @@ def page_overview(d: dict[str, pd.DataFrame]) -> None:
     fig.update_layout(height=430, margin=dict(l=0, r=48, t=8, b=8),
                       xaxis=dict(title="Occupancy %", ticksuffix="%", range=[0, 105]),
                       yaxis=dict(title=""))
-    st.plotly_chart(fig, width="stretch")
+    st.plotly_chart(fig, width="stretch", theme=None)
 
     # Status mix + revenue split
     left, right = st.columns(2)
@@ -196,7 +196,7 @@ def page_overview(d: dict[str, pd.DataFrame]) -> None:
             text=mix.values, textposition="outside", textfont=dict(size=11)))
         fig2.update_layout(height=300, margin=dict(l=0, r=40, t=8, b=8),
                            xaxis=dict(title="Units"), yaxis=dict(title=""))
-        st.plotly_chart(fig2, width="stretch")
+        st.plotly_chart(fig2, width="stretch", theme=None)
     with right:
         section("Rent roll by property (top 8)")
         rev = (rr.groupby("property")["actual_rent"].sum()
@@ -208,7 +208,7 @@ def page_overview(d: dict[str, pd.DataFrame]) -> None:
         fig3.update_layout(height=300, margin=dict(l=0, r=70, t=8, b=8),
                            xaxis=dict(title="Monthly rent ($)"),
                            yaxis=dict(title="", autorange="reversed"))
-        st.plotly_chart(fig3, width="stretch")
+        st.plotly_chart(fig3, width="stretch", theme=None)
 
 
 def page_occupancy(d: dict[str, pd.DataFrame]) -> None:
@@ -245,7 +245,7 @@ def page_occupancy(d: dict[str, pd.DataFrame]) -> None:
                       margin=dict(l=0, r=20, t=8, b=8),
                       legend=dict(orientation="h", y=1.06, x=0),
                       xaxis=dict(title="Monthly rent ($)"), yaxis=dict(title=""))
-    st.plotly_chart(fig, width="stretch")
+    st.plotly_chart(fig, width="stretch", theme=None)
 
     # Rent roll table with filters
     section("Rent roll")
@@ -298,7 +298,7 @@ def page_funnel(d: dict[str, pd.DataFrame]) -> None:
         marker=dict(color=["#1E40AF", "#2563EB", "#3B82F6", "#60A5FA", "#93C5FD"]),
         connector=dict(line=dict(color=BORDER))))
     fig.update_layout(height=380, margin=dict(l=0, r=0, t=8, b=8))
-    st.plotly_chart(fig, width="stretch")
+    st.plotly_chart(fig, width="stretch", theme=None)
 
     left, right = st.columns(2)
     with left:
@@ -311,7 +311,7 @@ def page_funnel(d: dict[str, pd.DataFrame]) -> None:
         fig2.update_layout(height=320, margin=dict(l=0, r=36, t=8, b=8),
                            xaxis=dict(title="Leads"),
                            yaxis=dict(title="", autorange="reversed"))
-        st.plotly_chart(fig2, width="stretch")
+        st.plotly_chart(fig2, width="stretch", theme=None)
     with right:
         section("Leased units by month")
         by_mo = fn.groupby("month")["leased"].sum().reset_index()
@@ -322,7 +322,7 @@ def page_funnel(d: dict[str, pd.DataFrame]) -> None:
             fill="tozeroy", fillcolor="rgba(30,64,175,0.08)"))
         fig3.update_layout(height=320, margin=dict(l=0, r=10, t=8, b=8),
                            xaxis=dict(title=""), yaxis=dict(title="Leased"))
-        st.plotly_chart(fig3, width="stretch")
+        st.plotly_chart(fig3, width="stretch", theme=None)
 
 
 def page_maintenance(d: dict[str, pd.DataFrame]) -> None:
@@ -358,7 +358,7 @@ def page_maintenance(d: dict[str, pd.DataFrame]) -> None:
             text=pr.values.astype(int), textposition="outside"))
         fig.update_layout(height=320, margin=dict(l=0, r=0, t=8, b=8),
                           yaxis=dict(title="Open orders"), xaxis=dict(title=""))
-        st.plotly_chart(fig, width="stretch")
+        st.plotly_chart(fig, width="stretch", theme=None)
     with right:
         section("Completed spend by category")
         cat = (completed.groupby("category")["cost"].sum()
@@ -369,7 +369,7 @@ def page_maintenance(d: dict[str, pd.DataFrame]) -> None:
             textfont=dict(size=10)))
         fig2.update_layout(height=320, margin=dict(l=0, r=64, t=8, b=8),
                            xaxis=dict(title="Spend ($)"), yaxis=dict(title=""))
-        st.plotly_chart(fig2, width="stretch")
+        st.plotly_chart(fig2, width="stretch", theme=None)
 
     section("Oldest open work orders")
     oldest = (open_wo.sort_values("age_days", ascending=False)
