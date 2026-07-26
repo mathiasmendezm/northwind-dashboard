@@ -1,6 +1,8 @@
 # Northwind Residential | Property Operations Dashboard
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://northwind-dashboard-82q7dco7ckuydu5tfaqwh9.streamlit.app/)
+[![CI](https://github.com/mathiasmendezm/northwind-dashboard/actions/workflows/ci.yml/badge.svg)](https://github.com/mathiasmendezm/northwind-dashboard/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 **[Live demo →](https://northwind-dashboard-82q7dco7ckuydu5tfaqwh9.streamlit.app/)**
 
@@ -17,17 +19,29 @@ portfolio of properties.
 
 ## What it demonstrates
 
-- **Multi-page analytics UI** — Overview, Occupancy & Rent, Leasing Funnel,
-  Maintenance, and a cross-dataset Search, with a custom design system (not the
-  default Streamlit theme).
+- **Multi-page analytics UI** — Overview, Occupancy & Rent, Financials · NOI,
+  Leasing Funnel, Maintenance, and a cross-dataset Search, with a custom design
+  system (not the default Streamlit theme).
 - **Executive KPI + Plotly visualizations** — physical vs. economic occupancy,
   loss-to-lease, vacancy exposure, funnel conversion, work-order aging and spend.
+- **NOI-driven financials page** — trailing-12 vs. prior-12 NOI and its
+  year-over-year delta, NOI margin, opex ratio, revenue/NOI per unit, an
+  opex breakdown by category (property tax, insurance, utilities, payroll,
+  repairs & maintenance, contract services, marketing/turnover), and an
+  implied portfolio valuation off a user-adjustable cap-rate slider — the
+  indicators an owner or investor actually tracks, not just occupancy counts.
 - **Pluggable data layer** — [`data_source.py`](data_source.py) reads from
   **Supabase** when credentials are present and falls back to local CSVs
   otherwise. Swapping backends is a config change, not a code change.
 - **Messy-export cleaning pipeline** — [`cleaning.py`](cleaning.py) turns a raw
   property-management CSV export (junk preamble rows, `$1,234.00` money strings,
   addresses glued onto property names) into an analysis-ready frame.
+- **Tested and CI-checked** — a [pytest](tests/) suite covers the cleaning
+  pipeline, the data-source fallback logic, the synthetic-data generator
+  (including the NOI math), and a full app-level smoke test that renders
+  every page headlessly and fails the build if any of them raises;
+  [GitHub Actions](.github/workflows/ci.yml) runs lint (`ruff`) and the full
+  test suite on every push and pull request.
 
 ## Tech stack
 
@@ -44,10 +58,23 @@ streamlit run app.py
 The app opens on the Overview page. No credentials or setup required — it runs
 entirely on the local synthetic data.
 
+## Testing
+
+```bash
+pip install -r requirements-dev.txt
+ruff check .     # lint
+pytest -v        # unit tests + full-app smoke test
+```
+
+The same two commands run in CI (see badge above) on every push and pull
+request, against a freshly regenerated dataset — so a broken generator, a
+regression in the cleaning pipeline, or a page that throws at runtime fails
+the build, not just a demo.
+
 ## Using a real Supabase backend (optional)
 
 1. Create tables named `properties`, `rent_roll`, `work_orders`,
-   `leasing_funnel`, `applications`, `leads`.
+   `financials_monthly`, `leasing_funnel`, `applications`, `leads`.
 2. Copy `.streamlit/secrets.toml.example` to `.streamlit/secrets.toml` and fill in
    `SUPABASE_URL` / `SUPABASE_KEY` (or set them as environment variables).
 3. `pip install supabase`, then `streamlit run app.py`.
@@ -57,16 +84,46 @@ The sidebar shows which source is active (`Supabase` vs. `Local CSV`).
 ## Project layout
 
 ```
-app.py              Streamlit dashboard (pages, charts, styling)
-data_source.py      Supabase-or-CSV data access layer
-generate_data.py    Synthetic data generator (Faker + NumPy, fixed seed)
-cleaning.py         Raw-export cleaning pipeline (+ runnable demo)
-data/               Generated synthetic CSVs (committed so it runs on clone)
+app.py               Streamlit dashboard (pages, charts, styling)
+data_source.py       Supabase-or-CSV data access layer
+generate_data.py     Synthetic data generator (Faker + NumPy, fixed seed)
+cleaning.py          Raw-export cleaning pipeline (+ runnable demo)
+constants.py         Shared constants (e.g. the fixed "as of" date)
+data/                Generated synthetic CSVs (committed so it runs on clone)
+tests/               pytest suite for the generator, cleaner, data layer, and app smoke test
+.github/workflows/   CI: lint + tests on every push/PR
 requirements.txt
+requirements-dev.txt Adds pytest + ruff for local development
 ```
 
 ## Notes
 
 The data model mirrors the shape of common property-management exports (rent roll,
-work orders, leasing funnel, guest cards/leads) so the analytics are realistic,
-but all values are synthetic and reproducible via the fixed random seed.
+work orders, leasing funnel, guest cards/leads, monthly financials) so the
+analytics are realistic, but all values are synthetic and reproducible via the
+fixed random seed.
+
+The NOI model in `financials_monthly` is a simplified stand-in for a real
+operating statement: opex per category is generated as a class-adjusted share
+of effective gross income (industry rule-of-thumb ratios), not itemized
+ledger entries. It's built to demonstrate the *shape* of NOI analysis — trend,
+margin, YoY, opex mix, cap-rate-implied valuation — not to model any specific
+property's actual books.
+
+## License
+
+MIT — see [LICENSE](LICENSE). Free to clone, run, and adapt.
+
+## About / Contact
+
+Built by **Mathias Mendez** as a freelance portfolio piece — a self-contained
+example of a data dashboard done properly: a clean data layer with a real
+backend seam (Supabase or CSV), an executive-ready UI, a cleaning pipeline for
+messy real-world exports, and a tested, CI-checked codebase rather than a
+one-off script.
+
+- Email: [mathiasmmendezm@gmail.com](mailto:mathiasmmendezm@gmail.com)
+- LinkedIn: [linkedin.com/in/mathias-mendez-martinez](https://www.linkedin.com/in/mathias-mendez-martinez)
+- GitHub: [github.com/mathiasmendezm](https://github.com/mathiasmendezm)
+
+Open to freelance and contract work in Python data/analytics dashboards.

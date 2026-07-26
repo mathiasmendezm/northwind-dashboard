@@ -16,7 +16,7 @@ a config change, not a code change.
 from __future__ import annotations
 
 import os
-from functools import lru_cache
+from functools import cache
 
 import pandas as pd
 
@@ -26,6 +26,7 @@ DATA_DIR = "data"
 _DATE_COLUMNS = {
     "rent_roll": ["lease_start", "lease_end"],
     "work_orders": ["opened_date", "closed_date"],
+    "financials_monthly": ["month"],
     "leasing_funnel": ["month"],
     "applications": ["submitted_date"],
     "leads": ["created_date"],
@@ -36,7 +37,7 @@ def _supabase_enabled() -> bool:
     return bool(os.environ.get("SUPABASE_URL") and os.environ.get("SUPABASE_KEY"))
 
 
-@lru_cache(maxsize=None)
+@cache
 def _client():
     """Lazily build a Supabase client only if credentials exist.
 

@@ -17,6 +17,7 @@ import plotly.graph_objects as go
 import plotly.io as pio
 import streamlit as st
 
+from constants import AS_OF
 from data_source import load_table, source_label
 
 # ───────────────────────────────────────────────────────────────────────────
@@ -128,7 +129,7 @@ def kpi(col, label: str, value: str, note: str = "", note_color: str = MUTE,
 @st.cache_data(show_spinner=False)
 def get_data() -> dict[str, pd.DataFrame]:
     return {t: load_table(t) for t in
-            ["properties", "rent_roll", "work_orders",
+            ["properties", "rent_roll", "work_orders", "financials_monthly",
              "leasing_funnel", "applications", "leads"]}
 
 
@@ -276,6 +277,129 @@ def page_occupancy(d: dict[str, pd.DataFrame]) -> None:
                      "Actual": st.column_config.NumberColumn(format="$%d")})
 
 
+OPEX_CATEGORIES = {
+    "opex_property_tax": "Property tax",
+    "opex_insurance": "Insurance",
+    "opex_utilities": "Utilities",
+    "opex_payroll_management": "Payroll & management",
+    "opex_repairs_maintenance": "Repairs & maintenance",
+    "opex_contract_services": "Contract services",
+    "opex_marketing_turnover": "Marketing & turnover",
+}
+
+
+def page_financials(d: dict[str, pd.DataFrame]) -> None:
+    fin, props = d["financials_monthly"], d["properties"]
+    page_head("Financials · NOI",
+              "Net operating income, margin, and expense mix — the numbers that drive valuation")
+
+    fin = fin.sort_values("month")
+    last_month = fin["month"].max()
+    t12 = fin[fin["month"] > last_month - pd.DateOffset(months=12)]
+    prior12 = fin[(fin["month"] <= last_month - pd.DateOffset(months=12)) &
+                  (fin["month"] > last_month - pd.DateOffset(months=24))]
+    total_units = int(props["unit_count"].sum())
+
+    t12_egi = t12["effective_gross_income"].sum()
+    t12_opex = t12["total_opex"].sum()
+    t12_noi = t12["noi"].sum()
+    prior_noi = prior12["noi"].sum()
+    noi_yoy = (t12_noi / prior_noi - 1) * 100 if prior_noi else 0.0
+    noi_margin = t12_noi / t12_egi * 100 if t12_egi else 0.0
+
+    section("Trailing-12-month NOI")
+    c = st.columns(4)
+    kpi(c[0], "NOI (T12)", money(t12_noi),
+        f"{noi_yoy:+.1f}% vs. prior 12mo", GOOD if noi_yoy >= 0 else BAD,
+        top=GOOD if noi_yoy >= 0 else BAD)
+    kpi(c[1], "NOI margin", f"{noi_margin:.1f}%",
+        f"{money(t12_opex)} opex on {money(t12_egi)} EGI",
+        GOOD if noi_margin >= 60 else WARN if noi_margin >= 50 else BAD,
+        top=GOOD if noi_margin >= 60 else WARN if noi_margin >= 50 else PRIMARY)
+    kpi(c[2], "NOI per unit / mo", money(t12_noi / 12 / total_units), "per-door average")
+    kpi(c[3], "Revenue per unit / mo", money(t12_egi / 12 / total_units), "effective gross income")
+
+    section("Implied portfolio valuation")
+    v1, v2 = st.columns([1, 2])
+    with v1:
+        cap_rate = st.slider("Cap rate assumption", min_value=4.0, max_value=8.0,
+                             value=6.0, step=0.25, format="%.2f%%")
+    implied_value = t12_noi / (cap_rate / 100)
+    with v2:
+        st.markdown(
+            f'<div class="kpi" style="border-top-color:{PRIMARY}; margin-top: 6px;">'
+            f'<div class="kpi-label">Implied portfolio value</div>'
+            f'<div class="kpi-value">{money(implied_value)}</div>'
+            f'<div class="kpi-note">NOI (T12) {money(t12_noi)} ÷ {cap_rate:.2f}% cap rate — '
+            f'{money(implied_value / total_units)} per unit</div></div>',
+            unsafe_allow_html=True)
+
+    # NOI trend — full 24mo history with the T12 boundary marked
+    section("NOI trend (24 months)")
+    monthly = fin.groupby("month").agg(
+        egi=("effective_gross_income", "sum"),
+        opex=("total_opex", "sum"),
+        noi=("noi", "sum")).reset_index()
+    fig = go.Figure()
+    fig.add_scatter(x=monthly["month"], y=monthly["noi"], mode="lines+markers",
+                    name="NOI", line=dict(color=PRIMARY, width=3),
+                    fill="tozeroy", fillcolor="rgba(30,64,175,0.08)")
+    fig.add_vline(x=last_month - pd.DateOffset(months=12), line_dash="dot",
+                  line_color=MUTE, annotation_text="trailing 12mo",
+                  annotation_position="top left", annotation_font=dict(size=10, color=MUTE))
+    fig.update_layout(height=340, margin=dict(l=0, r=10, t=8, b=8),
+                      xaxis=dict(title=""), yaxis=dict(title="NOI ($/mo)"))
+    st.plotly_chart(fig, width="stretch", theme=None)
+
+    left, right = st.columns(2)
+    with left:
+        section("Revenue vs. opex vs. NOI (T12, monthly)")
+        t12_by_month = monthly[monthly["month"] > last_month - pd.DateOffset(months=12)]
+        fig2 = go.Figure()
+        fig2.add_bar(x=t12_by_month["month"], y=t12_by_month["egi"], name="EGI",
+                     marker=dict(color="#CBD5E1"))
+        fig2.add_bar(x=t12_by_month["month"], y=t12_by_month["opex"], name="Opex",
+                     marker=dict(color=BAD))
+        fig2.add_scatter(x=t12_by_month["month"], y=t12_by_month["noi"], name="NOI",
+                         mode="lines+markers", line=dict(color=PRIMARY, width=2))
+        fig2.update_layout(barmode="overlay", height=320, margin=dict(l=0, r=10, t=8, b=8),
+                           legend=dict(orientation="h", y=1.12, x=0),
+                           xaxis=dict(title=""), yaxis=dict(title="$ / month"))
+        st.plotly_chart(fig2, width="stretch", theme=None)
+    with right:
+        section("Opex mix (T12 total)")
+        opex_totals = pd.Series({
+            label: t12[col].sum() for col, label in OPEX_CATEGORIES.items()
+        }).sort_values(ascending=True)
+        fig3 = go.Figure(go.Bar(
+            x=opex_totals.values, y=opex_totals.index, orientation="h",
+            marker=dict(color=PRIMARY), text=[money(v) for v in opex_totals.values],
+            textposition="outside", textfont=dict(size=10)))
+        fig3.update_layout(height=320, margin=dict(l=0, r=64, t=8, b=8),
+                           xaxis=dict(title="Spend ($, T12)"), yaxis=dict(title=""))
+        st.plotly_chart(fig3, width="stretch", theme=None)
+
+    # NOI by property — scale (bar) and efficiency (margin) side by side
+    section("NOI by property (T12)")
+    by_prop = (t12.groupby("property")
+               .agg(egi=("effective_gross_income", "sum"), noi=("noi", "sum"))
+               .join(props.set_index("property")["unit_count"]))
+    by_prop["margin"] = by_prop["noi"] / by_prop["egi"] * 100
+    by_prop = by_prop.sort_values("noi")
+    colors = [GOOD if m >= 60 else WARN if m >= 50 else BAD for m in by_prop["margin"]]
+    fig4 = go.Figure(go.Bar(
+        x=by_prop["noi"], y=by_prop.index, orientation="h",
+        marker=dict(color=colors), text=[money(v) for v in by_prop["noi"]],
+        textposition="outside", textfont=dict(size=10),
+        customdata=by_prop["margin"],
+        hovertemplate="%{y}<br>NOI: %{x:$,.0f}<br>Margin: %{customdata:.1f}%<extra></extra>"))
+    fig4.update_layout(height=400, margin=dict(l=0, r=64, t=8, b=8),
+                       xaxis=dict(title="NOI ($, T12)"), yaxis=dict(title=""))
+    st.plotly_chart(fig4, width="stretch", theme=None)
+    st.caption("Bar color reflects NOI margin — green ≥60%, amber 50-60%, red <50%. "
+              "Hover a bar for the exact margin.")
+
+
 def page_funnel(d: dict[str, pd.DataFrame]) -> None:
     fn, leads = d["leasing_funnel"], d["leads"]
     page_head("Leasing Funnel",
@@ -287,7 +411,7 @@ def page_funnel(d: dict[str, pd.DataFrame]) -> None:
     section("Conversion (trailing 6 months)")
     c = st.columns(5)
     labels = ["Leads", "Tours", "Applications", "Approved", "Leased"]
-    for i, (s, lab) in enumerate(zip(stages, labels)):
+    for i, (s, lab) in enumerate(zip(stages, labels, strict=True)):
         conv = "" if i == 0 else f"{totals[s]/totals[stages[i-1]]*100:.0f}% of prev"
         kpi(c[i], lab, f"{totals[s]:,}", conv)
 
@@ -333,7 +457,7 @@ def page_maintenance(d: dict[str, pd.DataFrame]) -> None:
     open_wo = wo[wo["status"] != "Completed"]
     completed = wo[wo["status"] == "Completed"]
     open_wo = open_wo.copy()
-    open_wo["age_days"] = (pd.Timestamp("2026-06-30") - open_wo["opened_date"]).dt.days
+    open_wo["age_days"] = (pd.Timestamp(AS_OF) - open_wo["opened_date"]).dt.days
 
     section("Key metrics")
     c = st.columns(4)
@@ -421,6 +545,7 @@ def page_search(d: dict[str, pd.DataFrame]) -> None:
 PAGES = {
     "Overview": page_overview,
     "Occupancy & Rent": page_occupancy,
+    "Financials · NOI": page_financials,
     "Leasing Funnel": page_funnel,
     "Maintenance": page_maintenance,
     "Search": page_search,

@@ -14,11 +14,13 @@ Output: writes clean CSVs to ./data/ and one deliberately messy export to
 from __future__ import annotations
 
 import os
-from datetime import date, timedelta
+from datetime import timedelta
 
 import numpy as np
 import pandas as pd
 from faker import Faker
+
+from constants import AS_OF
 
 SEED = 42
 DATA_DIR = "data"
@@ -27,9 +29,6 @@ RAW_DIR = os.path.join(DATA_DIR, "raw")
 fake = Faker("en_US")
 Faker.seed(SEED)
 rng = np.random.default_rng(SEED)
-
-# As-of date for the whole dataset. Kept fixed so the demo is deterministic.
-AS_OF = date(2026, 6, 30)
 
 # ---------------------------------------------------------------------------
 # Fictional portfolio definition
@@ -197,7 +196,86 @@ def build_work_orders(rr: pd.DataFrame) -> pd.DataFrame:
 
 
 # ---------------------------------------------------------------------------
-# 4) Leasing funnel (monthly, per property)
+# 4) Monthly financials — revenue, opex by category, and NOI (per property)
+# ---------------------------------------------------------------------------
+# 24 trailing months so the dashboard can show NOI trend *and* a trailing-12
+# vs. prior-12 year-over-year comparison, which is how operators/investors
+# actually track NOI (a single point-in-time NOI figure means little on its
+# own; the trend and the YoY delta are what drive decisions).
+FINANCIALS_MONTHS = 24
+
+# Opex categories as a mean/sd fraction of effective gross income (EGI) — a
+# simplified stand-in for real multifamily operating-expense benchmarks,
+# where total opex typically runs ~35-45% of EGI.
+OPEX_BENCHMARKS = {
+    "property_tax":          (0.095, 0.010),
+    "insurance":             (0.035, 0.006),
+    "utilities":             (0.055, 0.012),
+    "payroll_management":    (0.090, 0.010),
+    "repairs_maintenance":   (0.065, 0.015),
+    "contract_services":     (0.025, 0.006),
+    "marketing_turnover":    (0.020, 0.008),
+}
+# Class C (older stock) runs hotter on utilities/upkeep; Class A runs a bit
+# leaner on both since building systems are newer and better insulated.
+CLASS_OPEX_ADJUST = {
+    "A": {"utilities": 0.85, "repairs_maintenance": 0.80},
+    "B": {},
+    "C": {"utilities": 1.25, "repairs_maintenance": 1.35},
+}
+
+
+def build_financials_monthly(props: pd.DataFrame, rr: pd.DataFrame) -> pd.DataFrame:
+    """Monthly property-level P&L: revenue, opex by category, and NOI.
+
+    Revenue is anchored to the current rent-roll snapshot (market rent,
+    collected rent, implied vacancy) and projected back across trailing
+    months with mild seasonal noise — winter months run a bit more vacant,
+    which is typical for multifamily leasing. Opex is modeled as a
+    class-adjusted share of EGI per category rather than flat dollars, which
+    is how operators actually budget and benchmark it.
+    """
+    months = pd.date_range(end=pd.Timestamp(AS_OF).replace(day=1),
+                           periods=FINANCIALS_MONTHS, freq="MS")
+    rows = []
+    for _, p in props.iterrows():
+        prop_units = rr[rr["property"] == p["property"]]
+        gpr_base = prop_units["market_rent"].sum()
+        egi_base = prop_units["actual_rent"].sum()
+        vacancy_base = max(0.02, (gpr_base - egi_base) / gpr_base) if gpr_base else 0.05
+        adjust = CLASS_OPEX_ADJUST[p["class"]]
+
+        for m in months:
+            season = 1.15 if m.month in (12, 1, 2) else (1.05 if m.month == 11 else 1.0)
+            vacancy_pct = np.clip(vacancy_base * season * rng.uniform(0.85, 1.15), 0.01, 0.30)
+
+            gpr = gpr_base * rng.uniform(0.985, 1.015)
+            vacancy_loss = gpr * vacancy_pct
+            other_income = gpr * rng.uniform(0.02, 0.045)  # pet/parking/laundry/fees
+            egi = gpr - vacancy_loss + other_income
+
+            opex_amounts = {}
+            for cat, (pct_mean, pct_sd) in OPEX_BENCHMARKS.items():
+                pct = max(0.005, rng.normal(pct_mean, pct_sd)) * adjust.get(cat, 1.0)
+                opex_amounts[cat] = egi * pct
+            total_opex = sum(opex_amounts.values())
+
+            rows.append({
+                "property": p["property"],
+                "month": m.date(),
+                "gross_potential_rent": round(gpr, 2),
+                "vacancy_loss": round(vacancy_loss, 2),
+                "other_income": round(other_income, 2),
+                "effective_gross_income": round(egi, 2),
+                **{f"opex_{cat}": round(amt, 2) for cat, amt in opex_amounts.items()},
+                "total_opex": round(total_opex, 2),
+                "noi": round(egi - total_opex, 2),
+            })
+    return pd.DataFrame(rows)
+
+
+# ---------------------------------------------------------------------------
+# 5) Leasing funnel (monthly, per property)
 # ---------------------------------------------------------------------------
 def build_funnel(props: pd.DataFrame) -> pd.DataFrame:
     months = pd.date_range(end=pd.Timestamp(AS_OF).replace(day=1), periods=6, freq="MS")
@@ -224,7 +302,7 @@ def build_funnel(props: pd.DataFrame) -> pd.DataFrame:
 
 
 # ---------------------------------------------------------------------------
-# 5) Applications (in-flight)
+# 6) Applications (in-flight)
 # ---------------------------------------------------------------------------
 def build_applications(rr: pd.DataFrame) -> pd.DataFrame:
     vacant = rr[rr["status"].isin(["Vacant-Unrented", "Notice-Unrented"])]
@@ -249,7 +327,7 @@ def build_applications(rr: pd.DataFrame) -> pd.DataFrame:
 
 
 # ---------------------------------------------------------------------------
-# 6) Leads / guest cards
+# 7) Leads / guest cards
 # ---------------------------------------------------------------------------
 LEAD_SOURCES = ["Zillow", "Apartments.com", "Google", "Walk-in", "Referral", "Facebook"]
 
@@ -284,6 +362,7 @@ def main() -> None:
     props = build_properties()
     rr = build_rent_roll(props)
     wo = build_work_orders(rr)
+    financials = build_financials_monthly(props, rr)
     funnel = build_funnel(props)
     apps = build_applications(rr)
     leads = build_leads(props)
@@ -292,6 +371,7 @@ def main() -> None:
         "properties": props,
         "rent_roll": rr,
         "work_orders": wo,
+        "financials_monthly": financials,
         "leasing_funnel": funnel,
         "applications": apps,
         "leads": leads,

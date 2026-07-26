@@ -63,7 +63,7 @@ def normalize_property_name(name: str) -> str:
 
 def clean_rent_roll(path: str) -> pd.DataFrame:
     """Full pipeline: read a raw rent-roll export and return a tidy DataFrame."""
-    with open(path, "r", encoding="utf-8") as f:
+    with open(path, encoding="utf-8") as f:
         lines = f.readlines()
     header_idx = detect_header_row(lines)
 
