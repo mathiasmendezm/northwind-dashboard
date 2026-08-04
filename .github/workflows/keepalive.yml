@@ -1,0 +1,24 @@
+name: Keep-alive
+
+# Streamlit Community Cloud puts an app to sleep after a stretch of no
+# visitors — the next person to open the link sees a "wake this app up"
+# screen instead of the dashboard. Pinging it regularly keeps it from ever
+# going idle long enough to trigger that.
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"  # every 12 hours
+  workflow_dispatch:         # lets you trigger it manually from the Actions tab
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping the live demo
+        # -L follows the app's session redirects; -c enables curl's cookie
+        # jar so those redirects don't loop forever (Streamlit sets a
+        # session cookie on each hop and expects it echoed back).
+        run: |
+          curl -sS -L -c /tmp/cookies.txt --max-redirs 10 \
+            -o /dev/null -w "HTTP %{http_code}\n" \
+            "https://northwind-dashboard-82q7dco7ckuydu5tfaqwh9.streamlit.app/"
