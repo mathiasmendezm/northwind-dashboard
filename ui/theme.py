@@ -64,6 +64,12 @@ def inject_css() -> None:
       .chip {{ display: inline-block; padding: 1px 8px; border-radius: 999px;
                font-size: 11px; font-weight: 700; }}
 
+      /* Recommended-action cards (Executive Summary) */
+      .action {{ background: #fff; border: 1px solid {BORDER}; border-left: 4px solid {PRIMARY};
+                 border-radius: 10px; padding: 13px 16px; margin-bottom: 10px; }}
+      .action-title {{ font-size: 14.5px; font-weight: 700; color: {INK}; margin-top: 7px; }}
+      .action-detail {{ font-size: 12.5px; color: {MUTE}; margin-top: 3px; line-height: 1.45; }}
+
       /* Sidebar */
       section[data-testid="stSidebar"] {{ background: #fff; border-right: 1px solid {BORDER}; }}
       .brand {{ font-size: 17px; font-weight: 800; color: {INK}; letter-spacing: -.01em; }}
@@ -102,3 +108,13 @@ def kpi(col, label: str, value: str, note: str = "", note_color: str = MUTE,
 
 def money(v: float) -> str:
     return f"${v:,.0f}"
+
+
+def action_card(color: str, chip_label: str, area: str, title: str, detail: str) -> None:
+    st.markdown(
+        f'<div class="action" style="border-left-color:{color}">'
+        f'<span class="chip" style="background:{color}22; color:{color}">{chip_label}</span> '
+        f'<span class="chip" style="background:{BORDER}; color:{MUTE}">{area}</span>'
+        f'<div class="action-title">{title}</div>'
+        f'<div class="action-detail">{detail}</div></div>',
+        unsafe_allow_html=True)

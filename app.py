@@ -24,6 +24,7 @@ from views.maintenance import page_maintenance
 from views.occupancy import page_occupancy
 from views.overview import page_overview
 from views.search import page_search
+from views.summary import page_summary
 
 st.set_page_config(page_title="Northwind Residential — Ops",
                    page_icon="◆", layout="wide")
@@ -43,6 +44,7 @@ def get_data() -> dict[str, pd.DataFrame]:
 # Shell
 # ───────────────────────────────────────────────────────────────────────────
 PAGES = {
+    "Executive Summary": page_summary,
     "Overview": page_overview,
     "Occupancy & Rent": page_occupancy,
     "Lease Management": page_leases,

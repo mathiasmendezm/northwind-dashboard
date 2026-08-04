@@ -19,9 +19,17 @@ portfolio of properties.
 
 ## What it demonstrates
 
-- **Multi-page analytics UI** — Overview, Occupancy & Rent, Lease Management,
-  Financials · NOI, Leasing Funnel, Maintenance, and a cross-dataset Search,
-  with a custom design system (not the default Streamlit theme).
+- **Multi-page analytics UI** — Executive Summary, Overview, Occupancy & Rent,
+  Lease Management, Financials · NOI, Leasing Funnel, Maintenance, and a
+  cross-dataset Search, with a custom design system (not the default
+  Streamlit theme).
+- **Executive Summary with rule-based recommendations** —
+  [`insights.py`](insights.py) scores the portfolio against the same
+  thresholds already used as color-coding elsewhere (93%/88% occupancy,
+  60%/50% NOI margin, work-order aging, lease-renewal exposure, funnel
+  drop-off) and returns a prioritized, plain-English action list for
+  leadership. Deterministic and fully unit-tested — not an LLM call, so it's
+  free to run and its output never varies between runs of the same data.
 - **Executive KPI + Plotly visualizations** — physical vs. economic occupancy,
   loss-to-lease, vacancy exposure, funnel conversion, work-order aging and spend.
 - **NOI-driven financials page** — trailing-12 vs. prior-12 NOI and its
@@ -40,7 +48,7 @@ portfolio of properties.
 - **Messy-export cleaning pipeline** — [`cleaning.py`](cleaning.py) turns a raw
   property-management CSV export (junk preamble rows, `$1,234.00` money strings,
   addresses glued onto property names) into an analysis-ready frame.
-- **Tested and CI-checked** — a [pytest](tests/) suite (~89% coverage) covers
+- **Tested and CI-checked** — a [pytest](tests/) suite (~90% coverage) covers
   the cleaning pipeline, the data-source fallback logic, the synthetic-data
   generator (including the NOI math), and a full app-level smoke test that
   renders every page headlessly and fails the build if any of them raises;
@@ -92,7 +100,8 @@ The sidebar shows which source is active (`Supabase` vs. `Local CSV`).
 ```
 app.py               Entry point: page config, data loading, sidebar, routing
 ui/                  Design tokens, Plotly theme, CSS, chart-builder helpers
-views/               One module per page (overview, occupancy, leases, financials, ...)
+views/               One module per page (summary, overview, occupancy, leases, ...)
+insights.py          Rule-based recommendation engine for the Executive Summary page
 data_source.py       Supabase-or-CSV data access layer
 generate_data.py     Synthetic data generator (Faker + NumPy, fixed seed)
 cleaning.py          Raw-export cleaning pipeline (+ runnable demo)
