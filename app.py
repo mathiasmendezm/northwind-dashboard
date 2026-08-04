@@ -19,6 +19,7 @@ from data_source import load_table, source_label
 from ui.theme import inject_css
 from views.financials import page_financials
 from views.funnel import page_funnel
+from views.leases import page_leases
 from views.maintenance import page_maintenance
 from views.occupancy import page_occupancy
 from views.overview import page_overview
@@ -44,6 +45,7 @@ def get_data() -> dict[str, pd.DataFrame]:
 PAGES = {
     "Overview": page_overview,
     "Occupancy & Rent": page_occupancy,
+    "Lease Management": page_leases,
     "Financials · NOI": page_financials,
     "Leasing Funnel": page_funnel,
     "Maintenance": page_maintenance,

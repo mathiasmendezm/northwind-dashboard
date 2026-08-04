@@ -15,13 +15,13 @@ portfolio of properties.
 > [`generate_data.py`](generate_data.py). "Northwind Residential" is a fictional
 > company. There is no real, scraped, or client data anywhere in this repository.
 
-![Portfolio Overview](docs/overview.png)
+![Demo — adjusting the cap rate and filtering the rent roll](docs/demo.gif)
 
 ## What it demonstrates
 
-- **Multi-page analytics UI** — Overview, Occupancy & Rent, Financials · NOI,
-  Leasing Funnel, Maintenance, and a cross-dataset Search, with a custom design
-  system (not the default Streamlit theme).
+- **Multi-page analytics UI** — Overview, Occupancy & Rent, Lease Management,
+  Financials · NOI, Leasing Funnel, Maintenance, and a cross-dataset Search,
+  with a custom design system (not the default Streamlit theme).
 - **Executive KPI + Plotly visualizations** — physical vs. economic occupancy,
   loss-to-lease, vacancy exposure, funnel conversion, work-order aging and spend.
 - **NOI-driven financials page** — trailing-12 vs. prior-12 NOI and its
@@ -30,18 +30,23 @@ portfolio of properties.
   repairs & maintenance, contract services, marketing/turnover), and an
   implied portfolio valuation off a user-adjustable cap-rate slider — the
   indicators an owner or investor actually tracks, not just occupancy counts.
+- **Lease management** — upcoming expirations bucketed by month, renewal
+  exposure in $ at risk over the next 30/60/90 days, and a holdover-tenant
+  report (occupied units past their original lease term with no renewal on
+  file) — the operational counterpart to the NOI page's financial view.
 - **Pluggable data layer** — [`data_source.py`](data_source.py) reads from
   **Supabase** when credentials are present and falls back to local CSVs
   otherwise. Swapping backends is a config change, not a code change.
 - **Messy-export cleaning pipeline** — [`cleaning.py`](cleaning.py) turns a raw
   property-management CSV export (junk preamble rows, `$1,234.00` money strings,
   addresses glued onto property names) into an analysis-ready frame.
-- **Tested and CI-checked** — a [pytest](tests/) suite covers the cleaning
-  pipeline, the data-source fallback logic, the synthetic-data generator
-  (including the NOI math), and a full app-level smoke test that renders
-  every page headlessly and fails the build if any of them raises;
-  [GitHub Actions](.github/workflows/ci.yml) runs lint (`ruff`) and the full
-  test suite on every push and pull request.
+- **Tested and CI-checked** — a [pytest](tests/) suite (~89% coverage) covers
+  the cleaning pipeline, the data-source fallback logic, the synthetic-data
+  generator (including the NOI math), and a full app-level smoke test that
+  renders every page headlessly and fails the build if any of them raises;
+  [GitHub Actions](.github/workflows/ci.yml) runs lint (`ruff`), tests with a
+  coverage gate, and a `pip-audit` dependency vulnerability scan on every push
+  and pull request.
 
 ## Tech stack
 
@@ -62,14 +67,15 @@ entirely on the local synthetic data.
 
 ```bash
 pip install -r requirements-dev.txt
-ruff check .     # lint
-pytest -v        # unit tests + full-app smoke test
+ruff check .                              # lint
+pytest -v --cov --cov-report=term-missing # unit tests + full-app smoke test + coverage
+pip-audit -r requirements.txt -r requirements-dev.txt  # dependency vulnerability scan
 ```
 
-The same two commands run in CI (see badge above) on every push and pull
-request, against a freshly regenerated dataset — so a broken generator, a
-regression in the cleaning pipeline, or a page that throws at runtime fails
-the build, not just a demo.
+The same commands run in CI (see badge above) on every push and pull request,
+against a freshly regenerated dataset — so a broken generator, a regression in
+the cleaning pipeline, a page that throws at runtime, a coverage drop below
+80%, or a dependency with a known CVE all fail the build, not just a demo.
 
 ## Using a real Supabase backend (optional)
 
@@ -84,16 +90,18 @@ The sidebar shows which source is active (`Supabase` vs. `Local CSV`).
 ## Project layout
 
 ```
-app.py               Streamlit dashboard (pages, charts, styling)
+app.py               Entry point: page config, data loading, sidebar, routing
+ui/                  Design tokens, Plotly theme, CSS, chart-builder helpers
+views/               One module per page (overview, occupancy, leases, financials, ...)
 data_source.py       Supabase-or-CSV data access layer
 generate_data.py     Synthetic data generator (Faker + NumPy, fixed seed)
 cleaning.py          Raw-export cleaning pipeline (+ runnable demo)
 constants.py         Shared constants (e.g. the fixed "as of" date)
 data/                Generated synthetic CSVs (committed so it runs on clone)
 tests/               pytest suite for the generator, cleaner, data layer, and app smoke test
-.github/workflows/   CI: lint + tests on every push/PR
-requirements.txt
-requirements-dev.txt Adds pytest + ruff for local development
+.github/workflows/   CI: lint, tests + coverage gate, pip-audit on every push/PR
+requirements.txt     Pinned runtime dependencies
+requirements-dev.txt Adds pytest, pytest-cov, ruff, pip-audit for local development
 ```
 
 ## Notes

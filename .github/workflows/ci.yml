@@ -27,5 +27,8 @@ jobs:
       - name: Regenerate synthetic data (checks the generator still runs)
         run: python generate_data.py
 
-      - name: Test (pytest)
-        run: pytest -v
+      - name: Test (pytest + coverage)
+        run: pytest -v --cov --cov-report=term-missing
+
+      - name: Dependency audit (pip-audit)
+        run: pip-audit -r requirements.txt -r requirements-dev.txt

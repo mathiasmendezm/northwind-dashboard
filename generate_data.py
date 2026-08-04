@@ -111,7 +111,12 @@ def build_rent_roll(props: pd.DataFrame) -> pd.DataFrame:
                 # Actual rent sits slightly below market (loss-to-lease)
                 actual = round(market * rng.uniform(0.90, 1.01) / 5) * 5
                 tenant = fake.name()
-                start = AS_OF - timedelta(days=int(rng.integers(30, 900)))
+                # lease_start reflects the most recently signed term (initial move-in
+                # or a renewal), not necessarily the original move-in date. Most
+                # tenants are within a 365-day term; a slice (~10%) are drawn past
+                # that mark to represent realistic holdover / late-renewal cases.
+                days_since_signed = int(rng.integers(30, 400))
+                start = AS_OF - timedelta(days=days_since_signed)
                 end = start + timedelta(days=365)
                 deposit = market
             else:
