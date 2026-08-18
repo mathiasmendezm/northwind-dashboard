@@ -26,8 +26,8 @@ from views.overview import page_overview
 from views.search import page_search
 from views.summary import page_summary
 
-st.set_page_config(page_title="Northwind Residential — Ops",
-                   page_icon="◆", layout="wide")
+st.set_page_config(page_title="Northwind Residential — Ops", page_icon="◆",
+                    layout="wide", initial_sidebar_state="expanded")
 
 
 # ───────────────────────────────────────────────────────────────────────────
