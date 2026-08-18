@@ -1,7 +1,7 @@
 streamlit==1.60.0
 pandas==2.3.3
 plotly==6.9.0
-numpy==2.5.1
+numpy==2.5.2
 Faker==40.36.0
 # Optional — only needed if you point the app at a real Supabase backend:
 # supabase==2.31.0
