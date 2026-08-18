@@ -40,7 +40,10 @@ def inject_css() -> None:
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
       html, body, [class*="css"] {{ font-family: 'Inter', system-ui, sans-serif; }}
       .stApp {{ background: {BG}; }}
-      #MainMenu, footer, header {{ visibility: hidden; }}
+      #MainMenu, footer {{ visibility: hidden; }}
+      header[data-testid="stHeader"] {{ background: transparent; }}
+      header[data-testid="stHeader"] [data-testid="stToolbar"] {{ visibility: hidden; }}
+      [data-testid="stSidebarCollapsedControl"] {{ visibility: visible !important; }}
       .block-container {{ padding-top: 2.2rem; padding-bottom: 3rem; max-width: 1280px; }}
 
       /* Page title block */
