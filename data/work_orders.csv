@@ -1,1014 +1,1014 @@
 wo_id,property,unit,category,priority,status,opened_date,closed_date,vendor,cost
-WO00001,Birchwood Terrace,019,Pest,High,Completed,2026-04-30,2026-05-08,Volt Electric,46.72
-WO00002,Meadowlark Place,004,HVAC,Low,Open,2026-06-29,,In-House Maintenance,0.0
-WO00003,Cedar Commons,051,Plumbing,High,Completed,2026-03-26,2026-03-28,BlueLine Plumbing,57.17
-WO00004,Cedar Commons,015,HVAC,High,In Progress,2026-04-12,,GreenLeaf Pest,0.0
-WO00005,Willow Park,030,Appliance,Medium,Completed,2026-03-27,2026-04-13,Summit Handyman,370.12
-WO00006,Oakhaven Apartments,029,Turnover,High,Completed,2026-05-03,2026-05-20,Volt Electric,453.31
-WO00007,Riverbend Lofts,006,General,Low,Completed,2026-03-11,2026-03-24,Summit Handyman,35.0
-WO00008,Meadowlark Place,011,HVAC,Low,In Progress,2026-06-29,,Apex Mechanical,0.0
-WO00009,Harborview Flats,011,General,Low,Completed,2026-04-14,2026-04-23,BlueLine Plumbing,111.17
-WO00010,Harborview Flats,013,Plumbing,Low,Completed,2026-05-24,2026-06-03,GreenLeaf Pest,166.15
-WO00011,Willow Park,008,General,Medium,Completed,2026-05-31,2026-06-16,In-House Maintenance,121.34
-WO00012,Cedar Commons,047,HVAC,Medium,Completed,2026-06-23,2026-06-25,BlueLine Plumbing,368.53
-WO00013,Aspen Grove,056,General,Medium,Completed,2026-04-16,2026-05-02,GreenLeaf Pest,218.04
-WO00014,Birchwood Terrace,039,Appliance,Low,Completed,2026-04-05,2026-04-22,In-House Maintenance,106.16
-WO00015,Riverbend Lofts,008,General,Medium,Completed,2026-05-11,2026-05-24,BlueLine Plumbing,118.43
-WO00016,Cedar Commons,057,Plumbing,Low,Open,2026-05-09,,Volt Electric,0.0
-WO00017,Willow Park,029,Turnover,Medium,Open,2026-04-14,,Volt Electric,0.0
-WO00018,Meadowlark Place,026,General,Low,Completed,2026-04-07,2026-04-18,BlueLine Plumbing,35.0
-WO00019,Stonebridge Villas,024,Electrical,Low,Open,2026-05-08,,GreenLeaf Pest,0.0
-WO00020,Aspen Grove,012,General,Low,Open,2026-06-29,,Volt Electric,0.0
-WO00021,Aspen Grove,010,Turnover,Low,Open,2026-05-28,,GreenLeaf Pest,0.0
-WO00022,Cedar Commons,028,Electrical,Low,Open,2026-06-11,,Apex Mechanical,0.0
-WO00023,Stonebridge Villas,030,Plumbing,Medium,In Progress,2026-06-13,,Apex Mechanical,0.0
-WO00024,Aspen Grove,052,General,Low,In Progress,2026-05-27,,In-House Maintenance,0.0
-WO00025,Oakhaven Apartments,072,Turnover,Medium,Completed,2026-04-30,2026-05-03,Summit Handyman,835.03
-WO00026,Stonebridge Villas,045,Pest,Low,Completed,2026-03-12,2026-03-30,Apex Mechanical,35.0
-WO00027,Harborview Flats,040,HVAC,Medium,Completed,2026-04-03,2026-04-20,Apex Mechanical,317.46
-WO00028,Cedar Commons,024,Appliance,High,Completed,2026-04-11,2026-04-25,Summit Handyman,101.44
-WO00029,Willow Park,076,Appliance,Medium,Completed,2026-03-25,2026-04-12,BlueLine Plumbing,236.7
-WO00030,Willow Park,015,Electrical,Medium,Completed,2026-04-29,2026-05-09,BlueLine Plumbing,266.88
-WO00031,Maple Court,031,Turnover,Low,Open,2026-05-29,,In-House Maintenance,0.0
-WO00032,Maple Court,014,Pest,Medium,Open,2026-06-19,,In-House Maintenance,0.0
-WO00033,Cedar Commons,027,Plumbing,Low,Open,2026-06-22,,BlueLine Plumbing,0.0
-WO00034,Meadowlark Place,039,Plumbing,Low,Completed,2026-03-11,2026-03-15,Summit Handyman,71.35
-WO00035,Willow Park,078,HVAC,Low,Open,2026-03-17,,Apex Mechanical,0.0
-WO00036,Aspen Grove,054,Electrical,Medium,Completed,2026-03-07,2026-03-08,GreenLeaf Pest,254.27
-WO00037,Aspen Grove,037,Turnover,Medium,Completed,2026-04-11,2026-04-14,GreenLeaf Pest,975.21
-WO00038,Aspen Grove,019,Plumbing,Low,Completed,2026-04-08,2026-04-17,Volt Electric,90.59
-WO00039,Maple Court,047,HVAC,Emergency,Completed,2026-06-22,2026-06-25,In-House Maintenance,122.76
-WO00040,Maple Court,026,Pest,Low,Completed,2026-06-07,2026-06-21,Apex Mechanical,122.95
-WO00041,Sunset Ridge,012,Appliance,Medium,Completed,2026-05-17,2026-05-19,BlueLine Plumbing,126.91
-WO00042,Aspen Grove,009,Plumbing,Low,Completed,2026-05-17,2026-05-19,In-House Maintenance,56.62
-WO00043,Cedar Commons,029,Turnover,Low,Completed,2026-04-26,2026-05-05,Apex Mechanical,659.05
-WO00044,Oakhaven Apartments,085,HVAC,Medium,Completed,2026-06-29,2026-07-02,BlueLine Plumbing,53.45
-WO00045,Ironwood Residences,022,Pest,Low,Completed,2026-03-09,2026-03-27,GreenLeaf Pest,50.13
-WO00046,Willow Park,080,Plumbing,Low,Completed,2026-05-02,2026-05-08,BlueLine Plumbing,105.35
-WO00047,Stonebridge Villas,044,HVAC,Medium,Completed,2026-04-25,2026-04-26,GreenLeaf Pest,325.23
-WO00048,Stonebridge Villas,051,Pest,Medium,Completed,2026-05-07,2026-05-27,BlueLine Plumbing,141.6
-WO00049,Willow Park,054,Electrical,High,Completed,2026-04-04,2026-04-20,Summit Handyman,257.97
-WO00050,Ironwood Residences,042,General,Medium,Completed,2026-05-04,2026-05-20,GreenLeaf Pest,111.14
-WO00051,Sunset Ridge,031,Appliance,High,Completed,2026-04-13,2026-04-20,Apex Mechanical,92.97
-WO00052,Birchwood Terrace,031,Turnover,Low,Open,2026-05-08,,GreenLeaf Pest,0.0
-WO00053,Riverbend Lofts,031,General,Medium,In Progress,2026-06-02,,BlueLine Plumbing,0.0
-WO00054,Aspen Grove,049,Appliance,High,Completed,2026-05-08,2026-05-15,In-House Maintenance,264.76
-WO00055,Sunset Ridge,015,Electrical,Medium,Completed,2026-05-03,2026-05-23,Volt Electric,117.63
-WO00056,Harborview Flats,006,HVAC,Low,In Progress,2026-06-16,,In-House Maintenance,0.0
-WO00057,Maple Court,004,Pest,Medium,Completed,2026-05-14,2026-05-16,Apex Mechanical,99.85
-WO00058,Oakhaven Apartments,022,Electrical,Low,Completed,2026-05-09,2026-05-21,BlueLine Plumbing,157.82
-WO00059,Willow Park,053,Electrical,Low,In Progress,2026-05-29,,BlueLine Plumbing,0.0
-WO00060,Stonebridge Villas,041,Plumbing,Low,Completed,2026-04-17,2026-05-02,Summit Handyman,156.11
-WO00061,Ironwood Residences,025,Pest,Low,In Progress,2026-06-12,,BlueLine Plumbing,0.0
-WO00062,Oakhaven Apartments,076,General,Medium,Completed,2026-05-09,2026-05-15,Volt Electric,76.16
-WO00063,Oakhaven Apartments,024,Electrical,Medium,Completed,2026-03-14,2026-03-26,In-House Maintenance,213.08
-WO00064,Harborview Flats,023,Appliance,High,Completed,2026-04-17,2026-05-04,Volt Electric,280.7
-WO00065,Oakhaven Apartments,090,Electrical,High,Completed,2026-05-29,2026-06-09,Volt Electric,67.91
-WO00066,Maple Court,010,Turnover,Medium,Open,2026-04-20,,In-House Maintenance,0.0
-WO00067,Oakhaven Apartments,051,Appliance,High,Completed,2026-04-24,2026-05-10,Summit Handyman,207.6
-WO00068,Harborview Flats,040,Plumbing,Medium,Completed,2026-05-10,2026-05-13,GreenLeaf Pest,109.57
-WO00069,Riverbend Lofts,017,Pest,Medium,Open,2026-06-10,,Summit Handyman,0.0
-WO00070,Willow Park,043,Electrical,Low,Open,2026-05-10,,BlueLine Plumbing,0.0
-WO00071,Stonebridge Villas,041,Electrical,Medium,Completed,2026-05-05,2026-05-15,Volt Electric,267.92
-WO00072,Riverbend Lofts,026,Plumbing,Low,Open,2026-06-22,,GreenLeaf Pest,0.0
-WO00073,Willow Park,078,Electrical,Low,Completed,2026-05-14,2026-06-03,Volt Electric,181.54
-WO00074,Ironwood Residences,016,Appliance,Medium,Open,2026-03-16,,In-House Maintenance,0.0
-WO00075,Stonebridge Villas,020,Pest,Emergency,Completed,2026-05-20,2026-06-02,Summit Handyman,89.6
-WO00076,Willow Park,005,HVAC,Medium,Completed,2026-04-04,2026-04-14,In-House Maintenance,277.23
-WO00077,Maple Court,036,Pest,Low,Completed,2026-03-13,2026-03-16,BlueLine Plumbing,201.06
-WO00078,Oakhaven Apartments,022,Electrical,High,Completed,2026-04-05,2026-04-25,GreenLeaf Pest,239.53
-WO00079,Willow Park,018,Plumbing,Low,Completed,2026-04-11,2026-04-15,Apex Mechanical,130.26
-WO00080,Willow Park,064,Pest,Medium,Open,2026-06-18,,Summit Handyman,0.0
-WO00081,Oakhaven Apartments,001,Appliance,Medium,Completed,2026-05-08,2026-05-10,Volt Electric,203.77
-WO00082,Stonebridge Villas,030,Plumbing,Medium,Completed,2026-06-20,2026-06-24,BlueLine Plumbing,77.62
-WO00083,Oakhaven Apartments,068,HVAC,Low,Completed,2026-04-09,2026-04-19,Apex Mechanical,384.56
-WO00084,Cedar Commons,026,HVAC,Low,Completed,2026-04-06,2026-04-19,Volt Electric,143.19
-WO00085,Stonebridge Villas,011,Pest,Medium,Completed,2026-03-05,2026-03-20,Apex Mechanical,85.64
-WO00086,Birchwood Terrace,022,HVAC,Medium,Completed,2026-03-26,2026-04-13,GreenLeaf Pest,259.54
-WO00087,Maple Court,067,Turnover,Medium,Completed,2026-03-23,2026-04-01,BlueLine Plumbing,297.69
-WO00088,Sunset Ridge,040,Pest,High,Completed,2026-03-05,2026-03-09,BlueLine Plumbing,94.16
-WO00089,Willow Park,021,HVAC,High,Completed,2026-06-08,2026-06-25,Apex Mechanical,330.57
-WO00090,Cedar Commons,011,Appliance,Emergency,Completed,2026-03-11,2026-03-17,Volt Electric,53.77
-WO00091,Willow Park,002,Appliance,Medium,Completed,2026-03-24,2026-04-03,Summit Handyman,78.06
-WO00092,Cedar Commons,032,Pest,Medium,In Progress,2026-05-01,,In-House Maintenance,0.0
-WO00093,Stonebridge Villas,020,HVAC,High,Completed,2026-05-01,2026-05-10,GreenLeaf Pest,337.39
-WO00094,Oakhaven Apartments,039,Turnover,Medium,Completed,2026-06-30,2026-07-01,In-House Maintenance,424.9
-WO00095,Sunset Ridge,017,HVAC,Emergency,Completed,2026-03-03,2026-03-08,BlueLine Plumbing,228.54
-WO00096,Birchwood Terrace,038,HVAC,Medium,Open,2026-06-23,,BlueLine Plumbing,0.0
-WO00097,Meadowlark Place,015,HVAC,Medium,Completed,2026-04-21,2026-04-27,Summit Handyman,324.56
-WO00098,Harborview Flats,005,Turnover,Low,Completed,2026-04-04,2026-04-05,BlueLine Plumbing,1266.87
-WO00099,Aspen Grove,002,Pest,Medium,Completed,2026-03-10,2026-03-15,BlueLine Plumbing,111.37
-WO00100,Willow Park,025,Pest,High,In Progress,2026-05-08,,GreenLeaf Pest,0.0
-WO00101,Cedar Commons,058,Electrical,Medium,Completed,2026-03-14,2026-03-26,Summit Handyman,336.07
-WO00102,Ironwood Residences,060,Turnover,Medium,In Progress,2026-04-25,,In-House Maintenance,0.0
-WO00103,Ironwood Residences,004,General,Medium,Completed,2026-03-10,2026-03-24,Apex Mechanical,46.76
-WO00104,Willow Park,076,Plumbing,High,Completed,2026-03-27,2026-04-07,Apex Mechanical,133.57
-WO00105,Oakhaven Apartments,070,General,Medium,In Progress,2026-04-23,,Volt Electric,0.0
-WO00106,Willow Park,037,Pest,Low,Completed,2026-04-29,2026-05-13,GreenLeaf Pest,130.03
-WO00107,Ironwood Residences,021,Plumbing,Emergency,Completed,2026-06-02,2026-06-16,Summit Handyman,148.94
-WO00108,Willow Park,085,General,Medium,Completed,2026-04-02,2026-04-20,In-House Maintenance,158.0
-WO00109,Aspen Grove,007,Pest,Medium,Completed,2026-05-15,2026-05-25,Summit Handyman,73.95
-WO00110,Willow Park,027,Plumbing,Medium,Completed,2026-05-27,2026-06-15,GreenLeaf Pest,189.48
-WO00111,Stonebridge Villas,009,HVAC,High,Completed,2026-04-04,2026-04-08,In-House Maintenance,538.18
-WO00112,Cedar Commons,043,Pest,Medium,In Progress,2026-05-23,,GreenLeaf Pest,0.0
-WO00113,Aspen Grove,029,Appliance,Medium,Completed,2026-06-12,2026-06-15,Summit Handyman,295.39
-WO00114,Harborview Flats,047,Appliance,Medium,Completed,2026-06-25,2026-07-03,Volt Electric,124.65
-WO00115,Oakhaven Apartments,055,Electrical,High,Open,2026-06-12,,GreenLeaf Pest,0.0
-WO00116,Maple Court,004,Pest,High,Completed,2026-05-05,2026-05-13,In-House Maintenance,81.11
-WO00117,Willow Park,061,HVAC,Medium,Completed,2026-04-14,2026-04-16,GreenLeaf Pest,572.83
-WO00118,Ironwood Residences,010,Turnover,Low,Completed,2026-03-29,2026-04-12,GreenLeaf Pest,961.16
-WO00119,Riverbend Lofts,025,Electrical,Low,Completed,2026-04-30,2026-05-13,BlueLine Plumbing,141.21
-WO00120,Harborview Flats,036,Appliance,Low,Completed,2026-06-08,2026-06-28,BlueLine Plumbing,169.32
-WO00121,Oakhaven Apartments,042,Turnover,Medium,In Progress,2026-06-18,,Volt Electric,0.0
-WO00122,Oakhaven Apartments,019,HVAC,Low,Completed,2026-05-20,2026-05-27,Apex Mechanical,360.83
-WO00123,Aspen Grove,003,General,Medium,Completed,2026-03-13,2026-03-23,Volt Electric,35.0
-WO00124,Willow Park,078,Appliance,Emergency,Completed,2026-06-15,2026-07-02,In-House Maintenance,188.68
-WO00125,Ironwood Residences,019,Electrical,Low,Completed,2026-04-28,2026-05-05,Apex Mechanical,86.69
-WO00126,Harborview Flats,006,Pest,Low,Open,2026-04-13,,Volt Electric,0.0
-WO00127,Ironwood Residences,016,HVAC,Emergency,Completed,2026-05-18,2026-06-01,Apex Mechanical,228.24
-WO00128,Willow Park,005,Turnover,Low,Completed,2026-05-28,2026-05-31,GreenLeaf Pest,808.83
-WO00129,Sunset Ridge,021,Appliance,Emergency,Completed,2026-04-14,2026-05-01,In-House Maintenance,301.72
-WO00130,Willow Park,068,Turnover,High,Completed,2026-03-28,2026-04-04,Summit Handyman,452.69
-WO00131,Willow Park,037,Plumbing,Medium,Completed,2026-03-31,2026-04-11,BlueLine Plumbing,163.34
-WO00132,Sunset Ridge,015,Pest,Medium,Open,2026-06-18,,BlueLine Plumbing,0.0
-WO00133,Cedar Commons,034,Plumbing,Medium,Completed,2026-03-30,2026-04-15,Volt Electric,123.96
-WO00134,Cedar Commons,021,Plumbing,Low,Completed,2026-03-27,2026-04-05,Apex Mechanical,92.06
-WO00135,Ironwood Residences,024,Pest,High,Completed,2026-04-21,2026-05-03,Apex Mechanical,119.79
-WO00136,Meadowlark Place,038,Electrical,High,Completed,2026-03-19,2026-03-25,Summit Handyman,257.18
-WO00137,Stonebridge Villas,047,Appliance,High,Completed,2026-05-12,2026-05-13,GreenLeaf Pest,189.36
-WO00138,Willow Park,084,Pest,Medium,Completed,2026-03-22,2026-03-27,GreenLeaf Pest,82.17
-WO00139,Maple Court,040,General,Medium,Completed,2026-04-13,2026-04-14,GreenLeaf Pest,35.0
-WO00140,Harborview Flats,008,Turnover,Low,Completed,2026-06-18,2026-06-26,Volt Electric,904.2
-WO00141,Aspen Grove,041,General,Low,Open,2026-05-02,,Apex Mechanical,0.0
-WO00142,Aspen Grove,054,Appliance,Medium,Completed,2026-05-27,2026-06-06,Summit Handyman,73.78
-WO00143,Aspen Grove,058,HVAC,Medium,Completed,2026-03-19,2026-04-04,Volt Electric,172.39
-WO00144,Willow Park,025,General,Low,Completed,2026-03-04,2026-03-06,Apex Mechanical,62.02
-WO00145,Oakhaven Apartments,054,General,Medium,Open,2026-06-05,,Apex Mechanical,0.0
-WO00146,Cedar Commons,028,Turnover,High,Completed,2026-04-07,2026-04-15,BlueLine Plumbing,755.52
-WO00147,Cedar Commons,022,Turnover,Low,In Progress,2026-06-21,,In-House Maintenance,0.0
-WO00148,Sunset Ridge,035,Pest,High,Completed,2026-03-05,2026-03-14,In-House Maintenance,125.57
-WO00149,Oakhaven Apartments,017,General,Medium,Completed,2026-03-20,2026-03-25,Apex Mechanical,92.66
-WO00150,Riverbend Lofts,018,Electrical,Medium,Completed,2026-06-05,2026-06-24,BlueLine Plumbing,348.36
-WO00151,Meadowlark Place,034,Electrical,Emergency,Completed,2026-05-21,2026-06-09,Volt Electric,66.43
-WO00152,Oakhaven Apartments,062,Pest,Low,Completed,2026-05-23,2026-05-26,In-House Maintenance,153.42
-WO00153,Harborview Flats,024,Turnover,Medium,Completed,2026-06-22,2026-07-06,GreenLeaf Pest,1074.87
-WO00154,Stonebridge Villas,031,General,Medium,Open,2026-06-14,,GreenLeaf Pest,0.0
-WO00155,Cedar Commons,015,Pest,Low,Completed,2026-04-15,2026-04-21,In-House Maintenance,98.44
-WO00156,Aspen Grove,033,Electrical,Low,Completed,2026-06-09,2026-06-15,GreenLeaf Pest,218.65
-WO00157,Birchwood Terrace,006,Appliance,Low,Completed,2026-05-29,2026-05-31,Summit Handyman,175.1
-WO00158,Birchwood Terrace,050,HVAC,Low,Completed,2026-04-26,2026-05-01,Volt Electric,531.19
-WO00159,Cedar Commons,049,Electrical,High,Completed,2026-05-29,2026-06-14,BlueLine Plumbing,90.41
-WO00160,Maple Court,040,Appliance,Low,Completed,2026-04-25,2026-05-12,GreenLeaf Pest,82.66
-WO00161,Maple Court,037,Pest,Low,Completed,2026-03-18,2026-03-28,Apex Mechanical,115.47
-WO00162,Willow Park,005,General,Low,Completed,2026-05-13,2026-05-23,Apex Mechanical,106.13
-WO00163,Oakhaven Apartments,082,General,High,Completed,2026-03-25,2026-04-08,Apex Mechanical,35.0
-WO00164,Birchwood Terrace,054,Electrical,Medium,Completed,2026-03-20,2026-03-26,Apex Mechanical,218.66
-WO00165,Ironwood Residences,055,Electrical,High,Open,2026-06-15,,Volt Electric,0.0
-WO00166,Oakhaven Apartments,033,Electrical,Medium,In Progress,2026-04-03,,Apex Mechanical,0.0
-WO00167,Stonebridge Villas,013,Pest,High,Completed,2026-06-01,2026-06-09,Summit Handyman,90.92
-WO00168,Riverbend Lofts,009,Electrical,High,Open,2026-06-02,,GreenLeaf Pest,0.0
-WO00169,Willow Park,012,Electrical,Low,Completed,2026-03-21,2026-03-27,Volt Electric,148.74
-WO00170,Meadowlark Place,025,Plumbing,Low,In Progress,2026-05-20,,Volt Electric,0.0
-WO00171,Oakhaven Apartments,087,Plumbing,Medium,Completed,2026-06-07,2026-06-14,Apex Mechanical,233.43
-WO00172,Maple Court,068,Appliance,Medium,Completed,2026-04-02,2026-04-08,Summit Handyman,150.75
-WO00173,Harborview Flats,024,General,Medium,Completed,2026-03-26,2026-03-30,BlueLine Plumbing,94.39
-WO00174,Oakhaven Apartments,041,Turnover,High,Completed,2026-04-15,2026-04-20,Summit Handyman,1347.67
-WO00175,Cedar Commons,009,HVAC,Medium,Completed,2026-06-25,2026-06-26,BlueLine Plumbing,274.13
-WO00176,Birchwood Terrace,043,Pest,Low,Completed,2026-04-25,2026-04-27,GreenLeaf Pest,88.41
-WO00177,Cedar Commons,011,Electrical,Low,Completed,2026-03-18,2026-03-19,Volt Electric,109.32
-WO00178,Harborview Flats,007,Appliance,Medium,Open,2026-06-05,,GreenLeaf Pest,0.0
-WO00179,Stonebridge Villas,038,Turnover,High,Completed,2026-03-19,2026-03-30,Apex Mechanical,844.31
-WO00180,Willow Park,073,General,Medium,Completed,2026-05-29,2026-06-09,Summit Handyman,79.37
-WO00181,Maple Court,018,General,Medium,Completed,2026-04-14,2026-04-15,Summit Handyman,96.55
-WO00182,Meadowlark Place,034,Appliance,Low,Open,2026-05-10,,GreenLeaf Pest,0.0
-WO00183,Oakhaven Apartments,019,Turnover,Emergency,Completed,2026-03-13,2026-03-17,BlueLine Plumbing,1241.3
-WO00184,Maple Court,020,Pest,Medium,Completed,2026-06-14,2026-06-28,Summit Handyman,105.91
-WO00185,Stonebridge Villas,015,Turnover,Low,Completed,2026-03-08,2026-03-17,Volt Electric,964.62
-WO00186,Stonebridge Villas,034,Pest,Low,Completed,2026-04-23,2026-05-02,BlueLine Plumbing,114.04
-WO00187,Stonebridge Villas,014,Appliance,Medium,Completed,2026-03-25,2026-04-04,Volt Electric,39.97
-WO00188,Meadowlark Place,023,General,Medium,Open,2026-06-06,,Summit Handyman,0.0
-WO00189,Stonebridge Villas,024,Plumbing,Medium,Completed,2026-04-05,2026-04-16,Volt Electric,184.75
-WO00190,Ironwood Residences,014,Appliance,Medium,Completed,2026-05-29,2026-06-04,Volt Electric,218.03
-WO00191,Oakhaven Apartments,018,HVAC,High,Completed,2026-03-22,2026-04-07,Apex Mechanical,357.24
-WO00192,Harborview Flats,030,Plumbing,Low,Open,2026-04-10,,Volt Electric,0.0
-WO00193,Sunset Ridge,015,Pest,High,Completed,2026-06-16,2026-06-29,BlueLine Plumbing,73.74
-WO00194,Oakhaven Apartments,093,Appliance,Low,Open,2026-06-30,,BlueLine Plumbing,0.0
-WO00195,Willow Park,051,Pest,High,Completed,2026-05-17,2026-06-01,In-House Maintenance,199.67
-WO00196,Meadowlark Place,026,Plumbing,Medium,Completed,2026-03-09,2026-03-21,BlueLine Plumbing,168.8
-WO00197,Birchwood Terrace,050,Appliance,High,Completed,2026-05-27,2026-06-02,In-House Maintenance,153.73
-WO00198,Willow Park,026,General,Medium,Open,2026-05-26,,GreenLeaf Pest,0.0
-WO00199,Stonebridge Villas,048,Appliance,Medium,Completed,2026-04-08,2026-04-24,BlueLine Plumbing,111.29
-WO00200,Ironwood Residences,035,General,Low,Completed,2026-03-16,2026-03-24,Summit Handyman,98.06
-WO00201,Oakhaven Apartments,056,Electrical,High,Completed,2026-05-21,2026-05-24,Summit Handyman,100.97
-WO00202,Aspen Grove,011,Electrical,Medium,Completed,2026-03-04,2026-03-10,Summit Handyman,35.0
-WO00203,Willow Park,052,HVAC,Medium,In Progress,2026-05-04,,Summit Handyman,0.0
-WO00204,Maple Court,030,General,High,In Progress,2026-05-27,,Volt Electric,0.0
-WO00205,Harborview Flats,041,Appliance,Low,Completed,2026-06-16,2026-06-21,Volt Electric,206.34
-WO00206,Oakhaven Apartments,080,Electrical,High,Completed,2026-03-18,2026-03-25,Apex Mechanical,292.71
-WO00207,Meadowlark Place,025,General,Medium,Completed,2026-03-12,2026-03-27,BlueLine Plumbing,70.83
-WO00208,Willow Park,057,Turnover,Low,In Progress,2026-06-08,,Volt Electric,0.0
-WO00209,Maple Court,053,Electrical,High,Completed,2026-03-19,2026-04-01,Volt Electric,184.08
-WO00210,Birchwood Terrace,001,General,Medium,Open,2026-06-12,,Volt Electric,0.0
-WO00211,Cedar Commons,051,Electrical,Emergency,Completed,2026-06-24,2026-07-06,Summit Handyman,129.49
-WO00212,Aspen Grove,027,General,Medium,Completed,2026-03-26,2026-04-09,BlueLine Plumbing,69.63
-WO00213,Oakhaven Apartments,068,General,Low,Completed,2026-06-02,2026-06-11,In-House Maintenance,41.06
-WO00214,Ironwood Residences,064,HVAC,Low,Completed,2026-04-11,2026-04-26,Apex Mechanical,137.48
-WO00215,Aspen Grove,030,Appliance,Low,Completed,2026-06-01,2026-06-02,BlueLine Plumbing,68.87
-WO00216,Cedar Commons,021,Plumbing,Low,Completed,2026-04-23,2026-05-06,Summit Handyman,75.75
-WO00217,Harborview Flats,023,Turnover,Medium,Completed,2026-04-22,2026-05-08,Summit Handyman,779.6
-WO00218,Willow Park,018,Turnover,Low,Completed,2026-03-30,2026-04-04,BlueLine Plumbing,783.01
-WO00219,Maple Court,064,HVAC,Low,Open,2026-05-22,,Volt Electric,0.0
-WO00220,Willow Park,061,Electrical,Medium,Completed,2026-03-20,2026-03-27,BlueLine Plumbing,206.23
-WO00221,Cedar Commons,033,HVAC,Medium,Completed,2026-03-03,2026-03-11,GreenLeaf Pest,411.18
-WO00222,Birchwood Terrace,028,HVAC,Low,Completed,2026-03-30,2026-04-13,Summit Handyman,192.04
-WO00223,Maple Court,008,General,Low,Completed,2026-03-25,2026-04-03,Apex Mechanical,161.67
-WO00224,Birchwood Terrace,018,Turnover,Low,Completed,2026-04-04,2026-04-20,Volt Electric,599.92
-WO00225,Sunset Ridge,016,General,High,In Progress,2026-04-20,,In-House Maintenance,0.0
-WO00226,Meadowlark Place,017,General,Low,Completed,2026-03-28,2026-04-06,GreenLeaf Pest,184.78
-WO00227,Oakhaven Apartments,012,Plumbing,Low,In Progress,2026-06-30,,BlueLine Plumbing,0.0
-WO00228,Maple Court,062,Electrical,High,Completed,2026-03-15,2026-03-18,BlueLine Plumbing,35.0
-WO00229,Harborview Flats,041,HVAC,Low,Open,2026-04-25,,Volt Electric,0.0
-WO00230,Meadowlark Place,019,Pest,Low,Completed,2026-04-15,2026-05-05,Volt Electric,122.92
-WO00231,Aspen Grove,038,Pest,Low,Open,2026-06-16,,In-House Maintenance,0.0
-WO00232,Birchwood Terrace,040,Appliance,Low,Completed,2026-06-24,2026-07-03,Apex Mechanical,83.71
-WO00233,Stonebridge Villas,044,Turnover,Medium,Completed,2026-03-05,2026-03-18,BlueLine Plumbing,801.63
-WO00234,Birchwood Terrace,004,Electrical,Medium,Completed,2026-05-26,2026-06-07,In-House Maintenance,291.7
-WO00235,Birchwood Terrace,021,HVAC,Low,Open,2026-05-05,,Apex Mechanical,0.0
-WO00236,Oakhaven Apartments,003,General,High,Completed,2026-05-18,2026-05-20,GreenLeaf Pest,118.2
-WO00237,Stonebridge Villas,006,Turnover,Low,Completed,2026-05-12,2026-05-13,Summit Handyman,517.23
-WO00238,Willow Park,037,Electrical,Medium,In Progress,2026-06-16,,In-House Maintenance,0.0
-WO00239,Riverbend Lofts,003,Pest,Low,Completed,2026-06-03,2026-06-15,In-House Maintenance,155.07
-WO00240,Aspen Grove,018,Pest,Low,Completed,2026-03-23,2026-04-04,GreenLeaf Pest,52.45
-WO00241,Birchwood Terrace,039,Pest,High,Open,2026-05-11,,GreenLeaf Pest,0.0
-WO00242,Maple Court,028,Turnover,Low,Completed,2026-03-25,2026-04-10,Summit Handyman,1173.24
-WO00243,Ironwood Residences,024,Appliance,Medium,Completed,2026-05-25,2026-06-06,Apex Mechanical,136.04
-WO00244,Maple Court,038,Appliance,Emergency,Completed,2026-03-29,2026-04-17,In-House Maintenance,35.0
-WO00245,Maple Court,060,General,High,Completed,2026-06-04,2026-06-15,Apex Mechanical,35.0
-WO00246,Maple Court,048,Plumbing,Medium,Completed,2026-05-21,2026-06-07,GreenLeaf Pest,63.96
-WO00247,Maple Court,032,Pest,High,Completed,2026-03-11,2026-03-27,Volt Electric,93.97
-WO00248,Stonebridge Villas,009,Turnover,Low,Open,2026-06-24,,GreenLeaf Pest,0.0
-WO00249,Oakhaven Apartments,048,Plumbing,Medium,Completed,2026-05-11,2026-05-18,Apex Mechanical,116.84
-WO00250,Cedar Commons,045,Turnover,Low,Completed,2026-03-04,2026-03-17,GreenLeaf Pest,512.76
-WO00251,Birchwood Terrace,019,Pest,Low,Completed,2026-05-26,2026-06-10,GreenLeaf Pest,35.0
-WO00252,Oakhaven Apartments,073,Pest,Low,Completed,2026-04-16,2026-05-04,Apex Mechanical,150.78
-WO00253,Harborview Flats,026,HVAC,Medium,Open,2026-06-28,,GreenLeaf Pest,0.0
-WO00254,Harborview Flats,020,Plumbing,High,Completed,2026-05-21,2026-05-23,Summit Handyman,57.09
-WO00255,Birchwood Terrace,052,Appliance,Medium,Completed,2026-03-15,2026-03-30,Apex Mechanical,35.0
-WO00256,Oakhaven Apartments,034,General,Medium,Completed,2026-06-17,2026-07-07,Summit Handyman,87.8
-WO00257,Birchwood Terrace,004,HVAC,Low,Completed,2026-04-26,2026-05-02,Volt Electric,289.79
-WO00258,Willow Park,036,HVAC,High,Completed,2026-03-04,2026-03-06,Summit Handyman,293.96
-WO00259,Sunset Ridge,010,Turnover,Emergency,Open,2026-05-07,,GreenLeaf Pest,0.0
-WO00260,Oakhaven Apartments,073,HVAC,Low,Completed,2026-05-16,2026-05-26,Apex Mechanical,351.29
-WO00261,Willow Park,026,Appliance,Medium,Completed,2026-05-09,2026-05-12,In-House Maintenance,78.23
-WO00262,Cedar Commons,037,Plumbing,Low,In Progress,2026-06-30,,BlueLine Plumbing,0.0
-WO00263,Maple Court,053,Electrical,Medium,Completed,2026-05-13,2026-05-21,Apex Mechanical,168.85
-WO00264,Maple Court,054,Appliance,Low,Completed,2026-05-29,2026-06-01,In-House Maintenance,224.27
-WO00265,Oakhaven Apartments,062,Turnover,Medium,Completed,2026-05-06,2026-05-17,Apex Mechanical,751.58
-WO00266,Aspen Grove,034,Pest,Low,In Progress,2026-04-13,,Apex Mechanical,0.0
-WO00267,Maple Court,013,Turnover,Medium,Completed,2026-05-19,2026-05-28,In-House Maintenance,439.87
-WO00268,Ironwood Residences,033,Electrical,High,Completed,2026-04-21,2026-04-27,Apex Mechanical,232.2
-WO00269,Willow Park,045,Electrical,Medium,In Progress,2026-06-15,,In-House Maintenance,0.0
-WO00270,Aspen Grove,021,Pest,High,Completed,2026-05-12,2026-05-20,In-House Maintenance,175.09
-WO00271,Maple Court,006,Pest,Emergency,Completed,2026-06-09,2026-06-29,In-House Maintenance,84.11
-WO00272,Oakhaven Apartments,062,Electrical,High,Completed,2026-03-29,2026-04-01,In-House Maintenance,56.78
-WO00273,Ironwood Residences,005,Appliance,Medium,In Progress,2026-04-18,,In-House Maintenance,0.0
-WO00274,Birchwood Terrace,004,Turnover,Low,Completed,2026-04-21,2026-05-08,Apex Mechanical,563.05
-WO00275,Maple Court,019,Appliance,Low,Completed,2026-04-01,2026-04-16,Volt Electric,35.0
-WO00276,Harborview Flats,001,Plumbing,Low,Completed,2026-03-03,2026-03-11,Volt Electric,143.12
-WO00277,Ironwood Residences,022,HVAC,Low,Completed,2026-05-27,2026-06-09,GreenLeaf Pest,385.39
-WO00278,Ironwood Residences,035,Plumbing,Low,Completed,2026-03-12,2026-03-28,GreenLeaf Pest,154.21
-WO00279,Oakhaven Apartments,026,Turnover,Low,In Progress,2026-05-20,,Apex Mechanical,0.0
-WO00280,Meadowlark Place,014,Appliance,Medium,Completed,2026-04-21,2026-05-07,Volt Electric,35.0
-WO00281,Willow Park,025,Electrical,Medium,In Progress,2026-05-19,,BlueLine Plumbing,0.0
-WO00282,Willow Park,019,Turnover,High,Completed,2026-05-21,2026-06-07,BlueLine Plumbing,615.18
-WO00283,Sunset Ridge,009,Plumbing,Medium,Completed,2026-04-01,2026-04-16,Volt Electric,35.0
-WO00284,Maple Court,071,Electrical,Medium,In Progress,2026-04-01,,GreenLeaf Pest,0.0
-WO00285,Ironwood Residences,042,Electrical,High,Completed,2026-05-11,2026-05-12,Apex Mechanical,374.03
-WO00286,Ironwood Residences,012,Plumbing,Emergency,Completed,2026-05-04,2026-05-22,Volt Electric,75.82
-WO00287,Ironwood Residences,047,Plumbing,Low,Open,2026-03-23,,GreenLeaf Pest,0.0
-WO00288,Ironwood Residences,001,Plumbing,Low,Completed,2026-04-13,2026-04-17,BlueLine Plumbing,67.44
-WO00289,Oakhaven Apartments,066,Pest,High,Completed,2026-03-26,2026-04-09,BlueLine Plumbing,141.41
-WO00290,Ironwood Residences,035,Plumbing,Low,Completed,2026-03-29,2026-04-04,In-House Maintenance,151.39
-WO00291,Meadowlark Place,034,Appliance,Medium,Completed,2026-03-23,2026-04-12,GreenLeaf Pest,151.6
-WO00292,Willow Park,031,Electrical,Medium,Completed,2026-05-24,2026-06-04,Summit Handyman,289.75
-WO00293,Harborview Flats,041,HVAC,Medium,Completed,2026-04-03,2026-04-06,GreenLeaf Pest,297.26
-WO00294,Ironwood Residences,019,HVAC,High,Completed,2026-06-11,2026-06-14,Summit Handyman,140.73
-WO00295,Birchwood Terrace,033,Electrical,Medium,Completed,2026-04-07,2026-04-22,Apex Mechanical,121.1
-WO00296,Meadowlark Place,010,Appliance,Medium,In Progress,2026-06-13,,Apex Mechanical,0.0
-WO00297,Aspen Grove,009,Turnover,Emergency,Completed,2026-03-11,2026-03-24,In-House Maintenance,969.2
-WO00298,Oakhaven Apartments,034,General,Medium,In Progress,2026-06-29,,Volt Electric,0.0
-WO00299,Stonebridge Villas,032,Plumbing,High,Completed,2026-05-04,2026-05-09,Apex Mechanical,61.05
-WO00300,Meadowlark Place,026,Electrical,Medium,Open,2026-03-25,,BlueLine Plumbing,0.0
-WO00301,Sunset Ridge,002,Electrical,Medium,Completed,2026-05-19,2026-05-20,GreenLeaf Pest,131.06
-WO00302,Aspen Grove,050,Pest,Medium,Completed,2026-03-08,2026-03-27,Apex Mechanical,77.43
-WO00303,Stonebridge Villas,002,Appliance,Medium,Completed,2026-06-07,2026-06-08,Apex Mechanical,295.01
-WO00304,Meadowlark Place,008,Pest,High,Completed,2026-05-23,2026-06-09,In-House Maintenance,122.6
-WO00305,Maple Court,068,General,Low,Open,2026-06-19,,In-House Maintenance,0.0
-WO00306,Riverbend Lofts,005,Plumbing,Medium,In Progress,2026-06-15,,Summit Handyman,0.0
-WO00307,Willow Park,044,Plumbing,Medium,In Progress,2026-06-30,,Summit Handyman,0.0
-WO00308,Oakhaven Apartments,040,Pest,Medium,Completed,2026-06-13,2026-07-02,GreenLeaf Pest,115.5
-WO00309,Oakhaven Apartments,053,HVAC,Low,Open,2026-05-06,,In-House Maintenance,0.0
-WO00310,Cedar Commons,023,Plumbing,Medium,Completed,2026-03-21,2026-03-25,Volt Electric,116.06
-WO00311,Riverbend Lofts,022,Electrical,Low,Completed,2026-03-18,2026-04-05,Summit Handyman,314.93
-WO00312,Birchwood Terrace,044,General,Medium,Completed,2026-04-12,2026-04-23,Volt Electric,59.98
-WO00313,Birchwood Terrace,030,HVAC,Low,Completed,2026-03-05,2026-03-18,GreenLeaf Pest,243.03
-WO00314,Willow Park,009,Appliance,Low,Open,2026-05-07,,Summit Handyman,0.0
-WO00315,Sunset Ridge,021,HVAC,Low,Completed,2026-03-16,2026-04-02,Summit Handyman,361.89
-WO00316,Aspen Grove,045,Pest,High,Completed,2026-05-20,2026-05-25,GreenLeaf Pest,57.06
-WO00317,Maple Court,064,Electrical,Medium,In Progress,2026-06-19,,In-House Maintenance,0.0
-WO00318,Cedar Commons,028,Appliance,Medium,Open,2026-06-24,,In-House Maintenance,0.0
-WO00319,Harborview Flats,025,Electrical,Low,In Progress,2026-05-22,,Volt Electric,0.0
-WO00320,Birchwood Terrace,044,Electrical,Low,Open,2026-05-20,,Summit Handyman,0.0
-WO00321,Oakhaven Apartments,080,Plumbing,Low,Completed,2026-03-12,2026-03-31,In-House Maintenance,138.92
-WO00322,Maple Court,061,Pest,Low,Completed,2026-06-07,2026-06-21,GreenLeaf Pest,106.95
-WO00323,Ironwood Residences,017,Turnover,Emergency,In Progress,2026-06-30,,Apex Mechanical,0.0
-WO00324,Cedar Commons,064,Pest,Low,In Progress,2026-04-26,,Volt Electric,0.0
-WO00325,Maple Court,058,Turnover,Medium,Open,2026-06-22,,BlueLine Plumbing,0.0
-WO00326,Willow Park,044,Pest,Medium,Completed,2026-04-23,2026-04-24,Summit Handyman,132.32
-WO00327,Ironwood Residences,040,Plumbing,Medium,Completed,2026-05-12,2026-05-21,Apex Mechanical,168.41
-WO00328,Ironwood Residences,025,Turnover,Medium,Completed,2026-04-28,2026-05-09,Volt Electric,706.52
-WO00329,Ironwood Residences,003,Appliance,Low,Open,2026-05-10,,In-House Maintenance,0.0
-WO00330,Maple Court,061,Appliance,Medium,In Progress,2026-04-16,,In-House Maintenance,0.0
-WO00331,Stonebridge Villas,005,General,Medium,Completed,2026-05-08,2026-05-27,Apex Mechanical,57.5
-WO00332,Harborview Flats,027,General,Low,Completed,2026-04-17,2026-05-03,BlueLine Plumbing,125.27
-WO00333,Birchwood Terrace,017,Pest,Low,Completed,2026-06-09,2026-06-18,Summit Handyman,90.28
-WO00334,Ironwood Residences,012,HVAC,Medium,Completed,2026-05-03,2026-05-04,Apex Mechanical,147.65
-WO00335,Oakhaven Apartments,041,General,Medium,Completed,2026-03-28,2026-04-13,GreenLeaf Pest,90.56
-WO00336,Stonebridge Villas,043,Plumbing,High,Completed,2026-05-28,2026-06-01,Summit Handyman,95.56
-WO00337,Maple Court,012,HVAC,Low,In Progress,2026-05-18,,Apex Mechanical,0.0
-WO00338,Sunset Ridge,013,Pest,Low,Completed,2026-04-02,2026-04-05,Apex Mechanical,128.21
-WO00339,Oakhaven Apartments,026,HVAC,High,Completed,2026-03-09,2026-03-15,Summit Handyman,365.42
-WO00340,Aspen Grove,053,Turnover,Medium,Completed,2026-04-18,2026-04-23,GreenLeaf Pest,187.02
-WO00341,Oakhaven Apartments,057,Turnover,High,Completed,2026-03-04,2026-03-16,In-House Maintenance,1030.71
-WO00342,Oakhaven Apartments,048,Appliance,Medium,Completed,2026-05-17,2026-06-03,Apex Mechanical,187.0
-WO00343,Meadowlark Place,024,Plumbing,High,Completed,2026-03-07,2026-03-23,Apex Mechanical,82.03
-WO00344,Maple Court,057,HVAC,Medium,Completed,2026-04-27,2026-05-01,Apex Mechanical,91.94
-WO00345,Aspen Grove,023,Turnover,High,Completed,2026-04-21,2026-04-23,In-House Maintenance,452.8
-WO00346,Sunset Ridge,015,Turnover,Medium,In Progress,2026-03-31,,Summit Handyman,0.0
-WO00347,Oakhaven Apartments,011,General,Medium,In Progress,2026-04-18,,GreenLeaf Pest,0.0
-WO00348,Riverbend Lofts,023,Electrical,Emergency,Completed,2026-06-07,2026-06-27,Apex Mechanical,234.13
-WO00349,Oakhaven Apartments,057,Pest,High,In Progress,2026-05-24,,Apex Mechanical,0.0
-WO00350,Sunset Ridge,032,General,Low,Completed,2026-05-12,2026-05-31,GreenLeaf Pest,132.06
-WO00351,Cedar Commons,043,Plumbing,Low,In Progress,2026-04-10,,In-House Maintenance,0.0
-WO00352,Aspen Grove,050,Plumbing,Medium,Completed,2026-03-13,2026-03-31,Summit Handyman,114.72
-WO00353,Willow Park,031,Turnover,Low,In Progress,2026-05-01,,Apex Mechanical,0.0
-WO00354,Cedar Commons,059,Turnover,High,Completed,2026-04-01,2026-04-09,BlueLine Plumbing,732.77
-WO00355,Aspen Grove,021,Electrical,Medium,Completed,2026-04-18,2026-04-19,Apex Mechanical,207.08
-WO00356,Ironwood Residences,057,Plumbing,High,Completed,2026-05-20,2026-06-04,Summit Handyman,144.14
-WO00357,Ironwood Residences,041,Turnover,Medium,In Progress,2026-05-18,,Apex Mechanical,0.0
-WO00358,Meadowlark Place,025,Pest,Low,Completed,2026-06-01,2026-06-15,Summit Handyman,127.85
-WO00359,Ironwood Residences,064,Appliance,Emergency,Open,2026-03-18,,Apex Mechanical,0.0
-WO00360,Stonebridge Villas,052,Turnover,High,In Progress,2026-06-20,,Summit Handyman,0.0
-WO00361,Willow Park,010,Appliance,Low,Completed,2026-06-17,2026-07-01,In-House Maintenance,208.09
-WO00362,Birchwood Terrace,027,Plumbing,High,Completed,2026-04-16,2026-04-28,Volt Electric,130.12
-WO00363,Riverbend Lofts,016,Electrical,Medium,Completed,2026-04-09,2026-04-25,Volt Electric,280.18
-WO00364,Cedar Commons,008,Turnover,Low,Completed,2026-04-07,2026-04-24,GreenLeaf Pest,683.43
-WO00365,Maple Court,010,Plumbing,Medium,Open,2026-05-01,,Summit Handyman,0.0
-WO00366,Cedar Commons,006,HVAC,Medium,In Progress,2026-05-24,,Volt Electric,0.0
-WO00367,Aspen Grove,036,HVAC,Medium,Completed,2026-05-02,2026-05-06,Volt Electric,471.95
-WO00368,Maple Court,067,Appliance,Low,Completed,2026-03-27,2026-04-03,GreenLeaf Pest,274.98
-WO00369,Oakhaven Apartments,019,Appliance,Medium,Completed,2026-03-13,2026-03-31,Apex Mechanical,111.06
-WO00370,Oakhaven Apartments,026,HVAC,Low,Completed,2026-05-16,2026-05-20,Volt Electric,140.71
-WO00371,Riverbend Lofts,021,Turnover,Low,Completed,2026-03-17,2026-03-22,Summit Handyman,610.91
-WO00372,Willow Park,054,Pest,Low,Completed,2026-03-19,2026-04-01,Summit Handyman,100.35
-WO00373,Riverbend Lofts,004,General,Low,Completed,2026-05-08,2026-05-20,GreenLeaf Pest,96.85
-WO00374,Willow Park,037,Electrical,Medium,Completed,2026-04-14,2026-04-22,Summit Handyman,36.06
-WO00375,Oakhaven Apartments,003,Pest,Medium,Completed,2026-06-05,2026-06-09,GreenLeaf Pest,111.29
-WO00376,Aspen Grove,013,Appliance,Medium,Open,2026-06-12,,Apex Mechanical,0.0
-WO00377,Aspen Grove,017,Turnover,Low,In Progress,2026-05-28,,Volt Electric,0.0
-WO00378,Ironwood Residences,005,Electrical,Low,Open,2026-06-25,,Apex Mechanical,0.0
-WO00379,Maple Court,049,Pest,High,Completed,2026-04-21,2026-05-05,Summit Handyman,119.54
-WO00380,Aspen Grove,037,Plumbing,Low,Open,2026-05-08,,GreenLeaf Pest,0.0
-WO00381,Oakhaven Apartments,060,Plumbing,High,Completed,2026-03-24,2026-04-03,Apex Mechanical,90.77
-WO00382,Willow Park,088,General,Emergency,Completed,2026-05-26,2026-06-07,GreenLeaf Pest,87.55
-WO00383,Ironwood Residences,051,HVAC,High,Completed,2026-04-25,2026-05-07,Summit Handyman,303.89
-WO00384,Cedar Commons,012,HVAC,Low,Open,2026-05-26,,BlueLine Plumbing,0.0
-WO00385,Riverbend Lofts,031,Appliance,High,Open,2026-06-10,,Apex Mechanical,0.0
-WO00386,Stonebridge Villas,034,General,Low,Completed,2026-06-01,2026-06-06,GreenLeaf Pest,107.64
-WO00387,Oakhaven Apartments,033,HVAC,High,Completed,2026-04-15,2026-04-29,GreenLeaf Pest,337.45
-WO00388,Willow Park,002,Pest,Low,Completed,2026-06-13,2026-06-17,Apex Mechanical,94.91
-WO00389,Stonebridge Villas,021,General,Low,Completed,2026-03-30,2026-04-13,GreenLeaf Pest,175.15
-WO00390,Cedar Commons,046,Pest,Medium,Open,2026-06-25,,Volt Electric,0.0
-WO00391,Cedar Commons,037,Electrical,Low,Completed,2026-05-24,2026-05-28,BlueLine Plumbing,203.16
-WO00392,Aspen Grove,002,General,Low,In Progress,2026-06-22,,Summit Handyman,0.0
-WO00393,Riverbend Lofts,021,Electrical,Emergency,Open,2026-04-03,,GreenLeaf Pest,0.0
-WO00394,Meadowlark Place,044,Pest,Medium,Completed,2026-03-22,2026-03-26,Apex Mechanical,52.93
-WO00395,Birchwood Terrace,001,HVAC,Medium,Completed,2026-03-23,2026-04-04,Apex Mechanical,382.58
-WO00396,Harborview Flats,025,Electrical,Low,Completed,2026-03-08,2026-03-18,Summit Handyman,280.82
-WO00397,Oakhaven Apartments,015,Appliance,Medium,Completed,2026-03-14,2026-04-02,Summit Handyman,222.37
-WO00398,Willow Park,004,Turnover,Low,Completed,2026-05-01,2026-05-11,GreenLeaf Pest,1211.66
-WO00399,Willow Park,028,Appliance,Medium,In Progress,2026-06-23,,Apex Mechanical,0.0
-WO00400,Oakhaven Apartments,051,Electrical,Low,Completed,2026-03-31,2026-04-11,Apex Mechanical,410.3
-WO00401,Cedar Commons,032,Plumbing,Medium,In Progress,2026-05-08,,Summit Handyman,0.0
-WO00402,Aspen Grove,021,Turnover,High,Completed,2026-04-14,2026-05-02,Summit Handyman,834.71
-WO00403,Oakhaven Apartments,095,Pest,Low,Completed,2026-06-16,2026-06-17,Volt Electric,145.89
-WO00404,Cedar Commons,023,Plumbing,High,Completed,2026-03-13,2026-04-02,BlueLine Plumbing,104.93
-WO00405,Oakhaven Apartments,032,Pest,Medium,Completed,2026-06-04,2026-06-20,Summit Handyman,127.35
-WO00406,Birchwood Terrace,031,Turnover,Medium,Completed,2026-05-06,2026-05-14,BlueLine Plumbing,683.98
-WO00407,Ironwood Residences,033,Appliance,Medium,Open,2026-05-01,,BlueLine Plumbing,0.0
-WO00408,Riverbend Lofts,002,Electrical,Medium,In Progress,2026-06-26,,Summit Handyman,0.0
-WO00409,Aspen Grove,053,Turnover,Medium,Completed,2026-05-13,2026-06-02,In-House Maintenance,761.75
-WO00410,Aspen Grove,040,Appliance,Low,Open,2026-06-28,,BlueLine Plumbing,0.0
-WO00411,Maple Court,032,Plumbing,Medium,Open,2026-06-18,,Summit Handyman,0.0
-WO00412,Ironwood Residences,012,Plumbing,Low,Open,2026-06-22,,BlueLine Plumbing,0.0
-WO00413,Sunset Ridge,029,Plumbing,Low,Completed,2026-04-29,2026-05-09,Apex Mechanical,159.79
-WO00414,Willow Park,033,General,Medium,In Progress,2026-06-23,,Summit Handyman,0.0
-WO00415,Oakhaven Apartments,073,Appliance,Medium,Completed,2026-06-23,2026-07-04,GreenLeaf Pest,194.14
-WO00416,Stonebridge Villas,022,HVAC,Medium,In Progress,2026-05-29,,In-House Maintenance,0.0
-WO00417,Ironwood Residences,040,Plumbing,Low,Completed,2026-03-10,2026-03-23,Volt Electric,234.46
-WO00418,Harborview Flats,025,HVAC,High,Completed,2026-03-08,2026-03-22,Apex Mechanical,341.25
-WO00419,Oakhaven Apartments,014,Turnover,Medium,Open,2026-06-03,,Apex Mechanical,0.0
-WO00420,Oakhaven Apartments,061,Plumbing,Low,Completed,2026-04-30,2026-05-05,Apex Mechanical,209.91
-WO00421,Cedar Commons,058,Plumbing,Medium,Completed,2026-05-27,2026-06-02,BlueLine Plumbing,110.32
-WO00422,Stonebridge Villas,045,HVAC,Low,Completed,2026-04-13,2026-04-17,Summit Handyman,409.11
-WO00423,Oakhaven Apartments,032,Pest,Medium,In Progress,2026-06-12,,Volt Electric,0.0
-WO00424,Aspen Grove,014,Pest,Medium,In Progress,2026-05-22,,BlueLine Plumbing,0.0
-WO00425,Cedar Commons,052,Turnover,Low,Completed,2026-05-28,2026-06-08,Apex Mechanical,973.29
-WO00426,Birchwood Terrace,031,Plumbing,Medium,Completed,2026-06-12,2026-06-26,BlueLine Plumbing,67.94
-WO00427,Oakhaven Apartments,054,HVAC,Medium,Completed,2026-03-16,2026-04-05,Volt Electric,266.58
-WO00428,Willow Park,017,General,Medium,Completed,2026-05-14,2026-05-23,Summit Handyman,35.0
-WO00429,Stonebridge Villas,045,HVAC,Medium,Completed,2026-03-04,2026-03-24,Volt Electric,328.54
-WO00430,Ironwood Residences,017,Plumbing,Medium,Completed,2026-05-15,2026-06-01,Apex Mechanical,81.85
-WO00431,Maple Court,009,Plumbing,Medium,Completed,2026-04-05,2026-04-06,In-House Maintenance,116.29
-WO00432,Cedar Commons,026,Plumbing,Low,Completed,2026-04-27,2026-05-07,Volt Electric,172.61
-WO00433,Oakhaven Apartments,086,General,Emergency,Completed,2026-06-13,2026-06-22,Volt Electric,36.13
-WO00434,Sunset Ridge,011,Appliance,Medium,Completed,2026-05-27,2026-05-30,Apex Mechanical,211.56
-WO00435,Willow Park,041,Turnover,Low,Open,2026-06-27,,GreenLeaf Pest,0.0
-WO00436,Maple Court,026,Turnover,Medium,Open,2026-06-01,,GreenLeaf Pest,0.0
-WO00437,Oakhaven Apartments,073,Electrical,Medium,Completed,2026-05-08,2026-05-20,GreenLeaf Pest,70.11
-WO00438,Ironwood Residences,006,Plumbing,Medium,Completed,2026-06-12,2026-06-19,Volt Electric,243.33
-WO00439,Stonebridge Villas,022,Turnover,Low,Completed,2026-05-03,2026-05-05,Apex Mechanical,958.64
-WO00440,Oakhaven Apartments,071,Electrical,Medium,Open,2026-06-20,,In-House Maintenance,0.0
-WO00441,Birchwood Terrace,018,Plumbing,Low,In Progress,2026-06-13,,BlueLine Plumbing,0.0
-WO00442,Aspen Grove,034,General,Low,Completed,2026-06-10,2026-06-27,BlueLine Plumbing,88.02
-WO00443,Willow Park,035,Electrical,Medium,Completed,2026-03-13,2026-04-01,Volt Electric,205.72
-WO00444,Birchwood Terrace,045,HVAC,Low,Open,2026-05-08,,Apex Mechanical,0.0
-WO00445,Cedar Commons,038,Pest,Low,Completed,2026-06-12,2026-06-29,Summit Handyman,57.45
-WO00446,Willow Park,051,Plumbing,Low,Completed,2026-06-04,2026-06-12,Summit Handyman,176.66
-WO00447,Meadowlark Place,039,HVAC,Low,Open,2026-06-08,,Summit Handyman,0.0
-WO00448,Sunset Ridge,011,Electrical,Medium,Completed,2026-03-03,2026-03-20,BlueLine Plumbing,270.27
-WO00449,Oakhaven Apartments,094,HVAC,Medium,In Progress,2026-05-21,,In-House Maintenance,0.0
-WO00450,Ironwood Residences,058,General,High,Open,2026-06-15,,Volt Electric,0.0
-WO00451,Willow Park,027,Pest,Medium,Completed,2026-06-06,2026-06-08,Summit Handyman,84.33
-WO00452,Willow Park,047,Pest,Low,In Progress,2026-06-26,,Summit Handyman,0.0
-WO00453,Cedar Commons,016,HVAC,Medium,Open,2026-06-29,,GreenLeaf Pest,0.0
-WO00454,Stonebridge Villas,022,General,High,Completed,2026-06-02,2026-06-10,GreenLeaf Pest,35.0
-WO00455,Willow Park,064,Electrical,Medium,Completed,2026-06-08,2026-06-10,BlueLine Plumbing,81.86
-WO00456,Riverbend Lofts,014,Appliance,Medium,Open,2026-05-29,,GreenLeaf Pest,0.0
-WO00457,Ironwood Residences,015,Electrical,Medium,In Progress,2026-05-06,,Apex Mechanical,0.0
-WO00458,Aspen Grove,038,Turnover,Medium,In Progress,2026-05-12,,BlueLine Plumbing,0.0
-WO00459,Cedar Commons,058,Appliance,High,Completed,2026-03-13,2026-03-29,Volt Electric,202.59
-WO00460,Willow Park,052,Pest,Medium,Completed,2026-05-29,2026-06-10,Volt Electric,80.05
-WO00461,Meadowlark Place,035,General,High,Completed,2026-05-10,2026-05-13,GreenLeaf Pest,81.31
-WO00462,Harborview Flats,038,HVAC,Medium,Open,2026-06-06,,BlueLine Plumbing,0.0
-WO00463,Maple Court,041,Electrical,Low,Completed,2026-04-07,2026-04-21,In-House Maintenance,208.78
-WO00464,Oakhaven Apartments,087,Electrical,High,Completed,2026-04-30,2026-05-15,Volt Electric,271.37
-WO00465,Willow Park,049,General,Low,Completed,2026-06-10,2026-06-29,In-House Maintenance,91.07
-WO00466,Oakhaven Apartments,057,HVAC,Low,Completed,2026-04-26,2026-05-09,Volt Electric,262.33
-WO00467,Stonebridge Villas,044,Plumbing,Low,Completed,2026-03-31,2026-04-11,Summit Handyman,105.74
-WO00468,Meadowlark Place,032,HVAC,Medium,Completed,2026-06-18,2026-06-19,Apex Mechanical,439.02
-WO00469,Oakhaven Apartments,048,General,Medium,Completed,2026-03-07,2026-03-16,Apex Mechanical,51.61
-WO00470,Birchwood Terrace,044,Pest,Medium,Completed,2026-05-03,2026-05-22,Apex Mechanical,138.73
-WO00471,Oakhaven Apartments,016,Electrical,Medium,Completed,2026-06-06,2026-06-19,GreenLeaf Pest,191.11
-WO00472,Ironwood Residences,044,General,Low,Completed,2026-05-30,2026-06-01,BlueLine Plumbing,75.51
-WO00473,Aspen Grove,058,Plumbing,Medium,Completed,2026-05-05,2026-05-12,Apex Mechanical,115.25
-WO00474,Meadowlark Place,017,Turnover,Medium,Completed,2026-04-14,2026-04-22,In-House Maintenance,1780.57
-WO00475,Willow Park,062,HVAC,High,Completed,2026-04-22,2026-05-09,Summit Handyman,35.0
-WO00476,Willow Park,045,HVAC,Medium,In Progress,2026-06-01,,Summit Handyman,0.0
-WO00477,Cedar Commons,024,Electrical,Low,Completed,2026-03-12,2026-03-22,In-House Maintenance,140.82
-WO00478,Aspen Grove,016,Pest,Medium,Open,2026-05-05,,Apex Mechanical,0.0
-WO00479,Cedar Commons,023,Electrical,Medium,Open,2026-04-06,,In-House Maintenance,0.0
-WO00480,Cedar Commons,033,General,Medium,Completed,2026-03-08,2026-03-24,In-House Maintenance,35.0
-WO00481,Ironwood Residences,002,Appliance,High,Completed,2026-06-30,2026-07-01,Volt Electric,257.72
-WO00482,Willow Park,084,Electrical,Medium,In Progress,2026-05-20,,Apex Mechanical,0.0
-WO00483,Aspen Grove,044,Pest,Medium,Completed,2026-03-16,2026-03-22,In-House Maintenance,114.11
-WO00484,Oakhaven Apartments,046,HVAC,Low,Open,2026-05-22,,In-House Maintenance,0.0
-WO00485,Cedar Commons,026,Appliance,Medium,Open,2026-06-08,,Volt Electric,0.0
-WO00486,Ironwood Residences,004,General,Low,Open,2026-03-12,,Summit Handyman,0.0
-WO00487,Willow Park,063,General,Low,Completed,2026-03-31,2026-04-16,BlueLine Plumbing,143.48
-WO00488,Maple Court,027,HVAC,Medium,Open,2026-06-13,,Volt Electric,0.0
-WO00489,Maple Court,021,Plumbing,Low,Completed,2026-03-06,2026-03-09,Volt Electric,164.05
-WO00490,Oakhaven Apartments,040,Turnover,Medium,Completed,2026-05-29,2026-05-30,BlueLine Plumbing,954.27
-WO00491,Aspen Grove,040,Electrical,Low,Completed,2026-03-03,2026-03-14,BlueLine Plumbing,99.62
-WO00492,Oakhaven Apartments,007,Plumbing,Medium,Open,2026-06-26,,GreenLeaf Pest,0.0
-WO00493,Willow Park,001,Turnover,High,Completed,2026-04-11,2026-04-17,Apex Mechanical,947.04
-WO00494,Ironwood Residences,017,Plumbing,High,Completed,2026-04-05,2026-04-07,In-House Maintenance,150.71
-WO00495,Harborview Flats,047,Plumbing,High,Completed,2026-06-14,2026-06-22,GreenLeaf Pest,145.29
-WO00496,Riverbend Lofts,026,General,Medium,Completed,2026-06-03,2026-06-14,In-House Maintenance,78.6
-WO00497,Harborview Flats,044,Appliance,Medium,Completed,2026-04-05,2026-04-17,Summit Handyman,246.7
-WO00498,Oakhaven Apartments,070,Electrical,Medium,Completed,2026-04-08,2026-04-16,Volt Electric,150.85
-WO00499,Maple Court,037,General,Emergency,In Progress,2026-03-10,,Summit Handyman,0.0
-WO00500,Oakhaven Apartments,076,General,Medium,Completed,2026-06-02,2026-06-06,GreenLeaf Pest,151.22
-WO00501,Aspen Grove,048,Plumbing,Medium,Completed,2026-03-06,2026-03-21,Summit Handyman,35.0
-WO00502,Maple Court,063,Appliance,Low,Completed,2026-03-04,2026-03-24,In-House Maintenance,69.3
-WO00503,Willow Park,064,Electrical,Low,Completed,2026-06-19,2026-07-09,BlueLine Plumbing,207.74
-WO00504,Maple Court,020,HVAC,High,Completed,2026-06-21,2026-06-24,GreenLeaf Pest,406.09
-WO00505,Ironwood Residences,053,Electrical,Low,Open,2026-06-29,,BlueLine Plumbing,0.0
-WO00506,Oakhaven Apartments,054,Pest,High,Completed,2026-06-15,2026-06-16,BlueLine Plumbing,91.86
-WO00507,Maple Court,061,Pest,Medium,Completed,2026-06-01,2026-06-02,BlueLine Plumbing,123.27
-WO00508,Willow Park,044,Turnover,Low,Completed,2026-04-14,2026-04-28,Summit Handyman,1121.15
-WO00509,Riverbend Lofts,017,Plumbing,High,Completed,2026-04-14,2026-04-26,Volt Electric,124.68
-WO00510,Maple Court,023,Turnover,Medium,Completed,2026-04-07,2026-04-22,Summit Handyman,1063.35
-WO00511,Stonebridge Villas,020,HVAC,Low,Completed,2026-04-03,2026-04-16,BlueLine Plumbing,157.84
-WO00512,Sunset Ridge,023,Turnover,Medium,In Progress,2026-03-13,,GreenLeaf Pest,0.0
-WO00513,Oakhaven Apartments,039,Electrical,Medium,In Progress,2026-04-29,,BlueLine Plumbing,0.0
-WO00514,Oakhaven Apartments,046,Electrical,Low,Open,2026-05-22,,Summit Handyman,0.0
-WO00515,Oakhaven Apartments,061,Pest,Low,Open,2026-03-26,,BlueLine Plumbing,0.0
-WO00516,Maple Court,032,General,Medium,Completed,2026-04-30,2026-05-07,Volt Electric,133.82
-WO00517,Sunset Ridge,011,Turnover,Medium,In Progress,2026-06-18,,Volt Electric,0.0
-WO00518,Willow Park,027,Pest,High,In Progress,2026-05-23,,Volt Electric,0.0
-WO00519,Stonebridge Villas,018,Appliance,High,Completed,2026-03-30,2026-04-01,Volt Electric,245.75
-WO00520,Maple Court,070,Plumbing,Low,In Progress,2026-05-28,,In-House Maintenance,0.0
-WO00521,Birchwood Terrace,051,Electrical,Low,Completed,2026-04-17,2026-05-05,Volt Electric,59.48
-WO00522,Ironwood Residences,066,HVAC,Low,Completed,2026-04-21,2026-05-04,GreenLeaf Pest,235.45
-WO00523,Aspen Grove,012,Turnover,Medium,In Progress,2026-05-24,,Volt Electric,0.0
-WO00524,Ironwood Residences,040,Appliance,Medium,Completed,2026-04-16,2026-04-24,Volt Electric,73.15
-WO00525,Oakhaven Apartments,007,Plumbing,Low,Completed,2026-06-27,2026-07-05,Apex Mechanical,157.69
-WO00526,Sunset Ridge,032,Plumbing,Medium,In Progress,2026-04-22,,Volt Electric,0.0
-WO00527,Birchwood Terrace,038,General,Medium,Completed,2026-03-05,2026-03-13,BlueLine Plumbing,73.29
-WO00528,Oakhaven Apartments,054,General,Low,Completed,2026-05-25,2026-05-27,Volt Electric,38.33
-WO00529,Aspen Grove,003,Electrical,Medium,Completed,2026-04-18,2026-04-22,Apex Mechanical,234.07
-WO00530,Birchwood Terrace,021,HVAC,Medium,Completed,2026-04-20,2026-05-09,Volt Electric,260.16
-WO00531,Riverbend Lofts,011,Electrical,Low,Completed,2026-03-16,2026-03-22,GreenLeaf Pest,224.49
-WO00532,Cedar Commons,013,Turnover,Medium,Open,2026-04-12,,BlueLine Plumbing,0.0
-WO00533,Maple Court,056,Pest,Medium,In Progress,2026-06-26,,Volt Electric,0.0
-WO00534,Stonebridge Villas,048,Appliance,Medium,Completed,2026-03-23,2026-03-31,GreenLeaf Pest,155.36
-WO00535,Aspen Grove,018,HVAC,Medium,Completed,2026-05-16,2026-05-28,GreenLeaf Pest,288.94
-WO00536,Cedar Commons,001,Appliance,High,Completed,2026-04-15,2026-04-30,Volt Electric,248.33
-WO00537,Cedar Commons,039,Pest,Medium,In Progress,2026-05-22,,GreenLeaf Pest,0.0
-WO00538,Oakhaven Apartments,026,Turnover,Low,Completed,2026-06-08,2026-06-15,GreenLeaf Pest,653.72
-WO00539,Aspen Grove,029,Appliance,High,In Progress,2026-06-28,,In-House Maintenance,0.0
-WO00540,Stonebridge Villas,020,Electrical,Low,Completed,2026-03-31,2026-04-04,Apex Mechanical,239.75
-WO00541,Aspen Grove,048,Pest,Medium,Completed,2026-05-01,2026-05-04,Apex Mechanical,78.55
-WO00542,Willow Park,085,Turnover,Medium,Completed,2026-03-05,2026-03-24,Summit Handyman,707.68
-WO00543,Aspen Grove,001,Electrical,High,Completed,2026-04-25,2026-04-27,Summit Handyman,170.6
-WO00544,Aspen Grove,018,Appliance,Emergency,Completed,2026-06-16,2026-06-22,In-House Maintenance,35.0
-WO00545,Riverbend Lofts,018,HVAC,Emergency,In Progress,2026-06-24,,GreenLeaf Pest,0.0
-WO00546,Cedar Commons,003,Plumbing,Medium,Completed,2026-04-05,2026-04-18,BlueLine Plumbing,239.56
-WO00547,Harborview Flats,047,Electrical,Emergency,Completed,2026-05-15,2026-06-04,GreenLeaf Pest,239.33
-WO00548,Ironwood Residences,066,Appliance,Low,Completed,2026-05-13,2026-05-17,BlueLine Plumbing,138.54
-WO00549,Ironwood Residences,009,HVAC,High,Completed,2026-05-22,2026-05-27,Apex Mechanical,534.89
-WO00550,Harborview Flats,010,Appliance,Medium,Completed,2026-04-28,2026-05-08,GreenLeaf Pest,73.02
-WO00551,Stonebridge Villas,030,Appliance,Medium,Completed,2026-05-16,2026-05-28,Apex Mechanical,97.18
-WO00552,Willow Park,056,Electrical,Low,Open,2026-05-01,,In-House Maintenance,0.0
-WO00553,Oakhaven Apartments,091,Turnover,High,In Progress,2026-04-13,,In-House Maintenance,0.0
-WO00554,Stonebridge Villas,051,General,Medium,Open,2026-05-30,,In-House Maintenance,0.0
-WO00555,Riverbend Lofts,025,Pest,Low,Open,2026-06-05,,In-House Maintenance,0.0
-WO00556,Harborview Flats,019,Appliance,Medium,Completed,2026-03-09,2026-03-26,BlueLine Plumbing,233.45
-WO00557,Cedar Commons,002,Appliance,High,Open,2026-05-29,,Summit Handyman,0.0
-WO00558,Riverbend Lofts,016,Pest,Medium,In Progress,2026-04-23,,GreenLeaf Pest,0.0
-WO00559,Ironwood Residences,014,Electrical,Medium,In Progress,2026-06-20,,BlueLine Plumbing,0.0
-WO00560,Oakhaven Apartments,068,Electrical,Low,Completed,2026-04-25,2026-05-02,GreenLeaf Pest,177.04
-WO00561,Ironwood Residences,067,Plumbing,Low,In Progress,2026-05-24,,BlueLine Plumbing,0.0
-WO00562,Oakhaven Apartments,021,General,High,Completed,2026-04-14,2026-04-27,Apex Mechanical,152.2
-WO00563,Willow Park,045,HVAC,Medium,Completed,2026-03-10,2026-03-20,In-House Maintenance,527.58
-WO00564,Sunset Ridge,011,Pest,Medium,Completed,2026-03-30,2026-04-16,In-House Maintenance,63.29
-WO00565,Oakhaven Apartments,081,General,Medium,Open,2026-05-16,,Apex Mechanical,0.0
-WO00566,Ironwood Residences,048,Electrical,High,Completed,2026-06-14,2026-06-22,Volt Electric,90.53
-WO00567,Maple Court,059,Pest,Low,Completed,2026-04-22,2026-04-27,GreenLeaf Pest,94.98
-WO00568,Meadowlark Place,030,HVAC,High,Completed,2026-03-25,2026-04-06,Summit Handyman,548.93
-WO00569,Ironwood Residences,047,Pest,Low,Completed,2026-03-08,2026-03-26,BlueLine Plumbing,152.02
-WO00570,Riverbend Lofts,032,Pest,Emergency,Completed,2026-04-16,2026-05-06,Volt Electric,153.68
-WO00571,Willow Park,023,Turnover,Medium,Completed,2026-05-23,2026-05-25,Apex Mechanical,864.99
-WO00572,Ironwood Residences,002,Plumbing,High,Completed,2026-06-22,2026-06-28,Summit Handyman,116.7
-WO00573,Cedar Commons,058,HVAC,Medium,Completed,2026-03-22,2026-04-02,Summit Handyman,428.28
-WO00574,Birchwood Terrace,034,Pest,Medium,Open,2026-04-30,,GreenLeaf Pest,0.0
-WO00575,Sunset Ridge,015,Pest,Medium,Completed,2026-05-31,2026-06-01,In-House Maintenance,125.99
-WO00576,Meadowlark Place,006,General,Low,Open,2026-06-30,,GreenLeaf Pest,0.0
-WO00577,Oakhaven Apartments,034,Appliance,Emergency,Open,2026-06-27,,In-House Maintenance,0.0
-WO00578,Ironwood Residences,011,General,Medium,Completed,2026-06-18,2026-07-02,GreenLeaf Pest,76.41
-WO00579,Oakhaven Apartments,036,Turnover,Low,Completed,2026-04-19,2026-04-24,GreenLeaf Pest,853.43
-WO00580,Sunset Ridge,017,Appliance,Medium,In Progress,2026-04-16,,Apex Mechanical,0.0
-WO00581,Cedar Commons,015,Plumbing,Emergency,Open,2026-06-07,,BlueLine Plumbing,0.0
-WO00582,Birchwood Terrace,021,Electrical,Emergency,Completed,2026-04-30,2026-05-11,Volt Electric,177.74
-WO00583,Stonebridge Villas,005,Appliance,High,Completed,2026-06-22,2026-06-30,In-House Maintenance,160.08
-WO00584,Stonebridge Villas,026,Electrical,Low,Completed,2026-05-13,2026-05-16,Apex Mechanical,169.77
-WO00585,Aspen Grove,023,Electrical,High,Completed,2026-03-17,2026-04-01,Apex Mechanical,279.47
-WO00586,Ironwood Residences,054,Plumbing,Low,Completed,2026-04-12,2026-04-17,Summit Handyman,68.99
-WO00587,Stonebridge Villas,001,Appliance,Low,In Progress,2026-05-07,,In-House Maintenance,0.0
-WO00588,Maple Court,064,Pest,Medium,Completed,2026-03-17,2026-03-22,BlueLine Plumbing,140.38
-WO00589,Sunset Ridge,009,HVAC,Low,Completed,2026-05-29,2026-06-13,GreenLeaf Pest,196.99
-WO00590,Aspen Grove,043,Pest,Low,Completed,2026-03-13,2026-03-27,BlueLine Plumbing,100.52
-WO00591,Aspen Grove,019,Plumbing,Low,Completed,2026-06-02,2026-06-19,GreenLeaf Pest,107.99
-WO00592,Riverbend Lofts,020,Plumbing,Medium,Completed,2026-05-18,2026-05-19,Apex Mechanical,106.2
-WO00593,Birchwood Terrace,053,Appliance,Medium,Open,2026-06-13,,Summit Handyman,0.0
-WO00594,Birchwood Terrace,020,General,Medium,Completed,2026-03-15,2026-03-21,GreenLeaf Pest,85.91
-WO00595,Willow Park,026,Electrical,High,Completed,2026-05-26,2026-06-15,In-House Maintenance,202.26
-WO00596,Meadowlark Place,020,Turnover,High,Completed,2026-05-23,2026-06-12,Volt Electric,1362.97
-WO00597,Ironwood Residences,021,General,Low,Completed,2026-03-04,2026-03-13,GreenLeaf Pest,88.14
-WO00598,Stonebridge Villas,048,Appliance,Low,Completed,2026-06-03,2026-06-10,Summit Handyman,297.85
-WO00599,Aspen Grove,002,Pest,Medium,Completed,2026-03-27,2026-04-14,Volt Electric,167.77
-WO00600,Maple Court,042,Electrical,Medium,Completed,2026-04-04,2026-04-05,In-House Maintenance,84.82
-WO00601,Harborview Flats,038,General,High,Open,2026-06-13,,Summit Handyman,0.0
-WO00602,Maple Court,041,HVAC,Medium,In Progress,2026-05-19,,Volt Electric,0.0
-WO00603,Willow Park,007,Electrical,Medium,Completed,2026-04-13,2026-04-17,BlueLine Plumbing,80.83
-WO00604,Cedar Commons,003,HVAC,Medium,Completed,2026-04-26,2026-04-29,Apex Mechanical,431.54
-WO00605,Maple Court,006,Plumbing,Low,Completed,2026-03-05,2026-03-24,In-House Maintenance,35.0
-WO00606,Ironwood Residences,050,Electrical,Low,Completed,2026-04-09,2026-04-29,BlueLine Plumbing,45.54
-WO00607,Aspen Grove,047,Electrical,Medium,Completed,2026-04-24,2026-05-08,Summit Handyman,135.39
-WO00608,Maple Court,017,Plumbing,Emergency,Completed,2026-05-02,2026-05-11,In-House Maintenance,149.29
-WO00609,Stonebridge Villas,001,General,Low,Completed,2026-06-20,2026-06-28,GreenLeaf Pest,62.98
-WO00610,Stonebridge Villas,049,Turnover,Medium,Completed,2026-04-19,2026-05-07,BlueLine Plumbing,909.09
-WO00611,Riverbend Lofts,022,General,Medium,Completed,2026-03-05,2026-03-21,GreenLeaf Pest,93.53
-WO00612,Sunset Ridge,017,Turnover,Medium,Completed,2026-06-22,2026-06-26,BlueLine Plumbing,1179.44
-WO00613,Maple Court,032,HVAC,Low,Open,2026-06-12,,GreenLeaf Pest,0.0
-WO00614,Willow Park,015,Plumbing,Emergency,Completed,2026-03-20,2026-03-24,Apex Mechanical,179.84
-WO00615,Maple Court,071,Pest,Medium,Open,2026-06-07,,GreenLeaf Pest,0.0
-WO00616,Stonebridge Villas,030,Pest,Medium,Completed,2026-05-04,2026-05-14,Summit Handyman,82.46
-WO00617,Birchwood Terrace,054,Pest,High,Completed,2026-04-07,2026-04-27,In-House Maintenance,147.44
-WO00618,Stonebridge Villas,032,Turnover,Medium,In Progress,2026-04-19,,Summit Handyman,0.0
-WO00619,Willow Park,061,General,High,Open,2026-06-25,,Summit Handyman,0.0
-WO00620,Meadowlark Place,014,Appliance,Low,Completed,2026-03-23,2026-03-27,Apex Mechanical,229.45
-WO00621,Cedar Commons,055,Electrical,Medium,In Progress,2026-05-18,,In-House Maintenance,0.0
-WO00622,Stonebridge Villas,001,Plumbing,High,Completed,2026-03-21,2026-04-05,Volt Electric,194.38
-WO00623,Riverbend Lofts,030,Appliance,Medium,Completed,2026-04-18,2026-05-03,Apex Mechanical,53.64
-WO00624,Sunset Ridge,030,Plumbing,High,Completed,2026-06-09,2026-06-28,BlueLine Plumbing,145.11
-WO00625,Ironwood Residences,014,Turnover,Low,Open,2026-06-08,,GreenLeaf Pest,0.0
-WO00626,Aspen Grove,037,General,Low,Completed,2026-03-04,2026-03-12,GreenLeaf Pest,73.79
-WO00627,Aspen Grove,039,Appliance,Medium,Open,2026-06-17,,In-House Maintenance,0.0
-WO00628,Cedar Commons,045,Plumbing,Medium,Completed,2026-03-30,2026-04-02,GreenLeaf Pest,87.71
-WO00629,Cedar Commons,011,Plumbing,Low,Completed,2026-05-13,2026-05-30,In-House Maintenance,270.46
-WO00630,Sunset Ridge,012,Turnover,Low,Completed,2026-04-11,2026-04-18,Volt Electric,436.01
-WO00631,Birchwood Terrace,047,Turnover,Low,Open,2026-03-11,,Apex Mechanical,0.0
-WO00632,Riverbend Lofts,022,General,High,Completed,2026-05-10,2026-05-16,GreenLeaf Pest,144.41
-WO00633,Stonebridge Villas,041,Electrical,Medium,Completed,2026-06-07,2026-06-20,Summit Handyman,212.63
-WO00634,Oakhaven Apartments,012,Plumbing,High,Completed,2026-04-26,2026-05-04,BlueLine Plumbing,140.26
-WO00635,Stonebridge Villas,022,Appliance,Low,Completed,2026-04-03,2026-04-13,Apex Mechanical,50.62
-WO00636,Birchwood Terrace,021,General,Medium,Completed,2026-06-12,2026-06-30,Volt Electric,159.48
-WO00637,Maple Court,012,General,Medium,In Progress,2026-06-28,,BlueLine Plumbing,0.0
-WO00638,Cedar Commons,043,Turnover,Low,Completed,2026-05-11,2026-05-15,In-House Maintenance,1030.88
-WO00639,Oakhaven Apartments,024,Appliance,Low,Completed,2026-03-13,2026-03-31,GreenLeaf Pest,74.24
-WO00640,Riverbend Lofts,015,Pest,Low,Open,2026-04-12,,Apex Mechanical,0.0
-WO00641,Maple Court,034,Electrical,High,Completed,2026-04-18,2026-04-26,GreenLeaf Pest,238.38
-WO00642,Willow Park,069,HVAC,Low,Completed,2026-03-28,2026-04-07,BlueLine Plumbing,182.94
-WO00643,Harborview Flats,025,HVAC,Medium,In Progress,2026-06-15,,BlueLine Plumbing,0.0
-WO00644,Cedar Commons,040,Electrical,High,Completed,2026-04-19,2026-05-09,Volt Electric,111.22
-WO00645,Oakhaven Apartments,022,HVAC,Medium,Completed,2026-05-23,2026-05-24,In-House Maintenance,254.39
-WO00646,Ironwood Residences,041,General,High,Completed,2026-04-29,2026-05-04,Summit Handyman,47.83
-WO00647,Oakhaven Apartments,053,HVAC,High,Completed,2026-04-20,2026-04-23,In-House Maintenance,333.33
-WO00648,Ironwood Residences,024,Appliance,Low,Completed,2026-06-12,2026-06-15,Summit Handyman,136.83
-WO00649,Ironwood Residences,024,HVAC,Emergency,Completed,2026-04-02,2026-04-09,GreenLeaf Pest,345.33
-WO00650,Stonebridge Villas,029,Turnover,Medium,Completed,2026-04-23,2026-05-06,In-House Maintenance,559.31
-WO00651,Aspen Grove,044,Electrical,Medium,Completed,2026-05-09,2026-05-18,In-House Maintenance,340.69
-WO00652,Ironwood Residences,014,Turnover,Low,Completed,2026-03-20,2026-04-04,Summit Handyman,1204.93
-WO00653,Stonebridge Villas,006,Pest,Low,Completed,2026-04-14,2026-04-20,Volt Electric,134.64
-WO00654,Birchwood Terrace,011,General,Medium,Open,2026-05-27,,GreenLeaf Pest,0.0
-WO00655,Maple Court,041,General,Low,In Progress,2026-06-10,,GreenLeaf Pest,0.0
-WO00656,Maple Court,050,Plumbing,High,Open,2026-06-29,,BlueLine Plumbing,0.0
-WO00657,Aspen Grove,059,Pest,Medium,Completed,2026-03-25,2026-04-04,Apex Mechanical,181.03
-WO00658,Willow Park,043,Appliance,High,Completed,2026-05-29,2026-06-04,In-House Maintenance,142.01
-WO00659,Maple Court,056,Appliance,High,Completed,2026-05-16,2026-05-22,In-House Maintenance,173.11
-WO00660,Harborview Flats,038,Appliance,High,In Progress,2026-06-11,,Apex Mechanical,0.0
-WO00661,Maple Court,020,Plumbing,Low,Completed,2026-03-15,2026-03-26,GreenLeaf Pest,68.63
-WO00662,Stonebridge Villas,016,Plumbing,Low,Completed,2026-04-23,2026-05-08,In-House Maintenance,119.05
-WO00663,Willow Park,061,General,High,Completed,2026-04-03,2026-04-04,GreenLeaf Pest,39.24
-WO00664,Ironwood Residences,041,General,Medium,Open,2026-05-24,,Apex Mechanical,0.0
-WO00665,Sunset Ridge,026,Turnover,Low,Completed,2026-03-13,2026-03-21,GreenLeaf Pest,740.47
-WO00666,Sunset Ridge,022,Plumbing,Low,Completed,2026-05-06,2026-05-18,Summit Handyman,90.9
-WO00667,Willow Park,054,Pest,Low,Completed,2026-03-14,2026-03-18,BlueLine Plumbing,112.09
-WO00668,Cedar Commons,038,General,Emergency,Completed,2026-06-25,2026-07-02,Summit Handyman,117.93
-WO00669,Riverbend Lofts,035,Plumbing,Medium,Completed,2026-05-06,2026-05-25,BlueLine Plumbing,132.04
-WO00670,Meadowlark Place,024,Appliance,Medium,Completed,2026-04-25,2026-05-01,Apex Mechanical,114.9
-WO00671,Meadowlark Place,021,Plumbing,Low,Completed,2026-04-23,2026-05-07,GreenLeaf Pest,124.75
-WO00672,Maple Court,014,Turnover,Low,Completed,2026-03-12,2026-03-18,In-House Maintenance,1031.87
-WO00673,Maple Court,021,Turnover,Medium,Completed,2026-06-16,2026-06-19,In-House Maintenance,530.64
-WO00674,Willow Park,079,Turnover,High,In Progress,2026-06-26,,Apex Mechanical,0.0
-WO00675,Willow Park,083,General,Low,In Progress,2026-06-21,,GreenLeaf Pest,0.0
-WO00676,Willow Park,020,Pest,Low,Open,2026-06-28,,In-House Maintenance,0.0
-WO00677,Stonebridge Villas,020,Electrical,Low,In Progress,2026-04-25,,BlueLine Plumbing,0.0
-WO00678,Aspen Grove,058,Plumbing,High,In Progress,2026-05-17,,In-House Maintenance,0.0
-WO00679,Aspen Grove,002,General,Medium,In Progress,2026-05-26,,Apex Mechanical,0.0
-WO00680,Birchwood Terrace,016,Plumbing,High,In Progress,2026-04-30,,Apex Mechanical,0.0
-WO00681,Oakhaven Apartments,052,Electrical,High,In Progress,2026-05-23,,Volt Electric,0.0
-WO00682,Willow Park,006,HVAC,Low,In Progress,2026-05-13,,In-House Maintenance,0.0
-WO00683,Sunset Ridge,003,Appliance,Low,Completed,2026-05-23,2026-06-12,Volt Electric,35.0
-WO00684,Riverbend Lofts,012,Plumbing,Low,Open,2026-04-27,,In-House Maintenance,0.0
-WO00685,Ironwood Residences,037,General,Low,Completed,2026-04-16,2026-04-28,Summit Handyman,99.5
-WO00686,Maple Court,030,Pest,Medium,Completed,2026-03-09,2026-03-24,In-House Maintenance,140.53
-WO00687,Birchwood Terrace,054,Electrical,Low,Completed,2026-04-03,2026-04-17,Volt Electric,138.25
-WO00688,Stonebridge Villas,012,Turnover,High,Completed,2026-05-23,2026-06-01,GreenLeaf Pest,610.26
-WO00689,Meadowlark Place,021,Plumbing,High,Open,2026-06-06,,Summit Handyman,0.0
-WO00690,Willow Park,037,Appliance,Medium,Open,2026-06-10,,In-House Maintenance,0.0
-WO00691,Oakhaven Apartments,009,Appliance,Medium,Completed,2026-05-05,2026-05-13,GreenLeaf Pest,114.08
-WO00692,Ironwood Residences,062,HVAC,Medium,Completed,2026-06-10,2026-06-12,GreenLeaf Pest,327.36
-WO00693,Ironwood Residences,017,HVAC,Emergency,In Progress,2026-06-06,,In-House Maintenance,0.0
-WO00694,Harborview Flats,044,Appliance,High,Completed,2026-03-27,2026-03-28,Volt Electric,138.36
-WO00695,Sunset Ridge,013,General,Low,Completed,2026-05-17,2026-05-28,Volt Electric,65.03
-WO00696,Sunset Ridge,026,HVAC,Low,Open,2026-05-26,,GreenLeaf Pest,0.0
-WO00697,Sunset Ridge,028,General,Medium,Open,2026-06-25,,GreenLeaf Pest,0.0
-WO00698,Cedar Commons,018,Appliance,Medium,Completed,2026-04-12,2026-04-22,Apex Mechanical,194.75
-WO00699,Oakhaven Apartments,051,Electrical,Low,Completed,2026-03-29,2026-04-14,Apex Mechanical,142.76
-WO00700,Sunset Ridge,021,Appliance,Medium,Completed,2026-04-01,2026-04-17,GreenLeaf Pest,297.5
-WO00701,Maple Court,003,HVAC,High,Completed,2026-06-24,2026-07-13,Apex Mechanical,343.43
-WO00702,Harborview Flats,031,HVAC,Medium,Completed,2026-05-18,2026-05-22,Apex Mechanical,143.53
-WO00703,Aspen Grove,029,General,Medium,Open,2026-06-02,,BlueLine Plumbing,0.0
-WO00704,Sunset Ridge,033,Plumbing,Medium,In Progress,2026-05-09,,BlueLine Plumbing,0.0
-WO00705,Willow Park,079,General,Medium,Completed,2026-04-22,2026-05-04,Summit Handyman,68.49
-WO00706,Ironwood Residences,045,Pest,High,Completed,2026-06-07,2026-06-26,Apex Mechanical,95.85
-WO00707,Maple Court,055,General,Low,Open,2026-06-16,,Summit Handyman,0.0
-WO00708,Oakhaven Apartments,089,Pest,Medium,Completed,2026-05-31,2026-06-17,Summit Handyman,102.29
-WO00709,Meadowlark Place,001,Electrical,Low,Completed,2026-03-09,2026-03-23,Summit Handyman,287.7
-WO00710,Harborview Flats,012,General,Medium,Completed,2026-03-08,2026-03-17,In-House Maintenance,122.21
-WO00711,Ironwood Residences,001,HVAC,Low,Open,2026-06-21,,Summit Handyman,0.0
-WO00712,Willow Park,046,Electrical,High,Completed,2026-05-07,2026-05-21,In-House Maintenance,92.55
-WO00713,Birchwood Terrace,034,Electrical,Low,Completed,2026-04-06,2026-04-24,GreenLeaf Pest,189.36
-WO00714,Maple Court,009,Pest,Medium,Completed,2026-03-16,2026-04-03,In-House Maintenance,183.91
-WO00715,Stonebridge Villas,033,General,Medium,Completed,2026-03-26,2026-04-10,Summit Handyman,35.0
-WO00716,Maple Court,017,Pest,Low,Completed,2026-05-26,2026-06-14,In-House Maintenance,164.93
-WO00717,Maple Court,013,General,Medium,Completed,2026-04-07,2026-04-08,GreenLeaf Pest,90.2
-WO00718,Oakhaven Apartments,090,General,Medium,Completed,2026-04-10,2026-04-20,In-House Maintenance,136.26
-WO00719,Aspen Grove,019,Appliance,Low,Open,2026-05-31,,Volt Electric,0.0
-WO00720,Sunset Ridge,017,General,Medium,Completed,2026-06-08,2026-06-17,Summit Handyman,35.0
-WO00721,Ironwood Residences,003,General,Medium,Open,2026-05-31,,BlueLine Plumbing,0.0
-WO00722,Oakhaven Apartments,033,Turnover,Medium,Completed,2026-04-06,2026-04-08,Apex Mechanical,830.23
-WO00723,Oakhaven Apartments,015,Plumbing,Low,Open,2026-05-01,,Summit Handyman,0.0
-WO00724,Aspen Grove,030,HVAC,Low,Open,2026-04-22,,BlueLine Plumbing,0.0
-WO00725,Sunset Ridge,034,Pest,Medium,Completed,2026-03-22,2026-04-05,Apex Mechanical,159.35
-WO00726,Birchwood Terrace,021,Appliance,Low,Completed,2026-04-02,2026-04-12,In-House Maintenance,417.84
-WO00727,Oakhaven Apartments,062,General,Low,Completed,2026-04-08,2026-04-25,Apex Mechanical,77.08
-WO00728,Meadowlark Place,026,Appliance,High,In Progress,2026-06-26,,GreenLeaf Pest,0.0
-WO00729,Oakhaven Apartments,079,HVAC,Medium,Completed,2026-06-18,2026-06-25,GreenLeaf Pest,214.18
-WO00730,Harborview Flats,011,Pest,Medium,Open,2026-05-26,,Volt Electric,0.0
-WO00731,Birchwood Terrace,030,Electrical,Medium,In Progress,2026-06-18,,BlueLine Plumbing,0.0
-WO00732,Ironwood Residences,027,Pest,Medium,Completed,2026-03-07,2026-03-23,In-House Maintenance,73.81
-WO00733,Stonebridge Villas,042,General,Medium,Open,2026-05-19,,BlueLine Plumbing,0.0
-WO00734,Oakhaven Apartments,035,Electrical,Medium,In Progress,2026-06-12,,Apex Mechanical,0.0
-WO00735,Ironwood Residences,053,Turnover,High,Completed,2026-04-27,2026-04-29,GreenLeaf Pest,784.75
-WO00736,Harborview Flats,046,General,Medium,Open,2026-05-14,,BlueLine Plumbing,0.0
-WO00737,Harborview Flats,042,Pest,Medium,Completed,2026-05-09,2026-05-11,GreenLeaf Pest,108.97
-WO00738,Stonebridge Villas,032,Plumbing,Low,Completed,2026-05-31,2026-06-13,Summit Handyman,146.38
-WO00739,Cedar Commons,042,Plumbing,Low,Completed,2026-06-05,2026-06-07,Summit Handyman,49.82
-WO00740,Harborview Flats,006,Appliance,High,Completed,2026-06-14,2026-06-20,In-House Maintenance,35.0
-WO00741,Ironwood Residences,064,Appliance,Medium,Completed,2026-03-14,2026-03-15,Apex Mechanical,116.67
-WO00742,Cedar Commons,012,Pest,Low,Completed,2026-05-16,2026-05-24,BlueLine Plumbing,129.16
-WO00743,Harborview Flats,046,General,Medium,Open,2026-06-13,,Apex Mechanical,0.0
-WO00744,Willow Park,001,General,Low,Completed,2026-04-30,2026-05-08,GreenLeaf Pest,40.1
-WO00745,Oakhaven Apartments,061,HVAC,High,Completed,2026-04-06,2026-04-07,Summit Handyman,317.47
-WO00746,Oakhaven Apartments,003,Appliance,Medium,Completed,2026-03-07,2026-03-10,In-House Maintenance,142.4
-WO00747,Riverbend Lofts,024,Turnover,Low,In Progress,2026-04-19,,Summit Handyman,0.0
-WO00748,Oakhaven Apartments,085,General,High,Completed,2026-05-29,2026-05-31,Apex Mechanical,49.57
-WO00749,Sunset Ridge,029,Electrical,Low,In Progress,2026-06-14,,Apex Mechanical,0.0
-WO00750,Cedar Commons,053,Turnover,High,Open,2026-05-28,,BlueLine Plumbing,0.0
-WO00751,Birchwood Terrace,041,Electrical,Emergency,Completed,2026-03-22,2026-03-24,Summit Handyman,35.0
-WO00752,Aspen Grove,040,Electrical,High,Completed,2026-04-21,2026-04-26,BlueLine Plumbing,191.51
-WO00753,Oakhaven Apartments,004,General,Low,Open,2026-04-16,,Volt Electric,0.0
-WO00754,Harborview Flats,028,Pest,Medium,In Progress,2026-05-03,,Apex Mechanical,0.0
-WO00755,Aspen Grove,020,General,Low,Completed,2026-05-18,2026-06-02,In-House Maintenance,102.33
-WO00756,Maple Court,033,Appliance,High,Completed,2026-03-10,2026-03-12,Apex Mechanical,99.76
-WO00757,Harborview Flats,021,General,High,Completed,2026-03-22,2026-04-05,Summit Handyman,116.58
-WO00758,Birchwood Terrace,016,Turnover,Medium,In Progress,2026-05-02,,Summit Handyman,0.0
-WO00759,Harborview Flats,044,General,Medium,Completed,2026-06-29,2026-07-11,In-House Maintenance,40.44
-WO00760,Stonebridge Villas,011,Appliance,Low,Completed,2026-03-17,2026-03-30,Summit Handyman,146.76
-WO00761,Sunset Ridge,021,Turnover,Medium,Completed,2026-06-26,2026-06-29,BlueLine Plumbing,791.49
-WO00762,Maple Court,028,Plumbing,Low,Completed,2026-05-11,2026-05-27,In-House Maintenance,151.1
-WO00763,Riverbend Lofts,032,Appliance,Emergency,Open,2026-03-26,,BlueLine Plumbing,0.0
-WO00764,Aspen Grove,038,General,Low,In Progress,2026-04-14,,GreenLeaf Pest,0.0
-WO00765,Ironwood Residences,012,HVAC,Low,Completed,2026-06-02,2026-06-05,Apex Mechanical,511.05
-WO00766,Oakhaven Apartments,079,Turnover,High,Completed,2026-03-04,2026-03-21,GreenLeaf Pest,692.14
-WO00767,Riverbend Lofts,007,Appliance,Low,Completed,2026-03-28,2026-04-01,Apex Mechanical,219.31
-WO00768,Sunset Ridge,009,HVAC,Low,In Progress,2026-04-08,,Volt Electric,0.0
-WO00769,Maple Court,070,Appliance,High,Open,2026-05-26,,Summit Handyman,0.0
-WO00770,Cedar Commons,040,HVAC,Medium,Completed,2026-04-22,2026-04-30,Volt Electric,45.51
-WO00771,Maple Court,035,General,High,Completed,2026-03-16,2026-03-20,Volt Electric,35.0
-WO00772,Aspen Grove,004,Pest,Medium,Completed,2026-04-08,2026-04-27,In-House Maintenance,153.61
-WO00773,Birchwood Terrace,013,Pest,Medium,Completed,2026-03-26,2026-04-01,Apex Mechanical,140.74
-WO00774,Maple Court,038,Appliance,Low,Completed,2026-03-30,2026-04-06,BlueLine Plumbing,44.38
-WO00775,Ironwood Residences,061,Electrical,Low,Completed,2026-04-15,2026-04-27,Apex Mechanical,61.49
-WO00776,Birchwood Terrace,040,Turnover,Medium,In Progress,2026-06-19,,BlueLine Plumbing,0.0
-WO00777,Ironwood Residences,049,Electrical,Low,Completed,2026-03-06,2026-03-12,Volt Electric,374.68
-WO00778,Cedar Commons,041,Electrical,Low,Completed,2026-06-07,2026-06-12,Volt Electric,246.27
-WO00779,Harborview Flats,043,Pest,Low,Completed,2026-04-09,2026-04-26,In-House Maintenance,136.35
-WO00780,Cedar Commons,052,General,Low,In Progress,2026-06-08,,GreenLeaf Pest,0.0
-WO00781,Maple Court,065,General,Low,Open,2026-05-28,,Volt Electric,0.0
-WO00782,Willow Park,042,Plumbing,Medium,Completed,2026-06-17,2026-07-06,Volt Electric,128.39
-WO00783,Ironwood Residences,067,Electrical,High,Completed,2026-03-26,2026-04-08,In-House Maintenance,144.48
-WO00784,Sunset Ridge,021,Turnover,Low,Completed,2026-04-04,2026-04-17,In-House Maintenance,950.08
-WO00785,Cedar Commons,046,Electrical,Low,Open,2026-06-28,,In-House Maintenance,0.0
-WO00786,Oakhaven Apartments,017,Pest,Medium,Open,2026-05-14,,Apex Mechanical,0.0
-WO00787,Harborview Flats,016,Pest,Low,Completed,2026-04-11,2026-04-26,In-House Maintenance,155.97
-WO00788,Aspen Grove,050,General,Low,Completed,2026-03-28,2026-04-14,Volt Electric,123.57
-WO00789,Oakhaven Apartments,046,Plumbing,Low,Completed,2026-03-12,2026-03-16,Apex Mechanical,132.89
-WO00790,Maple Court,058,Turnover,Low,In Progress,2026-06-13,,BlueLine Plumbing,0.0
-WO00791,Birchwood Terrace,024,Turnover,Medium,Completed,2026-03-04,2026-03-23,Summit Handyman,1342.58
-WO00792,Aspen Grove,042,Turnover,Emergency,Completed,2026-06-23,2026-06-24,In-House Maintenance,959.35
-WO00793,Oakhaven Apartments,064,HVAC,Medium,Completed,2026-03-28,2026-03-30,GreenLeaf Pest,332.4
-WO00794,Birchwood Terrace,037,Plumbing,High,Open,2026-06-14,,GreenLeaf Pest,0.0
-WO00795,Birchwood Terrace,040,General,Medium,Completed,2026-06-01,2026-06-02,Apex Mechanical,98.71
-WO00796,Riverbend Lofts,036,Pest,Emergency,Completed,2026-03-11,2026-03-25,In-House Maintenance,84.65
-WO00797,Cedar Commons,058,General,Medium,Completed,2026-04-04,2026-04-11,In-House Maintenance,121.88
-WO00798,Willow Park,065,Pest,Medium,Completed,2026-04-12,2026-04-20,Summit Handyman,107.63
-WO00799,Oakhaven Apartments,051,Pest,Medium,Completed,2026-05-23,2026-05-26,GreenLeaf Pest,158.97
-WO00800,Willow Park,048,Plumbing,High,Completed,2026-06-13,2026-06-22,Summit Handyman,156.86
-WO00801,Aspen Grove,036,Turnover,Medium,Completed,2026-04-02,2026-04-12,Summit Handyman,1054.13
-WO00802,Meadowlark Place,041,Electrical,Low,Completed,2026-06-25,2026-07-01,In-House Maintenance,170.77
-WO00803,Stonebridge Villas,033,HVAC,Medium,Open,2026-05-14,,Volt Electric,0.0
-WO00804,Oakhaven Apartments,015,Electrical,Emergency,Completed,2026-04-11,2026-04-17,BlueLine Plumbing,35.0
-WO00805,Oakhaven Apartments,057,Plumbing,Medium,Completed,2026-03-04,2026-03-09,Apex Mechanical,70.07
-WO00806,Stonebridge Villas,036,Pest,Low,Open,2026-05-25,,Summit Handyman,0.0
-WO00807,Birchwood Terrace,053,Appliance,Medium,Completed,2026-03-18,2026-04-01,Summit Handyman,38.16
-WO00808,Maple Court,071,Appliance,Low,Open,2026-06-20,,GreenLeaf Pest,0.0
-WO00809,Stonebridge Villas,047,General,Medium,Open,2026-05-17,,Apex Mechanical,0.0
-WO00810,Oakhaven Apartments,058,Appliance,High,Completed,2026-03-12,2026-03-20,BlueLine Plumbing,198.17
-WO00811,Birchwood Terrace,029,Pest,Low,In Progress,2026-06-14,,Summit Handyman,0.0
-WO00812,Harborview Flats,048,Pest,High,Open,2026-06-07,,Volt Electric,0.0
-WO00813,Cedar Commons,003,Plumbing,High,Completed,2026-06-11,2026-06-20,Volt Electric,108.1
-WO00814,Birchwood Terrace,039,Appliance,High,Completed,2026-03-19,2026-03-22,BlueLine Plumbing,334.94
-WO00815,Ironwood Residences,051,Electrical,Low,Completed,2026-05-11,2026-05-17,GreenLeaf Pest,128.17
-WO00816,Riverbend Lofts,005,General,Medium,Completed,2026-06-07,2026-06-24,GreenLeaf Pest,35.0
-WO00817,Harborview Flats,002,Plumbing,Low,Completed,2026-04-24,2026-05-01,Volt Electric,35.0
-WO00818,Maple Court,051,Turnover,Medium,Completed,2026-04-24,2026-05-03,Apex Mechanical,1377.42
-WO00819,Oakhaven Apartments,082,Electrical,Low,Completed,2026-05-08,2026-05-22,GreenLeaf Pest,240.55
-WO00820,Maple Court,021,Pest,Medium,Completed,2026-03-16,2026-04-01,Summit Handyman,58.28
-WO00821,Maple Court,069,Appliance,High,Completed,2026-03-22,2026-03-28,Summit Handyman,94.45
-WO00822,Oakhaven Apartments,062,Turnover,Medium,Completed,2026-03-08,2026-03-22,GreenLeaf Pest,575.13
-WO00823,Aspen Grove,019,Electrical,High,Open,2026-06-20,,Apex Mechanical,0.0
-WO00824,Meadowlark Place,018,HVAC,Medium,Open,2026-05-28,,BlueLine Plumbing,0.0
-WO00825,Willow Park,020,Appliance,Emergency,Completed,2026-03-28,2026-04-01,Apex Mechanical,206.1
-WO00826,Cedar Commons,028,Plumbing,High,Open,2026-05-08,,GreenLeaf Pest,0.0
-WO00827,Willow Park,036,Pest,High,Completed,2026-06-08,2026-06-12,Apex Mechanical,119.28
-WO00828,Willow Park,066,Appliance,Low,Completed,2026-05-12,2026-05-25,Summit Handyman,277.73
-WO00829,Ironwood Residences,052,Plumbing,Low,Completed,2026-03-04,2026-03-23,BlueLine Plumbing,63.4
-WO00830,Willow Park,050,Appliance,Emergency,In Progress,2026-06-07,,Summit Handyman,0.0
-WO00831,Sunset Ridge,007,Plumbing,Medium,Completed,2026-03-12,2026-03-17,GreenLeaf Pest,131.62
-WO00832,Stonebridge Villas,027,Appliance,Medium,Completed,2026-06-25,2026-07-06,BlueLine Plumbing,170.4
-WO00833,Willow Park,040,HVAC,Low,Completed,2026-03-26,2026-04-03,BlueLine Plumbing,373.33
-WO00834,Oakhaven Apartments,015,Pest,High,Completed,2026-06-23,2026-06-29,Summit Handyman,155.24
-WO00835,Birchwood Terrace,054,General,High,Completed,2026-03-23,2026-04-03,In-House Maintenance,108.15
-WO00836,Willow Park,083,Plumbing,Low,Open,2026-06-17,,Summit Handyman,0.0
-WO00837,Ironwood Residences,019,Turnover,Low,In Progress,2026-04-16,,GreenLeaf Pest,0.0
-WO00838,Meadowlark Place,002,Plumbing,Low,Completed,2026-03-20,2026-04-05,Volt Electric,104.0
-WO00839,Willow Park,060,Electrical,Low,In Progress,2026-05-28,,BlueLine Plumbing,0.0
-WO00840,Sunset Ridge,011,HVAC,Emergency,Completed,2026-04-28,2026-04-29,GreenLeaf Pest,281.17
-WO00841,Aspen Grove,023,Turnover,Low,Completed,2026-03-03,2026-03-15,BlueLine Plumbing,667.85
-WO00842,Riverbend Lofts,003,Pest,Low,Completed,2026-03-06,2026-03-07,Summit Handyman,137.88
-WO00843,Ironwood Residences,026,General,Low,Completed,2026-04-20,2026-05-03,In-House Maintenance,114.48
-WO00844,Oakhaven Apartments,077,Plumbing,Low,Open,2026-04-03,,Apex Mechanical,0.0
-WO00845,Willow Park,072,Plumbing,Low,Open,2026-06-09,,GreenLeaf Pest,0.0
-WO00846,Oakhaven Apartments,064,Turnover,Medium,Completed,2026-04-02,2026-04-09,GreenLeaf Pest,674.14
-WO00847,Aspen Grove,052,General,High,Completed,2026-04-23,2026-05-08,Volt Electric,52.03
-WO00848,Ironwood Residences,009,Turnover,High,Completed,2026-04-03,2026-04-12,BlueLine Plumbing,622.81
-WO00849,Willow Park,056,Turnover,Medium,Open,2026-04-25,,Volt Electric,0.0
-WO00850,Stonebridge Villas,024,General,High,Open,2026-05-19,,GreenLeaf Pest,0.0
-WO00851,Birchwood Terrace,055,Turnover,Low,Completed,2026-04-10,2026-04-11,Apex Mechanical,985.52
-WO00852,Ironwood Residences,016,Appliance,Medium,Completed,2026-04-21,2026-05-02,In-House Maintenance,35.0
-WO00853,Stonebridge Villas,005,Electrical,Medium,Open,2026-06-02,,Volt Electric,0.0
-WO00854,Oakhaven Apartments,044,Plumbing,Low,In Progress,2026-05-19,,Volt Electric,0.0
-WO00855,Willow Park,035,General,Medium,Completed,2026-06-23,2026-07-02,BlueLine Plumbing,37.84
-WO00856,Cedar Commons,027,Electrical,Medium,Completed,2026-03-04,2026-03-05,Summit Handyman,259.35
-WO00857,Birchwood Terrace,045,HVAC,Medium,Open,2026-05-31,,Apex Mechanical,0.0
-WO00858,Stonebridge Villas,017,Plumbing,Medium,Completed,2026-03-31,2026-04-12,In-House Maintenance,114.74
-WO00859,Ironwood Residences,028,Plumbing,Low,Completed,2026-03-10,2026-03-24,Volt Electric,101.81
-WO00860,Sunset Ridge,005,Plumbing,Medium,Open,2026-04-17,,In-House Maintenance,0.0
-WO00861,Oakhaven Apartments,042,Appliance,Low,Completed,2026-03-12,2026-03-25,GreenLeaf Pest,163.71
-WO00862,Stonebridge Villas,008,Pest,Low,Completed,2026-05-14,2026-05-25,In-House Maintenance,81.93
-WO00863,Maple Court,018,Plumbing,Medium,Open,2026-06-06,,BlueLine Plumbing,0.0
-WO00864,Sunset Ridge,019,Appliance,High,Open,2026-05-25,,BlueLine Plumbing,0.0
-WO00865,Meadowlark Place,039,Electrical,Medium,Open,2026-06-12,,BlueLine Plumbing,0.0
-WO00866,Maple Court,034,HVAC,High,Completed,2026-03-12,2026-04-01,Volt Electric,326.2
-WO00867,Stonebridge Villas,030,Electrical,Medium,Open,2026-05-07,,Apex Mechanical,0.0
-WO00868,Birchwood Terrace,036,General,Low,Completed,2026-03-04,2026-03-05,Summit Handyman,37.43
-WO00869,Riverbend Lofts,028,General,Low,Completed,2026-04-11,2026-04-25,GreenLeaf Pest,103.4
-WO00870,Oakhaven Apartments,068,Electrical,Low,Completed,2026-03-19,2026-04-04,BlueLine Plumbing,74.13
-WO00871,Meadowlark Place,032,Plumbing,Low,Completed,2026-03-28,2026-04-08,Summit Handyman,188.4
-WO00872,Oakhaven Apartments,012,Plumbing,Low,Completed,2026-03-27,2026-04-07,Apex Mechanical,35.0
-WO00873,Birchwood Terrace,007,Plumbing,Low,Completed,2026-06-04,2026-06-15,Volt Electric,95.22
-WO00874,Harborview Flats,038,Plumbing,Low,Completed,2026-05-11,2026-05-15,Volt Electric,122.11
-WO00875,Cedar Commons,023,Pest,Medium,Completed,2026-05-15,2026-05-31,Summit Handyman,111.99
-WO00876,Cedar Commons,035,Electrical,Medium,Completed,2026-06-07,2026-06-17,Summit Handyman,156.68
-WO00877,Stonebridge Villas,014,Appliance,Medium,In Progress,2026-05-26,,Summit Handyman,0.0
-WO00878,Maple Court,011,Electrical,Low,Completed,2026-03-08,2026-03-16,GreenLeaf Pest,189.34
-WO00879,Cedar Commons,018,Pest,Low,Completed,2026-05-04,2026-05-20,Volt Electric,102.21
-WO00880,Oakhaven Apartments,010,Pest,Medium,Completed,2026-05-13,2026-05-14,Summit Handyman,117.75
-WO00881,Sunset Ridge,030,Turnover,Medium,In Progress,2026-04-23,,Summit Handyman,0.0
-WO00882,Meadowlark Place,023,Appliance,High,Completed,2026-04-05,2026-04-12,Apex Mechanical,98.33
-WO00883,Cedar Commons,027,HVAC,Medium,Completed,2026-05-03,2026-05-07,In-House Maintenance,308.96
-WO00884,Maple Court,057,Plumbing,Medium,Completed,2026-06-18,2026-07-03,Volt Electric,98.85
-WO00885,Ironwood Residences,017,Pest,Low,Completed,2026-06-18,2026-06-30,BlueLine Plumbing,154.14
-WO00886,Cedar Commons,056,Appliance,Medium,Completed,2026-04-10,2026-04-21,Volt Electric,162.51
-WO00887,Meadowlark Place,040,Pest,Medium,Completed,2026-06-29,2026-07-04,GreenLeaf Pest,35.0
-WO00888,Maple Court,071,Plumbing,Low,In Progress,2026-05-31,,Volt Electric,0.0
-WO00889,Cedar Commons,047,Turnover,High,Completed,2026-03-24,2026-04-05,Summit Handyman,815.96
-WO00890,Maple Court,012,Appliance,Medium,Completed,2026-05-04,2026-05-14,BlueLine Plumbing,35.0
-WO00891,Oakhaven Apartments,075,HVAC,Low,Completed,2026-06-09,2026-06-17,Summit Handyman,255.54
-WO00892,Maple Court,013,Appliance,High,In Progress,2026-06-27,,Summit Handyman,0.0
-WO00893,Maple Court,025,Turnover,High,Completed,2026-06-30,2026-07-20,GreenLeaf Pest,1391.41
-WO00894,Stonebridge Villas,015,Appliance,High,Completed,2026-03-27,2026-03-29,Volt Electric,119.93
-WO00895,Maple Court,019,General,High,Completed,2026-03-03,2026-03-21,GreenLeaf Pest,35.0
-WO00896,Willow Park,055,Appliance,Low,Open,2026-06-09,,GreenLeaf Pest,0.0
-WO00897,Oakhaven Apartments,089,Pest,Medium,Open,2026-05-15,,GreenLeaf Pest,0.0
-WO00898,Ironwood Residences,018,Plumbing,Low,In Progress,2026-06-09,,Apex Mechanical,0.0
-WO00899,Birchwood Terrace,051,General,High,Open,2026-03-25,,BlueLine Plumbing,0.0
-WO00900,Maple Court,028,HVAC,Medium,Completed,2026-06-14,2026-06-20,In-House Maintenance,357.86
-WO00901,Sunset Ridge,035,Turnover,Low,Completed,2026-05-23,2026-05-28,In-House Maintenance,859.02
-WO00902,Sunset Ridge,014,Electrical,Medium,Completed,2026-04-20,2026-05-07,Volt Electric,247.2
-WO00903,Ironwood Residences,019,Electrical,High,Completed,2026-03-31,2026-04-11,Apex Mechanical,244.22
-WO00904,Maple Court,041,Electrical,High,Open,2026-06-28,,Volt Electric,0.0
-WO00905,Sunset Ridge,019,HVAC,Medium,Completed,2026-04-05,2026-04-08,Volt Electric,437.78
-WO00906,Oakhaven Apartments,005,HVAC,High,Completed,2026-05-30,2026-06-11,BlueLine Plumbing,234.29
-WO00907,Maple Court,002,Plumbing,Low,Completed,2026-04-07,2026-04-18,Apex Mechanical,118.42
-WO00908,Oakhaven Apartments,082,HVAC,Low,Completed,2026-03-08,2026-03-15,Volt Electric,227.82
-WO00909,Aspen Grove,044,HVAC,High,Completed,2026-03-28,2026-04-16,Volt Electric,393.6
-WO00910,Ironwood Residences,009,Pest,Medium,Completed,2026-04-07,2026-04-12,BlueLine Plumbing,55.44
-WO00911,Cedar Commons,031,Pest,Low,Completed,2026-05-13,2026-06-01,BlueLine Plumbing,90.93
-WO00912,Aspen Grove,051,Turnover,Medium,Completed,2026-05-05,2026-05-14,Apex Mechanical,446.38
-WO00913,Aspen Grove,046,General,Medium,Open,2026-05-09,,Summit Handyman,0.0
-WO00914,Meadowlark Place,022,Turnover,Low,In Progress,2026-04-18,,Volt Electric,0.0
-WO00915,Riverbend Lofts,024,Turnover,Medium,Open,2026-06-04,,Apex Mechanical,0.0
-WO00916,Sunset Ridge,015,Electrical,High,Open,2026-06-22,,In-House Maintenance,0.0
-WO00917,Cedar Commons,016,Electrical,Low,Completed,2026-05-08,2026-05-18,BlueLine Plumbing,239.82
-WO00918,Oakhaven Apartments,062,Turnover,Medium,Completed,2026-04-05,2026-04-13,GreenLeaf Pest,615.71
-WO00919,Stonebridge Villas,006,General,Medium,Completed,2026-04-17,2026-04-27,GreenLeaf Pest,35.0
-WO00920,Willow Park,066,Electrical,Low,Open,2026-03-10,,GreenLeaf Pest,0.0
-WO00921,Birchwood Terrace,030,Turnover,Low,Completed,2026-03-07,2026-03-24,Summit Handyman,863.67
-WO00922,Maple Court,040,Plumbing,Medium,Open,2026-06-27,,In-House Maintenance,0.0
-WO00923,Ironwood Residences,054,Electrical,Medium,Completed,2026-04-15,2026-04-26,BlueLine Plumbing,55.31
-WO00924,Oakhaven Apartments,058,Turnover,High,Completed,2026-06-17,2026-06-25,Summit Handyman,940.03
-WO00925,Stonebridge Villas,043,Pest,High,Open,2026-05-18,,Apex Mechanical,0.0
-WO00926,Cedar Commons,026,Pest,Low,Completed,2026-04-14,2026-04-24,Apex Mechanical,47.36
-WO00927,Stonebridge Villas,004,Plumbing,Medium,Completed,2026-03-25,2026-03-28,GreenLeaf Pest,202.84
-WO00928,Birchwood Terrace,043,General,High,Completed,2026-05-08,2026-05-13,In-House Maintenance,126.72
-WO00929,Cedar Commons,049,Pest,Medium,Open,2026-06-20,,Volt Electric,0.0
-WO00930,Maple Court,029,Turnover,Medium,Completed,2026-05-09,2026-05-19,BlueLine Plumbing,976.63
-WO00931,Oakhaven Apartments,037,Plumbing,Low,Completed,2026-03-23,2026-04-03,In-House Maintenance,109.66
-WO00932,Willow Park,009,Electrical,Low,In Progress,2026-05-24,,Volt Electric,0.0
-WO00933,Stonebridge Villas,028,Electrical,Low,Completed,2026-03-14,2026-03-17,Summit Handyman,251.64
-WO00934,Stonebridge Villas,019,Plumbing,Low,Completed,2026-05-25,2026-06-04,In-House Maintenance,35.0
-WO00935,Willow Park,067,Electrical,High,In Progress,2026-05-15,,GreenLeaf Pest,0.0
-WO00936,Ironwood Residences,067,Turnover,Low,In Progress,2026-06-06,,In-House Maintenance,0.0
-WO00937,Stonebridge Villas,003,Turnover,Low,Open,2026-06-09,,Summit Handyman,0.0
-WO00938,Stonebridge Villas,028,General,Low,Completed,2026-06-14,2026-06-21,Summit Handyman,70.6
-WO00939,Aspen Grove,012,Plumbing,Low,In Progress,2026-04-10,,Summit Handyman,0.0
-WO00940,Oakhaven Apartments,007,Turnover,Medium,Completed,2026-05-21,2026-06-08,BlueLine Plumbing,1283.89
-WO00941,Riverbend Lofts,024,Plumbing,High,Completed,2026-04-26,2026-05-02,Summit Handyman,58.0
-WO00942,Harborview Flats,016,Turnover,Low,Completed,2026-04-12,2026-04-29,GreenLeaf Pest,828.56
-WO00943,Stonebridge Villas,026,Appliance,Emergency,Completed,2026-06-07,2026-06-19,In-House Maintenance,147.19
-WO00944,Willow Park,076,HVAC,Medium,Open,2026-05-04,,GreenLeaf Pest,0.0
-WO00945,Maple Court,055,Electrical,Emergency,Completed,2026-03-25,2026-04-09,Volt Electric,180.06
-WO00946,Maple Court,040,Appliance,Low,Completed,2026-05-13,2026-05-30,In-House Maintenance,205.21
-WO00947,Cedar Commons,034,Pest,Emergency,Completed,2026-03-20,2026-04-09,Volt Electric,35.04
-WO00948,Aspen Grove,022,Turnover,Medium,Completed,2026-04-08,2026-04-14,BlueLine Plumbing,1168.55
-WO00949,Sunset Ridge,014,Plumbing,Medium,Open,2026-06-19,,Volt Electric,0.0
-WO00950,Sunset Ridge,038,Plumbing,Low,Completed,2026-05-02,2026-05-15,Volt Electric,119.92
-WO00951,Aspen Grove,005,Turnover,Low,Open,2026-06-24,,Summit Handyman,0.0
-WO00952,Oakhaven Apartments,008,Appliance,Low,Completed,2026-06-04,2026-06-07,Summit Handyman,268.11
-WO00953,Oakhaven Apartments,032,HVAC,High,Completed,2026-03-06,2026-03-10,Apex Mechanical,502.78
-WO00954,Oakhaven Apartments,088,HVAC,High,In Progress,2026-06-25,,BlueLine Plumbing,0.0
-WO00955,Willow Park,009,Appliance,Low,Completed,2026-03-10,2026-03-23,Summit Handyman,200.72
-WO00956,Sunset Ridge,037,HVAC,Low,Completed,2026-06-10,2026-06-19,In-House Maintenance,100.07
-WO00957,Harborview Flats,029,Turnover,High,Completed,2026-06-25,2026-07-05,Volt Electric,1415.67
-WO00958,Ironwood Residences,055,General,Emergency,In Progress,2026-06-19,,Volt Electric,0.0
-WO00959,Riverbend Lofts,005,Pest,Medium,Completed,2026-04-19,2026-04-22,BlueLine Plumbing,112.37
-WO00960,Aspen Grove,034,Appliance,Low,Completed,2026-04-07,2026-04-17,BlueLine Plumbing,175.53
-WO00961,Riverbend Lofts,029,HVAC,Low,Open,2026-05-26,,BlueLine Plumbing,0.0
-WO00962,Stonebridge Villas,011,Plumbing,Medium,Open,2026-06-27,,BlueLine Plumbing,0.0
-WO00963,Riverbend Lofts,017,Plumbing,Low,Completed,2026-03-09,2026-03-12,Apex Mechanical,126.07
-WO00964,Ironwood Residences,020,Pest,High,Completed,2026-03-07,2026-03-27,Apex Mechanical,157.47
-WO00965,Maple Court,029,Turnover,Medium,Completed,2026-05-22,2026-06-11,Summit Handyman,1316.46
-WO00966,Maple Court,035,Turnover,Medium,Completed,2026-03-28,2026-04-13,GreenLeaf Pest,790.12
-WO00967,Maple Court,047,Pest,Low,Completed,2026-04-20,2026-04-27,Volt Electric,117.41
-WO00968,Harborview Flats,008,General,Low,Completed,2026-04-12,2026-05-02,GreenLeaf Pest,113.63
-WO00969,Riverbend Lofts,026,Pest,Medium,Completed,2026-05-31,2026-06-19,Volt Electric,206.29
-WO00970,Stonebridge Villas,021,General,Low,In Progress,2026-06-03,,BlueLine Plumbing,0.0
-WO00971,Sunset Ridge,031,Pest,High,Completed,2026-05-19,2026-05-30,GreenLeaf Pest,63.86
-WO00972,Harborview Flats,041,Electrical,Medium,Completed,2026-03-04,2026-03-12,Apex Mechanical,227.74
-WO00973,Birchwood Terrace,050,Pest,High,Completed,2026-04-03,2026-04-21,BlueLine Plumbing,128.7
-WO00974,Willow Park,021,Pest,Medium,Completed,2026-04-01,2026-04-02,Apex Mechanical,135.57
-WO00975,Cedar Commons,002,Pest,High,In Progress,2026-05-13,,BlueLine Plumbing,0.0
-WO00976,Oakhaven Apartments,061,Appliance,Low,In Progress,2026-06-07,,Volt Electric,0.0
-WO00977,Birchwood Terrace,011,Electrical,High,Completed,2026-03-10,2026-03-19,Apex Mechanical,93.33
-WO00978,Maple Court,040,HVAC,Low,In Progress,2026-06-11,,GreenLeaf Pest,0.0
-WO00979,Stonebridge Villas,005,Electrical,Low,Completed,2026-03-28,2026-04-06,Apex Mechanical,36.61
-WO00980,Willow Park,049,Appliance,Low,Completed,2026-04-24,2026-05-13,Summit Handyman,35.0
-WO00981,Ironwood Residences,054,General,Medium,Completed,2026-04-24,2026-04-29,In-House Maintenance,87.86
-WO00982,Cedar Commons,008,Turnover,Low,Completed,2026-03-09,2026-03-25,Apex Mechanical,601.74
-WO00983,Stonebridge Villas,024,Appliance,Medium,Open,2026-06-14,,In-House Maintenance,0.0
-WO00984,Sunset Ridge,029,Appliance,Medium,Completed,2026-06-24,2026-07-14,Volt Electric,54.36
-WO00985,Harborview Flats,036,General,Medium,In Progress,2026-06-11,,Summit Handyman,0.0
-WO00986,Willow Park,082,Electrical,High,Completed,2026-03-21,2026-03-22,Summit Handyman,139.87
-WO00987,Birchwood Terrace,018,Plumbing,High,Completed,2026-04-22,2026-05-07,Apex Mechanical,92.52
-WO00988,Ironwood Residences,015,Pest,Medium,Completed,2026-04-08,2026-04-15,BlueLine Plumbing,105.87
-WO00989,Aspen Grove,051,Pest,Medium,Completed,2026-03-05,2026-03-20,BlueLine Plumbing,124.76
-WO00990,Sunset Ridge,015,Appliance,High,Completed,2026-04-24,2026-05-05,Volt Electric,166.48
-WO00991,Sunset Ridge,024,Electrical,High,Completed,2026-03-25,2026-04-14,Apex Mechanical,232.38
-WO00992,Oakhaven Apartments,007,General,Low,Open,2026-04-27,,GreenLeaf Pest,0.0
-WO00993,Willow Park,078,Electrical,Medium,Completed,2026-03-20,2026-03-30,Volt Electric,232.21
-WO00994,Cedar Commons,038,Plumbing,High,Open,2026-05-04,,In-House Maintenance,0.0
-WO00995,Willow Park,019,Electrical,Medium,Completed,2026-04-16,2026-04-20,Summit Handyman,297.18
-WO00996,Cedar Commons,026,General,High,Completed,2026-03-18,2026-04-05,BlueLine Plumbing,137.21
-WO00997,Aspen Grove,028,General,Medium,Completed,2026-04-12,2026-04-19,GreenLeaf Pest,77.91
-WO00998,Birchwood Terrace,012,Appliance,Medium,Completed,2026-05-15,2026-05-30,Summit Handyman,160.8
-WO00999,Willow Park,072,Plumbing,Medium,Open,2026-06-01,,Volt Electric,0.0
-WO01000,Cedar Commons,028,Plumbing,Medium,Completed,2026-06-24,2026-06-30,GreenLeaf Pest,102.84
-WO01001,Harborview Flats,027,Pest,Medium,Open,2026-06-01,,Volt Electric,0.0
-WO01002,Oakhaven Apartments,027,HVAC,High,Completed,2026-04-14,2026-04-24,In-House Maintenance,80.74
-WO01003,Ironwood Residences,058,Appliance,Low,Completed,2026-04-01,2026-04-05,In-House Maintenance,176.67
-WO01004,Willow Park,072,General,Low,Completed,2026-05-03,2026-05-18,Summit Handyman,53.22
-WO01005,Cedar Commons,043,HVAC,High,Completed,2026-06-01,2026-06-14,Summit Handyman,35.0
-WO01006,Harborview Flats,033,General,Low,Completed,2026-06-23,2026-06-26,Summit Handyman,82.58
-WO01007,Harborview Flats,040,Electrical,Low,Completed,2026-03-06,2026-03-10,Apex Mechanical,187.91
-WO01008,Willow Park,019,Turnover,Medium,Completed,2026-03-03,2026-03-08,GreenLeaf Pest,1820.05
-WO01009,Cedar Commons,055,General,Low,Completed,2026-04-11,2026-04-30,Volt Electric,35.0
-WO01010,Oakhaven Apartments,075,Turnover,Low,Completed,2026-03-16,2026-04-01,In-House Maintenance,1021.8
-WO01011,Maple Court,041,Appliance,Medium,Open,2026-05-19,,In-House Maintenance,0.0
-WO01012,Harborview Flats,012,Plumbing,High,Completed,2026-04-30,2026-05-09,In-House Maintenance,69.46
-WO01013,Aspen Grove,034,Turnover,Low,Completed,2026-04-11,2026-04-13,GreenLeaf Pest,560.61
+WO00001,Cedar Commons,039,Turnover,High,Completed,2026-04-12,2026-04-29,Volt Electric,1116.4
+WO00002,Stonebridge Villas,044,General,Emergency,Completed,2026-06-21,2026-07-01,In-House Maintenance,103.38
+WO00003,Birchwood Terrace,020,Turnover,High,Open,2026-05-19,,GreenLeaf Pest,0.0
+WO00004,Cedar Commons,023,Electrical,Low,Completed,2026-06-29,2026-07-04,Summit Handyman,147.97
+WO00005,Aspen Grove,037,Plumbing,Medium,Open,2026-04-24,,Apex Mechanical,0.0
+WO00006,Stonebridge Villas,026,Plumbing,Low,Completed,2026-06-29,2026-07-05,Apex Mechanical,87.71
+WO00007,Aspen Grove,003,HVAC,High,Completed,2026-03-28,2026-04-10,In-House Maintenance,383.18
+WO00008,Meadowlark Place,022,Pest,Low,Open,2026-06-14,,In-House Maintenance,0.0
+WO00009,Ironwood Residences,030,Plumbing,High,In Progress,2026-05-28,,Apex Mechanical,0.0
+WO00010,Ironwood Residences,067,Appliance,Medium,Completed,2026-06-27,2026-06-30,BlueLine Plumbing,340.27
+WO00011,Meadowlark Place,037,Turnover,Medium,Completed,2026-04-18,2026-04-28,GreenLeaf Pest,404.98
+WO00012,Harborview Flats,002,HVAC,Medium,Completed,2026-05-27,2026-06-12,Summit Handyman,213.88
+WO00013,Sunset Ridge,008,HVAC,Medium,Completed,2026-03-19,2026-04-01,Apex Mechanical,463.31
+WO00014,Harborview Flats,048,Turnover,Medium,Completed,2026-04-30,2026-05-02,BlueLine Plumbing,562.13
+WO00015,Cedar Commons,032,Electrical,Medium,Completed,2026-03-10,2026-03-18,BlueLine Plumbing,260.73
+WO00016,Willow Park,064,Electrical,Medium,Completed,2026-03-26,2026-03-27,Volt Electric,328.17
+WO00017,Willow Park,028,Plumbing,High,Completed,2026-06-30,2026-07-07,BlueLine Plumbing,183.32
+WO00018,Cedar Commons,023,Plumbing,Medium,Completed,2026-05-31,2026-06-17,BlueLine Plumbing,42.0
+WO00019,Maple Court,032,Plumbing,Medium,Completed,2026-04-22,2026-05-12,Apex Mechanical,275.39
+WO00020,Riverbend Lofts,009,HVAC,Medium,In Progress,2026-06-28,,In-House Maintenance,0.0
+WO00021,Willow Park,084,HVAC,Emergency,Completed,2026-03-06,2026-03-23,In-House Maintenance,440.17
+WO00022,Aspen Grove,001,HVAC,Medium,Completed,2026-03-21,2026-04-04,In-House Maintenance,282.39
+WO00023,Ironwood Residences,031,Turnover,Medium,Completed,2026-04-17,2026-04-28,BlueLine Plumbing,720.57
+WO00024,Maple Court,072,HVAC,Medium,Completed,2026-03-31,2026-04-15,GreenLeaf Pest,284.78
+WO00025,Stonebridge Villas,012,Plumbing,Medium,Completed,2026-03-25,2026-03-29,GreenLeaf Pest,139.48
+WO00026,Aspen Grove,036,Appliance,Medium,Completed,2026-05-27,2026-06-04,Volt Electric,310.27
+WO00027,Oakhaven Apartments,009,Turnover,Medium,Completed,2026-04-26,2026-05-14,In-House Maintenance,1103.16
+WO00028,Stonebridge Villas,044,Electrical,Medium,In Progress,2026-06-23,,BlueLine Plumbing,0.0
+WO00029,Cedar Commons,006,Plumbing,Medium,Completed,2026-04-13,2026-04-24,Summit Handyman,121.06
+WO00030,Riverbend Lofts,008,General,Low,Open,2026-05-02,,Summit Handyman,0.0
+WO00031,Willow Park,037,Electrical,Low,Open,2026-06-22,,BlueLine Plumbing,0.0
+WO00032,Willow Park,078,Electrical,High,Completed,2026-06-05,2026-06-08,Volt Electric,103.89
+WO00033,Riverbend Lofts,017,Turnover,Low,Completed,2026-04-01,2026-04-16,BlueLine Plumbing,1277.08
+WO00034,Riverbend Lofts,009,Plumbing,Medium,Completed,2026-03-09,2026-03-20,Apex Mechanical,263.82
+WO00035,Cedar Commons,051,General,Low,Completed,2026-03-11,2026-03-18,GreenLeaf Pest,81.53
+WO00036,Maple Court,023,HVAC,Emergency,Completed,2026-05-10,2026-05-30,GreenLeaf Pest,389.69
+WO00037,Birchwood Terrace,003,HVAC,Low,Completed,2026-04-16,2026-04-21,Summit Handyman,390.38
+WO00038,Aspen Grove,003,Turnover,Medium,Completed,2026-04-13,2026-04-18,BlueLine Plumbing,925.64
+WO00039,Oakhaven Apartments,012,Electrical,Medium,In Progress,2026-05-09,,BlueLine Plumbing,0.0
+WO00040,Cedar Commons,007,Turnover,Low,Completed,2026-04-05,2026-04-07,BlueLine Plumbing,1135.58
+WO00041,Ironwood Residences,051,General,Low,Completed,2026-06-19,2026-07-02,Summit Handyman,240.1
+WO00042,Willow Park,048,Electrical,Medium,Completed,2026-05-12,2026-05-17,Apex Mechanical,374.08
+WO00043,Cedar Commons,048,Pest,Medium,Completed,2026-06-12,2026-07-02,BlueLine Plumbing,116.81
+WO00044,Ironwood Residences,041,Turnover,Medium,Completed,2026-05-11,2026-05-23,Summit Handyman,906.2
+WO00045,Birchwood Terrace,054,Turnover,Low,Completed,2026-06-20,2026-06-29,BlueLine Plumbing,508.17
+WO00046,Cedar Commons,026,Turnover,Medium,Open,2026-05-31,,In-House Maintenance,0.0
+WO00047,Stonebridge Villas,048,Turnover,Medium,Open,2026-06-09,,Volt Electric,0.0
+WO00048,Willow Park,013,Electrical,Medium,Completed,2026-03-24,2026-04-10,In-House Maintenance,303.93
+WO00049,Oakhaven Apartments,017,Appliance,High,Completed,2026-04-01,2026-04-12,BlueLine Plumbing,188.15
+WO00050,Harborview Flats,009,HVAC,High,Open,2026-06-21,,Summit Handyman,0.0
+WO00051,Ironwood Residences,013,Appliance,Low,Open,2026-05-23,,In-House Maintenance,0.0
+WO00052,Birchwood Terrace,035,Pest,Low,Completed,2026-04-03,2026-04-18,BlueLine Plumbing,84.25
+WO00053,Harborview Flats,043,Plumbing,Medium,Open,2026-03-28,,Summit Handyman,0.0
+WO00054,Oakhaven Apartments,043,Electrical,Low,Completed,2026-04-14,2026-05-01,Volt Electric,308.39
+WO00055,Sunset Ridge,026,General,Medium,Completed,2026-06-23,2026-06-27,Volt Electric,42.0
+WO00056,Meadowlark Place,004,Electrical,Medium,Open,2026-04-04,,Apex Mechanical,0.0
+WO00057,Willow Park,074,HVAC,Low,In Progress,2026-06-22,,Volt Electric,0.0
+WO00058,Birchwood Terrace,015,HVAC,Medium,In Progress,2026-06-04,,GreenLeaf Pest,0.0
+WO00059,Aspen Grove,002,Appliance,Medium,Completed,2026-05-26,2026-06-02,In-House Maintenance,237.09
+WO00060,Stonebridge Villas,018,Plumbing,High,Completed,2026-06-24,2026-07-09,BlueLine Plumbing,193.46
+WO00061,Harborview Flats,031,General,Medium,Completed,2026-03-23,2026-03-30,BlueLine Plumbing,90.67
+WO00062,Sunset Ridge,022,General,Medium,In Progress,2026-03-07,,BlueLine Plumbing,0.0
+WO00063,Stonebridge Villas,042,Turnover,Low,Completed,2026-05-11,2026-05-31,Summit Handyman,1090.7
+WO00064,Oakhaven Apartments,053,Appliance,Medium,Completed,2026-03-27,2026-03-29,Volt Electric,207.52
+WO00065,Willow Park,007,Appliance,Medium,In Progress,2026-05-20,,Apex Mechanical,0.0
+WO00066,Riverbend Lofts,027,Pest,Low,Open,2026-06-30,,GreenLeaf Pest,0.0
+WO00067,Birchwood Terrace,032,HVAC,Medium,Completed,2026-06-19,2026-07-03,In-House Maintenance,403.05
+WO00068,Aspen Grove,028,Appliance,Medium,Completed,2026-04-27,2026-04-29,Apex Mechanical,275.12
+WO00069,Maple Court,050,Turnover,Low,Completed,2026-04-10,2026-04-20,GreenLeaf Pest,1402.86
+WO00070,Willow Park,029,Appliance,Medium,Completed,2026-03-19,2026-04-03,Apex Mechanical,184.82
+WO00071,Oakhaven Apartments,071,Electrical,Emergency,Completed,2026-04-15,2026-04-25,BlueLine Plumbing,210.69
+WO00072,Birchwood Terrace,001,HVAC,Medium,In Progress,2026-05-26,,In-House Maintenance,0.0
+WO00073,Riverbend Lofts,011,General,Low,Completed,2026-03-15,2026-03-22,Volt Electric,163.41
+WO00074,Aspen Grove,054,Turnover,Low,Completed,2026-04-13,2026-04-16,In-House Maintenance,1291.67
+WO00075,Oakhaven Apartments,037,HVAC,Medium,Open,2026-06-21,,In-House Maintenance,0.0
+WO00076,Birchwood Terrace,024,Turnover,Low,Completed,2026-06-16,2026-06-30,BlueLine Plumbing,1081.54
+WO00077,Meadowlark Place,026,Pest,Medium,Open,2026-06-19,,GreenLeaf Pest,0.0
+WO00078,Harborview Flats,033,Plumbing,Medium,Completed,2026-04-02,2026-04-07,Apex Mechanical,97.72
+WO00079,Birchwood Terrace,046,HVAC,Low,Open,2026-06-17,,BlueLine Plumbing,0.0
+WO00080,Oakhaven Apartments,068,HVAC,Low,Completed,2026-04-09,2026-04-19,Apex Mechanical,461.47
+WO00081,Cedar Commons,026,HVAC,Low,Completed,2026-04-06,2026-04-19,Volt Electric,171.82
+WO00082,Stonebridge Villas,011,Pest,Medium,Completed,2026-03-05,2026-03-20,Apex Mechanical,102.76
+WO00083,Birchwood Terrace,022,HVAC,Medium,Completed,2026-03-26,2026-04-13,GreenLeaf Pest,311.45
+WO00084,Maple Court,067,Turnover,Medium,Completed,2026-03-23,2026-04-01,BlueLine Plumbing,357.23
+WO00085,Sunset Ridge,040,Pest,High,Completed,2026-03-05,2026-03-09,BlueLine Plumbing,113.0
+WO00086,Willow Park,021,HVAC,High,Completed,2026-06-08,2026-06-25,Apex Mechanical,396.68
+WO00087,Cedar Commons,011,Appliance,Emergency,Completed,2026-03-11,2026-03-17,Volt Electric,64.52
+WO00088,Willow Park,002,Appliance,Medium,Completed,2026-03-24,2026-04-03,Summit Handyman,93.67
+WO00089,Cedar Commons,032,Pest,Medium,In Progress,2026-05-01,,In-House Maintenance,0.0
+WO00090,Stonebridge Villas,020,HVAC,High,Completed,2026-05-01,2026-05-10,GreenLeaf Pest,404.87
+WO00091,Oakhaven Apartments,039,Turnover,Medium,Completed,2026-06-30,2026-07-01,In-House Maintenance,509.88
+WO00092,Sunset Ridge,017,HVAC,Emergency,Completed,2026-03-03,2026-03-08,BlueLine Plumbing,274.24
+WO00093,Birchwood Terrace,038,HVAC,Medium,Open,2026-06-23,,BlueLine Plumbing,0.0
+WO00094,Meadowlark Place,015,HVAC,Medium,Completed,2026-04-21,2026-04-27,Summit Handyman,389.47
+WO00095,Harborview Flats,005,Turnover,Low,Completed,2026-04-04,2026-04-05,BlueLine Plumbing,1520.24
+WO00096,Aspen Grove,002,Pest,Medium,Completed,2026-03-10,2026-03-15,BlueLine Plumbing,133.64
+WO00097,Willow Park,025,Pest,High,In Progress,2026-05-08,,GreenLeaf Pest,0.0
+WO00098,Cedar Commons,058,Electrical,Medium,Completed,2026-03-14,2026-03-26,Summit Handyman,403.28
+WO00099,Ironwood Residences,060,Turnover,Medium,In Progress,2026-04-25,,In-House Maintenance,0.0
+WO00100,Ironwood Residences,004,General,Medium,Completed,2026-03-10,2026-03-24,Apex Mechanical,56.11
+WO00101,Willow Park,076,Plumbing,High,Completed,2026-03-27,2026-04-07,Apex Mechanical,160.28
+WO00102,Oakhaven Apartments,070,General,Medium,In Progress,2026-04-23,,Volt Electric,0.0
+WO00103,Willow Park,037,Pest,Low,Completed,2026-04-29,2026-05-13,GreenLeaf Pest,156.04
+WO00104,Ironwood Residences,021,Plumbing,Emergency,Completed,2026-06-02,2026-06-16,Summit Handyman,178.73
+WO00105,Willow Park,085,General,Medium,Completed,2026-04-02,2026-04-20,In-House Maintenance,189.6
+WO00106,Aspen Grove,007,Pest,Medium,Completed,2026-05-15,2026-05-25,Summit Handyman,88.74
+WO00107,Willow Park,027,Plumbing,Medium,Completed,2026-05-27,2026-06-15,GreenLeaf Pest,227.37
+WO00108,Stonebridge Villas,009,HVAC,High,Completed,2026-04-04,2026-04-08,In-House Maintenance,645.81
+WO00109,Cedar Commons,043,Pest,Medium,In Progress,2026-05-23,,GreenLeaf Pest,0.0
+WO00110,Aspen Grove,029,Appliance,Medium,Completed,2026-06-12,2026-06-15,Summit Handyman,354.46
+WO00111,Harborview Flats,047,Appliance,Medium,Completed,2026-06-25,2026-07-03,Volt Electric,149.58
+WO00112,Oakhaven Apartments,055,Electrical,High,Open,2026-06-12,,GreenLeaf Pest,0.0
+WO00113,Maple Court,004,Pest,High,Completed,2026-05-05,2026-05-13,In-House Maintenance,97.33
+WO00114,Willow Park,061,HVAC,Medium,Completed,2026-04-14,2026-04-16,GreenLeaf Pest,687.4
+WO00115,Ironwood Residences,010,Turnover,Low,Completed,2026-03-29,2026-04-12,GreenLeaf Pest,1153.39
+WO00116,Riverbend Lofts,025,Electrical,Low,Completed,2026-04-30,2026-05-13,BlueLine Plumbing,169.46
+WO00117,Harborview Flats,036,Appliance,Low,Completed,2026-06-08,2026-06-28,BlueLine Plumbing,203.18
+WO00118,Oakhaven Apartments,042,Turnover,Medium,In Progress,2026-06-18,,Volt Electric,0.0
+WO00119,Oakhaven Apartments,019,HVAC,Low,Completed,2026-05-20,2026-05-27,Apex Mechanical,432.99
+WO00120,Aspen Grove,003,General,Medium,Completed,2026-03-13,2026-03-23,Volt Electric,42.0
+WO00121,Willow Park,078,Appliance,Emergency,Completed,2026-06-15,2026-07-02,In-House Maintenance,226.41
+WO00122,Ironwood Residences,019,Electrical,Low,Completed,2026-04-28,2026-05-05,Apex Mechanical,104.03
+WO00123,Harborview Flats,006,Pest,Low,Open,2026-04-13,,Volt Electric,0.0
+WO00124,Ironwood Residences,016,HVAC,Emergency,Completed,2026-05-18,2026-06-01,Apex Mechanical,273.89
+WO00125,Willow Park,005,Turnover,Low,Completed,2026-05-28,2026-05-31,GreenLeaf Pest,970.6
+WO00126,Sunset Ridge,021,Appliance,Emergency,Completed,2026-04-14,2026-05-01,In-House Maintenance,362.06
+WO00127,Willow Park,068,Turnover,High,Completed,2026-03-28,2026-04-04,Summit Handyman,543.22
+WO00128,Willow Park,037,Plumbing,Medium,Completed,2026-03-31,2026-04-11,BlueLine Plumbing,196.0
+WO00129,Sunset Ridge,015,Pest,Medium,Open,2026-06-18,,BlueLine Plumbing,0.0
+WO00130,Cedar Commons,034,Plumbing,Medium,Completed,2026-03-30,2026-04-15,Volt Electric,148.75
+WO00131,Cedar Commons,021,Plumbing,Low,Completed,2026-03-27,2026-04-05,Apex Mechanical,110.48
+WO00132,Ironwood Residences,024,Pest,High,Completed,2026-04-21,2026-05-03,Apex Mechanical,143.75
+WO00133,Meadowlark Place,038,Electrical,High,Completed,2026-03-19,2026-03-25,Summit Handyman,308.61
+WO00134,Stonebridge Villas,047,Appliance,High,Completed,2026-05-12,2026-05-13,GreenLeaf Pest,227.24
+WO00135,Willow Park,084,Pest,Medium,Completed,2026-03-22,2026-03-27,GreenLeaf Pest,98.61
+WO00136,Maple Court,040,General,Medium,Completed,2026-04-13,2026-04-14,GreenLeaf Pest,42.0
+WO00137,Harborview Flats,008,Turnover,Low,Completed,2026-06-18,2026-06-26,Volt Electric,1085.04
+WO00138,Aspen Grove,041,General,Low,Open,2026-05-02,,Apex Mechanical,0.0
+WO00139,Aspen Grove,054,Appliance,Medium,Completed,2026-05-27,2026-06-06,Summit Handyman,88.54
+WO00140,Aspen Grove,058,HVAC,Medium,Completed,2026-03-19,2026-04-04,Volt Electric,206.87
+WO00141,Willow Park,025,General,Low,Completed,2026-03-04,2026-03-06,Apex Mechanical,74.42
+WO00142,Oakhaven Apartments,054,General,Medium,Open,2026-06-05,,Apex Mechanical,0.0
+WO00143,Cedar Commons,028,Turnover,High,Completed,2026-04-07,2026-04-15,BlueLine Plumbing,906.62
+WO00144,Cedar Commons,022,Turnover,Low,In Progress,2026-06-21,,In-House Maintenance,0.0
+WO00145,Sunset Ridge,035,Pest,High,Completed,2026-03-05,2026-03-14,In-House Maintenance,150.69
+WO00146,Oakhaven Apartments,017,General,Medium,Completed,2026-03-20,2026-03-25,Apex Mechanical,111.19
+WO00147,Riverbend Lofts,018,Electrical,Medium,Completed,2026-06-05,2026-06-24,BlueLine Plumbing,418.03
+WO00148,Meadowlark Place,034,Electrical,Emergency,Completed,2026-05-21,2026-06-09,Volt Electric,79.71
+WO00149,Oakhaven Apartments,062,Pest,Low,Completed,2026-05-23,2026-05-26,In-House Maintenance,184.11
+WO00150,Harborview Flats,024,Turnover,Medium,Completed,2026-06-22,2026-07-06,GreenLeaf Pest,1289.84
+WO00151,Stonebridge Villas,031,General,Medium,Open,2026-06-14,,GreenLeaf Pest,0.0
+WO00152,Cedar Commons,015,Pest,Low,Completed,2026-04-15,2026-04-21,In-House Maintenance,118.13
+WO00153,Aspen Grove,033,Electrical,Low,Completed,2026-06-09,2026-06-15,GreenLeaf Pest,262.38
+WO00154,Birchwood Terrace,006,Appliance,Low,Completed,2026-05-29,2026-05-31,Summit Handyman,210.12
+WO00155,Birchwood Terrace,050,HVAC,Low,Completed,2026-04-26,2026-05-01,Volt Electric,637.43
+WO00156,Cedar Commons,049,Electrical,High,Completed,2026-05-29,2026-06-14,BlueLine Plumbing,108.49
+WO00157,Maple Court,040,Appliance,Low,Completed,2026-04-25,2026-05-12,GreenLeaf Pest,99.19
+WO00158,Maple Court,037,Pest,Low,Completed,2026-03-18,2026-03-28,Apex Mechanical,138.56
+WO00159,Willow Park,005,General,Low,Completed,2026-05-13,2026-05-23,Apex Mechanical,127.35
+WO00160,Oakhaven Apartments,082,General,High,Completed,2026-03-25,2026-04-08,Apex Mechanical,42.0
+WO00161,Birchwood Terrace,054,Electrical,Medium,Completed,2026-03-20,2026-03-26,Apex Mechanical,262.4
+WO00162,Ironwood Residences,055,Electrical,High,Open,2026-06-15,,Volt Electric,0.0
+WO00163,Oakhaven Apartments,033,Electrical,Medium,In Progress,2026-04-03,,Apex Mechanical,0.0
+WO00164,Stonebridge Villas,013,Pest,High,Completed,2026-06-01,2026-06-09,Summit Handyman,109.1
+WO00165,Riverbend Lofts,009,Electrical,High,Open,2026-06-02,,GreenLeaf Pest,0.0
+WO00166,Willow Park,012,Electrical,Low,Completed,2026-03-21,2026-03-27,Volt Electric,178.49
+WO00167,Meadowlark Place,025,Plumbing,Low,In Progress,2026-05-20,,Volt Electric,0.0
+WO00168,Oakhaven Apartments,087,Plumbing,Medium,Completed,2026-06-07,2026-06-14,Apex Mechanical,280.11
+WO00169,Maple Court,068,Appliance,Medium,Completed,2026-04-02,2026-04-08,Summit Handyman,180.9
+WO00170,Harborview Flats,024,General,Medium,Completed,2026-03-26,2026-03-30,BlueLine Plumbing,113.27
+WO00171,Oakhaven Apartments,041,Turnover,High,Completed,2026-04-15,2026-04-20,Summit Handyman,1617.2
+WO00172,Cedar Commons,009,HVAC,Medium,Completed,2026-06-25,2026-06-26,BlueLine Plumbing,328.96
+WO00173,Birchwood Terrace,043,Pest,Low,Completed,2026-04-25,2026-04-27,GreenLeaf Pest,106.09
+WO00174,Cedar Commons,011,Electrical,Low,Completed,2026-03-18,2026-03-19,Volt Electric,131.18
+WO00175,Harborview Flats,007,Appliance,Medium,Open,2026-06-05,,GreenLeaf Pest,0.0
+WO00176,Stonebridge Villas,038,Turnover,High,Completed,2026-03-19,2026-03-30,Apex Mechanical,1013.17
+WO00177,Willow Park,073,General,Medium,Completed,2026-05-29,2026-06-09,Summit Handyman,95.24
+WO00178,Maple Court,018,General,Medium,Completed,2026-04-14,2026-04-15,Summit Handyman,115.86
+WO00179,Meadowlark Place,034,Appliance,Low,Open,2026-05-10,,GreenLeaf Pest,0.0
+WO00180,Oakhaven Apartments,019,Turnover,Emergency,Completed,2026-03-13,2026-03-17,BlueLine Plumbing,1489.56
+WO00181,Maple Court,020,Pest,Medium,Completed,2026-06-14,2026-06-28,Summit Handyman,127.09
+WO00182,Stonebridge Villas,015,Turnover,Low,Completed,2026-03-08,2026-03-17,Volt Electric,1157.54
+WO00183,Stonebridge Villas,034,Pest,Low,Completed,2026-04-23,2026-05-02,BlueLine Plumbing,136.84
+WO00184,Stonebridge Villas,014,Appliance,Medium,Completed,2026-03-25,2026-04-04,Volt Electric,47.96
+WO00185,Meadowlark Place,023,General,Medium,Open,2026-06-06,,Summit Handyman,0.0
+WO00186,Stonebridge Villas,024,Plumbing,Medium,Completed,2026-04-05,2026-04-16,Volt Electric,221.7
+WO00187,Ironwood Residences,014,Appliance,Medium,Completed,2026-05-29,2026-06-04,Volt Electric,261.63
+WO00188,Oakhaven Apartments,018,HVAC,High,Completed,2026-03-22,2026-04-07,Apex Mechanical,428.69
+WO00189,Harborview Flats,030,Plumbing,Low,Open,2026-04-10,,Volt Electric,0.0
+WO00190,Sunset Ridge,015,Pest,High,Completed,2026-06-16,2026-06-29,BlueLine Plumbing,88.49
+WO00191,Oakhaven Apartments,093,Appliance,Low,Open,2026-06-30,,BlueLine Plumbing,0.0
+WO00192,Willow Park,051,Pest,High,Completed,2026-05-17,2026-06-01,In-House Maintenance,239.61
+WO00193,Meadowlark Place,026,Plumbing,Medium,Completed,2026-03-09,2026-03-21,BlueLine Plumbing,202.55
+WO00194,Birchwood Terrace,050,Appliance,High,Completed,2026-05-27,2026-06-02,In-House Maintenance,184.48
+WO00195,Willow Park,026,General,Medium,Open,2026-05-26,,GreenLeaf Pest,0.0
+WO00196,Stonebridge Villas,048,Appliance,Medium,Completed,2026-04-08,2026-04-24,BlueLine Plumbing,133.55
+WO00197,Ironwood Residences,035,General,Low,Completed,2026-03-16,2026-03-24,Summit Handyman,117.68
+WO00198,Oakhaven Apartments,056,Electrical,High,Completed,2026-05-21,2026-05-24,Summit Handyman,121.17
+WO00199,Aspen Grove,011,Electrical,Medium,Completed,2026-03-04,2026-03-10,Summit Handyman,42.0
+WO00200,Willow Park,052,HVAC,Medium,In Progress,2026-05-04,,Summit Handyman,0.0
+WO00201,Maple Court,030,General,High,In Progress,2026-05-27,,Volt Electric,0.0
+WO00202,Harborview Flats,041,Appliance,Low,Completed,2026-06-16,2026-06-21,Volt Electric,247.61
+WO00203,Oakhaven Apartments,080,Electrical,High,Completed,2026-03-18,2026-03-25,Apex Mechanical,351.26
+WO00204,Meadowlark Place,025,General,Medium,Completed,2026-03-12,2026-03-27,BlueLine Plumbing,84.99
+WO00205,Willow Park,057,Turnover,Low,In Progress,2026-06-08,,Volt Electric,0.0
+WO00206,Maple Court,053,Electrical,High,Completed,2026-03-19,2026-04-01,Volt Electric,220.89
+WO00207,Birchwood Terrace,001,General,Medium,Open,2026-06-12,,Volt Electric,0.0
+WO00208,Cedar Commons,051,Electrical,Emergency,Completed,2026-06-24,2026-07-06,Summit Handyman,155.39
+WO00209,Aspen Grove,027,General,Medium,Completed,2026-03-26,2026-04-09,BlueLine Plumbing,83.56
+WO00210,Oakhaven Apartments,068,General,Low,Completed,2026-06-02,2026-06-11,In-House Maintenance,49.27
+WO00211,Ironwood Residences,064,HVAC,Low,Completed,2026-04-11,2026-04-26,Apex Mechanical,164.98
+WO00212,Aspen Grove,030,Appliance,Low,Completed,2026-06-01,2026-06-02,BlueLine Plumbing,82.64
+WO00213,Cedar Commons,021,Plumbing,Low,Completed,2026-04-23,2026-05-06,Summit Handyman,90.9
+WO00214,Harborview Flats,023,Turnover,Medium,Completed,2026-04-22,2026-05-08,Summit Handyman,935.52
+WO00215,Willow Park,018,Turnover,Low,Completed,2026-03-30,2026-04-04,BlueLine Plumbing,939.62
+WO00216,Maple Court,064,HVAC,Low,Open,2026-05-22,,Volt Electric,0.0
+WO00217,Willow Park,061,Electrical,Medium,Completed,2026-03-20,2026-03-27,BlueLine Plumbing,247.48
+WO00218,Cedar Commons,033,HVAC,Medium,Completed,2026-03-03,2026-03-11,GreenLeaf Pest,493.41
+WO00219,Birchwood Terrace,028,HVAC,Low,Completed,2026-03-30,2026-04-13,Summit Handyman,230.44
+WO00220,Maple Court,008,General,Low,Completed,2026-03-25,2026-04-03,Apex Mechanical,194.01
+WO00221,Birchwood Terrace,018,Turnover,Low,Completed,2026-04-04,2026-04-20,Volt Electric,719.91
+WO00222,Sunset Ridge,016,General,High,In Progress,2026-04-20,,In-House Maintenance,0.0
+WO00223,Meadowlark Place,017,General,Low,Completed,2026-03-28,2026-04-06,GreenLeaf Pest,221.74
+WO00224,Oakhaven Apartments,012,Plumbing,Low,In Progress,2026-06-30,,BlueLine Plumbing,0.0
+WO00225,Maple Court,062,Electrical,High,Completed,2026-03-15,2026-03-18,BlueLine Plumbing,42.0
+WO00226,Harborview Flats,041,HVAC,Low,Open,2026-04-25,,Volt Electric,0.0
+WO00227,Meadowlark Place,019,Pest,Low,Completed,2026-04-15,2026-05-05,Volt Electric,147.5
+WO00228,Aspen Grove,038,Pest,Low,Open,2026-06-16,,In-House Maintenance,0.0
+WO00229,Birchwood Terrace,040,Appliance,Low,Completed,2026-06-24,2026-07-03,Apex Mechanical,100.46
+WO00230,Stonebridge Villas,044,Turnover,Medium,Completed,2026-03-05,2026-03-18,BlueLine Plumbing,961.96
+WO00231,Birchwood Terrace,004,Electrical,Medium,Completed,2026-05-26,2026-06-07,In-House Maintenance,350.04
+WO00232,Birchwood Terrace,021,HVAC,Low,Open,2026-05-05,,Apex Mechanical,0.0
+WO00233,Oakhaven Apartments,003,General,High,Completed,2026-05-18,2026-05-20,GreenLeaf Pest,141.84
+WO00234,Stonebridge Villas,006,Turnover,Low,Completed,2026-05-12,2026-05-13,Summit Handyman,620.67
+WO00235,Willow Park,037,Electrical,Medium,In Progress,2026-06-16,,In-House Maintenance,0.0
+WO00236,Riverbend Lofts,003,Pest,Low,Completed,2026-06-03,2026-06-15,In-House Maintenance,186.08
+WO00237,Aspen Grove,018,Pest,Low,Completed,2026-03-23,2026-04-04,GreenLeaf Pest,62.94
+WO00238,Birchwood Terrace,039,Pest,High,Open,2026-05-11,,GreenLeaf Pest,0.0
+WO00239,Maple Court,028,Turnover,Low,Completed,2026-03-25,2026-04-10,Summit Handyman,1407.89
+WO00240,Ironwood Residences,024,Appliance,Medium,Completed,2026-05-25,2026-06-06,Apex Mechanical,163.25
+WO00241,Maple Court,038,Appliance,Emergency,Completed,2026-03-29,2026-04-17,In-House Maintenance,42.0
+WO00242,Maple Court,060,General,High,Completed,2026-06-04,2026-06-15,Apex Mechanical,42.0
+WO00243,Maple Court,048,Plumbing,Medium,Completed,2026-05-21,2026-06-07,GreenLeaf Pest,76.76
+WO00244,Maple Court,032,Pest,High,Completed,2026-03-11,2026-03-27,Volt Electric,112.77
+WO00245,Stonebridge Villas,009,Turnover,Low,Open,2026-06-24,,GreenLeaf Pest,0.0
+WO00246,Oakhaven Apartments,048,Plumbing,Medium,Completed,2026-05-11,2026-05-18,Apex Mechanical,140.2
+WO00247,Cedar Commons,045,Turnover,Low,Completed,2026-03-04,2026-03-17,GreenLeaf Pest,615.31
+WO00248,Birchwood Terrace,019,Pest,Low,Completed,2026-05-26,2026-06-10,GreenLeaf Pest,42.0
+WO00249,Oakhaven Apartments,073,Pest,Low,Completed,2026-04-16,2026-05-04,Apex Mechanical,180.94
+WO00250,Harborview Flats,026,HVAC,Medium,Open,2026-06-28,,GreenLeaf Pest,0.0
+WO00251,Harborview Flats,020,Plumbing,High,Completed,2026-05-21,2026-05-23,Summit Handyman,68.51
+WO00252,Birchwood Terrace,052,Appliance,Medium,Completed,2026-03-15,2026-03-30,Apex Mechanical,42.0
+WO00253,Oakhaven Apartments,034,General,Medium,Completed,2026-06-17,2026-07-07,Summit Handyman,105.36
+WO00254,Birchwood Terrace,004,HVAC,Low,Completed,2026-04-26,2026-05-02,Volt Electric,347.75
+WO00255,Willow Park,036,HVAC,High,Completed,2026-03-04,2026-03-06,Summit Handyman,352.75
+WO00256,Sunset Ridge,010,Turnover,Emergency,Open,2026-05-07,,GreenLeaf Pest,0.0
+WO00257,Oakhaven Apartments,073,HVAC,Low,Completed,2026-05-16,2026-05-26,Apex Mechanical,421.55
+WO00258,Willow Park,026,Appliance,Medium,Completed,2026-05-09,2026-05-12,In-House Maintenance,93.88
+WO00259,Cedar Commons,037,Plumbing,Low,In Progress,2026-06-30,,BlueLine Plumbing,0.0
+WO00260,Maple Court,053,Electrical,Medium,Completed,2026-05-13,2026-05-21,Apex Mechanical,202.62
+WO00261,Maple Court,054,Appliance,Low,Completed,2026-05-29,2026-06-01,In-House Maintenance,269.12
+WO00262,Oakhaven Apartments,062,Turnover,Medium,Completed,2026-05-06,2026-05-17,Apex Mechanical,901.89
+WO00263,Aspen Grove,034,Pest,Low,In Progress,2026-04-13,,Apex Mechanical,0.0
+WO00264,Maple Court,013,Turnover,Medium,Completed,2026-05-19,2026-05-28,In-House Maintenance,527.84
+WO00265,Ironwood Residences,033,Electrical,High,Completed,2026-04-21,2026-04-27,Apex Mechanical,278.64
+WO00266,Willow Park,045,Electrical,Medium,In Progress,2026-06-15,,In-House Maintenance,0.0
+WO00267,Aspen Grove,021,Pest,High,Completed,2026-05-12,2026-05-20,In-House Maintenance,210.11
+WO00268,Maple Court,006,Pest,Emergency,Completed,2026-06-09,2026-06-29,In-House Maintenance,100.93
+WO00269,Oakhaven Apartments,062,Electrical,High,Completed,2026-03-29,2026-04-01,In-House Maintenance,68.14
+WO00270,Ironwood Residences,005,Appliance,Medium,In Progress,2026-04-18,,In-House Maintenance,0.0
+WO00271,Birchwood Terrace,004,Turnover,Low,Completed,2026-04-21,2026-05-08,Apex Mechanical,675.66
+WO00272,Maple Court,019,Appliance,Low,Completed,2026-04-01,2026-04-16,Volt Electric,42.0
+WO00273,Harborview Flats,001,Plumbing,Low,Completed,2026-03-03,2026-03-11,Volt Electric,171.74
+WO00274,Ironwood Residences,022,HVAC,Low,Completed,2026-05-27,2026-06-09,GreenLeaf Pest,462.46
+WO00275,Ironwood Residences,035,Plumbing,Low,Completed,2026-03-12,2026-03-28,GreenLeaf Pest,185.05
+WO00276,Oakhaven Apartments,026,Turnover,Low,In Progress,2026-05-20,,Apex Mechanical,0.0
+WO00277,Meadowlark Place,014,Appliance,Medium,Completed,2026-04-21,2026-05-07,Volt Electric,42.0
+WO00278,Willow Park,025,Electrical,Medium,In Progress,2026-05-19,,BlueLine Plumbing,0.0
+WO00279,Willow Park,019,Turnover,High,Completed,2026-05-21,2026-06-07,BlueLine Plumbing,738.22
+WO00280,Sunset Ridge,009,Plumbing,Medium,Completed,2026-04-01,2026-04-16,Volt Electric,42.0
+WO00281,Maple Court,071,Electrical,Medium,In Progress,2026-04-01,,GreenLeaf Pest,0.0
+WO00282,Ironwood Residences,042,Electrical,High,Completed,2026-05-11,2026-05-12,Apex Mechanical,448.84
+WO00283,Ironwood Residences,012,Plumbing,Emergency,Completed,2026-05-04,2026-05-22,Volt Electric,90.99
+WO00284,Ironwood Residences,047,Plumbing,Low,Open,2026-03-23,,GreenLeaf Pest,0.0
+WO00285,Ironwood Residences,001,Plumbing,Low,Completed,2026-04-13,2026-04-17,BlueLine Plumbing,80.93
+WO00286,Oakhaven Apartments,066,Pest,High,Completed,2026-03-26,2026-04-09,BlueLine Plumbing,169.69
+WO00287,Ironwood Residences,035,Plumbing,Low,Completed,2026-03-29,2026-04-04,In-House Maintenance,181.67
+WO00288,Meadowlark Place,034,Appliance,Medium,Completed,2026-03-23,2026-04-12,GreenLeaf Pest,181.92
+WO00289,Willow Park,031,Electrical,Medium,Completed,2026-05-24,2026-06-04,Summit Handyman,347.7
+WO00290,Harborview Flats,041,HVAC,Medium,Completed,2026-04-03,2026-04-06,GreenLeaf Pest,356.72
+WO00291,Ironwood Residences,019,HVAC,High,Completed,2026-06-11,2026-06-14,Summit Handyman,168.87
+WO00292,Birchwood Terrace,033,Electrical,Medium,Completed,2026-04-07,2026-04-22,Apex Mechanical,145.32
+WO00293,Meadowlark Place,010,Appliance,Medium,In Progress,2026-06-13,,Apex Mechanical,0.0
+WO00294,Aspen Grove,009,Turnover,Emergency,Completed,2026-03-11,2026-03-24,In-House Maintenance,1163.04
+WO00295,Oakhaven Apartments,034,General,Medium,In Progress,2026-06-29,,Volt Electric,0.0
+WO00296,Stonebridge Villas,032,Plumbing,High,Completed,2026-05-04,2026-05-09,Apex Mechanical,73.26
+WO00297,Meadowlark Place,026,Electrical,Medium,Open,2026-03-25,,BlueLine Plumbing,0.0
+WO00298,Sunset Ridge,002,Electrical,Medium,Completed,2026-05-19,2026-05-20,GreenLeaf Pest,157.27
+WO00299,Aspen Grove,050,Pest,Medium,Completed,2026-03-08,2026-03-27,Apex Mechanical,92.91
+WO00300,Stonebridge Villas,002,Appliance,Medium,Completed,2026-06-07,2026-06-08,Apex Mechanical,354.01
+WO00301,Meadowlark Place,008,Pest,High,Completed,2026-05-23,2026-06-09,In-House Maintenance,147.12
+WO00302,Maple Court,068,General,Low,Open,2026-06-19,,In-House Maintenance,0.0
+WO00303,Riverbend Lofts,005,Plumbing,Medium,In Progress,2026-06-15,,Summit Handyman,0.0
+WO00304,Willow Park,044,Plumbing,Medium,In Progress,2026-06-30,,Summit Handyman,0.0
+WO00305,Oakhaven Apartments,040,Pest,Medium,Completed,2026-06-13,2026-07-02,GreenLeaf Pest,138.61
+WO00306,Oakhaven Apartments,053,HVAC,Low,Open,2026-05-06,,In-House Maintenance,0.0
+WO00307,Cedar Commons,023,Plumbing,Medium,Completed,2026-03-21,2026-03-25,Volt Electric,139.27
+WO00308,Riverbend Lofts,022,Electrical,Low,Completed,2026-03-18,2026-04-05,Summit Handyman,377.92
+WO00309,Birchwood Terrace,044,General,Medium,Completed,2026-04-12,2026-04-23,Volt Electric,71.97
+WO00310,Birchwood Terrace,030,HVAC,Low,Completed,2026-03-05,2026-03-18,GreenLeaf Pest,291.64
+WO00311,Willow Park,009,Appliance,Low,Open,2026-05-07,,Summit Handyman,0.0
+WO00312,Sunset Ridge,021,HVAC,Low,Completed,2026-03-16,2026-04-02,Summit Handyman,434.27
+WO00313,Aspen Grove,045,Pest,High,Completed,2026-05-20,2026-05-25,GreenLeaf Pest,68.48
+WO00314,Maple Court,064,Electrical,Medium,In Progress,2026-06-19,,In-House Maintenance,0.0
+WO00315,Cedar Commons,028,Appliance,Medium,Open,2026-06-24,,In-House Maintenance,0.0
+WO00316,Harborview Flats,025,Electrical,Low,In Progress,2026-05-22,,Volt Electric,0.0
+WO00317,Birchwood Terrace,044,Electrical,Low,Open,2026-05-20,,Summit Handyman,0.0
+WO00318,Oakhaven Apartments,080,Plumbing,Low,Completed,2026-03-12,2026-03-31,In-House Maintenance,166.7
+WO00319,Maple Court,061,Pest,Low,Completed,2026-06-07,2026-06-21,GreenLeaf Pest,128.34
+WO00320,Ironwood Residences,017,Turnover,Emergency,In Progress,2026-06-30,,Apex Mechanical,0.0
+WO00321,Cedar Commons,064,Pest,Low,In Progress,2026-04-26,,Volt Electric,0.0
+WO00322,Maple Court,058,Turnover,Medium,Open,2026-06-22,,BlueLine Plumbing,0.0
+WO00323,Willow Park,044,Pest,Medium,Completed,2026-04-23,2026-04-24,Summit Handyman,158.79
+WO00324,Ironwood Residences,040,Plumbing,Medium,Completed,2026-05-12,2026-05-21,Apex Mechanical,202.09
+WO00325,Ironwood Residences,025,Turnover,Medium,Completed,2026-04-28,2026-05-09,Volt Electric,847.82
+WO00326,Ironwood Residences,003,Appliance,Low,Open,2026-05-10,,In-House Maintenance,0.0
+WO00327,Maple Court,061,Appliance,Medium,In Progress,2026-04-16,,In-House Maintenance,0.0
+WO00328,Stonebridge Villas,005,General,Medium,Completed,2026-05-08,2026-05-27,Apex Mechanical,69.01
+WO00329,Harborview Flats,027,General,Low,Completed,2026-04-17,2026-05-03,BlueLine Plumbing,150.32
+WO00330,Birchwood Terrace,017,Pest,Low,Completed,2026-06-09,2026-06-18,Summit Handyman,108.33
+WO00331,Ironwood Residences,012,HVAC,Medium,Completed,2026-05-03,2026-05-04,Apex Mechanical,177.18
+WO00332,Oakhaven Apartments,041,General,Medium,Completed,2026-03-28,2026-04-13,GreenLeaf Pest,108.67
+WO00333,Stonebridge Villas,043,Plumbing,High,Completed,2026-05-28,2026-06-01,Summit Handyman,114.67
+WO00334,Maple Court,012,HVAC,Low,In Progress,2026-05-18,,Apex Mechanical,0.0
+WO00335,Sunset Ridge,013,Pest,Low,Completed,2026-04-02,2026-04-05,Apex Mechanical,153.85
+WO00336,Oakhaven Apartments,026,HVAC,High,Completed,2026-03-09,2026-03-15,Summit Handyman,438.5
+WO00337,Aspen Grove,053,Turnover,Medium,Completed,2026-04-18,2026-04-23,GreenLeaf Pest,224.42
+WO00338,Oakhaven Apartments,057,Turnover,High,Completed,2026-03-04,2026-03-16,In-House Maintenance,1236.85
+WO00339,Oakhaven Apartments,048,Appliance,Medium,Completed,2026-05-17,2026-06-03,Apex Mechanical,224.4
+WO00340,Meadowlark Place,024,Plumbing,High,Completed,2026-03-07,2026-03-23,Apex Mechanical,98.44
+WO00341,Maple Court,057,HVAC,Medium,Completed,2026-04-27,2026-05-01,Apex Mechanical,110.33
+WO00342,Aspen Grove,023,Turnover,High,Completed,2026-04-21,2026-04-23,In-House Maintenance,543.36
+WO00343,Sunset Ridge,015,Turnover,Medium,In Progress,2026-03-31,,Summit Handyman,0.0
+WO00344,Oakhaven Apartments,011,General,Medium,In Progress,2026-04-18,,GreenLeaf Pest,0.0
+WO00345,Riverbend Lofts,023,Electrical,Emergency,Completed,2026-06-07,2026-06-27,Apex Mechanical,280.96
+WO00346,Oakhaven Apartments,057,Pest,High,In Progress,2026-05-24,,Apex Mechanical,0.0
+WO00347,Sunset Ridge,032,General,Low,Completed,2026-05-12,2026-05-31,GreenLeaf Pest,158.47
+WO00348,Cedar Commons,043,Plumbing,Low,In Progress,2026-04-10,,In-House Maintenance,0.0
+WO00349,Aspen Grove,050,Plumbing,Medium,Completed,2026-03-13,2026-03-31,Summit Handyman,137.67
+WO00350,Willow Park,031,Turnover,Low,In Progress,2026-05-01,,Apex Mechanical,0.0
+WO00351,Cedar Commons,059,Turnover,High,Completed,2026-04-01,2026-04-09,BlueLine Plumbing,879.32
+WO00352,Aspen Grove,021,Electrical,Medium,Completed,2026-04-18,2026-04-19,Apex Mechanical,248.49
+WO00353,Ironwood Residences,057,Plumbing,High,Completed,2026-05-20,2026-06-04,Summit Handyman,172.97
+WO00354,Ironwood Residences,041,Turnover,Medium,In Progress,2026-05-18,,Apex Mechanical,0.0
+WO00355,Meadowlark Place,025,Pest,Low,Completed,2026-06-01,2026-06-15,Summit Handyman,153.41
+WO00356,Ironwood Residences,064,Appliance,Emergency,Open,2026-03-18,,Apex Mechanical,0.0
+WO00357,Stonebridge Villas,052,Turnover,High,In Progress,2026-06-20,,Summit Handyman,0.0
+WO00358,Willow Park,010,Appliance,Low,Completed,2026-06-17,2026-07-01,In-House Maintenance,249.71
+WO00359,Birchwood Terrace,027,Plumbing,High,Completed,2026-04-16,2026-04-28,Volt Electric,156.15
+WO00360,Riverbend Lofts,016,Electrical,Medium,Completed,2026-04-09,2026-04-25,Volt Electric,336.22
+WO00361,Cedar Commons,008,Turnover,Low,Completed,2026-04-07,2026-04-24,GreenLeaf Pest,820.12
+WO00362,Maple Court,010,Plumbing,Medium,Open,2026-05-01,,Summit Handyman,0.0
+WO00363,Cedar Commons,006,HVAC,Medium,In Progress,2026-05-24,,Volt Electric,0.0
+WO00364,Aspen Grove,036,HVAC,Medium,Completed,2026-05-02,2026-05-06,Volt Electric,566.34
+WO00365,Maple Court,067,Appliance,Low,Completed,2026-03-27,2026-04-03,GreenLeaf Pest,329.98
+WO00366,Oakhaven Apartments,019,Appliance,Medium,Completed,2026-03-13,2026-03-31,Apex Mechanical,133.27
+WO00367,Oakhaven Apartments,026,HVAC,Low,Completed,2026-05-16,2026-05-20,Volt Electric,168.85
+WO00368,Riverbend Lofts,021,Turnover,Low,Completed,2026-03-17,2026-03-22,Summit Handyman,733.1
+WO00369,Willow Park,054,Pest,Low,Completed,2026-03-19,2026-04-01,Summit Handyman,120.41
+WO00370,Riverbend Lofts,004,General,Low,Completed,2026-05-08,2026-05-20,GreenLeaf Pest,116.22
+WO00371,Willow Park,037,Electrical,Medium,Completed,2026-04-14,2026-04-22,Summit Handyman,43.27
+WO00372,Oakhaven Apartments,003,Pest,Medium,Completed,2026-06-05,2026-06-09,GreenLeaf Pest,133.55
+WO00373,Aspen Grove,013,Appliance,Medium,Open,2026-06-12,,Apex Mechanical,0.0
+WO00374,Aspen Grove,017,Turnover,Low,In Progress,2026-05-28,,Volt Electric,0.0
+WO00375,Ironwood Residences,005,Electrical,Low,Open,2026-06-25,,Apex Mechanical,0.0
+WO00376,Maple Court,049,Pest,High,Completed,2026-04-21,2026-05-05,Summit Handyman,143.45
+WO00377,Aspen Grove,037,Plumbing,Low,Open,2026-05-08,,GreenLeaf Pest,0.0
+WO00378,Oakhaven Apartments,060,Plumbing,High,Completed,2026-03-24,2026-04-03,Apex Mechanical,108.93
+WO00379,Willow Park,088,General,Emergency,Completed,2026-05-26,2026-06-07,GreenLeaf Pest,105.07
+WO00380,Ironwood Residences,051,HVAC,High,Completed,2026-04-25,2026-05-07,Summit Handyman,364.67
+WO00381,Cedar Commons,012,HVAC,Low,Open,2026-05-26,,BlueLine Plumbing,0.0
+WO00382,Riverbend Lofts,031,Appliance,High,Open,2026-06-10,,Apex Mechanical,0.0
+WO00383,Stonebridge Villas,034,General,Low,Completed,2026-06-01,2026-06-06,GreenLeaf Pest,129.17
+WO00384,Oakhaven Apartments,033,HVAC,High,Completed,2026-04-15,2026-04-29,GreenLeaf Pest,404.94
+WO00385,Willow Park,002,Pest,Low,Completed,2026-06-13,2026-06-17,Apex Mechanical,113.89
+WO00386,Stonebridge Villas,021,General,Low,Completed,2026-03-30,2026-04-13,GreenLeaf Pest,210.18
+WO00387,Cedar Commons,046,Pest,Medium,Open,2026-06-25,,Volt Electric,0.0
+WO00388,Cedar Commons,037,Electrical,Low,Completed,2026-05-24,2026-05-28,BlueLine Plumbing,243.79
+WO00389,Aspen Grove,002,General,Low,In Progress,2026-06-22,,Summit Handyman,0.0
+WO00390,Riverbend Lofts,021,Electrical,Emergency,Open,2026-04-03,,GreenLeaf Pest,0.0
+WO00391,Meadowlark Place,044,Pest,Medium,Completed,2026-03-22,2026-03-26,Apex Mechanical,63.52
+WO00392,Birchwood Terrace,001,HVAC,Medium,Completed,2026-03-23,2026-04-04,Apex Mechanical,459.1
+WO00393,Harborview Flats,025,Electrical,Low,Completed,2026-03-08,2026-03-18,Summit Handyman,336.98
+WO00394,Oakhaven Apartments,015,Appliance,Medium,Completed,2026-03-14,2026-04-02,Summit Handyman,266.84
+WO00395,Willow Park,004,Turnover,Low,Completed,2026-05-01,2026-05-11,GreenLeaf Pest,1453.99
+WO00396,Willow Park,028,Appliance,Medium,In Progress,2026-06-23,,Apex Mechanical,0.0
+WO00397,Oakhaven Apartments,051,Electrical,Low,Completed,2026-03-31,2026-04-11,Apex Mechanical,492.36
+WO00398,Cedar Commons,032,Plumbing,Medium,In Progress,2026-05-08,,Summit Handyman,0.0
+WO00399,Aspen Grove,021,Turnover,High,Completed,2026-04-14,2026-05-02,Summit Handyman,1001.65
+WO00400,Oakhaven Apartments,095,Pest,Low,Completed,2026-06-16,2026-06-17,Volt Electric,175.07
+WO00401,Cedar Commons,023,Plumbing,High,Completed,2026-03-13,2026-04-02,BlueLine Plumbing,125.91
+WO00402,Oakhaven Apartments,032,Pest,Medium,Completed,2026-06-04,2026-06-20,Summit Handyman,152.82
+WO00403,Birchwood Terrace,031,Turnover,Medium,Completed,2026-05-06,2026-05-14,BlueLine Plumbing,820.78
+WO00404,Ironwood Residences,033,Appliance,Medium,Open,2026-05-01,,BlueLine Plumbing,0.0
+WO00405,Riverbend Lofts,002,Electrical,Medium,In Progress,2026-06-26,,Summit Handyman,0.0
+WO00406,Aspen Grove,053,Turnover,Medium,Completed,2026-05-13,2026-06-02,In-House Maintenance,914.11
+WO00407,Aspen Grove,040,Appliance,Low,Open,2026-06-28,,BlueLine Plumbing,0.0
+WO00408,Maple Court,032,Plumbing,Medium,Open,2026-06-18,,Summit Handyman,0.0
+WO00409,Ironwood Residences,012,Plumbing,Low,Open,2026-06-22,,BlueLine Plumbing,0.0
+WO00410,Sunset Ridge,029,Plumbing,Low,Completed,2026-04-29,2026-05-09,Apex Mechanical,191.75
+WO00411,Willow Park,033,General,Medium,In Progress,2026-06-23,,Summit Handyman,0.0
+WO00412,Oakhaven Apartments,073,Appliance,Medium,Completed,2026-06-23,2026-07-04,GreenLeaf Pest,232.97
+WO00413,Stonebridge Villas,022,HVAC,Medium,In Progress,2026-05-29,,In-House Maintenance,0.0
+WO00414,Ironwood Residences,040,Plumbing,Low,Completed,2026-03-10,2026-03-23,Volt Electric,281.35
+WO00415,Harborview Flats,025,HVAC,High,Completed,2026-03-08,2026-03-22,Apex Mechanical,409.5
+WO00416,Oakhaven Apartments,014,Turnover,Medium,Open,2026-06-03,,Apex Mechanical,0.0
+WO00417,Oakhaven Apartments,061,Plumbing,Low,Completed,2026-04-30,2026-05-05,Apex Mechanical,251.89
+WO00418,Cedar Commons,058,Plumbing,Medium,Completed,2026-05-27,2026-06-02,BlueLine Plumbing,132.38
+WO00419,Stonebridge Villas,045,HVAC,Low,Completed,2026-04-13,2026-04-17,Summit Handyman,490.94
+WO00420,Oakhaven Apartments,032,Pest,Medium,In Progress,2026-06-12,,Volt Electric,0.0
+WO00421,Aspen Grove,014,Pest,Medium,In Progress,2026-05-22,,BlueLine Plumbing,0.0
+WO00422,Cedar Commons,052,Turnover,Low,Completed,2026-05-28,2026-06-08,Apex Mechanical,1167.95
+WO00423,Birchwood Terrace,031,Plumbing,Medium,Completed,2026-06-12,2026-06-26,BlueLine Plumbing,81.53
+WO00424,Oakhaven Apartments,054,HVAC,Medium,Completed,2026-03-16,2026-04-05,Volt Electric,319.9
+WO00425,Willow Park,017,General,Medium,Completed,2026-05-14,2026-05-23,Summit Handyman,42.0
+WO00426,Stonebridge Villas,045,HVAC,Medium,Completed,2026-03-04,2026-03-24,Volt Electric,394.24
+WO00427,Ironwood Residences,017,Plumbing,Medium,Completed,2026-05-15,2026-06-01,Apex Mechanical,98.22
+WO00428,Maple Court,009,Plumbing,Medium,Completed,2026-04-05,2026-04-06,In-House Maintenance,139.54
+WO00429,Cedar Commons,026,Plumbing,Low,Completed,2026-04-27,2026-05-07,Volt Electric,207.13
+WO00430,Oakhaven Apartments,086,General,Emergency,Completed,2026-06-13,2026-06-22,Volt Electric,43.36
+WO00431,Sunset Ridge,011,Appliance,Medium,Completed,2026-05-27,2026-05-30,Apex Mechanical,253.87
+WO00432,Willow Park,041,Turnover,Low,Open,2026-06-27,,GreenLeaf Pest,0.0
+WO00433,Maple Court,026,Turnover,Medium,Open,2026-06-01,,GreenLeaf Pest,0.0
+WO00434,Oakhaven Apartments,073,Electrical,Medium,Completed,2026-05-08,2026-05-20,GreenLeaf Pest,84.13
+WO00435,Ironwood Residences,006,Plumbing,Medium,Completed,2026-06-12,2026-06-19,Volt Electric,291.99
+WO00436,Stonebridge Villas,022,Turnover,Low,Completed,2026-05-03,2026-05-05,Apex Mechanical,1150.36
+WO00437,Oakhaven Apartments,071,Electrical,Medium,Open,2026-06-20,,In-House Maintenance,0.0
+WO00438,Birchwood Terrace,018,Plumbing,Low,In Progress,2026-06-13,,BlueLine Plumbing,0.0
+WO00439,Aspen Grove,034,General,Low,Completed,2026-06-10,2026-06-27,BlueLine Plumbing,105.62
+WO00440,Willow Park,035,Electrical,Medium,Completed,2026-03-13,2026-04-01,Volt Electric,246.86
+WO00441,Birchwood Terrace,045,HVAC,Low,Open,2026-05-08,,Apex Mechanical,0.0
+WO00442,Cedar Commons,038,Pest,Low,Completed,2026-06-12,2026-06-29,Summit Handyman,68.95
+WO00443,Willow Park,051,Plumbing,Low,Completed,2026-06-04,2026-06-12,Summit Handyman,211.99
+WO00444,Meadowlark Place,039,HVAC,Low,Open,2026-06-08,,Summit Handyman,0.0
+WO00445,Sunset Ridge,011,Electrical,Medium,Completed,2026-03-03,2026-03-20,BlueLine Plumbing,324.32
+WO00446,Oakhaven Apartments,094,HVAC,Medium,In Progress,2026-05-21,,In-House Maintenance,0.0
+WO00447,Ironwood Residences,058,General,High,Open,2026-06-15,,Volt Electric,0.0
+WO00448,Willow Park,027,Pest,Medium,Completed,2026-06-06,2026-06-08,Summit Handyman,101.2
+WO00449,Willow Park,047,Pest,Low,In Progress,2026-06-26,,Summit Handyman,0.0
+WO00450,Cedar Commons,016,HVAC,Medium,Open,2026-06-29,,GreenLeaf Pest,0.0
+WO00451,Stonebridge Villas,022,General,High,Completed,2026-06-02,2026-06-10,GreenLeaf Pest,42.0
+WO00452,Willow Park,064,Electrical,Medium,Completed,2026-06-08,2026-06-10,BlueLine Plumbing,98.24
+WO00453,Riverbend Lofts,014,Appliance,Medium,Open,2026-05-29,,GreenLeaf Pest,0.0
+WO00454,Ironwood Residences,015,Electrical,Medium,In Progress,2026-05-06,,Apex Mechanical,0.0
+WO00455,Aspen Grove,038,Turnover,Medium,In Progress,2026-05-12,,BlueLine Plumbing,0.0
+WO00456,Cedar Commons,058,Appliance,High,Completed,2026-03-13,2026-03-29,Volt Electric,243.1
+WO00457,Willow Park,052,Pest,Medium,Completed,2026-05-29,2026-06-10,Volt Electric,96.06
+WO00458,Meadowlark Place,035,General,High,Completed,2026-05-10,2026-05-13,GreenLeaf Pest,97.57
+WO00459,Harborview Flats,038,HVAC,Medium,Open,2026-06-06,,BlueLine Plumbing,0.0
+WO00460,Maple Court,041,Electrical,Low,Completed,2026-04-07,2026-04-21,In-House Maintenance,250.54
+WO00461,Oakhaven Apartments,087,Electrical,High,Completed,2026-04-30,2026-05-15,Volt Electric,325.64
+WO00462,Willow Park,049,General,Low,Completed,2026-06-10,2026-06-29,In-House Maintenance,109.29
+WO00463,Oakhaven Apartments,057,HVAC,Low,Completed,2026-04-26,2026-05-09,Volt Electric,314.79
+WO00464,Stonebridge Villas,044,Plumbing,Low,Completed,2026-03-31,2026-04-11,Summit Handyman,126.89
+WO00465,Meadowlark Place,032,HVAC,Medium,Completed,2026-06-18,2026-06-19,Apex Mechanical,526.82
+WO00466,Oakhaven Apartments,048,General,Medium,Completed,2026-03-07,2026-03-16,Apex Mechanical,61.93
+WO00467,Birchwood Terrace,044,Pest,Medium,Completed,2026-05-03,2026-05-22,Apex Mechanical,166.48
+WO00468,Oakhaven Apartments,016,Electrical,Medium,Completed,2026-06-06,2026-06-19,GreenLeaf Pest,229.33
+WO00469,Ironwood Residences,044,General,Low,Completed,2026-05-30,2026-06-01,BlueLine Plumbing,90.61
+WO00470,Aspen Grove,058,Plumbing,Medium,Completed,2026-05-05,2026-05-12,Apex Mechanical,138.3
+WO00471,Meadowlark Place,017,Turnover,Medium,Completed,2026-04-14,2026-04-22,In-House Maintenance,2136.68
+WO00472,Willow Park,062,HVAC,High,Completed,2026-04-22,2026-05-09,Summit Handyman,42.0
+WO00473,Willow Park,045,HVAC,Medium,In Progress,2026-06-01,,Summit Handyman,0.0
+WO00474,Cedar Commons,024,Electrical,Low,Completed,2026-03-12,2026-03-22,In-House Maintenance,168.98
+WO00475,Aspen Grove,016,Pest,Medium,Open,2026-05-05,,Apex Mechanical,0.0
+WO00476,Cedar Commons,023,Electrical,Medium,Open,2026-04-06,,In-House Maintenance,0.0
+WO00477,Cedar Commons,033,General,Medium,Completed,2026-03-08,2026-03-24,In-House Maintenance,42.0
+WO00478,Ironwood Residences,002,Appliance,High,Completed,2026-06-30,2026-07-01,Volt Electric,309.26
+WO00479,Willow Park,084,Electrical,Medium,In Progress,2026-05-20,,Apex Mechanical,0.0
+WO00480,Aspen Grove,044,Pest,Medium,Completed,2026-03-16,2026-03-22,In-House Maintenance,136.93
+WO00481,Oakhaven Apartments,046,HVAC,Low,Open,2026-05-22,,In-House Maintenance,0.0
+WO00482,Cedar Commons,026,Appliance,Medium,Open,2026-06-08,,Volt Electric,0.0
+WO00483,Ironwood Residences,004,General,Low,Open,2026-03-12,,Summit Handyman,0.0
+WO00484,Willow Park,063,General,Low,Completed,2026-03-31,2026-04-16,BlueLine Plumbing,172.17
+WO00485,Maple Court,027,HVAC,Medium,Open,2026-06-13,,Volt Electric,0.0
+WO00486,Maple Court,021,Plumbing,Low,Completed,2026-03-06,2026-03-09,Volt Electric,196.86
+WO00487,Oakhaven Apartments,040,Turnover,Medium,Completed,2026-05-29,2026-05-30,BlueLine Plumbing,1145.12
+WO00488,Aspen Grove,040,Electrical,Low,Completed,2026-03-03,2026-03-14,BlueLine Plumbing,119.54
+WO00489,Oakhaven Apartments,007,Plumbing,Medium,Open,2026-06-26,,GreenLeaf Pest,0.0
+WO00490,Willow Park,001,Turnover,High,Completed,2026-04-11,2026-04-17,Apex Mechanical,1136.45
+WO00491,Ironwood Residences,017,Plumbing,High,Completed,2026-04-05,2026-04-07,In-House Maintenance,180.86
+WO00492,Harborview Flats,047,Plumbing,High,Completed,2026-06-14,2026-06-22,GreenLeaf Pest,174.34
+WO00493,Riverbend Lofts,026,General,Medium,Completed,2026-06-03,2026-06-14,In-House Maintenance,94.33
+WO00494,Harborview Flats,044,Appliance,Medium,Completed,2026-04-05,2026-04-17,Summit Handyman,296.04
+WO00495,Oakhaven Apartments,070,Electrical,Medium,Completed,2026-04-08,2026-04-16,Volt Electric,181.02
+WO00496,Maple Court,037,General,Emergency,In Progress,2026-03-10,,Summit Handyman,0.0
+WO00497,Oakhaven Apartments,076,General,Medium,Completed,2026-06-02,2026-06-06,GreenLeaf Pest,181.46
+WO00498,Aspen Grove,048,Plumbing,Medium,Completed,2026-03-06,2026-03-21,Summit Handyman,42.0
+WO00499,Maple Court,063,Appliance,Low,Completed,2026-03-04,2026-03-24,In-House Maintenance,83.17
+WO00500,Willow Park,064,Electrical,Low,Completed,2026-06-19,2026-07-09,BlueLine Plumbing,249.29
+WO00501,Maple Court,020,HVAC,High,Completed,2026-06-21,2026-06-24,GreenLeaf Pest,487.31
+WO00502,Ironwood Residences,053,Electrical,Low,Open,2026-06-29,,BlueLine Plumbing,0.0
+WO00503,Oakhaven Apartments,054,Pest,High,Completed,2026-06-15,2026-06-16,BlueLine Plumbing,110.23
+WO00504,Maple Court,061,Pest,Medium,Completed,2026-06-01,2026-06-02,BlueLine Plumbing,147.92
+WO00505,Willow Park,044,Turnover,Low,Completed,2026-04-14,2026-04-28,Summit Handyman,1345.38
+WO00506,Riverbend Lofts,017,Plumbing,High,Completed,2026-04-14,2026-04-26,Volt Electric,149.61
+WO00507,Maple Court,023,Turnover,Medium,Completed,2026-04-07,2026-04-22,Summit Handyman,1276.01
+WO00508,Stonebridge Villas,020,HVAC,Low,Completed,2026-04-03,2026-04-16,BlueLine Plumbing,189.41
+WO00509,Sunset Ridge,023,Turnover,Medium,In Progress,2026-03-13,,GreenLeaf Pest,0.0
+WO00510,Oakhaven Apartments,039,Electrical,Medium,In Progress,2026-04-29,,BlueLine Plumbing,0.0
+WO00511,Oakhaven Apartments,046,Electrical,Low,Open,2026-05-22,,Summit Handyman,0.0
+WO00512,Oakhaven Apartments,061,Pest,Low,Open,2026-03-26,,BlueLine Plumbing,0.0
+WO00513,Maple Court,032,General,Medium,Completed,2026-04-30,2026-05-07,Volt Electric,160.58
+WO00514,Sunset Ridge,011,Turnover,Medium,In Progress,2026-06-18,,Volt Electric,0.0
+WO00515,Willow Park,027,Pest,High,In Progress,2026-05-23,,Volt Electric,0.0
+WO00516,Stonebridge Villas,018,Appliance,High,Completed,2026-03-30,2026-04-01,Volt Electric,294.9
+WO00517,Maple Court,070,Plumbing,Low,In Progress,2026-05-28,,In-House Maintenance,0.0
+WO00518,Birchwood Terrace,051,Electrical,Low,Completed,2026-04-17,2026-05-05,Volt Electric,71.38
+WO00519,Ironwood Residences,066,HVAC,Low,Completed,2026-04-21,2026-05-04,GreenLeaf Pest,282.54
+WO00520,Aspen Grove,012,Turnover,Medium,In Progress,2026-05-24,,Volt Electric,0.0
+WO00521,Ironwood Residences,040,Appliance,Medium,Completed,2026-04-16,2026-04-24,Volt Electric,87.79
+WO00522,Oakhaven Apartments,007,Plumbing,Low,Completed,2026-06-27,2026-07-05,Apex Mechanical,189.23
+WO00523,Sunset Ridge,032,Plumbing,Medium,In Progress,2026-04-22,,Volt Electric,0.0
+WO00524,Birchwood Terrace,038,General,Medium,Completed,2026-03-05,2026-03-13,BlueLine Plumbing,87.95
+WO00525,Oakhaven Apartments,054,General,Low,Completed,2026-05-25,2026-05-27,Volt Electric,46.0
+WO00526,Aspen Grove,003,Electrical,Medium,Completed,2026-04-18,2026-04-22,Apex Mechanical,280.88
+WO00527,Birchwood Terrace,021,HVAC,Medium,Completed,2026-04-20,2026-05-09,Volt Electric,312.19
+WO00528,Riverbend Lofts,011,Electrical,Low,Completed,2026-03-16,2026-03-22,GreenLeaf Pest,269.38
+WO00529,Cedar Commons,013,Turnover,Medium,Open,2026-04-12,,BlueLine Plumbing,0.0
+WO00530,Maple Court,056,Pest,Medium,In Progress,2026-06-26,,Volt Electric,0.0
+WO00531,Stonebridge Villas,048,Appliance,Medium,Completed,2026-03-23,2026-03-31,GreenLeaf Pest,186.43
+WO00532,Aspen Grove,018,HVAC,Medium,Completed,2026-05-16,2026-05-28,GreenLeaf Pest,346.73
+WO00533,Cedar Commons,001,Appliance,High,Completed,2026-04-15,2026-04-30,Volt Electric,298.0
+WO00534,Cedar Commons,039,Pest,Medium,In Progress,2026-05-22,,GreenLeaf Pest,0.0
+WO00535,Oakhaven Apartments,026,Turnover,Low,Completed,2026-06-08,2026-06-15,GreenLeaf Pest,784.46
+WO00536,Aspen Grove,029,Appliance,High,In Progress,2026-06-28,,In-House Maintenance,0.0
+WO00537,Stonebridge Villas,020,Electrical,Low,Completed,2026-03-31,2026-04-04,Apex Mechanical,287.69
+WO00538,Aspen Grove,048,Pest,Medium,Completed,2026-05-01,2026-05-04,Apex Mechanical,94.26
+WO00539,Willow Park,085,Turnover,Medium,Completed,2026-03-05,2026-03-24,Summit Handyman,849.21
+WO00540,Aspen Grove,001,Electrical,High,Completed,2026-04-25,2026-04-27,Summit Handyman,204.72
+WO00541,Aspen Grove,018,Appliance,Emergency,Completed,2026-06-16,2026-06-22,In-House Maintenance,42.0
+WO00542,Riverbend Lofts,018,HVAC,Emergency,In Progress,2026-06-24,,GreenLeaf Pest,0.0
+WO00543,Cedar Commons,003,Plumbing,Medium,Completed,2026-04-05,2026-04-18,BlueLine Plumbing,287.48
+WO00544,Harborview Flats,047,Electrical,Emergency,Completed,2026-05-15,2026-06-04,GreenLeaf Pest,287.19
+WO00545,Ironwood Residences,066,Appliance,Low,Completed,2026-05-13,2026-05-17,BlueLine Plumbing,166.25
+WO00546,Ironwood Residences,009,HVAC,High,Completed,2026-05-22,2026-05-27,Apex Mechanical,641.87
+WO00547,Harborview Flats,010,Appliance,Medium,Completed,2026-04-28,2026-05-08,GreenLeaf Pest,87.63
+WO00548,Stonebridge Villas,030,Appliance,Medium,Completed,2026-05-16,2026-05-28,Apex Mechanical,116.61
+WO00549,Willow Park,056,Electrical,Low,Open,2026-05-01,,In-House Maintenance,0.0
+WO00550,Oakhaven Apartments,091,Turnover,High,In Progress,2026-04-13,,In-House Maintenance,0.0
+WO00551,Stonebridge Villas,051,General,Medium,Open,2026-05-30,,In-House Maintenance,0.0
+WO00552,Riverbend Lofts,025,Pest,Low,Open,2026-06-05,,In-House Maintenance,0.0
+WO00553,Harborview Flats,019,Appliance,Medium,Completed,2026-03-09,2026-03-26,BlueLine Plumbing,280.14
+WO00554,Cedar Commons,002,Appliance,High,Open,2026-05-29,,Summit Handyman,0.0
+WO00555,Riverbend Lofts,016,Pest,Medium,In Progress,2026-04-23,,GreenLeaf Pest,0.0
+WO00556,Ironwood Residences,014,Electrical,Medium,In Progress,2026-06-20,,BlueLine Plumbing,0.0
+WO00557,Oakhaven Apartments,068,Electrical,Low,Completed,2026-04-25,2026-05-02,GreenLeaf Pest,212.45
+WO00558,Ironwood Residences,067,Plumbing,Low,In Progress,2026-05-24,,BlueLine Plumbing,0.0
+WO00559,Oakhaven Apartments,021,General,High,Completed,2026-04-14,2026-04-27,Apex Mechanical,182.65
+WO00560,Willow Park,045,HVAC,Medium,Completed,2026-03-10,2026-03-20,In-House Maintenance,633.1
+WO00561,Sunset Ridge,011,Pest,Medium,Completed,2026-03-30,2026-04-16,In-House Maintenance,75.95
+WO00562,Oakhaven Apartments,081,General,Medium,Open,2026-05-16,,Apex Mechanical,0.0
+WO00563,Ironwood Residences,048,Electrical,High,Completed,2026-06-14,2026-06-22,Volt Electric,108.64
+WO00564,Maple Court,059,Pest,Low,Completed,2026-04-22,2026-04-27,GreenLeaf Pest,113.98
+WO00565,Meadowlark Place,030,HVAC,High,Completed,2026-03-25,2026-04-06,Summit Handyman,658.71
+WO00566,Ironwood Residences,047,Pest,Low,Completed,2026-03-08,2026-03-26,BlueLine Plumbing,182.43
+WO00567,Riverbend Lofts,032,Pest,Emergency,Completed,2026-04-16,2026-05-06,Volt Electric,184.41
+WO00568,Willow Park,023,Turnover,Medium,Completed,2026-05-23,2026-05-25,Apex Mechanical,1037.99
+WO00569,Ironwood Residences,002,Plumbing,High,Completed,2026-06-22,2026-06-28,Summit Handyman,140.04
+WO00570,Cedar Commons,058,HVAC,Medium,Completed,2026-03-22,2026-04-02,Summit Handyman,513.93
+WO00571,Birchwood Terrace,034,Pest,Medium,Open,2026-04-30,,GreenLeaf Pest,0.0
+WO00572,Sunset Ridge,015,Pest,Medium,Completed,2026-05-31,2026-06-01,In-House Maintenance,151.18
+WO00573,Meadowlark Place,006,General,Low,Open,2026-06-30,,GreenLeaf Pest,0.0
+WO00574,Oakhaven Apartments,034,Appliance,Emergency,Open,2026-06-27,,In-House Maintenance,0.0
+WO00575,Ironwood Residences,011,General,Medium,Completed,2026-06-18,2026-07-02,GreenLeaf Pest,91.69
+WO00576,Oakhaven Apartments,036,Turnover,Low,Completed,2026-04-19,2026-04-24,GreenLeaf Pest,1024.11
+WO00577,Sunset Ridge,017,Appliance,Medium,In Progress,2026-04-16,,Apex Mechanical,0.0
+WO00578,Cedar Commons,015,Plumbing,Emergency,Open,2026-06-07,,BlueLine Plumbing,0.0
+WO00579,Birchwood Terrace,021,Electrical,Emergency,Completed,2026-04-30,2026-05-11,Volt Electric,213.29
+WO00580,Stonebridge Villas,005,Appliance,High,Completed,2026-06-22,2026-06-30,In-House Maintenance,192.1
+WO00581,Stonebridge Villas,026,Electrical,Low,Completed,2026-05-13,2026-05-16,Apex Mechanical,203.73
+WO00582,Aspen Grove,023,Electrical,High,Completed,2026-03-17,2026-04-01,Apex Mechanical,335.36
+WO00583,Ironwood Residences,054,Plumbing,Low,Completed,2026-04-12,2026-04-17,Summit Handyman,82.79
+WO00584,Stonebridge Villas,001,Appliance,Low,In Progress,2026-05-07,,In-House Maintenance,0.0
+WO00585,Maple Court,064,Pest,Medium,Completed,2026-03-17,2026-03-22,BlueLine Plumbing,168.46
+WO00586,Sunset Ridge,009,HVAC,Low,Completed,2026-05-29,2026-06-13,GreenLeaf Pest,236.39
+WO00587,Aspen Grove,043,Pest,Low,Completed,2026-03-13,2026-03-27,BlueLine Plumbing,120.63
+WO00588,Aspen Grove,019,Plumbing,Low,Completed,2026-06-02,2026-06-19,GreenLeaf Pest,129.58
+WO00589,Riverbend Lofts,020,Plumbing,Medium,Completed,2026-05-18,2026-05-19,Apex Mechanical,127.44
+WO00590,Birchwood Terrace,053,Appliance,Medium,Open,2026-06-13,,Summit Handyman,0.0
+WO00591,Birchwood Terrace,020,General,Medium,Completed,2026-03-15,2026-03-21,GreenLeaf Pest,103.09
+WO00592,Willow Park,026,Electrical,High,Completed,2026-05-26,2026-06-15,In-House Maintenance,242.72
+WO00593,Meadowlark Place,020,Turnover,High,Completed,2026-05-23,2026-06-12,Volt Electric,1635.56
+WO00594,Ironwood Residences,021,General,Low,Completed,2026-03-04,2026-03-13,GreenLeaf Pest,105.77
+WO00595,Stonebridge Villas,048,Appliance,Low,Completed,2026-06-03,2026-06-10,Summit Handyman,357.42
+WO00596,Aspen Grove,002,Pest,Medium,Completed,2026-03-27,2026-04-14,Volt Electric,201.33
+WO00597,Maple Court,042,Electrical,Medium,Completed,2026-04-04,2026-04-05,In-House Maintenance,101.79
+WO00598,Harborview Flats,038,General,High,Open,2026-06-13,,Summit Handyman,0.0
+WO00599,Maple Court,041,HVAC,Medium,In Progress,2026-05-19,,Volt Electric,0.0
+WO00600,Willow Park,007,Electrical,Medium,Completed,2026-04-13,2026-04-17,BlueLine Plumbing,96.99
+WO00601,Cedar Commons,003,HVAC,Medium,Completed,2026-04-26,2026-04-29,Apex Mechanical,517.85
+WO00602,Maple Court,006,Plumbing,Low,Completed,2026-03-05,2026-03-24,In-House Maintenance,42.0
+WO00603,Ironwood Residences,050,Electrical,Low,Completed,2026-04-09,2026-04-29,BlueLine Plumbing,54.65
+WO00604,Aspen Grove,047,Electrical,Medium,Completed,2026-04-24,2026-05-08,Summit Handyman,162.47
+WO00605,Maple Court,017,Plumbing,Emergency,Completed,2026-05-02,2026-05-11,In-House Maintenance,179.15
+WO00606,Stonebridge Villas,001,General,Low,Completed,2026-06-20,2026-06-28,GreenLeaf Pest,75.58
+WO00607,Stonebridge Villas,049,Turnover,Medium,Completed,2026-04-19,2026-05-07,BlueLine Plumbing,1090.91
+WO00608,Riverbend Lofts,022,General,Medium,Completed,2026-03-05,2026-03-21,GreenLeaf Pest,112.24
+WO00609,Sunset Ridge,017,Turnover,Medium,Completed,2026-06-22,2026-06-26,BlueLine Plumbing,1415.33
+WO00610,Maple Court,032,HVAC,Low,Open,2026-06-12,,GreenLeaf Pest,0.0
+WO00611,Willow Park,015,Plumbing,Emergency,Completed,2026-03-20,2026-03-24,Apex Mechanical,215.81
+WO00612,Maple Court,071,Pest,Medium,Open,2026-06-07,,GreenLeaf Pest,0.0
+WO00613,Stonebridge Villas,030,Pest,Medium,Completed,2026-05-04,2026-05-14,Summit Handyman,98.95
+WO00614,Birchwood Terrace,054,Pest,High,Completed,2026-04-07,2026-04-27,In-House Maintenance,176.93
+WO00615,Stonebridge Villas,032,Turnover,Medium,In Progress,2026-04-19,,Summit Handyman,0.0
+WO00616,Willow Park,061,General,High,Open,2026-06-25,,Summit Handyman,0.0
+WO00617,Meadowlark Place,014,Appliance,Low,Completed,2026-03-23,2026-03-27,Apex Mechanical,275.33
+WO00618,Cedar Commons,055,Electrical,Medium,In Progress,2026-05-18,,In-House Maintenance,0.0
+WO00619,Stonebridge Villas,001,Plumbing,High,Completed,2026-03-21,2026-04-05,Volt Electric,233.26
+WO00620,Riverbend Lofts,030,Appliance,Medium,Completed,2026-04-18,2026-05-03,Apex Mechanical,64.37
+WO00621,Sunset Ridge,030,Plumbing,High,Completed,2026-06-09,2026-06-28,BlueLine Plumbing,174.13
+WO00622,Ironwood Residences,014,Turnover,Low,Open,2026-06-08,,GreenLeaf Pest,0.0
+WO00623,Aspen Grove,037,General,Low,Completed,2026-03-04,2026-03-12,GreenLeaf Pest,88.55
+WO00624,Aspen Grove,039,Appliance,Medium,Open,2026-06-17,,In-House Maintenance,0.0
+WO00625,Cedar Commons,045,Plumbing,Medium,Completed,2026-03-30,2026-04-02,GreenLeaf Pest,105.25
+WO00626,Cedar Commons,011,Plumbing,Low,Completed,2026-05-13,2026-05-30,In-House Maintenance,324.56
+WO00627,Sunset Ridge,012,Turnover,Low,Completed,2026-04-11,2026-04-18,Volt Electric,523.21
+WO00628,Birchwood Terrace,047,Turnover,Low,Open,2026-03-11,,Apex Mechanical,0.0
+WO00629,Riverbend Lofts,022,General,High,Completed,2026-05-10,2026-05-16,GreenLeaf Pest,173.3
+WO00630,Stonebridge Villas,041,Electrical,Medium,Completed,2026-06-07,2026-06-20,Summit Handyman,255.16
+WO00631,Oakhaven Apartments,012,Plumbing,High,Completed,2026-04-26,2026-05-04,BlueLine Plumbing,168.31
+WO00632,Stonebridge Villas,022,Appliance,Low,Completed,2026-04-03,2026-04-13,Apex Mechanical,60.75
+WO00633,Birchwood Terrace,021,General,Medium,Completed,2026-06-12,2026-06-30,Volt Electric,191.38
+WO00634,Maple Court,012,General,Medium,In Progress,2026-06-28,,BlueLine Plumbing,0.0
+WO00635,Cedar Commons,043,Turnover,Low,Completed,2026-05-11,2026-05-15,In-House Maintenance,1237.06
+WO00636,Oakhaven Apartments,024,Appliance,Low,Completed,2026-03-13,2026-03-31,GreenLeaf Pest,89.08
+WO00637,Riverbend Lofts,015,Pest,Low,Open,2026-04-12,,Apex Mechanical,0.0
+WO00638,Maple Court,034,Electrical,High,Completed,2026-04-18,2026-04-26,GreenLeaf Pest,286.05
+WO00639,Willow Park,069,HVAC,Low,Completed,2026-03-28,2026-04-07,BlueLine Plumbing,219.52
+WO00640,Harborview Flats,025,HVAC,Medium,In Progress,2026-06-15,,BlueLine Plumbing,0.0
+WO00641,Cedar Commons,040,Electrical,High,Completed,2026-04-19,2026-05-09,Volt Electric,133.47
+WO00642,Oakhaven Apartments,022,HVAC,Medium,Completed,2026-05-23,2026-05-24,In-House Maintenance,305.27
+WO00643,Ironwood Residences,041,General,High,Completed,2026-04-29,2026-05-04,Summit Handyman,57.39
+WO00644,Oakhaven Apartments,053,HVAC,High,Completed,2026-04-20,2026-04-23,In-House Maintenance,400.0
+WO00645,Ironwood Residences,024,Appliance,Low,Completed,2026-06-12,2026-06-15,Summit Handyman,164.19
+WO00646,Ironwood Residences,024,HVAC,Emergency,Completed,2026-04-02,2026-04-09,GreenLeaf Pest,414.4
+WO00647,Stonebridge Villas,029,Turnover,Medium,Completed,2026-04-23,2026-05-06,In-House Maintenance,671.18
+WO00648,Aspen Grove,044,Electrical,Medium,Completed,2026-05-09,2026-05-18,In-House Maintenance,408.83
+WO00649,Ironwood Residences,014,Turnover,Low,Completed,2026-03-20,2026-04-04,Summit Handyman,1445.92
+WO00650,Stonebridge Villas,006,Pest,Low,Completed,2026-04-14,2026-04-20,Volt Electric,161.57
+WO00651,Birchwood Terrace,011,General,Medium,Open,2026-05-27,,GreenLeaf Pest,0.0
+WO00652,Maple Court,041,General,Low,In Progress,2026-06-10,,GreenLeaf Pest,0.0
+WO00653,Maple Court,050,Plumbing,High,Open,2026-06-29,,BlueLine Plumbing,0.0
+WO00654,Aspen Grove,059,Pest,Medium,Completed,2026-03-25,2026-04-04,Apex Mechanical,217.23
+WO00655,Willow Park,043,Appliance,High,Completed,2026-05-29,2026-06-04,In-House Maintenance,170.41
+WO00656,Maple Court,056,Appliance,High,Completed,2026-05-16,2026-05-22,In-House Maintenance,207.73
+WO00657,Harborview Flats,038,Appliance,High,In Progress,2026-06-11,,Apex Mechanical,0.0
+WO00658,Maple Court,020,Plumbing,Low,Completed,2026-03-15,2026-03-26,GreenLeaf Pest,82.36
+WO00659,Stonebridge Villas,016,Plumbing,Low,Completed,2026-04-23,2026-05-08,In-House Maintenance,142.86
+WO00660,Willow Park,061,General,High,Completed,2026-04-03,2026-04-04,GreenLeaf Pest,47.09
+WO00661,Ironwood Residences,041,General,Medium,Open,2026-05-24,,Apex Mechanical,0.0
+WO00662,Sunset Ridge,026,Turnover,Low,Completed,2026-03-13,2026-03-21,GreenLeaf Pest,888.56
+WO00663,Sunset Ridge,022,Plumbing,Low,Completed,2026-05-06,2026-05-18,Summit Handyman,109.08
+WO00664,Willow Park,054,Pest,Low,Completed,2026-03-14,2026-03-18,BlueLine Plumbing,134.51
+WO00665,Cedar Commons,038,General,Emergency,Completed,2026-06-25,2026-07-02,Summit Handyman,141.52
+WO00666,Riverbend Lofts,035,Plumbing,Medium,Completed,2026-05-06,2026-05-25,BlueLine Plumbing,158.45
+WO00667,Meadowlark Place,024,Appliance,Medium,Completed,2026-04-25,2026-05-01,Apex Mechanical,137.88
+WO00668,Meadowlark Place,021,Plumbing,Low,Completed,2026-04-23,2026-05-07,GreenLeaf Pest,149.7
+WO00669,Maple Court,014,Turnover,Low,Completed,2026-03-12,2026-03-18,In-House Maintenance,1238.24
+WO00670,Maple Court,021,Turnover,Medium,Completed,2026-06-16,2026-06-19,In-House Maintenance,636.77
+WO00671,Willow Park,079,Turnover,High,In Progress,2026-06-26,,Apex Mechanical,0.0
+WO00672,Willow Park,083,General,Low,In Progress,2026-06-21,,GreenLeaf Pest,0.0
+WO00673,Willow Park,020,Pest,Low,Open,2026-06-28,,In-House Maintenance,0.0
+WO00674,Stonebridge Villas,020,Electrical,Low,In Progress,2026-04-25,,BlueLine Plumbing,0.0
+WO00675,Aspen Grove,058,Plumbing,High,In Progress,2026-05-17,,In-House Maintenance,0.0
+WO00676,Aspen Grove,002,General,Medium,In Progress,2026-05-26,,Apex Mechanical,0.0
+WO00677,Birchwood Terrace,016,Plumbing,High,In Progress,2026-04-30,,Apex Mechanical,0.0
+WO00678,Oakhaven Apartments,052,Electrical,High,In Progress,2026-05-23,,Volt Electric,0.0
+WO00679,Willow Park,006,HVAC,Low,In Progress,2026-05-13,,In-House Maintenance,0.0
+WO00680,Sunset Ridge,003,Appliance,Low,Completed,2026-05-23,2026-06-12,Volt Electric,42.0
+WO00681,Riverbend Lofts,012,Plumbing,Low,Open,2026-04-27,,In-House Maintenance,0.0
+WO00682,Ironwood Residences,037,General,Low,Completed,2026-04-16,2026-04-28,Summit Handyman,119.4
+WO00683,Maple Court,030,Pest,Medium,Completed,2026-03-09,2026-03-24,In-House Maintenance,168.64
+WO00684,Birchwood Terrace,054,Electrical,Low,Completed,2026-04-03,2026-04-17,Volt Electric,165.9
+WO00685,Stonebridge Villas,012,Turnover,High,Completed,2026-05-23,2026-06-01,GreenLeaf Pest,732.31
+WO00686,Meadowlark Place,021,Plumbing,High,Open,2026-06-06,,Summit Handyman,0.0
+WO00687,Willow Park,037,Appliance,Medium,Open,2026-06-10,,In-House Maintenance,0.0
+WO00688,Oakhaven Apartments,009,Appliance,Medium,Completed,2026-05-05,2026-05-13,GreenLeaf Pest,136.9
+WO00689,Ironwood Residences,062,HVAC,Medium,Completed,2026-06-10,2026-06-12,GreenLeaf Pest,392.83
+WO00690,Ironwood Residences,017,HVAC,Emergency,In Progress,2026-06-06,,In-House Maintenance,0.0
+WO00691,Harborview Flats,044,Appliance,High,Completed,2026-03-27,2026-03-28,Volt Electric,166.03
+WO00692,Sunset Ridge,013,General,Low,Completed,2026-05-17,2026-05-28,Volt Electric,78.04
+WO00693,Sunset Ridge,026,HVAC,Low,Open,2026-05-26,,GreenLeaf Pest,0.0
+WO00694,Sunset Ridge,028,General,Medium,Open,2026-06-25,,GreenLeaf Pest,0.0
+WO00695,Cedar Commons,018,Appliance,Medium,Completed,2026-04-12,2026-04-22,Apex Mechanical,233.7
+WO00696,Oakhaven Apartments,051,Electrical,Low,Completed,2026-03-29,2026-04-14,Apex Mechanical,171.31
+WO00697,Sunset Ridge,021,Appliance,Medium,Completed,2026-04-01,2026-04-17,GreenLeaf Pest,357.0
+WO00698,Maple Court,003,HVAC,High,Completed,2026-06-24,2026-07-13,Apex Mechanical,412.11
+WO00699,Harborview Flats,031,HVAC,Medium,Completed,2026-05-18,2026-05-22,Apex Mechanical,172.24
+WO00700,Aspen Grove,029,General,Medium,Open,2026-06-02,,BlueLine Plumbing,0.0
+WO00701,Sunset Ridge,033,Plumbing,Medium,In Progress,2026-05-09,,BlueLine Plumbing,0.0
+WO00702,Willow Park,079,General,Medium,Completed,2026-04-22,2026-05-04,Summit Handyman,82.19
+WO00703,Ironwood Residences,045,Pest,High,Completed,2026-06-07,2026-06-26,Apex Mechanical,115.02
+WO00704,Maple Court,055,General,Low,Open,2026-06-16,,Summit Handyman,0.0
+WO00705,Oakhaven Apartments,089,Pest,Medium,Completed,2026-05-31,2026-06-17,Summit Handyman,122.75
+WO00706,Meadowlark Place,001,Electrical,Low,Completed,2026-03-09,2026-03-23,Summit Handyman,345.24
+WO00707,Harborview Flats,012,General,Medium,Completed,2026-03-08,2026-03-17,In-House Maintenance,146.65
+WO00708,Ironwood Residences,001,HVAC,Low,Open,2026-06-21,,Summit Handyman,0.0
+WO00709,Willow Park,046,Electrical,High,Completed,2026-05-07,2026-05-21,In-House Maintenance,111.06
+WO00710,Birchwood Terrace,034,Electrical,Low,Completed,2026-04-06,2026-04-24,GreenLeaf Pest,227.23
+WO00711,Maple Court,009,Pest,Medium,Completed,2026-03-16,2026-04-03,In-House Maintenance,220.69
+WO00712,Stonebridge Villas,033,General,Medium,Completed,2026-03-26,2026-04-10,Summit Handyman,42.0
+WO00713,Maple Court,017,Pest,Low,Completed,2026-05-26,2026-06-14,In-House Maintenance,197.92
+WO00714,Maple Court,013,General,Medium,Completed,2026-04-07,2026-04-08,GreenLeaf Pest,108.24
+WO00715,Oakhaven Apartments,090,General,Medium,Completed,2026-04-10,2026-04-20,In-House Maintenance,163.52
+WO00716,Aspen Grove,019,Appliance,Low,Open,2026-05-31,,Volt Electric,0.0
+WO00717,Sunset Ridge,017,General,Medium,Completed,2026-06-08,2026-06-17,Summit Handyman,42.0
+WO00718,Ironwood Residences,003,General,Medium,Open,2026-05-31,,BlueLine Plumbing,0.0
+WO00719,Oakhaven Apartments,033,Turnover,Medium,Completed,2026-04-06,2026-04-08,Apex Mechanical,996.28
+WO00720,Oakhaven Apartments,015,Plumbing,Low,Open,2026-05-01,,Summit Handyman,0.0
+WO00721,Aspen Grove,030,HVAC,Low,Open,2026-04-22,,BlueLine Plumbing,0.0
+WO00722,Sunset Ridge,034,Pest,Medium,Completed,2026-03-22,2026-04-05,Apex Mechanical,191.22
+WO00723,Birchwood Terrace,021,Appliance,Low,Completed,2026-04-02,2026-04-12,In-House Maintenance,501.41
+WO00724,Oakhaven Apartments,062,General,Low,Completed,2026-04-08,2026-04-25,Apex Mechanical,92.5
+WO00725,Meadowlark Place,026,Appliance,High,In Progress,2026-06-26,,GreenLeaf Pest,0.0
+WO00726,Oakhaven Apartments,079,HVAC,Medium,Completed,2026-06-18,2026-06-25,GreenLeaf Pest,257.02
+WO00727,Harborview Flats,011,Pest,Medium,Open,2026-05-26,,Volt Electric,0.0
+WO00728,Birchwood Terrace,030,Electrical,Medium,In Progress,2026-06-18,,BlueLine Plumbing,0.0
+WO00729,Ironwood Residences,027,Pest,Medium,Completed,2026-03-07,2026-03-23,In-House Maintenance,88.57
+WO00730,Stonebridge Villas,042,General,Medium,Open,2026-05-19,,BlueLine Plumbing,0.0
+WO00731,Oakhaven Apartments,035,Electrical,Medium,In Progress,2026-06-12,,Apex Mechanical,0.0
+WO00732,Ironwood Residences,053,Turnover,High,Completed,2026-04-27,2026-04-29,GreenLeaf Pest,941.7
+WO00733,Harborview Flats,046,General,Medium,Open,2026-05-14,,BlueLine Plumbing,0.0
+WO00734,Harborview Flats,042,Pest,Medium,Completed,2026-05-09,2026-05-11,GreenLeaf Pest,130.77
+WO00735,Stonebridge Villas,032,Plumbing,Low,Completed,2026-05-31,2026-06-13,Summit Handyman,175.66
+WO00736,Cedar Commons,042,Plumbing,Low,Completed,2026-06-05,2026-06-07,Summit Handyman,59.78
+WO00737,Harborview Flats,006,Appliance,High,Completed,2026-06-14,2026-06-20,In-House Maintenance,42.0
+WO00738,Ironwood Residences,064,Appliance,Medium,Completed,2026-03-14,2026-03-15,Apex Mechanical,140.0
+WO00739,Cedar Commons,012,Pest,Low,Completed,2026-05-16,2026-05-24,BlueLine Plumbing,155.0
+WO00740,Harborview Flats,046,General,Medium,Open,2026-06-13,,Apex Mechanical,0.0
+WO00741,Willow Park,001,General,Low,Completed,2026-04-30,2026-05-08,GreenLeaf Pest,48.12
+WO00742,Oakhaven Apartments,061,HVAC,High,Completed,2026-04-06,2026-04-07,Summit Handyman,380.96
+WO00743,Oakhaven Apartments,003,Appliance,Medium,Completed,2026-03-07,2026-03-10,In-House Maintenance,170.88
+WO00744,Riverbend Lofts,024,Turnover,Low,In Progress,2026-04-19,,Summit Handyman,0.0
+WO00745,Oakhaven Apartments,085,General,High,Completed,2026-05-29,2026-05-31,Apex Mechanical,59.48
+WO00746,Sunset Ridge,029,Electrical,Low,In Progress,2026-06-14,,Apex Mechanical,0.0
+WO00747,Cedar Commons,053,Turnover,High,Open,2026-05-28,,BlueLine Plumbing,0.0
+WO00748,Birchwood Terrace,041,Electrical,Emergency,Completed,2026-03-22,2026-03-24,Summit Handyman,42.0
+WO00749,Aspen Grove,040,Electrical,High,Completed,2026-04-21,2026-04-26,BlueLine Plumbing,229.81
+WO00750,Oakhaven Apartments,004,General,Low,Open,2026-04-16,,Volt Electric,0.0
+WO00751,Harborview Flats,028,Pest,Medium,In Progress,2026-05-03,,Apex Mechanical,0.0
+WO00752,Aspen Grove,020,General,Low,Completed,2026-05-18,2026-06-02,In-House Maintenance,122.8
+WO00753,Maple Court,033,Appliance,High,Completed,2026-03-10,2026-03-12,Apex Mechanical,119.71
+WO00754,Harborview Flats,021,General,High,Completed,2026-03-22,2026-04-05,Summit Handyman,139.89
+WO00755,Birchwood Terrace,016,Turnover,Medium,In Progress,2026-05-02,,Summit Handyman,0.0
+WO00756,Harborview Flats,044,General,Medium,Completed,2026-06-29,2026-07-11,In-House Maintenance,48.52
+WO00757,Stonebridge Villas,011,Appliance,Low,Completed,2026-03-17,2026-03-30,Summit Handyman,176.11
+WO00758,Sunset Ridge,021,Turnover,Medium,Completed,2026-06-26,2026-06-29,BlueLine Plumbing,949.78
+WO00759,Maple Court,028,Plumbing,Low,Completed,2026-05-11,2026-05-27,In-House Maintenance,181.33
+WO00760,Riverbend Lofts,032,Appliance,Emergency,Open,2026-03-26,,BlueLine Plumbing,0.0
+WO00761,Aspen Grove,038,General,Low,In Progress,2026-04-14,,GreenLeaf Pest,0.0
+WO00762,Ironwood Residences,012,HVAC,Low,Completed,2026-06-02,2026-06-05,Apex Mechanical,613.26
+WO00763,Oakhaven Apartments,079,Turnover,High,Completed,2026-03-04,2026-03-21,GreenLeaf Pest,830.57
+WO00764,Riverbend Lofts,007,Appliance,Low,Completed,2026-03-28,2026-04-01,Apex Mechanical,263.17
+WO00765,Sunset Ridge,009,HVAC,Low,In Progress,2026-04-08,,Volt Electric,0.0
+WO00766,Maple Court,070,Appliance,High,Open,2026-05-26,,Summit Handyman,0.0
+WO00767,Cedar Commons,040,HVAC,Medium,Completed,2026-04-22,2026-04-30,Volt Electric,54.61
+WO00768,Maple Court,035,General,High,Completed,2026-03-16,2026-03-20,Volt Electric,42.0
+WO00769,Aspen Grove,004,Pest,Medium,Completed,2026-04-08,2026-04-27,In-House Maintenance,184.33
+WO00770,Birchwood Terrace,013,Pest,Medium,Completed,2026-03-26,2026-04-01,Apex Mechanical,168.89
+WO00771,Maple Court,038,Appliance,Low,Completed,2026-03-30,2026-04-06,BlueLine Plumbing,53.25
+WO00772,Ironwood Residences,061,Electrical,Low,Completed,2026-04-15,2026-04-27,Apex Mechanical,73.79
+WO00773,Birchwood Terrace,040,Turnover,Medium,In Progress,2026-06-19,,BlueLine Plumbing,0.0
+WO00774,Ironwood Residences,049,Electrical,Low,Completed,2026-03-06,2026-03-12,Volt Electric,449.62
+WO00775,Cedar Commons,041,Electrical,Low,Completed,2026-06-07,2026-06-12,Volt Electric,295.52
+WO00776,Harborview Flats,043,Pest,Low,Completed,2026-04-09,2026-04-26,In-House Maintenance,163.62
+WO00777,Cedar Commons,052,General,Low,In Progress,2026-06-08,,GreenLeaf Pest,0.0
+WO00778,Maple Court,065,General,Low,Open,2026-05-28,,Volt Electric,0.0
+WO00779,Willow Park,042,Plumbing,Medium,Completed,2026-06-17,2026-07-06,Volt Electric,154.07
+WO00780,Ironwood Residences,067,Electrical,High,Completed,2026-03-26,2026-04-08,In-House Maintenance,173.38
+WO00781,Sunset Ridge,021,Turnover,Low,Completed,2026-04-04,2026-04-17,In-House Maintenance,1140.1
+WO00782,Cedar Commons,046,Electrical,Low,Open,2026-06-28,,In-House Maintenance,0.0
+WO00783,Oakhaven Apartments,017,Pest,Medium,Open,2026-05-14,,Apex Mechanical,0.0
+WO00784,Harborview Flats,016,Pest,Low,Completed,2026-04-11,2026-04-26,In-House Maintenance,187.16
+WO00785,Aspen Grove,050,General,Low,Completed,2026-03-28,2026-04-14,Volt Electric,148.29
+WO00786,Oakhaven Apartments,046,Plumbing,Low,Completed,2026-03-12,2026-03-16,Apex Mechanical,159.47
+WO00787,Maple Court,058,Turnover,Low,In Progress,2026-06-13,,BlueLine Plumbing,0.0
+WO00788,Birchwood Terrace,024,Turnover,Medium,Completed,2026-03-04,2026-03-23,Summit Handyman,1611.09
+WO00789,Aspen Grove,042,Turnover,Emergency,Completed,2026-06-23,2026-06-24,In-House Maintenance,1151.23
+WO00790,Oakhaven Apartments,064,HVAC,Medium,Completed,2026-03-28,2026-03-30,GreenLeaf Pest,398.89
+WO00791,Birchwood Terrace,037,Plumbing,High,Open,2026-06-14,,GreenLeaf Pest,0.0
+WO00792,Birchwood Terrace,040,General,Medium,Completed,2026-06-01,2026-06-02,Apex Mechanical,118.45
+WO00793,Riverbend Lofts,036,Pest,Emergency,Completed,2026-03-11,2026-03-25,In-House Maintenance,101.59
+WO00794,Cedar Commons,058,General,Medium,Completed,2026-04-04,2026-04-11,In-House Maintenance,146.26
+WO00795,Willow Park,065,Pest,Medium,Completed,2026-04-12,2026-04-20,Summit Handyman,129.16
+WO00796,Oakhaven Apartments,051,Pest,Medium,Completed,2026-05-23,2026-05-26,GreenLeaf Pest,190.76
+WO00797,Willow Park,048,Plumbing,High,Completed,2026-06-13,2026-06-22,Summit Handyman,188.23
+WO00798,Aspen Grove,036,Turnover,Medium,Completed,2026-04-02,2026-04-12,Summit Handyman,1264.96
+WO00799,Meadowlark Place,041,Electrical,Low,Completed,2026-06-25,2026-07-01,In-House Maintenance,204.92
+WO00800,Stonebridge Villas,033,HVAC,Medium,Open,2026-05-14,,Volt Electric,0.0
+WO00801,Oakhaven Apartments,015,Electrical,Emergency,Completed,2026-04-11,2026-04-17,BlueLine Plumbing,42.0
+WO00802,Oakhaven Apartments,057,Plumbing,Medium,Completed,2026-03-04,2026-03-09,Apex Mechanical,84.09
+WO00803,Stonebridge Villas,036,Pest,Low,Open,2026-05-25,,Summit Handyman,0.0
+WO00804,Birchwood Terrace,053,Appliance,Medium,Completed,2026-03-18,2026-04-01,Summit Handyman,45.8
+WO00805,Maple Court,071,Appliance,Low,Open,2026-06-20,,GreenLeaf Pest,0.0
+WO00806,Stonebridge Villas,047,General,Medium,Open,2026-05-17,,Apex Mechanical,0.0
+WO00807,Oakhaven Apartments,058,Appliance,High,Completed,2026-03-12,2026-03-20,BlueLine Plumbing,237.8
+WO00808,Birchwood Terrace,029,Pest,Low,In Progress,2026-06-14,,Summit Handyman,0.0
+WO00809,Harborview Flats,048,Pest,High,Open,2026-06-07,,Volt Electric,0.0
+WO00810,Cedar Commons,003,Plumbing,High,Completed,2026-06-11,2026-06-20,Volt Electric,129.72
+WO00811,Birchwood Terrace,039,Appliance,High,Completed,2026-03-19,2026-03-22,BlueLine Plumbing,401.92
+WO00812,Ironwood Residences,051,Electrical,Low,Completed,2026-05-11,2026-05-17,GreenLeaf Pest,153.8
+WO00813,Riverbend Lofts,005,General,Medium,Completed,2026-06-07,2026-06-24,GreenLeaf Pest,42.0
+WO00814,Harborview Flats,002,Plumbing,Low,Completed,2026-04-24,2026-05-01,Volt Electric,42.0
+WO00815,Maple Court,051,Turnover,Medium,Completed,2026-04-24,2026-05-03,Apex Mechanical,1652.9
+WO00816,Oakhaven Apartments,082,Electrical,Low,Completed,2026-05-08,2026-05-22,GreenLeaf Pest,288.66
+WO00817,Maple Court,021,Pest,Medium,Completed,2026-03-16,2026-04-01,Summit Handyman,69.93
+WO00818,Maple Court,069,Appliance,High,Completed,2026-03-22,2026-03-28,Summit Handyman,113.33
+WO00819,Oakhaven Apartments,062,Turnover,Medium,Completed,2026-03-08,2026-03-22,GreenLeaf Pest,690.16
+WO00820,Aspen Grove,019,Electrical,High,Open,2026-06-20,,Apex Mechanical,0.0
+WO00821,Meadowlark Place,018,HVAC,Medium,Open,2026-05-28,,BlueLine Plumbing,0.0
+WO00822,Willow Park,020,Appliance,Emergency,Completed,2026-03-28,2026-04-01,Apex Mechanical,247.31
+WO00823,Cedar Commons,028,Plumbing,High,Open,2026-05-08,,GreenLeaf Pest,0.0
+WO00824,Willow Park,036,Pest,High,Completed,2026-06-08,2026-06-12,Apex Mechanical,143.13
+WO00825,Willow Park,066,Appliance,Low,Completed,2026-05-12,2026-05-25,Summit Handyman,333.28
+WO00826,Ironwood Residences,052,Plumbing,Low,Completed,2026-03-04,2026-03-23,BlueLine Plumbing,76.07
+WO00827,Willow Park,050,Appliance,Emergency,In Progress,2026-06-07,,Summit Handyman,0.0
+WO00828,Sunset Ridge,007,Plumbing,Medium,Completed,2026-03-12,2026-03-17,GreenLeaf Pest,157.95
+WO00829,Stonebridge Villas,027,Appliance,Medium,Completed,2026-06-25,2026-07-06,BlueLine Plumbing,204.48
+WO00830,Willow Park,040,HVAC,Low,Completed,2026-03-26,2026-04-03,BlueLine Plumbing,447.99
+WO00831,Oakhaven Apartments,015,Pest,High,Completed,2026-06-23,2026-06-29,Summit Handyman,186.29
+WO00832,Birchwood Terrace,054,General,High,Completed,2026-03-23,2026-04-03,In-House Maintenance,129.78
+WO00833,Willow Park,083,Plumbing,Low,Open,2026-06-17,,Summit Handyman,0.0
+WO00834,Ironwood Residences,019,Turnover,Low,In Progress,2026-04-16,,GreenLeaf Pest,0.0
+WO00835,Meadowlark Place,002,Plumbing,Low,Completed,2026-03-20,2026-04-05,Volt Electric,124.81
+WO00836,Willow Park,060,Electrical,Low,In Progress,2026-05-28,,BlueLine Plumbing,0.0
+WO00837,Sunset Ridge,011,HVAC,Emergency,Completed,2026-04-28,2026-04-29,GreenLeaf Pest,337.41
+WO00838,Aspen Grove,023,Turnover,Low,Completed,2026-03-03,2026-03-15,BlueLine Plumbing,801.42
+WO00839,Riverbend Lofts,003,Pest,Low,Completed,2026-03-06,2026-03-07,Summit Handyman,165.45
+WO00840,Ironwood Residences,026,General,Low,Completed,2026-04-20,2026-05-03,In-House Maintenance,137.37
+WO00841,Oakhaven Apartments,077,Plumbing,Low,Open,2026-04-03,,Apex Mechanical,0.0
+WO00842,Willow Park,072,Plumbing,Low,Open,2026-06-09,,GreenLeaf Pest,0.0
+WO00843,Oakhaven Apartments,064,Turnover,Medium,Completed,2026-04-02,2026-04-09,GreenLeaf Pest,808.97
+WO00844,Aspen Grove,052,General,High,Completed,2026-04-23,2026-05-08,Volt Electric,62.44
+WO00845,Ironwood Residences,009,Turnover,High,Completed,2026-04-03,2026-04-12,BlueLine Plumbing,747.37
+WO00846,Willow Park,056,Turnover,Medium,Open,2026-04-25,,Volt Electric,0.0
+WO00847,Stonebridge Villas,024,General,High,Open,2026-05-19,,GreenLeaf Pest,0.0
+WO00848,Birchwood Terrace,055,Turnover,Low,Completed,2026-04-10,2026-04-11,Apex Mechanical,1182.62
+WO00849,Ironwood Residences,016,Appliance,Medium,Completed,2026-04-21,2026-05-02,In-House Maintenance,42.0
+WO00850,Stonebridge Villas,005,Electrical,Medium,Open,2026-06-02,,Volt Electric,0.0
+WO00851,Oakhaven Apartments,044,Plumbing,Low,In Progress,2026-05-19,,Volt Electric,0.0
+WO00852,Willow Park,035,General,Medium,Completed,2026-06-23,2026-07-02,BlueLine Plumbing,45.41
+WO00853,Cedar Commons,027,Electrical,Medium,Completed,2026-03-04,2026-03-05,Summit Handyman,311.21
+WO00854,Birchwood Terrace,045,HVAC,Medium,Open,2026-05-31,,Apex Mechanical,0.0
+WO00855,Stonebridge Villas,017,Plumbing,Medium,Completed,2026-03-31,2026-04-12,In-House Maintenance,137.69
+WO00856,Ironwood Residences,028,Plumbing,Low,Completed,2026-03-10,2026-03-24,Volt Electric,122.17
+WO00857,Sunset Ridge,005,Plumbing,Medium,Open,2026-04-17,,In-House Maintenance,0.0
+WO00858,Oakhaven Apartments,042,Appliance,Low,Completed,2026-03-12,2026-03-25,GreenLeaf Pest,196.45
+WO00859,Stonebridge Villas,008,Pest,Low,Completed,2026-05-14,2026-05-25,In-House Maintenance,98.31
+WO00860,Maple Court,018,Plumbing,Medium,Open,2026-06-06,,BlueLine Plumbing,0.0
+WO00861,Sunset Ridge,019,Appliance,High,Open,2026-05-25,,BlueLine Plumbing,0.0
+WO00862,Meadowlark Place,039,Electrical,Medium,Open,2026-06-12,,BlueLine Plumbing,0.0
+WO00863,Maple Court,034,HVAC,High,Completed,2026-03-12,2026-04-01,Volt Electric,391.44
+WO00864,Stonebridge Villas,030,Electrical,Medium,Open,2026-05-07,,Apex Mechanical,0.0
+WO00865,Birchwood Terrace,036,General,Low,Completed,2026-03-04,2026-03-05,Summit Handyman,44.91
+WO00866,Riverbend Lofts,028,General,Low,Completed,2026-04-11,2026-04-25,GreenLeaf Pest,124.08
+WO00867,Oakhaven Apartments,068,Electrical,Low,Completed,2026-03-19,2026-04-04,BlueLine Plumbing,88.96
+WO00868,Meadowlark Place,032,Plumbing,Low,Completed,2026-03-28,2026-04-08,Summit Handyman,226.08
+WO00869,Oakhaven Apartments,012,Plumbing,Low,Completed,2026-03-27,2026-04-07,Apex Mechanical,42.0
+WO00870,Birchwood Terrace,007,Plumbing,Low,Completed,2026-06-04,2026-06-15,Volt Electric,114.26
+WO00871,Harborview Flats,038,Plumbing,Low,Completed,2026-05-11,2026-05-15,Volt Electric,146.53
+WO00872,Cedar Commons,023,Pest,Medium,Completed,2026-05-15,2026-05-31,Summit Handyman,134.39
+WO00873,Cedar Commons,035,Electrical,Medium,Completed,2026-06-07,2026-06-17,Summit Handyman,188.02
+WO00874,Stonebridge Villas,014,Appliance,Medium,In Progress,2026-05-26,,Summit Handyman,0.0
+WO00875,Maple Court,011,Electrical,Low,Completed,2026-03-08,2026-03-16,GreenLeaf Pest,227.21
+WO00876,Cedar Commons,018,Pest,Low,Completed,2026-05-04,2026-05-20,Volt Electric,122.65
+WO00877,Oakhaven Apartments,010,Pest,Medium,Completed,2026-05-13,2026-05-14,Summit Handyman,141.3
+WO00878,Sunset Ridge,030,Turnover,Medium,In Progress,2026-04-23,,Summit Handyman,0.0
+WO00879,Meadowlark Place,023,Appliance,High,Completed,2026-04-05,2026-04-12,Apex Mechanical,118.0
+WO00880,Cedar Commons,027,HVAC,Medium,Completed,2026-05-03,2026-05-07,In-House Maintenance,370.75
+WO00881,Maple Court,057,Plumbing,Medium,Completed,2026-06-18,2026-07-03,Volt Electric,118.62
+WO00882,Ironwood Residences,017,Pest,Low,Completed,2026-06-18,2026-06-30,BlueLine Plumbing,184.97
+WO00883,Cedar Commons,056,Appliance,Medium,Completed,2026-04-10,2026-04-21,Volt Electric,195.02
+WO00884,Meadowlark Place,040,Pest,Medium,Completed,2026-06-29,2026-07-04,GreenLeaf Pest,42.0
+WO00885,Maple Court,071,Plumbing,Low,In Progress,2026-05-31,,Volt Electric,0.0
+WO00886,Cedar Commons,047,Turnover,High,Completed,2026-03-24,2026-04-05,Summit Handyman,979.15
+WO00887,Maple Court,012,Appliance,Medium,Completed,2026-05-04,2026-05-14,BlueLine Plumbing,42.0
+WO00888,Oakhaven Apartments,075,HVAC,Low,Completed,2026-06-09,2026-06-17,Summit Handyman,306.65
+WO00889,Maple Court,013,Appliance,High,In Progress,2026-06-27,,Summit Handyman,0.0
+WO00890,Maple Court,025,Turnover,High,Completed,2026-06-30,2026-07-20,GreenLeaf Pest,1669.69
+WO00891,Stonebridge Villas,015,Appliance,High,Completed,2026-03-27,2026-03-29,Volt Electric,143.92
+WO00892,Maple Court,019,General,High,Completed,2026-03-03,2026-03-21,GreenLeaf Pest,42.0
+WO00893,Willow Park,055,Appliance,Low,Open,2026-06-09,,GreenLeaf Pest,0.0
+WO00894,Oakhaven Apartments,089,Pest,Medium,Open,2026-05-15,,GreenLeaf Pest,0.0
+WO00895,Ironwood Residences,018,Plumbing,Low,In Progress,2026-06-09,,Apex Mechanical,0.0
+WO00896,Birchwood Terrace,051,General,High,Open,2026-03-25,,BlueLine Plumbing,0.0
+WO00897,Maple Court,028,HVAC,Medium,Completed,2026-06-14,2026-06-20,In-House Maintenance,429.44
+WO00898,Sunset Ridge,035,Turnover,Low,Completed,2026-05-23,2026-05-28,In-House Maintenance,1030.83
+WO00899,Sunset Ridge,014,Electrical,Medium,Completed,2026-04-20,2026-05-07,Volt Electric,296.64
+WO00900,Ironwood Residences,019,Electrical,High,Completed,2026-03-31,2026-04-11,Apex Mechanical,293.06
+WO00901,Maple Court,041,Electrical,High,Open,2026-06-28,,Volt Electric,0.0
+WO00902,Sunset Ridge,019,HVAC,Medium,Completed,2026-04-05,2026-04-08,Volt Electric,525.33
+WO00903,Oakhaven Apartments,005,HVAC,High,Completed,2026-05-30,2026-06-11,BlueLine Plumbing,281.15
+WO00904,Maple Court,002,Plumbing,Low,Completed,2026-04-07,2026-04-18,Apex Mechanical,142.11
+WO00905,Oakhaven Apartments,082,HVAC,Low,Completed,2026-03-08,2026-03-15,Volt Electric,273.38
+WO00906,Aspen Grove,044,HVAC,High,Completed,2026-03-28,2026-04-16,Volt Electric,472.32
+WO00907,Ironwood Residences,009,Pest,Medium,Completed,2026-04-07,2026-04-12,BlueLine Plumbing,66.53
+WO00908,Cedar Commons,031,Pest,Low,Completed,2026-05-13,2026-06-01,BlueLine Plumbing,109.12
+WO00909,Aspen Grove,051,Turnover,Medium,Completed,2026-05-05,2026-05-14,Apex Mechanical,535.66
+WO00910,Aspen Grove,046,General,Medium,Open,2026-05-09,,Summit Handyman,0.0
+WO00911,Meadowlark Place,022,Turnover,Low,In Progress,2026-04-18,,Volt Electric,0.0
+WO00912,Riverbend Lofts,024,Turnover,Medium,Open,2026-06-04,,Apex Mechanical,0.0
+WO00913,Sunset Ridge,015,Electrical,High,Open,2026-06-22,,In-House Maintenance,0.0
+WO00914,Cedar Commons,016,Electrical,Low,Completed,2026-05-08,2026-05-18,BlueLine Plumbing,287.78
+WO00915,Oakhaven Apartments,062,Turnover,Medium,Completed,2026-04-05,2026-04-13,GreenLeaf Pest,738.85
+WO00916,Stonebridge Villas,006,General,Medium,Completed,2026-04-17,2026-04-27,GreenLeaf Pest,42.0
+WO00917,Willow Park,066,Electrical,Low,Open,2026-03-10,,GreenLeaf Pest,0.0
+WO00918,Birchwood Terrace,030,Turnover,Low,Completed,2026-03-07,2026-03-24,Summit Handyman,1036.4
+WO00919,Maple Court,040,Plumbing,Medium,Open,2026-06-27,,In-House Maintenance,0.0
+WO00920,Ironwood Residences,054,Electrical,Medium,Completed,2026-04-15,2026-04-26,BlueLine Plumbing,66.38
+WO00921,Oakhaven Apartments,058,Turnover,High,Completed,2026-06-17,2026-06-25,Summit Handyman,1128.03
+WO00922,Stonebridge Villas,043,Pest,High,Open,2026-05-18,,Apex Mechanical,0.0
+WO00923,Cedar Commons,026,Pest,Low,Completed,2026-04-14,2026-04-24,Apex Mechanical,56.83
+WO00924,Stonebridge Villas,004,Plumbing,Medium,Completed,2026-03-25,2026-03-28,GreenLeaf Pest,243.41
+WO00925,Birchwood Terrace,043,General,High,Completed,2026-05-08,2026-05-13,In-House Maintenance,152.07
+WO00926,Cedar Commons,049,Pest,Medium,Open,2026-06-20,,Volt Electric,0.0
+WO00927,Maple Court,029,Turnover,Medium,Completed,2026-05-09,2026-05-19,BlueLine Plumbing,1171.95
+WO00928,Oakhaven Apartments,037,Plumbing,Low,Completed,2026-03-23,2026-04-03,In-House Maintenance,131.59
+WO00929,Willow Park,009,Electrical,Low,In Progress,2026-05-24,,Volt Electric,0.0
+WO00930,Stonebridge Villas,028,Electrical,Low,Completed,2026-03-14,2026-03-17,Summit Handyman,301.97
+WO00931,Stonebridge Villas,019,Plumbing,Low,Completed,2026-05-25,2026-06-04,In-House Maintenance,42.0
+WO00932,Willow Park,067,Electrical,High,In Progress,2026-05-15,,GreenLeaf Pest,0.0
+WO00933,Ironwood Residences,067,Turnover,Low,In Progress,2026-06-06,,In-House Maintenance,0.0
+WO00934,Stonebridge Villas,003,Turnover,Low,Open,2026-06-09,,Summit Handyman,0.0
+WO00935,Stonebridge Villas,028,General,Low,Completed,2026-06-14,2026-06-21,Summit Handyman,84.72
+WO00936,Aspen Grove,012,Plumbing,Low,In Progress,2026-04-10,,Summit Handyman,0.0
+WO00937,Oakhaven Apartments,007,Turnover,Medium,Completed,2026-05-21,2026-06-08,BlueLine Plumbing,1540.67
+WO00938,Riverbend Lofts,024,Plumbing,High,Completed,2026-04-26,2026-05-02,Summit Handyman,69.6
+WO00939,Harborview Flats,016,Turnover,Low,Completed,2026-04-12,2026-04-29,GreenLeaf Pest,994.27
+WO00940,Stonebridge Villas,026,Appliance,Emergency,Completed,2026-06-07,2026-06-19,In-House Maintenance,176.63
+WO00941,Willow Park,076,HVAC,Medium,Open,2026-05-04,,GreenLeaf Pest,0.0
+WO00942,Maple Court,055,Electrical,Emergency,Completed,2026-03-25,2026-04-09,Volt Electric,216.07
+WO00943,Maple Court,040,Appliance,Low,Completed,2026-05-13,2026-05-30,In-House Maintenance,246.25
+WO00944,Cedar Commons,034,Pest,Emergency,Completed,2026-03-20,2026-04-09,Volt Electric,42.05
+WO00945,Aspen Grove,022,Turnover,Medium,Completed,2026-04-08,2026-04-14,BlueLine Plumbing,1402.26
+WO00946,Sunset Ridge,014,Plumbing,Medium,Open,2026-06-19,,Volt Electric,0.0
+WO00947,Sunset Ridge,038,Plumbing,Low,Completed,2026-05-02,2026-05-15,Volt Electric,143.9
+WO00948,Aspen Grove,005,Turnover,Low,Open,2026-06-24,,Summit Handyman,0.0
+WO00949,Oakhaven Apartments,008,Appliance,Low,Completed,2026-06-04,2026-06-07,Summit Handyman,321.73
+WO00950,Oakhaven Apartments,032,HVAC,High,Completed,2026-03-06,2026-03-10,Apex Mechanical,603.33
+WO00951,Oakhaven Apartments,088,HVAC,High,In Progress,2026-06-25,,BlueLine Plumbing,0.0
+WO00952,Willow Park,009,Appliance,Low,Completed,2026-03-10,2026-03-23,Summit Handyman,240.87
+WO00953,Sunset Ridge,037,HVAC,Low,Completed,2026-06-10,2026-06-19,In-House Maintenance,120.09
+WO00954,Harborview Flats,029,Turnover,High,Completed,2026-06-25,2026-07-05,Volt Electric,1698.8
+WO00955,Ironwood Residences,055,General,Emergency,In Progress,2026-06-19,,Volt Electric,0.0
+WO00956,Riverbend Lofts,005,Pest,Medium,Completed,2026-04-19,2026-04-22,BlueLine Plumbing,134.84
+WO00957,Aspen Grove,034,Appliance,Low,Completed,2026-04-07,2026-04-17,BlueLine Plumbing,210.64
+WO00958,Riverbend Lofts,029,HVAC,Low,Open,2026-05-26,,BlueLine Plumbing,0.0
+WO00959,Stonebridge Villas,011,Plumbing,Medium,Open,2026-06-27,,BlueLine Plumbing,0.0
+WO00960,Riverbend Lofts,017,Plumbing,Low,Completed,2026-03-09,2026-03-12,Apex Mechanical,151.29
+WO00961,Ironwood Residences,020,Pest,High,Completed,2026-03-07,2026-03-27,Apex Mechanical,188.97
+WO00962,Maple Court,029,Turnover,Medium,Completed,2026-05-22,2026-06-11,Summit Handyman,1579.75
+WO00963,Maple Court,035,Turnover,Medium,Completed,2026-03-28,2026-04-13,GreenLeaf Pest,948.15
+WO00964,Maple Court,047,Pest,Low,Completed,2026-04-20,2026-04-27,Volt Electric,140.89
+WO00965,Harborview Flats,008,General,Low,Completed,2026-04-12,2026-05-02,GreenLeaf Pest,136.36
+WO00966,Riverbend Lofts,026,Pest,Medium,Completed,2026-05-31,2026-06-19,Volt Electric,247.55
+WO00967,Stonebridge Villas,021,General,Low,In Progress,2026-06-03,,BlueLine Plumbing,0.0
+WO00968,Sunset Ridge,031,Pest,High,Completed,2026-05-19,2026-05-30,GreenLeaf Pest,76.63
+WO00969,Harborview Flats,041,Electrical,Medium,Completed,2026-03-04,2026-03-12,Apex Mechanical,273.29
+WO00970,Birchwood Terrace,050,Pest,High,Completed,2026-04-03,2026-04-21,BlueLine Plumbing,154.44
+WO00971,Willow Park,021,Pest,Medium,Completed,2026-04-01,2026-04-02,Apex Mechanical,162.68
+WO00972,Cedar Commons,002,Pest,High,In Progress,2026-05-13,,BlueLine Plumbing,0.0
+WO00973,Oakhaven Apartments,061,Appliance,Low,In Progress,2026-06-07,,Volt Electric,0.0
+WO00974,Birchwood Terrace,011,Electrical,High,Completed,2026-03-10,2026-03-19,Apex Mechanical,111.99
+WO00975,Maple Court,040,HVAC,Low,In Progress,2026-06-11,,GreenLeaf Pest,0.0
+WO00976,Stonebridge Villas,005,Electrical,Low,Completed,2026-03-28,2026-04-06,Apex Mechanical,43.93
+WO00977,Willow Park,049,Appliance,Low,Completed,2026-04-24,2026-05-13,Summit Handyman,42.0
+WO00978,Ironwood Residences,054,General,Medium,Completed,2026-04-24,2026-04-29,In-House Maintenance,105.43
+WO00979,Cedar Commons,008,Turnover,Low,Completed,2026-03-09,2026-03-25,Apex Mechanical,722.08
+WO00980,Stonebridge Villas,024,Appliance,Medium,Open,2026-06-14,,In-House Maintenance,0.0
+WO00981,Sunset Ridge,029,Appliance,Medium,Completed,2026-06-24,2026-07-14,Volt Electric,65.23
+WO00982,Harborview Flats,036,General,Medium,In Progress,2026-06-11,,Summit Handyman,0.0
+WO00983,Willow Park,082,Electrical,High,Completed,2026-03-21,2026-03-22,Summit Handyman,167.84
+WO00984,Birchwood Terrace,018,Plumbing,High,Completed,2026-04-22,2026-05-07,Apex Mechanical,111.02
+WO00985,Ironwood Residences,015,Pest,Medium,Completed,2026-04-08,2026-04-15,BlueLine Plumbing,127.04
+WO00986,Aspen Grove,051,Pest,Medium,Completed,2026-03-05,2026-03-20,BlueLine Plumbing,149.71
+WO00987,Sunset Ridge,015,Appliance,High,Completed,2026-04-24,2026-05-05,Volt Electric,199.77
+WO00988,Sunset Ridge,024,Electrical,High,Completed,2026-03-25,2026-04-14,Apex Mechanical,278.85
+WO00989,Oakhaven Apartments,007,General,Low,Open,2026-04-27,,GreenLeaf Pest,0.0
+WO00990,Willow Park,078,Electrical,Medium,Completed,2026-03-20,2026-03-30,Volt Electric,278.66
+WO00991,Cedar Commons,038,Plumbing,High,Open,2026-05-04,,In-House Maintenance,0.0
+WO00992,Willow Park,019,Electrical,Medium,Completed,2026-04-16,2026-04-20,Summit Handyman,356.61
+WO00993,Cedar Commons,026,General,High,Completed,2026-03-18,2026-04-05,BlueLine Plumbing,164.65
+WO00994,Aspen Grove,028,General,Medium,Completed,2026-04-12,2026-04-19,GreenLeaf Pest,93.5
+WO00995,Birchwood Terrace,012,Appliance,Medium,Completed,2026-05-15,2026-05-30,Summit Handyman,192.96
+WO00996,Willow Park,072,Plumbing,Medium,Open,2026-06-01,,Volt Electric,0.0
+WO00997,Cedar Commons,028,Plumbing,Medium,Completed,2026-06-24,2026-06-30,GreenLeaf Pest,123.41
+WO00998,Harborview Flats,027,Pest,Medium,Open,2026-06-01,,Volt Electric,0.0
+WO00999,Oakhaven Apartments,027,HVAC,High,Completed,2026-04-14,2026-04-24,In-House Maintenance,96.89
+WO01000,Ironwood Residences,058,Appliance,Low,Completed,2026-04-01,2026-04-05,In-House Maintenance,212.01
+WO01001,Willow Park,072,General,Low,Completed,2026-05-03,2026-05-18,Summit Handyman,63.87
+WO01002,Cedar Commons,043,HVAC,High,Completed,2026-06-01,2026-06-14,Summit Handyman,42.0
+WO01003,Harborview Flats,033,General,Low,Completed,2026-06-23,2026-06-26,Summit Handyman,99.09
+WO01004,Harborview Flats,040,Electrical,Low,Completed,2026-03-06,2026-03-10,Apex Mechanical,225.5
+WO01005,Willow Park,019,Turnover,Medium,Completed,2026-03-03,2026-03-08,GreenLeaf Pest,2184.06
+WO01006,Cedar Commons,055,General,Low,Completed,2026-04-11,2026-04-30,Volt Electric,42.0
+WO01007,Oakhaven Apartments,075,Turnover,Low,Completed,2026-03-16,2026-04-01,In-House Maintenance,1226.15
+WO01008,Maple Court,041,Appliance,Medium,Open,2026-05-19,,In-House Maintenance,0.0
+WO01009,Harborview Flats,012,Plumbing,High,Completed,2026-04-30,2026-05-09,In-House Maintenance,83.35
+WO01010,Aspen Grove,034,Turnover,Low,Completed,2026-04-11,2026-04-13,GreenLeaf Pest,672.73
+WO01011,Aspen Grove,003,Pest,Medium,Completed,2026-03-05,2026-03-17,GreenLeaf Pest,46.67
+WO01012,Maple Court,039,HVAC,Medium,Completed,2026-03-19,2026-04-01,Volt Electric,464.41
+WO01013,Oakhaven Apartments,001,Plumbing,Medium,Completed,2026-06-22,2026-06-23,Summit Handyman,63.35

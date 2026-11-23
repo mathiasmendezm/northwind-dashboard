@@ -25,3 +25,14 @@ def test_every_page_renders_without_raising():
     for option in radio.options:
         at = radio.set_value(option).run()
         assert not at.exception, f"Page '{option}' raised: {at.exception}"
+
+
+def test_editing_a_target_rerenders_without_raising():
+    at = AppTest.from_file(APP, default_timeout=30)
+    at.run()
+    at.number_input(key="target_collection_good").set_value(90.0).run()
+    at.number_input(key="target_collection_warn").set_value(99.0).run()  # red above green: clamped
+    assert not at.exception, f"Editing targets raised: {at.exception}"
+    at.button[0].click().run()  # reset to defaults
+    assert at.number_input(key="target_collection_good").value == 98.0
+    assert not at.exception

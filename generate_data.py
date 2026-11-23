@@ -4,7 +4,9 @@ Synthetic data generator for the Northwind Residential demo dashboard.
 Everything produced here is randomly generated with Faker + NumPy under a fixed
 seed, so runs are reproducible. There is no real, scraped, or client data of any
 kind — "Northwind Residential" is a fictional company (a nod to the classic
-Microsoft demo database).
+Microsoft demo database). Its 12 fictional properties sit in real Los Angeles
+neighborhoods, and rents, occupancy, rent stabilization (RSO), concessions and
+collections are calibrated to published 2025-26 LA market figures.
 
 Run:  python generate_data.py
 Output: writes clean CSVs to ./data/ and one deliberately messy export to
@@ -31,36 +33,43 @@ Faker.seed(SEED)
 rng = np.random.default_rng(SEED)
 
 # ---------------------------------------------------------------------------
-# Fictional portfolio definition
+# Fictional portfolio definition — calibrated to Los Angeles
 # ---------------------------------------------------------------------------
-# 12 properties across a few fictional metros. rent_base scales the market rent
-# for a 1-bed at that property; class (A/B/C) drives quality/vacancy behaviour.
+# 12 fictional properties in real City of Los Angeles neighborhoods. rent_base is
+# the studio market rent; each bedroom adds BED_PREMIUM. Calibration targets
+# (2025-26): average asking rent ~$2,300-2,500 and occupancy in the mid-95% range.
+# Buildings built before Oct 1978 fall under LA's Rent Stabilization Ordinance
+# (RSO): long-tenured residents pay well below market, renew more often, and
+# renewal increases are capped, while rents reset to market on vacancy.
 PROPERTIES = [
-    # name,                 city,            state, units, class, rent_base, year
-    ("Cedar Commons",       "Lakeside",      "OR",   64,   "B",   1650,     2004),
-    ("Harborview Flats",    "Lakeside",      "OR",   48,   "A",   2200,     2018),
-    ("Maple Court",         "Fairview",      "WA",   72,   "C",   1250,     1988),
-    ("Birchwood Terrace",   "Fairview",      "WA",   56,   "B",   1550,     2001),
-    ("Sunset Ridge",        "Glenwood",      "CO",   40,   "A",   2050,     2015),
-    ("Willow Park",         "Glenwood",      "CO",   88,   "B",   1450,     1999),
-    ("Aspen Grove",         "Millbrook",     "TX",   60,   "B",   1350,     2007),
-    ("Riverbend Lofts",     "Millbrook",     "TX",   36,   "A",   1900,     2020),
-    ("Oakhaven Apartments", "Northgate",     "AZ",   96,   "C",   1150,     1985),
-    ("Stonebridge Villas",  "Northgate",     "AZ",   52,   "B",   1500,     2010),
-    ("Meadowlark Place",    "Cedar Falls",   "MN",   44,   "B",   1400,     2003),
-    ("Ironwood Residences", "Cedar Falls",   "MN",   68,   "A",   1750,     2017),
+    # name,                 neighborhood,      state, units, class, rent_base, year
+    ("Cedar Commons",       "Mid-City",        "CA",   64,   "B",   1750,     1986),
+    ("Harborview Flats",    "San Pedro",       "CA",   48,   "A",   2100,     2018),
+    ("Maple Court",         "Koreatown",       "CA",   72,   "C",   1350,     1964),
+    ("Birchwood Terrace",   "Van Nuys",        "CA",   56,   "B",   1550,     1989),
+    ("Sunset Ridge",        "Silver Lake",     "CA",   40,   "A",   2350,     2016),
+    ("Willow Park",         "North Hollywood", "CA",   88,   "B",   1650,     1985),
+    ("Aspen Grove",         "Palms",           "CA",   60,   "B",   1800,     1972),
+    ("Riverbend Lofts",     "Arts District",   "CA",   36,   "A",   2400,     2020),
+    ("Oakhaven Apartments", "Westlake",        "CA",   96,   "C",   1250,     1961),
+    ("Stonebridge Villas",  "Sherman Oaks",    "CA",   52,   "B",   1850,     1988),
+    ("Meadowlark Place",    "Highland Park",   "CA",   44,   "B",   1600,     1974),
+    ("Ironwood Residences", "Westwood",        "CA",   68,   "A",   2600,     2017),
 ]
+RSO_CUTOFF_YEAR = 1978   # LA RSO covers most rental buildings built before Oct 1978
+BED_PREMIUM = 450        # market rent added per bedroom
 
-STATUS_WEIGHTS = {  # by property class
+STATUS_WEIGHTS = {  # by property class; portfolio lands in the mid-95% occupancy range
     "A": {"Current": 0.93, "Notice-Rented": 0.02, "Notice-Unrented": 0.02,
           "Vacant-Rented": 0.01, "Vacant-Unrented": 0.015, "Evict": 0.005},
-    "B": {"Current": 0.88, "Notice-Rented": 0.02, "Notice-Unrented": 0.03,
-          "Vacant-Rented": 0.02, "Vacant-Unrented": 0.04, "Evict": 0.01},
-    "C": {"Current": 0.82, "Notice-Rented": 0.02, "Notice-Unrented": 0.04,
-          "Vacant-Rented": 0.02, "Vacant-Unrented": 0.07, "Evict": 0.03},
+    "B": {"Current": 0.895, "Notice-Rented": 0.02, "Notice-Unrented": 0.03,
+          "Vacant-Rented": 0.02, "Vacant-Unrented": 0.025, "Evict": 0.01},
+    "C": {"Current": 0.845, "Notice-Rented": 0.02, "Notice-Unrented": 0.04,
+          "Vacant-Rented": 0.02, "Vacant-Unrented": 0.045, "Evict": 0.03},
 }
 
 BED_MIX = [(0, 0.10), (1, 0.42), (2, 0.34), (3, 0.14)]  # studio..3BR
+LA_COST_INDEX = 1.2      # repair labor and materials run ~20% above national averages
 
 
 def _weighted_choice(mapping: dict) -> str:
@@ -85,6 +94,7 @@ def build_properties() -> pd.DataFrame:
             "class": cls,
             "year_built": year,
             "rent_base": rent_base,
+            "rent_stabilized": year < RSO_CUTOFF_YEAR,
         })
     return pd.DataFrame(rows)
 
@@ -101,15 +111,17 @@ def build_rent_roll(props: pd.DataFrame) -> pd.DataFrame:
             sqft = int(400 + beds * 280 + rng.integers(-40, 80))
 
             # Market rent scales off the property base + bedroom premium + noise
-            market = p["rent_base"] + beds * 320 + rng.normal(0, 60)
-            market = round(max(700, market) / 5) * 5  # round to nearest $5
+            market = p["rent_base"] + beds * BED_PREMIUM + rng.normal(0, 80)
+            market = round(max(900, market) / 5) * 5  # round to nearest $5
 
             status = _weighted_choice(STATUS_WEIGHTS[p["class"]])
             occupied = status in ("Current", "Notice-Rented", "Notice-Unrented", "Evict")
 
             if occupied:
-                # Actual rent sits slightly below market (loss-to-lease)
-                actual = round(market * rng.uniform(0.90, 1.01) / 5) * 5
+                # Actual rent sits slightly below market (loss-to-lease). In RSO
+                # buildings, capped increases leave long-tenured residents far below.
+                low = 0.68 if p["rent_stabilized"] else 0.90
+                actual = round(market * rng.uniform(low, 1.01) / 5) * 5
                 tenant = fake.name()
                 # lease_start reflects the most recently signed term (initial move-in
                 # or a renewal), not necessarily the original move-in date. Most
@@ -167,7 +179,7 @@ def build_work_orders(rr: pd.DataFrame) -> pd.DataFrame:
         unit = rr.sample(1, random_state=int(rng.integers(0, 1e6))).iloc[0]
         cat = rng.choice(list(WO_CATEGORIES.keys()))
         mean, sd = WO_CATEGORIES[cat]
-        cost = round(max(35, rng.normal(mean, sd)), 2)
+        cost = round(max(35, rng.normal(mean, sd)) * LA_COST_INDEX, 2)
 
         opened = AS_OF - timedelta(days=int(rng.integers(0, 120)))
         priority = rng.choice(["Low", "Medium", "High", "Emergency"],
@@ -326,7 +338,7 @@ def build_applications(rr: pd.DataFrame) -> pd.DataFrame:
             "submitted_date": submitted,
             "status": status,
             "screening_score": score,
-            "monthly_income": int(round(rng.normal(5200, 1600) / 50) * 50),
+            "monthly_income": int(round(rng.normal(8200, 2400) / 50) * 50),  # ~3x LA rents
         })
     return pd.DataFrame(rows)
 
@@ -352,7 +364,7 @@ def build_leads(props: pd.DataFrame) -> pd.DataFrame:
             "status": rng.choice(["New", "Contacted", "Toured", "Applied", "Lost"],
                                 p=[0.25, 0.30, 0.20, 0.15, 0.10]),
             "created_date": created,
-            "monthly_income": int(round(rng.normal(5000, 1500) / 50) * 50),
+            "monthly_income": int(round(rng.normal(7800, 2300) / 50) * 50),
         })
     return pd.DataFrame(rows)
 
@@ -360,29 +372,33 @@ def build_leads(props: pd.DataFrame) -> pd.DataFrame:
 # ---------------------------------------------------------------------------
 # 8) Lease events, unit turns, receivables, and monthly collections
 # ---------------------------------------------------------------------------
-# These four tables were added after the original seven. Each builder draws from
-# its own seeded generator instead of the module-level `rng`, so adding them
-# doesn't shift a single value in the tables above: every number the dashboard
-# showed before stays exactly the same.
+# Each of these builders draws from its own seeded generator instead of the
+# module-level `rng`, so changing them never shifts values in the tables above.
 #
-# Distributions are tuned to 2025-2026 industry benchmarks (see the README's
-# "Benchmarks behind the thresholds" section): ~56% renewal conversion,
-# renewals at ~+3.5% vs. new leases at ~+2% (Class C negative), ~41 days vacant
-# between residents, concessions on 12-22% of new leases at ~6 weeks free, and
-# bad debt around 1% of rent billed.
+# Distributions are tuned to 2025-2026 benchmarks, Los Angeles where a figure
+# exists (see the README's "Benchmarks behind the thresholds"): renewal
+# conversion in the mid-50s nationally and higher in RSO buildings, Southern
+# California renewals at ~2-3% with flat-to-negative new-lease rents, RSO rents
+# resetting to market on vacancy, concessions concentrated in new Class A
+# buildings (~6 weeks free), delinquency elevated but stable, and bad debt a bit
+# above the ~1% that large apartment REITs report.
 
 LEASE_WINDOW_DAYS = 365
 
-RENEWAL_PROB = {"A": 0.60, "B": 0.56, "C": 0.47}
-RENEWAL_INCREASE = {"A": (0.034, 0.010), "B": (0.036, 0.012), "C": (0.040, 0.014)}  # mean, sd
-NEW_LEASE_TRADEOUT = {"A": (0.015, 0.020), "B": (0.006, 0.022), "C": (-0.020, 0.025)}
+RENEWAL_PROB = {"A": 0.46, "B": 0.50, "C": 0.50}
+RSO_RENEWAL_PROB = 0.64                     # below-market rents keep RSO residents in place
+RENEWAL_INCREASE = {"A": (0.030, 0.010), "B": (0.032, 0.010), "C": (0.035, 0.012)}  # mean, sd
+RSO_RENEWAL_INCREASE = (0.030, 0.006)
+RSO_RENEWAL_CAP = (0.01, 0.04)              # City of LA RSO allowable increase range, 2026
+NEW_LEASE_TRADEOUT = {"A": (-0.010, 0.020), "B": (0.000, 0.020), "C": (-0.010, 0.025)}
+RSO_VACANCY_RESET = (0.16, 0.07)            # rent resets toward market when an RSO unit turns
 
 # Leasing days = time from rent-ready to move-in; make-ready time comes from the scope.
-LEASING_DAYS_MEAN = {"A": 18, "B": 27, "C": 38}
-TURN_SCOPES = {  # scope: (make-ready days low, high, turn cost mean, sd)
-    "Light":    (3, 7, 1100, 250),
-    "Standard": (6, 12, 2300, 450),
-    "Heavy":    (12, 24, 4800, 1100),
+LEASING_DAYS_MEAN = {"A": 16, "B": 21, "C": 27}
+TURN_SCOPES = {  # scope: (make-ready days low, high, turn cost mean, sd) — LA labor costs
+    "Light":    (3, 7, 1300, 300),
+    "Standard": (6, 12, 2750, 550),
+    "Heavy":    (12, 24, 5750, 1300),
 }
 SCOPE_WEIGHTS = {
     "A": {"Light": 0.45, "Standard": 0.45, "Heavy": 0.10},
@@ -402,10 +418,12 @@ MOVE_OUT_REASONS = {
     "Other / personal":                 (False, 0.08, 0.08),
 }
 
-CONCESSION_PROB = {"A": 0.13, "B": 0.15, "C": 0.22}  # share of new leases with a concession
-CONCESSION_WEEKS = (4.0, 8.0)                        # weeks free, amortized over the 12-month term
+# Share of new leases signed with a concession, and weeks free (amortized over the
+# 12-month term). LA concessions cluster in new Class A buildings; RSO units rarely need them.
+CONCESSION_PROB = {"A": 0.40, "B": 0.15, "C": 0.05}
+CONCESSION_WEEKS = {"A": (4.0, 8.0), "B": (2.0, 5.0), "C": (2.0, 4.0)}
 
-DELINQUENT_PROB = {"A": 0.01, "B": 0.025, "C": 0.05}  # share of non-eviction households behind
+DELINQUENT_PROB = {"A": 0.012, "B": 0.025, "C": 0.05}  # share of non-eviction households behind
 MONTHS_BEHIND_WEIGHTS = {1: 0.65, 2: 0.25, 3: 0.10}
 TURN_DELAY_PROB = 0.25   # open turns held up by a vendor, parts or an owner approval
 TURN_DELAY_DAYS = (10, 30)
@@ -414,7 +432,7 @@ COLLECTION_STAGES = {
     2: ["Payment plan", "Pay-or-quit notice"],
     3: ["Pay-or-quit notice", "Payment plan"],
 }
-BAD_DEBT_MEAN = {"A": 0.004, "B": 0.009, "C": 0.019}  # monthly write-offs as a share of rent billed
+BAD_DEBT_MEAN = {"A": 0.006, "B": 0.011, "C": 0.022}  # monthly write-offs as a share of rent billed
 COLLECTIONS_MONTHS = 12
 
 
@@ -444,19 +462,22 @@ def build_lease_events_and_turns(props: pd.DataFrame,
     names.seed_instance(SEED + 1)
     today = pd.Timestamp(AS_OF)
     cls_of = props.set_index("property")["class"]
+    rso_of = props.set_index("property")["rent_stabilized"]
     scopes = list(TURN_SCOPES)
 
     events, turns = [], []
     for _, u in rr.iterrows():
         cls = cls_of[u["property"]]
+        rso = bool(rso_of[u["property"]])
         occupied = u["status"] in OCCUPIED_STATUSES
         start = pd.Timestamp(u["lease_start"]) if occupied else pd.NaT
         if occupied and (today - start).days > LEASE_WINDOW_DAYS:
             continue  # signed before the window: no decision to record
 
         base = {"unit_id": u["unit_id"], "property": u["property"], "unit": u["unit"]}
-        if occupied and g.random() < RENEWAL_PROB[cls]:
-            increase = g.normal(*RENEWAL_INCREASE[cls])
+        if occupied and g.random() < (RSO_RENEWAL_PROB if rso else RENEWAL_PROB[cls]):
+            increase = (float(np.clip(g.normal(*RSO_RENEWAL_INCREASE), *RSO_RENEWAL_CAP)) if rso
+                        else g.normal(*RENEWAL_INCREASE[cls]))
             events.append({**base, "event_date": start.date(), "outcome": "Renewed",
                            "resident": u["tenant"],
                            "prior_rent": round(u["actual_rent"] / (1 + increase), 2),
@@ -473,12 +494,13 @@ def build_lease_events_and_turns(props: pd.DataFrame,
             move_in = start
             leasing = max(1, int(round(g.gamma(2.5, LEASING_DAYS_MEAN[cls] / 2.5))))
             move_out = move_in - timedelta(days=make_ready + leasing)
-            prior_rent = u["actual_rent"] / (1 + g.normal(*NEW_LEASE_TRADEOUT[cls]))
+            tradeout = g.normal(*(RSO_VACANCY_RESET if rso else NEW_LEASE_TRADEOUT[cls]))
+            prior_rent = u["actual_rent"] / (1 + tradeout)
             new_rent = float(u["actual_rent"])
         else:                                      # vacant now: turn still open
-            age = int(g.integers(10, 60)) if u["status"] == "Vacant-Rented" else int(g.integers(4, 95))
+            age = int(g.integers(10, 60)) if u["status"] == "Vacant-Rented" else int(g.integers(4, 80))
             move_out = today - timedelta(days=age)
-            prior_rent = u["market_rent"] * g.uniform(0.90, 1.00)
+            prior_rent = u["market_rent"] * g.uniform(0.70 if rso else 0.90, 1.00)
             if u["status"] == "Vacant-Rented":
                 move_in = today + timedelta(days=int(g.integers(3, 22)))
                 new_rent = round(u["market_rent"] * g.uniform(0.97, 1.01) / 5) * 5
@@ -492,8 +514,9 @@ def build_lease_events_and_turns(props: pd.DataFrame,
             ready = pd.NaT                         # still in make-ready
         reason, controllable = _move_out_reason(g, cls)
         has_new_lease = pd.notna(move_in)
-        concession = (round(float(g.uniform(*CONCESSION_WEEKS)), 1)
-                      if has_new_lease and g.random() < CONCESSION_PROB[cls] else 0.0)
+        concession_prob = 0.0 if rso else CONCESSION_PROB[cls]
+        concession = (round(float(g.uniform(*CONCESSION_WEEKS[cls])), 1)
+                      if has_new_lease and g.random() < concession_prob else 0.0)
 
         events.append({**base, "event_date": move_out.date(), "outcome": "Moved out",
                        "resident": names.name(), "prior_rent": round(prior_rent, 2),
@@ -551,10 +574,10 @@ def build_receivables(props: pd.DataFrame, rr: pd.DataFrame,
         if u["status"] == "Evict":
             b0 = b30 = billed
             depth = g.random()
-            if depth < 0.35:                       # case filed a while ago: 90+ days behind
+            if depth < 0.45:                       # LA cases take months: 90+ days behind
                 b60 = billed
-                b90 = round(billed * g.uniform(0.2, 1.0), 2)
-            elif depth < 0.75:
+                b90 = round(billed * g.uniform(0.3, 1.5), 2)
+            elif depth < 0.85:
                 b60 = round(billed * g.uniform(0.2, 1.0), 2)
             stage = "Eviction filed"
             last_paid = today - timedelta(days=int(30 * (2 + (b60 > 0) + (b90 > 0)) + g.integers(5, 25)))
@@ -665,8 +688,7 @@ def _write_messy_export(rr: pd.DataFrame) -> None:
     suffixes = ["St", "Ave", "Blvd", "Dr", "Ln"]
     messy["Property"] = [
         f"{name} - {int(rng.integers(100, 9999))} {fake.street_name()} "
-        f"{rng.choice(suffixes)}, {rng.choice(['OR','WA','CO','TX','AZ','MN'])} "
-        f"{int(rng.integers(10000, 99999))}"
+        f"{rng.choice(suffixes)}, CA {int(rng.integers(90001, 91610))}"
         for name in messy["property"]
     ]
     messy["Market Rent"] = messy["market_rent"].map(lambda v: f'"${v:,.2f}"')

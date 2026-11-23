@@ -4,6 +4,7 @@ import pandas as pd
 
 from constants import AS_OF
 from insights import CRITICAL, WARNING, WATCH, generate_recommendations
+from metrics import Targets
 
 TODAY = pd.Timestamp(AS_OF)
 
@@ -66,11 +67,31 @@ class TestOccupancy:
 
     def test_slightly_below_target_is_warning_not_critical(self):
         data = _healthy_data()
-        # 90% occupied: below the 93% target but above the 88% warn line.
+        # 90% occupied: below a 93% target but above an 88% red line.
         rows = [{"status": "Vacant-Unrented"} for _ in range(2)] + [{} for _ in range(18)]
         data["rent_roll"] = _rent_roll(rows)
-        recs = [r for r in generate_recommendations(data) if "leasing pace" in r["title"].lower()]
+        targets = Targets(occupancy_good=93, occupancy_warn=88)
+        recs = [r for r in generate_recommendations(data, targets)
+                if "leasing pace" in r["title"].lower()]
         assert recs and recs[0]["severity"] == WARNING
+
+    def test_default_la_targets_make_ninety_percent_critical(self):
+        data = _healthy_data()
+        rows = [{"status": "Vacant-Unrented"} for _ in range(2)] + [{} for _ in range(18)]
+        data["rent_roll"] = _rent_roll(rows)
+        recs = _area(generate_recommendations(data), "Occupancy")
+        assert any(r["severity"] == CRITICAL for r in recs)
+
+    def test_rent_stabilized_gap_is_split_out(self):
+        data = _healthy_data()
+        rows = [{"market_rent": 1000, "actual_rent": 900} for _ in range(10)] + \
+               [{"property": "Old Court", "market_rent": 1000, "actual_rent": 700} for _ in range(10)]
+        data["rent_roll"] = _rent_roll(rows)
+        data["properties"] = pd.DataFrame({"property": ["Healthy Court", "Old Court"],
+                                           "rent_stabilized": [False, True]})
+        recs = [r for r in generate_recommendations(data) if "renewal pricing" in r["title"].lower()]
+        assert recs and "rent-stabilized" in recs[0]["detail"]
+        assert "$1,000/mo of it is in non-stabilized units" in recs[0]["detail"]
 
     def test_high_vacancy_loss_flagged(self):
         data = _healthy_data()
@@ -300,3 +321,23 @@ class TestRetention:
         data["lease_events"] = _events(controllable=True)
         recs = _area(generate_recommendations(data), "Retention")
         assert any(r["severity"] == WATCH and "rent increase" in r["detail"] for r in recs)
+
+
+class TestEditableTargets:
+    def test_loosening_a_target_clears_its_warning(self):
+        data = _healthy_round_one()
+        unpaid = {"paid_this_month": 0.0, "bal_0_30": 1000.0, "total_balance": 1000.0}
+        data["receivables"] = _receivables([unpaid], n_current=40)  # ~97.6% collected
+        strict = _area(generate_recommendations(data), "Collections")
+        loose = _area(generate_recommendations(data, Targets(collection_good=95, collection_warn=90,
+                                                             past_due_good=5, past_due_warn=8)),
+                      "Collections")
+        assert any("unpaid rent" in r["title"].lower() for r in strict)
+        assert not loose
+
+    def test_target_value_appears_in_the_message(self):
+        data = _healthy_round_one()
+        data["lease_events"] = _events(renewed=3, moved=7)
+        recs = _area(generate_recommendations(data, Targets(renewal_good=62, renewal_warn=40)),
+                     "Retention")
+        assert any("target 62%" in r["detail"] for r in recs)

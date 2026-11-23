@@ -4,11 +4,12 @@ import pandas as pd
 import streamlit as st
 
 from constants import AS_OF
+from metrics import DEFAULT_TARGETS, Targets
 from ui.charts import hbar, vbar
 from ui.theme import BAD, MUTE, PRIMARY, WARN, kpi, money, page_head, section
 
 
-def page_maintenance(d: dict[str, pd.DataFrame]) -> None:
+def page_maintenance(d: dict[str, pd.DataFrame], t: Targets = DEFAULT_TARGETS) -> None:
     wo = d["work_orders"]
     page_head("Maintenance",
               "Work-order volume, aging, spend, and vendor mix")

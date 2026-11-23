@@ -21,11 +21,8 @@ from constants import AS_OF, OCCUPIED_STATUSES
 CRITICAL, WARNING, WATCH = "critical", "warning", "watch"
 _SEVERITY_ORDER = {CRITICAL: 0, WARNING: 1, WATCH: 2}
 
-# Thresholds — mirrors the color-coding used on Overview/Occupancy/Financials.
-OCC_TARGET_PCT = 93
-OCC_WARN_PCT = 88
-NOI_MARGIN_GOOD_PCT = 60
-NOI_MARGIN_WARN_PCT = 50
+# Fixed thresholds. The color-coded ones (occupancy, NOI margin, collections,
+# turnovers, retention) come from metrics.Targets, which viewers can edit.
 VACANCY_LOSS_CRITICAL_PCT = 8
 VACANCY_LOSS_WARNING_PCT = 4
 LOSS_TO_LEASE_WARN_PCT = 3
@@ -39,7 +36,8 @@ def _rec(severity: str, area: str, title: str, detail: str) -> dict:
     return {"severity": severity, "area": area, "title": title, "detail": detail}
 
 
-def _occupancy_recs(rr: pd.DataFrame) -> list[dict]:
+def _occupancy_recs(rr: pd.DataFrame, t: m.Targets,
+                    rso_properties: frozenset[str] = frozenset()) -> list[dict]:
     recs = []
     by_prop = (rr.assign(occ=rr["status"].isin(OCCUPIED_STATUSES))
                .groupby("property")
@@ -47,15 +45,16 @@ def _occupancy_recs(rr: pd.DataFrame) -> list[dict]:
     by_prop["pct"] = by_prop["occ"] / by_prop["units"] * 100
     worst = by_prop.sort_values("pct").iloc[0]
 
-    if worst["pct"] < OCC_WARN_PCT:
+    if worst["pct"] < t.occupancy_warn:
         recs.append(_rec(
             CRITICAL, "Occupancy", f"Address low occupancy at {worst.name}",
             f"{worst['pct']:.1f}% occupied ({int(worst['occ'])} of {int(worst['units'])} units) — "
-            f"{OCC_TARGET_PCT - worst['pct']:.0f} points below the {OCC_TARGET_PCT}% portfolio target."))
-    elif worst["pct"] < OCC_TARGET_PCT:
+            f"{t.occupancy_good - worst['pct']:.0f} points below the {t.occupancy_good:g}% "
+            "portfolio target."))
+    elif worst["pct"] < t.occupancy_good:
         recs.append(_rec(
             WARNING, "Occupancy", f"Monitor leasing pace at {worst.name}",
-            f"{worst['pct']:.1f}% occupied, trailing the {OCC_TARGET_PCT}% portfolio target."))
+            f"{worst['pct']:.1f}% occupied, trailing the {t.occupancy_good:g}% portfolio target."))
 
     occ_units = rr[rr["status"].isin(OCCUPIED_STATUSES)]
     vacant = rr[~rr["status"].isin(OCCUPIED_STATUSES)]
@@ -77,15 +76,20 @@ def _occupancy_recs(rr: pd.DataFrame) -> list[dict]:
     occ_market = occ_units["market_rent"].sum()
     ltl_pct = loss_to_lease / occ_market * 100 if occ_market else 0.0
     if ltl_pct > LOSS_TO_LEASE_WARN_PCT:
-        recs.append(_rec(
-            WARNING, "Occupancy", "Review renewal pricing",
-            f"${loss_to_lease:,.0f}/mo left on the table portfolio-wide — occupied units are "
-            f"renting {ltl_pct:.1f}% under market on average."))
+        detail = (f"${loss_to_lease:,.0f}/mo left on the table portfolio-wide — occupied units are "
+                  f"renting {ltl_pct:.1f}% under market on average.")
+        in_rso = occ_units["property"].isin(rso_properties)
+        rso_gap = (occ_units.loc[in_rso, "market_rent"] - occ_units.loc[in_rso, "actual_rent"]).sum()
+        if rso_gap > 0:
+            detail += (f" ${loss_to_lease - rso_gap:,.0f}/mo of it is in non-stabilized units and can be "
+                       f"closed at renewal; ${rso_gap:,.0f}/mo sits in rent-stabilized (RSO) buildings, "
+                       "where capped increases mean it mostly comes back only at turnover.")
+        recs.append(_rec(WARNING, "Occupancy", "Review renewal pricing", detail))
 
     return recs
 
 
-def _financials_recs(fin: pd.DataFrame) -> list[dict]:
+def _financials_recs(fin: pd.DataFrame, t: m.Targets) -> list[dict]:
     recs = []
     fin = fin.sort_values("month")
     last_month = fin["month"].max()
@@ -98,15 +102,15 @@ def _financials_recs(fin: pd.DataFrame) -> list[dict]:
     by_prop["margin"] = by_prop["noi"] / by_prop["egi"] * 100
     worst = by_prop.sort_values("margin").iloc[0]
 
-    if worst["margin"] < NOI_MARGIN_WARN_PCT:
+    if worst["margin"] < t.noi_margin_warn:
         recs.append(_rec(
             CRITICAL, "Financials", f"Review opex at {worst.name}",
             f"NOI margin at {worst['margin']:.1f}%, well below the "
-            f"{NOI_MARGIN_GOOD_PCT}% target — check for an expense outlier."))
-    elif worst["margin"] < NOI_MARGIN_GOOD_PCT:
+            f"{t.noi_margin_good:g}% target — check for an expense outlier."))
+    elif worst["margin"] < t.noi_margin_good:
         recs.append(_rec(
             WARNING, "Financials", f"Monitor margin at {worst.name}",
-            f"NOI margin at {worst['margin']:.1f}%, trailing the {NOI_MARGIN_GOOD_PCT}% target."))
+            f"NOI margin at {worst['margin']:.1f}%, trailing the {t.noi_margin_good:g}% target."))
 
     t12_noi = t12["noi"].sum()
     prior_noi = prior12["noi"].sum()
@@ -195,22 +199,22 @@ def _funnel_recs(funnel: pd.DataFrame) -> list[dict]:
 _SEVERITY_FOR_GRADE = {m.WARN: WARNING, m.BAD: CRITICAL}
 
 
-def _collections_recs(rec: pd.DataFrame, monthly: pd.DataFrame) -> list[dict]:
+def _collections_recs(rec: pd.DataFrame, monthly: pd.DataFrame, t: m.Targets) -> list[dict]:
     recs = []
     s = m.collections_summary(rec, monthly)
     by_prop = m.collections_by_property(rec).sort_values("rate")
     worst = by_prop.iloc[0]
 
-    grade = m.grade_high(s["rate"], m.COLLECTION_GOOD_PCT, m.COLLECTION_WARN_PCT)
+    grade = m.grade_high(s["rate"], t.collection_good, t.collection_warn)
     if grade != m.GOOD:
         unpaid = s["billed"] - s["collected"]
         recs.append(_rec(
             _SEVERITY_FOR_GRADE[grade], "Collections", "Chase this month's unpaid rent",
             f"{s['rate']:.1f}% of rent billed this month is collected "
-            f"(target {m.COLLECTION_GOOD_PCT:.0f}%) — ${unpaid:,.0f} still outstanding. "
+            f"(target {t.collection_good:g}%) — ${unpaid:,.0f} still outstanding. "
             f"Lowest: {worst.name} at {worst['rate']:.1f}%."))
 
-    grade = m.grade_low(s["past_due_pct"], m.PAST_DUE_GOOD_PCT, m.PAST_DUE_WARN_PCT)
+    grade = m.grade_low(s["past_due_pct"], t.past_due_good, t.past_due_warn)
     if grade != m.GOOD:
         eviction_share = s["eviction_balance"] / s["past_due"] * 100 if s["past_due"] else 0.0
         recs.append(_rec(
@@ -219,19 +223,19 @@ def _collections_recs(rec: pd.DataFrame, monthly: pd.DataFrame) -> list[dict]:
             f"({s['past_due_pct']:.1f}% of a month's rent); {eviction_share:.0f}% of it sits in "
             f"{s['evictions']} eviction case{'s' if s['evictions'] != 1 else ''}."))
 
-    grade = m.grade_low(s["bad_debt_pct"], m.BAD_DEBT_GOOD_PCT, m.BAD_DEBT_WARN_PCT)
+    grade = m.grade_low(s["bad_debt_pct"], t.bad_debt_good, t.bad_debt_warn)
     if grade != m.GOOD:
         recs.append(_rec(
             _SEVERITY_FOR_GRADE[grade], "Collections", "Review screening and write-off policy",
             f"${s['written_off']:,.0f} written off as bad debt in the last 12 months — "
-            f"{s['bad_debt_pct']:.1f}% of rent billed (target ≤ {m.BAD_DEBT_GOOD_PCT:.0f}%)."))
+            f"{s['bad_debt_pct']:.1f}% of rent billed (target ≤ {t.bad_debt_good:g}%)."))
     return recs
 
 
-def _turn_recs(turns: pd.DataFrame, rr: pd.DataFrame) -> list[dict]:
+def _turn_recs(turns: pd.DataFrame, rr: pd.DataFrame, t: m.Targets) -> list[dict]:
     recs = []
-    s = m.turn_summary(turns, rr)
-    now = m.open_turns(turns, rr)
+    s = m.turn_summary(turns, rr, t)
+    now = m.open_turns(turns, rr, t.make_ready_warn)
 
     if s["stuck"]:
         stuck = now[now["stuck"]]
@@ -239,15 +243,15 @@ def _turn_recs(turns: pd.DataFrame, rr: pd.DataFrame) -> list[dict]:
             WARNING, "Turnovers", "Unstick units held up in make-ready",
             f"{s['stuck']} vacant unit{'s' if s['stuck'] != 1 else ''} still not rent-ready after "
             f"{int(stuck['days_vacant'].min())}–{int(stuck['days_vacant'].max())} days "
-            f"(target ≤ {m.MAKE_READY_GOOD_DAYS}); together they lose "
+            f"(target ≤ {t.make_ready_good:g}); together they lose "
             f"${stuck['market_rent'].sum() / 30:,.0f} in rent per day."))
 
-    grade = m.grade_low(s["avg_days_vacant"], m.DAYS_VACANT_GOOD, m.DAYS_VACANT_WARN)
+    grade = m.grade_low(s["avg_days_vacant"], t.days_vacant_good, t.days_vacant_warn)
     if grade != m.GOOD and s["completed"]:
         recs.append(_rec(
             _SEVERITY_FOR_GRADE[grade], "Turnovers", "Shorten the gap between residents",
             f"Units sat empty {s['avg_days_vacant']:.0f} days on average between residents over the "
-            f"last 12 months (target ≤ {m.DAYS_VACANT_GOOD}); {s['avg_make_ready']:.0f} of those "
+            f"last 12 months (target ≤ {t.days_vacant_good:g}); {s['avg_make_ready']:.0f} of those "
             "were make-ready, the rest waiting for a lease."))
 
     if s["ready_unleased_30"]:
@@ -258,7 +262,7 @@ def _turn_recs(turns: pd.DataFrame, rr: pd.DataFrame) -> list[dict]:
     return recs
 
 
-def _retention_recs(events: pd.DataFrame) -> list[dict]:
+def _retention_recs(events: pd.DataFrame, t: m.Targets) -> list[dict]:
     recs = []
     s = m.retention_summary(events)
     if not s["renewed"] + s["moved_out"]:
@@ -266,12 +270,12 @@ def _retention_recs(events: pd.DataFrame) -> list[dict]:
     by_prop = m.retention_by_property(events).sort_values("rate")
     worst = by_prop.iloc[0]
 
-    grade = m.grade_high(s["renewal_rate"], m.RENEWAL_GOOD_PCT, m.RENEWAL_WARN_PCT)
+    grade = m.grade_high(s["renewal_rate"], t.renewal_good, t.renewal_warn)
     if grade != m.GOOD:
         recs.append(_rec(
             _SEVERITY_FOR_GRADE[grade], "Retention", "Lift renewals before leases expire",
             f"{s['renewal_rate']:.1f}% of lease decisions in the last 12 months were renewals "
-            f"(target {m.RENEWAL_GOOD_PCT:.0f}%). Lowest: {worst.name} at {worst['rate']:.0f}%."))
+            f"(target {t.renewal_good:g}%). Lowest: {worst.name} at {worst['rate']:.0f}%."))
 
     if s["controllable_pct"] > m.CONTROLLABLE_WATCH_PCT:
         reasons = m.move_out_reasons(events)
@@ -283,23 +287,28 @@ def _retention_recs(events: pd.DataFrame) -> list[dict]:
     return recs
 
 
-def generate_recommendations(data: dict[str, pd.DataFrame]) -> list[dict]:
-    """Score the portfolio against the dashboard's existing thresholds and
-    return a prioritized list of {severity, area, title, detail} actions,
-    most urgent first. Collections, turnover and retention rules run only when
-    their tables are present."""
+def generate_recommendations(data: dict[str, pd.DataFrame],
+                             targets: m.Targets = m.DEFAULT_TARGETS) -> list[dict]:
+    """Score the portfolio against the dashboard's targets and return a
+    prioritized list of {severity, area, title, detail} actions, most urgent
+    first. Collections, turnover and retention rules run only when their
+    tables are present."""
+    t = targets
+    props = data.get("properties")
+    rso = (frozenset(props.loc[props["rent_stabilized"].astype(bool), "property"])
+           if props is not None and "rent_stabilized" in props.columns else frozenset())
     recs = [
-        *_occupancy_recs(data["rent_roll"]),
-        *_financials_recs(data["financials_monthly"]),
+        *_occupancy_recs(data["rent_roll"], t, rso),
+        *_financials_recs(data["financials_monthly"], t),
         *_maintenance_recs(data["work_orders"]),
         *_lease_recs(data["rent_roll"]),
         *_funnel_recs(data["leasing_funnel"]),
     ]
     if "receivables" in data and "collections_monthly" in data:
-        recs += _collections_recs(data["receivables"], data["collections_monthly"])
+        recs += _collections_recs(data["receivables"], data["collections_monthly"], t)
     if "turns" in data:
-        recs += _turn_recs(data["turns"], data["rent_roll"])
+        recs += _turn_recs(data["turns"], data["rent_roll"], t)
     if "lease_events" in data:
-        recs += _retention_recs(data["lease_events"])
+        recs += _retention_recs(data["lease_events"], t)
     recs.sort(key=lambda r: _SEVERITY_ORDER[r["severity"]])
     return recs

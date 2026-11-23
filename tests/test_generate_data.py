@@ -13,6 +13,38 @@ class TestBuildProperties:
         assert props["unit_count"].gt(0).all()
 
 
+class TestLosAngelesCalibration:
+    def test_rent_stabilized_means_built_before_1978(self):
+        props = gd.build_properties()
+        assert (props["rent_stabilized"] == (props["year_built"] < gd.RSO_CUTOFF_YEAR)).all()
+        assert props["rent_stabilized"].any() and (~props["rent_stabilized"]).any()
+        assert (props["state"] == "CA").all()
+
+    def test_rents_and_occupancy_land_at_la_levels(self):
+        props = gd.build_properties()
+        rr = gd.build_rent_roll(props)
+        assert 2200 < rr["market_rent"].mean() < 2800
+        occupancy = rr["status"].isin(gd.OCCUPIED_STATUSES).mean()
+        assert 0.92 < occupancy < 0.99
+
+    def test_rso_renewals_stay_within_the_cap(self):
+        props = gd.build_properties()
+        rr = gd.build_rent_roll(props)
+        events, _ = gd.build_lease_events_and_turns(props, rr)
+        rso = set(props.loc[props["rent_stabilized"], "property"])
+        renewals = events[(events["outcome"] == "Renewed") & events["property"].isin(rso)]
+        increase = renewals["new_rent"] / renewals["prior_rent"] - 1
+        low, high = gd.RSO_RENEWAL_CAP
+        assert len(renewals) and increase.between(low - 0.001, high + 0.001).all()
+
+    def test_rso_units_get_no_concessions(self):
+        props = gd.build_properties()
+        rr = gd.build_rent_roll(props)
+        events, _ = gd.build_lease_events_and_turns(props, rr)
+        rso = set(props.loc[props["rent_stabilized"], "property"])
+        assert (events.loc[events["property"].isin(rso), "concession_weeks"] == 0).all()
+
+
 class TestBuildRentRoll:
     def test_one_row_per_unit(self):
         props = gd.build_properties()

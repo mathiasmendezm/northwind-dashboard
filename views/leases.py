@@ -4,11 +4,12 @@ import pandas as pd
 import streamlit as st
 
 from constants import AS_OF
+from metrics import DEFAULT_TARGETS, Targets
 from ui.charts import vbar
 from ui.theme import BAD, GOOD, PRIMARY, WARN, kpi, money, page_head, section
 
 
-def page_leases(d: dict[str, pd.DataFrame]) -> None:
+def page_leases(d: dict[str, pd.DataFrame], t: Targets = DEFAULT_TARGETS) -> None:
     rr = d["rent_roll"]
     page_head("Lease Management",
               "Upcoming expirations, renewal exposure, and holdover tenants")

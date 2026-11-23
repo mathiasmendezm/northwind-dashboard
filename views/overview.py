@@ -4,14 +4,15 @@ import pandas as pd
 import streamlit as st
 
 from constants import OCCUPIED_STATUSES, STATUS_COLORS
+from metrics import DEFAULT_TARGETS, Targets, grade_high
 from ui.charts import hbar
-from ui.theme import BAD, GOOD, MUTE, PRIMARY, WARN, kpi, money, page_head, section
+from ui.theme import BAD, MUTE, PRIMARY, TONE, kpi, money, page_head, section
 
 
-def page_overview(d: dict[str, pd.DataFrame]) -> None:
+def page_overview(d: dict[str, pd.DataFrame], t: Targets = DEFAULT_TARGETS) -> None:
     rr, wo = d["rent_roll"], d["work_orders"]
     page_head("Portfolio Overview",
-              "Occupancy, revenue, and operations across the Northwind portfolio")
+              "Occupancy, revenue, and operations across the Northwind portfolio in Los Angeles")
 
     total = len(rr)
     occupied = rr["status"].isin(OCCUPIED_STATUSES).sum()
@@ -29,8 +30,8 @@ def page_overview(d: dict[str, pd.DataFrame]) -> None:
     section("Key metrics")
     c = st.columns(4)
     kpi(c[0], "Physical occupancy", f"{occ_pct:.1f}%",
-        f"{occupied} of {total} units", GOOD if occ_pct >= 93 else WARN,
-        top=GOOD if occ_pct >= 93 else WARN)
+        f"{occupied} of {total} units", TONE[grade_high(occ_pct, t.occupancy_good, t.occupancy_warn)],
+        top=TONE[grade_high(occ_pct, t.occupancy_good, t.occupancy_warn)])
     kpi(c[1], "Monthly rent roll", money(monthly_actual), "contract rent, occupied units")
     kpi(c[2], "Economic occupancy", f"{econ_occ:.1f}%",
         f"collected ÷ market · {money(market_potential - collected)} gap")
@@ -45,12 +46,12 @@ def page_overview(d: dict[str, pd.DataFrame]) -> None:
                .agg(units=("unit_id", "size"), occ=("occ", "sum")))
     by_prop["pct"] = by_prop["occ"] / by_prop["units"] * 100
     by_prop = by_prop.sort_values("pct")
-    colors = [GOOD if p >= 93 else WARN if p >= 88 else BAD for p in by_prop["pct"]]
+    colors = [TONE[grade_high(p, t.occupancy_good, t.occupancy_warn)] for p in by_prop["pct"]]
     fig = hbar(by_prop.index, by_prop["pct"], colors=colors,
                text=[f"{p:.0f}%" for p in by_prop["pct"]],
                height=430, margin=dict(l=0, r=48, t=8, b=8),
                xaxis_title="Occupancy %", xaxis_ticksuffix="%", xaxis_range=[0, 105],
-               vline_x=93, vline_text="93% target")
+               vline_x=t.occupancy_good, vline_text=f"{t.occupancy_good:g}% target")
     st.plotly_chart(fig, width="stretch", theme=None)
 
     # Status mix + revenue split

@@ -4,11 +4,12 @@ import pandas as pd
 import streamlit as st
 
 from constants import OCCUPIED_STATUSES
+from metrics import DEFAULT_TARGETS, Targets
 from ui.charts import overlay_hbar
 from ui.theme import BAD, PRIMARY, WARN, kpi, money, page_head, section
 
 
-def page_occupancy(d: dict[str, pd.DataFrame]) -> None:
+def page_occupancy(d: dict[str, pd.DataFrame], t: Targets = DEFAULT_TARGETS) -> None:
     rr = d["rent_roll"]
     page_head("Occupancy & Rent",
               "Loss-to-lease, vacancy exposure, and the live rent roll")

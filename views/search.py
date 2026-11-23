@@ -3,10 +3,11 @@ from __future__ import annotations
 import pandas as pd
 import streamlit as st
 
+from metrics import DEFAULT_TARGETS, Targets
 from ui.theme import page_head, section
 
 
-def page_search(d: dict[str, pd.DataFrame]) -> None:
+def page_search(d: dict[str, pd.DataFrame], t: Targets = DEFAULT_TARGETS) -> None:
     page_head("Search", "Find tenants, units, work orders, and applicants across the portfolio")
     q = st.text_input("Search", placeholder="Tenant name, unit ID, property, applicant…",
                       label_visibility="collapsed").strip().lower()

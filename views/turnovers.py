@@ -4,29 +4,30 @@ import pandas as pd
 import streamlit as st
 
 import metrics as m
+from metrics import DEFAULT_TARGETS, Targets
 from ui.charts import hbar, stacked_hbar
 from ui.theme import BAD, MUTE, PRIMARY, TONE, kpi, md_money, money, page_head, section
 
 STATUS_ORDER = ["In make-ready", "Ready, not leased", "Pre-leased"]
 
 
-def page_turnovers(d: dict[str, pd.DataFrame]) -> None:
+def page_turnovers(d: dict[str, pd.DataFrame], t: Targets = DEFAULT_TARGETS) -> None:
     turns, rr = d["turns"], d["rent_roll"]
     page_head("Turnovers",
               "How fast units go from move-out to move-in, and which vacant units are stuck")
 
-    s = m.turn_summary(turns, rr)
-    vacant_tone = TONE[m.grade_low(s["avg_days_vacant"], m.DAYS_VACANT_GOOD, m.DAYS_VACANT_WARN)]
-    ready_tone = TONE[m.grade_low(s["avg_make_ready"], m.MAKE_READY_GOOD_DAYS, m.MAKE_READY_WARN_DAYS)]
+    s = m.turn_summary(turns, rr, t)
+    vacant_tone = TONE[m.grade_low(s["avg_days_vacant"], t.days_vacant_good, t.days_vacant_warn)]
+    ready_tone = TONE[m.grade_low(s["avg_make_ready"], t.make_ready_good, t.make_ready_warn)]
 
     section("Last 12 months")
     c = st.columns(4)
     kpi(c[0], "Days vacant", f"{s['avg_days_vacant']:.0f}",
-        f"move-out → move-in, avg of {s['completed']} turns · target ≤ {m.DAYS_VACANT_GOOD}",
+        f"move-out → move-in, avg of {s['completed']} turns · target ≤ {t.days_vacant_good:g}",
         vacant_tone, top=vacant_tone)
     kpi(c[1], "Make-ready days", f"{s['avg_make_ready']:.1f}",
-        f"move-out → rent-ready · target ≤ {m.MAKE_READY_GOOD_DAYS} · "
-        f"{s['slow_make_ready_pct']:.0f}% took over {m.MAKE_READY_WARN_DAYS}", ready_tone, top=ready_tone)
+        f"move-out → rent-ready · target ≤ {t.make_ready_good:g} · "
+        f"{s['slow_make_ready_pct']:.0f}% took over {t.make_ready_warn:g}", ready_tone, top=ready_tone)
     kpi(c[2], "Vacant now", f"{s['vacant_now']}",
         f"{s['in_make_ready']} in make-ready · {s['ready_unleased']} ready · {s['pre_leased']} pre-leased",
         BAD if s["stuck"] else MUTE, top=BAD if s["stuck"] else PRIMARY)
@@ -34,7 +35,7 @@ def page_turnovers(d: dict[str, pd.DataFrame]) -> None:
     st.caption("Targets are demo defaults anchored to public figures: about 7 working days to make a "
                "unit ready is the common NAA guideline (~10 calendar days), and US apartments sat "
                "vacant 41 days between residents on average in 2025 (RentCafe/Yardi). Sources in "
-               "the README.")
+               "the README; adjust targets in the sidebar.")
 
     section("Where the vacant days go, by property")
     by_prop = m.turns_by_property(turns).sort_values("days_vacant", ascending=True)
@@ -42,14 +43,14 @@ def page_turnovers(d: dict[str, pd.DataFrame]) -> None:
                        {"Make-ready": by_prop["make_ready"], "Waiting for a lease": by_prop["leasing"]},
                        {"Make-ready": PRIMARY, "Waiting for a lease": "#93C5FD"},
                        height=430, xaxis_title="Average days vacant per turn",
-                       vline_x=m.DAYS_VACANT_GOOD, vline_text=f"{m.DAYS_VACANT_GOOD}-day target",
+                       vline_x=t.days_vacant_good, vline_text=f"{t.days_vacant_good:g}-day target",
                        hovertemplate="%{y}: %{x:.0f} days<extra></extra>")
     st.plotly_chart(fig, width="stretch", theme=None)
     st.caption("Make-ready is the maintenance team's clock; waiting for a lease is the leasing "
                "team's. Splitting them shows which team owns the delay at each property.")
 
     section("Vacant units now")
-    now = m.open_turns(turns, rr)
+    now = m.open_turns(turns, rr, t.make_ready_warn)
     status_sel = st.multiselect("Status", STATUS_ORDER, default=STATUS_ORDER, key="turn_status")
     view = (now[now["status"].isin(status_sel)]
             .sort_values(["stuck", "days_vacant"], ascending=[False, False]))

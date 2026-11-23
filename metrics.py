@@ -2,11 +2,14 @@
 
 The pages, the Executive Summary waterfall and the recommendation engine all
 call these functions, so a number can never differ between two places that
-show it. The thresholds live here too, each next to the benchmark it is
-anchored to (sources in the README, "Benchmarks behind the thresholds").
+show it. The targets live here too, each next to the benchmark it is anchored
+to (sources in the README, "Benchmarks behind the thresholds"); viewers can
+change them for their session from the sidebar.
 """
 
 from __future__ import annotations
+
+from dataclasses import dataclass
 
 import pandas as pd
 
@@ -15,22 +18,59 @@ from constants import AS_OF, OCCUPIED_STATUSES
 TODAY = pd.Timestamp(AS_OF)
 WINDOW = pd.Timedelta(days=365)
 
-# ── Thresholds: (good, warn) limits ─────────────────────────────────────────
-# Judgment calls anchored to 2025-2026 benchmarks, not industry standards.
-# Collection rate, collected ÷ billed this month. Large apartment REITs report
-# bad debt of 0.2-1% of revenue in 2025-26, so even 97% collected is soft.
-COLLECTION_GOOD_PCT, COLLECTION_WARN_PCT = 98.0, 96.0
-# Past-due balance ÷ one month of rent billed. Common KPI-guide rule of thumb:
-# delinquency persistently above 3-5% points to screening or collections gaps.
-PAST_DUE_GOOD_PCT, PAST_DUE_WARN_PCT = 3.0, 5.0
-# Bad debt written off over 12 months ÷ rent billed (REITs target < 1%).
-BAD_DEBT_GOOD_PCT, BAD_DEBT_WARN_PCT = 1.0, 2.0
-# Make-ready, move-out → rent-ready (NAA: ~7 working days is the common guideline).
-MAKE_READY_GOOD_DAYS, MAKE_READY_WARN_DAYS = 10, 15
-# Days vacant, move-out → move-in (RentCafe/Yardi: 41-day national average in 2025).
-DAYS_VACANT_GOOD, DAYS_VACANT_WARN = 30, 45
-# Renewal conversion (RealPage: ~56% of H1-2026 expirations renewed).
-RENEWAL_GOOD_PCT, RENEWAL_WARN_PCT = 55.0, 45.0
+
+# ── Targets ─────────────────────────────────────────────────────────────────
+@dataclass(frozen=True)
+class Targets:
+    """Green and red lines for every color-coded metric.
+
+    For higher-is-better metrics, *_good is the green floor and *_warn the red
+    line below it; for lower-is-better metrics, the reverse. Defaults are
+    judgment calls anchored to 2025-2026 benchmarks, not industry standards.
+    """
+
+    # Occupancy: Los Angeles runs in the mid-95% range (Essex, Q3 2026).
+    occupancy_good: float = 95.0
+    occupancy_warn: float = 92.0
+    # NOI ÷ effective gross income.
+    noi_margin_good: float = 60.0
+    noi_margin_warn: float = 50.0
+    # Collected ÷ billed this month. Large apartment REITs report bad debt of
+    # 0.2-1% of revenue in 2025-26, so even 97% collected is soft.
+    collection_good: float = 98.0
+    collection_warn: float = 96.0
+    # Past-due balance ÷ one month of rent billed. Common KPI-guide rule of
+    # thumb: delinquency persistently above 3-5% points to collections gaps.
+    past_due_good: float = 3.0
+    past_due_warn: float = 5.0
+    # Bad debt written off over 12 months ÷ rent billed (REITs target < 1%).
+    bad_debt_good: float = 1.0
+    bad_debt_warn: float = 2.0
+    # Move-out → rent-ready, calendar days (NAA: ~7 working days is the guideline).
+    make_ready_good: float = 10.0
+    make_ready_warn: float = 15.0
+    # Move-out → move-in (RentCafe/Yardi: 41-day national average in 2025).
+    days_vacant_good: float = 30.0
+    days_vacant_warn: float = 45.0
+    # Renewals ÷ lease decisions (RealPage: ~56% of H1-2026 expirations renewed).
+    renewal_good: float = 55.0
+    renewal_warn: float = 45.0
+
+
+DEFAULT_TARGETS = Targets()
+
+# (label, field prefix, unit, higher is better) — drives the sidebar editor.
+TARGET_SPECS = [
+    ("Occupancy", "occupancy", "%", True),
+    ("NOI margin", "noi_margin", "%", True),
+    ("Collection rate", "collection", "%", True),
+    ("Past-due ÷ month's rent", "past_due", "%", False),
+    ("Bad debt, 12 months", "bad_debt", "%", False),
+    ("Make-ready days", "make_ready", "days", False),
+    ("Days vacant", "days_vacant", "days", False),
+    ("Renewal rate", "renewal", "%", True),
+]
+
 # Share of move-outs for reasons the team can influence (J Turner: ~46% in 2023).
 CONTROLLABLE_WATCH_PCT = 40.0
 
@@ -137,27 +177,29 @@ def completed_turns(turns: pd.DataFrame) -> pd.DataFrame:
     return done
 
 
-def open_turns(turns: pd.DataFrame, rr: pd.DataFrame) -> pd.DataFrame:
+def open_turns(turns: pd.DataFrame, rr: pd.DataFrame,
+               stuck_after: float = DEFAULT_TARGETS.make_ready_warn) -> pd.DataFrame:
     """Every unit that is vacant today, with how long it has sat and what it cost."""
     vacant_ids = rr.loc[~rr["status"].isin(OCCUPIED_STATUSES), "unit_id"]
     cur = turns[turns["unit_id"].isin(vacant_ids) & (turns["status"] != "Leased")].copy()
     cur = cur.merge(rr[["unit_id", "market_rent"]], on="unit_id", how="left")
     cur["days_vacant"] = (TODAY - cur["move_out_date"]).dt.days
     cur["rent_lost"] = cur["market_rent"] / 30 * cur["days_vacant"]
-    cur["stuck"] = (cur["status"] == "In make-ready") & (cur["days_vacant"] > MAKE_READY_WARN_DAYS)
+    cur["stuck"] = (cur["status"] == "In make-ready") & (cur["days_vacant"] > stuck_after)
     return cur.sort_values("days_vacant", ascending=False)
 
 
-def turn_summary(turns: pd.DataFrame, rr: pd.DataFrame) -> dict[str, float]:
+def turn_summary(turns: pd.DataFrame, rr: pd.DataFrame,
+                 t: Targets = DEFAULT_TARGETS) -> dict[str, float]:
     done = completed_turns(turns)
-    now = open_turns(turns, rr)
+    now = open_turns(turns, rr, t.make_ready_warn)
     unleased = now[now["status"] == "Ready, not leased"]
     return {
         "completed": len(done),
         "avg_make_ready": float(done["make_ready_days"].mean()) if len(done) else 0.0,
         "avg_days_vacant": float(done["days_vacant"].mean()) if len(done) else 0.0,
         "avg_turn_cost": float(done["turn_cost"].mean()) if len(done) else 0.0,
-        "slow_make_ready_pct": _pct(int((done["make_ready_days"] > MAKE_READY_WARN_DAYS).sum()),
+        "slow_make_ready_pct": _pct(int((done["make_ready_days"] > t.make_ready_warn).sum()),
                                     len(done)),
         "vacant_now": len(now),
         "in_make_ready": int((now["status"] == "In make-ready").sum()),

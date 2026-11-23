@@ -5,24 +5,25 @@ import plotly.graph_objects as go
 import streamlit as st
 
 import metrics as m
+from metrics import DEFAULT_TARGETS, Targets
 from ui.charts import hbar
 from ui.theme import MUTE, PRIMARY, TONE, WARN, kpi, page_head, section
 
 
-def page_retention(d: dict[str, pd.DataFrame]) -> None:
+def page_retention(d: dict[str, pd.DataFrame], t: Targets = DEFAULT_TARGETS) -> None:
     events = d["lease_events"]
     page_head("Retention",
               "Who renews, who leaves and why, and what a renewal is worth against a new lease")
 
     s = m.retention_summary(events)
-    renew_tone = TONE[m.grade_high(s["renewal_rate"], m.RENEWAL_GOOD_PCT, m.RENEWAL_WARN_PCT)]
+    renew_tone = TONE[m.grade_high(s["renewal_rate"], t.renewal_good, t.renewal_warn)]
     ctrl_high = s["controllable_pct"] > m.CONTROLLABLE_WATCH_PCT
 
     section("Last 12 months")
     c = st.columns(4)
     kpi(c[0], "Renewal rate", f"{s['renewal_rate']:.1f}%",
         f"{s['renewed']} renewed of {s['renewed'] + s['moved_out']} decisions · "
-        f"target {m.RENEWAL_GOOD_PCT:.0f}%", renew_tone, top=renew_tone)
+        f"target {t.renewal_good:g}%", renew_tone, top=renew_tone)
     kpi(c[1], "Move-outs", f"{s['moved_out']}", "each one starts a turn")
     kpi(c[2], "Renewal rent change", f"{s['renewal_change_pct']:+.1f}%",
         f"vs {s['new_lease_change_pct']:+.1f}% on new leases after a move-out")
@@ -32,17 +33,17 @@ def page_retention(d: dict[str, pd.DataFrame]) -> None:
     st.caption("Target is a demo default anchored to public figures: about 56% of US residents with "
                "leases expiring in early 2026 renewed (RealPage). Rent changes aren't color-coded "
                "because local rent caps set the ceiling for renewals in many markets. Sources in the "
-               "README.")
+               "README; adjust targets in the sidebar.")
 
     section("Renewal rate by property")
     by_prop = m.retention_by_property(events).sort_values("rate", ascending=False)
-    colors = [TONE[m.grade_high(r, m.RENEWAL_GOOD_PCT, m.RENEWAL_WARN_PCT)] for r in by_prop["rate"]]
+    colors = [TONE[m.grade_high(r, t.renewal_good, t.renewal_warn)] for r in by_prop["rate"]]
     fig = hbar(by_prop.index, by_prop["rate"], colors=colors,
                text=[f"{r:.0f}% ({int(n)})" for r, n in zip(by_prop["rate"], by_prop["decisions"],
                                                            strict=True)],
                height=430, xaxis_title="Renewals ÷ lease decisions (%)", xaxis_ticksuffix="%",
-               xaxis_range=[0, 100], vline_x=m.RENEWAL_GOOD_PCT,
-               vline_text=f"{m.RENEWAL_GOOD_PCT:.0f}% target")
+               xaxis_range=[0, 100], vline_x=t.renewal_good,
+               vline_text=f"{t.renewal_good:g}% target")
     st.plotly_chart(fig, width="stretch", theme=None)
 
     left, right = st.columns(2)

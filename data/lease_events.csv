@@ -1,670 +1,665 @@
 event_id,unit_id,property,unit,event_date,outcome,resident,prior_rent,new_rent,move_in_date,move_out_reason,controllable,concession_weeks
-E00001,P07-006,Aspen Grove,006,2025-04-20,Moved out,Rebecca Yang,1411.61,1445.0,2025-07-16,Maintenance / unit condition,True,0.0
-E00002,P09-080,Oakhaven Apartments,080,2025-04-21,Moved out,Gerald Carney,954.02,980.0,2025-07-12,Safety / neighbors,True,0.0
-E00003,P01-035,Cedar Commons,035,2025-04-22,Moved out,Tina Espinoza,2585.53,2585.0,2025-07-05,Rent increase / price,True,7.4
-E00004,P01-017,Cedar Commons,017,2025-04-30,Moved out,Samuel Wilkins,1485.38,1450.0,2025-07-02,Bought a home,False,0.0
-E00005,P05-020,Sunset Ridge,020,2025-05-01,Moved out,Kayla Kim,2698.42,2705.0,2025-07-26,Safety / neighbors,True,0.0
-E00006,P03-068,Maple Court,068,2025-05-04,Moved out,Jennifer Brown,1538.41,1485.0,2025-07-04,Rent increase / price,True,0.0
-E00007,P09-081,Oakhaven Apartments,081,2025-05-12,Moved out,Linda Gray,1834.56,1860.0,2025-08-26,Needed different size / location,False,0.0
-E00008,P03-040,Maple Court,040,2025-05-15,Moved out,Kelsey Williams,1469.93,1465.0,2025-07-30,Other / personal,False,0.0
-E00009,P12-016,Ironwood Residences,016,2025-05-15,Moved out,Karen Jones,1930.95,1865.0,2025-08-11,Bought a home,False,0.0
-E00010,P04-022,Birchwood Terrace,022,2025-05-16,Moved out,Kari Smith,1934.22,1935.0,2025-07-12,Maintenance / unit condition,True,4.2
-E00011,P01-047,Cedar Commons,047,2025-05-18,Moved out,Joseph Ramos,2280.17,2280.0,2025-07-14,Maintenance / unit condition,True,5.3
-E00012,P09-069,Oakhaven Apartments,069,2025-05-20,Moved out,Charles Richardson,2043.44,2140.0,2025-08-09,Other / personal,False,4.9
-E00013,P06-018,Willow Park,018,2025-05-21,Moved out,Amber Jackson,1686.81,1655.0,2025-07-17,Maintenance / unit condition,True,0.0
-E00014,P06-062,Willow Park,062,2025-05-21,Moved out,Mr. James Johnson,2083.25,2045.0,2025-07-09,Job / relocation,False,0.0
-E00015,P09-013,Oakhaven Apartments,013,2025-05-24,Moved out,Audrey Farmer,1300.69,1280.0,2025-07-16,Needed different size / location,False,4.3
-E00016,P07-046,Aspen Grove,046,2025-05-25,Moved out,Melanie Arnold,2070.01,2015.0,2025-07-04,Needed different size / location,False,0.0
-E00017,P01-038,Cedar Commons,038,2025-05-27,Moved out,Vincent Guzman,2283.55,2340.0,2025-07-12,Bought a home,False,6.6
-E00018,P09-086,Oakhaven Apartments,086,2025-05-28,Moved out,Kenneth Salinas,1548.57,1505.0,2025-07-08,Job / relocation,False,0.0
-E00019,P02-014,Harborview Flats,014,2025-06-02,Moved out,Cody Thompson,2799.29,2845.0,2025-07-16,Maintenance / unit condition,True,0.0
-E00020,P06-007,Willow Park,007,2025-06-04,Moved out,Michael Anderson,1365.49,1370.0,2025-07-31,Maintenance / unit condition,True,0.0
-E00021,P09-037,Oakhaven Apartments,037,2025-06-06,Moved out,Harold Castillo,1745.84,1660.0,2025-07-05,Job / relocation,False,0.0
-E00022,P12-008,Ironwood Residences,008,2025-06-07,Moved out,Richard James,2633.22,2655.0,2025-07-02,Rent increase / price,True,0.0
-E00023,P11-041,Meadowlark Place,041,2025-06-08,Moved out,Albert Simon,1528.3,1545.0,2025-07-05,Needed different size / location,False,6.3
-E00024,P04-004,Birchwood Terrace,004,2025-06-08,Moved out,Benjamin Russo,2097.84,2030.0,2025-07-25,Rent increase / price,True,0.0
-E00025,P10-034,Stonebridge Villas,034,2025-06-09,Moved out,Elizabeth Rodriguez,2534.13,2580.0,2025-08-03,Job / relocation,False,4.2
-E00026,P10-029,Stonebridge Villas,029,2025-06-12,Moved out,Mark Lyons,2096.12,2095.0,2025-08-12,Rent increase / price,True,0.0
-E00027,P10-019,Stonebridge Villas,019,2025-06-13,Moved out,William Perez,2067.13,2015.0,2025-07-15,Rent increase / price,True,0.0
-E00028,P09-072,Oakhaven Apartments,072,2025-06-15,Moved out,Lindsay Espinoza,1446.76,1440.0,2025-08-09,Rent increase / price,True,0.0
-E00029,P01-045,Cedar Commons,045,2025-06-15,Moved out,Brittany Aguirre,2200.43,2245.0,2025-07-22,Rent increase / price,True,0.0
-E00030,P03-010,Maple Court,010,2025-06-16,Moved out,Lisa Johnson,2174.65,2090.0,2025-08-31,Rent increase / price,True,0.0
-E00031,P07-027,Aspen Grove,027,2025-06-16,Moved out,Lisa Ward,1692.96,1680.0,2025-08-13,Other / personal,False,0.0
-E00032,P07-049,Aspen Grove,049,2025-06-16,Moved out,Keith Lowery,1743.65,1835.0,2025-07-20,Job / relocation,False,0.0
-E00033,P05-007,Sunset Ridge,007,2025-06-20,Moved out,Erik Gomez,2417.29,2440.0,2025-08-08,Other / personal,False,0.0
-E00034,P03-053,Maple Court,053,2025-06-22,Moved out,John Wong,1834.64,1745.0,2025-09-03,Job / relocation,False,0.0
-E00035,P01-005,Cedar Commons,005,2025-06-22,Moved out,Jonathan Smith,2393.93,2460.0,2025-07-05,Needed different size / location,False,5.4
-E00036,P07-037,Aspen Grove,037,2025-06-25,Moved out,Joseph Ford,1871.4,1895.0,2025-08-30,Needed different size / location,False,0.0
-E00037,P05-039,Sunset Ridge,039,2025-06-25,Moved out,Elizabeth Ramsey,2516.73,2515.0,2025-08-08,Bought a home,False,0.0
-E00038,P04-023,Birchwood Terrace,023,2025-06-27,Moved out,Brittney Johnson,2127.94,2180.0,2025-08-04,Safety / neighbors,True,0.0
-E00039,P05-017,Sunset Ridge,017,2025-06-29,Moved out,Mario Garcia,2781.28,2930.0,2025-07-19,Job / relocation,False,4.7
-E00040,P12-065,Ironwood Residences,065,2025-07-01,Renewed,Kristen Rowe,2199.58,2290.0,,,False,0.0
-E00041,P06-002,Willow Park,002,2025-07-02,Renewed,Jasmin Alvarado,2026.86,2095.0,,,False,0.0
-E00042,P03-063,Maple Court,063,2025-07-02,Renewed,Alyssa Day,2168.84,2275.0,,,False,0.0
-E00043,P10-046,Stonebridge Villas,046,2025-07-02,Renewed,Lisa Randall,1690.09,1745.0,,,False,0.0
-E00044,P01-009,Cedar Commons,009,2025-07-03,Renewed,Gabrielle Davis,2038.35,2120.0,,,False,0.0
-E00045,P08-002,Riverbend Lofts,002,2025-07-03,Renewed,Jeremy Turner,1942.24,2020.0,,,False,0.0
-E00046,P05-014,Sunset Ridge,014,2025-07-04,Moved out,Jill Hamilton,2272.64,2315.0,2025-07-20,Rent increase / price,True,0.0
-E00047,P12-002,Ironwood Residences,002,2025-07-05,Moved out,Jacqueline Butler,2483.3,2540.0,2025-07-20,Rent increase / price,True,0.0
-E00048,P12-062,Ironwood Residences,062,2025-07-05,Moved out,Tina Gonzalez,2429.35,2435.0,2025-07-20,Bought a home,False,0.0
-E00049,P04-052,Birchwood Terrace,052,2025-07-06,Renewed,Benjamin Smith,1918.46,1965.0,,,False,0.0
-E00050,P12-029,Ironwood Residences,029,2025-07-07,Renewed,Martha Bailey,1871.37,1955.0,,,False,0.0
-E00051,P03-025,Maple Court,025,2025-07-10,Moved out,Jacob Logan,2139.16,2205.0,2025-08-31,Job / relocation,False,0.0
-E00052,P08-023,Riverbend Lofts,023,2025-07-10,Moved out,Dennis Rogers,2259.57,2180.0,2025-07-30,Maintenance / unit condition,True,0.0
-E00053,P10-005,Stonebridge Villas,005,2025-07-12,Renewed,Marilyn Wang,1272.35,1305.0,,,False,0.0
-E00054,P09-021,Oakhaven Apartments,021,2025-07-13,Renewed,Brenda Thornton,1923.29,2000.0,,,False,0.0
-E00055,P09-096,Oakhaven Apartments,096,2025-07-14,Renewed,Todd Moore,1515.92,1600.0,,,False,0.0
-E00056,P11-030,Meadowlark Place,030,2025-07-14,Renewed,Kimberly Sharp,1976.27,2045.0,,,False,0.0
-E00057,P12-046,Ironwood Residences,046,2025-07-14,Moved out,Darren Smith,2050.5,2090.0,2025-08-18,Safety / neighbors,True,0.0
-E00058,P02-045,Harborview Flats,045,2025-07-15,Moved out,Michael Nelson,2591.7,2640.0,2025-08-20,Maintenance / unit condition,True,0.0
-E00059,P08-030,Riverbend Lofts,030,2025-07-15,Renewed,Ashley Wise,2339.47,2425.0,,,False,0.0
-E00060,P05-031,Sunset Ridge,031,2025-07-15,Renewed,Mrs. Kristen Reyes,2031.81,2125.0,,,False,0.0
-E00061,P11-005,Meadowlark Place,005,2025-07-16,Renewed,Melissa Bishop,1851.2,1895.0,,,False,0.0
-E00062,P04-055,Birchwood Terrace,055,2025-07-17,Renewed,Michael Bradshaw,1603.98,1660.0,,,False,0.0
-E00063,P02-023,Harborview Flats,023,2025-07-17,Moved out,Suzanne Callahan,2267.59,2300.0,2025-08-14,Rent increase / price,True,0.0
-E00064,P01-053,Cedar Commons,053,2025-07-17,Moved out,Becky Navarro,1919.68,1985.0,2025-08-11,Maintenance / unit condition,True,0.0
-E00065,P09-077,Oakhaven Apartments,077,2025-07-18,Moved out,Sara Delacruz,1828.45,1745.0,2025-08-26,Maintenance / unit condition,True,0.0
-E00066,P12-068,Ironwood Residences,068,2025-07-18,Renewed,William Harrison,2141.82,2205.0,,,False,0.0
-E00067,P01-058,Cedar Commons,058,2025-07-18,Renewed,Timothy Duncan,1706.37,1760.0,,,False,0.0
-E00068,P12-058,Ironwood Residences,058,2025-07-19,Moved out,Stephen Gallagher,2178.53,2200.0,2025-08-26,Bought a home,False,0.0
-E00069,P12-064,Ironwood Residences,064,2025-07-19,Moved out,Mary Garner,2187.29,2260.0,2025-08-09,Management / service,True,0.0
-E00070,P11-031,Meadowlark Place,031,2025-07-20,Moved out,Pamela Wilkerson,1375.55,1340.0,2025-08-09,Bought a home,False,0.0
-E00071,P09-055,Oakhaven Apartments,055,2025-07-20,Renewed,Samantha Gardner,1592.96,1680.0,,,False,0.0
-E00072,P12-024,Ironwood Residences,024,2025-07-21,Renewed,Timothy Johnson,2517.21,2600.0,,,False,0.0
-E00073,P08-033,Riverbend Lofts,033,2025-07-21,Renewed,Christopher Guerra,2241.52,2350.0,,,False,0.0
-E00074,P09-018,Oakhaven Apartments,018,2025-07-21,Moved out,Nancy Hall,2060.11,2030.0,2025-09-22,Rent increase / price,True,5.8
-E00075,P03-067,Maple Court,067,2025-07-22,Moved out,Mark Harris,1531.53,1565.0,2025-08-23,Job / relocation,False,0.0
-E00076,P11-008,Meadowlark Place,008,2025-07-22,Renewed,William Evans,1904.9,2000.0,,,False,0.0
-E00077,P06-008,Willow Park,008,2025-07-22,Moved out,Jodi Reese MD,1972.09,2040.0,2025-08-17,Other / personal,False,0.0
-E00078,P06-041,Willow Park,041,2025-07-22,Renewed,Edward Burgess,2088.53,2175.0,,,False,0.0
-E00079,P12-053,Ironwood Residences,053,2025-07-23,Renewed,Tracy Grant,1876.54,1940.0,,,False,0.0
-E00080,P02-039,Harborview Flats,039,2025-07-24,Renewed,Sandra Aguilar,2647.14,2770.0,,,False,0.0
-E00081,P09-051,Oakhaven Apartments,051,2025-07-24,Renewed,Steve Paul,1302.79,1360.0,,,False,0.0
-E00082,P12-022,Ironwood Residences,022,2025-07-24,Moved out,William Rivera,2226.43,2295.0,2025-08-30,Rent increase / price,True,0.0
-E00083,P09-076,Oakhaven Apartments,076,2025-07-26,Renewed,Emma Reed,1338.24,1405.0,,,False,0.0
-E00084,P05-028,Sunset Ridge,028,2025-07-26,Renewed,Susan Murray MD,2694.74,2780.0,,,False,0.0
-E00085,P01-023,Cedar Commons,023,2025-07-27,Moved out,Stephen Boyd,2094.45,2190.0,2025-08-24,Job / relocation,False,0.0
-E00086,P04-036,Birchwood Terrace,036,2025-07-28,Renewed,Brian Lee,1958.76,2000.0,,,False,0.0
-E00087,P04-025,Birchwood Terrace,025,2025-07-28,Moved out,Patricia Rodriguez,2028.22,2085.0,2025-08-22,Bought a home,False,0.0
-E00088,P05-002,Sunset Ridge,002,2025-07-28,Moved out,Herbert Parker,2695.67,2790.0,2025-08-25,Other / personal,False,0.0
-E00089,P02-026,Harborview Flats,026,2025-07-28,Moved out,Phillip Moore,2347.19,2395.0,2025-08-14,Job / relocation,False,0.0
-E00090,P02-005,Harborview Flats,005,2025-07-29,Moved out,Timothy Sullivan,2323.7,2360.0,2025-09-04,Bought a home,False,0.0
-E00091,P09-012,Oakhaven Apartments,012,2025-07-29,Renewed,Courtney Hayes,1669.6,1755.0,,,False,0.0
-E00092,P03-072,Maple Court,072,2025-07-30,Renewed,Alex Hernandez,1813.8,1925.0,,,False,0.0
-E00093,P06-065,Willow Park,065,2025-07-30,Moved out,Christine Smith DDS,1856.94,1920.0,2025-08-26,Management / service,True,0.0
-E00094,P04-005,Birchwood Terrace,005,2025-08-01,Moved out,Rhonda Sandoval,2090.92,2090.0,2025-08-30,Bought a home,False,0.0
-E00095,P09-041,Oakhaven Apartments,041,2025-08-01,Renewed,Julie Dominguez,1793.43,1845.0,,,False,0.0
-E00096,P09-053,Oakhaven Apartments,053,2025-08-02,Moved out,Cindy Romero,1392.66,1365.0,2025-10-16,Bought a home,False,0.0
-E00097,P03-003,Maple Court,003,2025-08-03,Moved out,Elizabeth Castillo,2150.27,2105.0,2025-08-15,Maintenance / unit condition,True,0.0
-E00098,P12-060,Ironwood Residences,060,2025-08-03,Renewed,Felicia Krueger,2267.94,2345.0,,,False,0.0
-E00099,P03-015,Maple Court,015,2025-08-06,Renewed,Michelle Harmon,1849.52,1905.0,,,False,0.0
-E00100,P06-083,Willow Park,083,2025-08-06,Renewed,Kayla Rodriguez,1708.52,1755.0,,,False,0.0
-E00101,P09-052,Oakhaven Apartments,052,2025-08-06,Renewed,Jasmine Beltran,1342.47,1405.0,,,False,0.0
-E00102,P01-041,Cedar Commons,041,2025-08-07,Renewed,Brittany Farmer,1757.77,1850.0,,,False,0.0
-E00103,P10-035,Stonebridge Villas,035,2025-08-09,Moved out,Heather Rodriguez,1759.28,1745.0,2025-10-17,Rent increase / price,True,4.7
-E00104,P06-055,Willow Park,055,2025-08-10,Renewed,Connie Brown,1605.48,1665.0,,,False,0.0
-E00105,P06-046,Willow Park,046,2025-08-10,Renewed,Victor Taylor,2206.47,2335.0,,,False,0.0
-E00106,P01-027,Cedar Commons,027,2025-08-10,Moved out,Meghan Davis,2474.83,2510.0,2025-09-25,Rent increase / price,True,0.0
-E00107,P12-028,Ironwood Residences,028,2025-08-10,Renewed,Michael Stanley,2219.7,2275.0,,,False,0.0
-E00108,P06-036,Willow Park,036,2025-08-11,Moved out,Alicia Weiss,1956.59,1990.0,2025-08-25,Bought a home,False,0.0
-E00109,P01-025,Cedar Commons,025,2025-08-11,Renewed,Tommy Walter,1872.33,1920.0,,,False,0.0
-E00110,P11-010,Meadowlark Place,010,2025-08-12,Renewed,Gregory Peck,2039.95,2120.0,,,False,0.0
-E00111,P09-010,Oakhaven Apartments,010,2025-08-12,Renewed,Phillip Nelson,1588.97,1620.0,,,False,0.0
-E00112,P01-002,Cedar Commons,002,2025-08-14,Renewed,Noah Rhodes,2057.64,2155.0,,,False,0.0
-E00113,P06-054,Willow Park,054,2025-08-14,Moved out,Jane Mccall,1306.85,1330.0,2025-09-02,Other / personal,False,0.0
-E00114,P06-068,Willow Park,068,2025-08-15,Moved out,Kenneth Gentry,1888.49,1915.0,2025-09-21,Safety / neighbors,True,0.0
-E00115,P07-040,Aspen Grove,040,2025-08-15,Renewed,Chad Scott,2137.18,2230.0,,,False,0.0
-E00116,P03-027,Maple Court,027,2025-08-17,Renewed,Jose Schultz,1393.15,1465.0,,,False,0.0
-E00117,P07-012,Aspen Grove,012,2025-08-18,Moved out,John Thompson,1167.6,1180.0,2025-09-03,Needed different size / location,False,0.0
-E00118,P06-001,Willow Park,001,2025-08-19,Renewed,Patrick Thornton,1574.39,1640.0,,,False,0.0
-E00119,P09-067,Oakhaven Apartments,067,2025-08-19,Renewed,Phillip Berry,1550.64,1610.0,,,False,0.0
-E00120,P09-016,Oakhaven Apartments,016,2025-08-19,Renewed,Marie Moody,1316.17,1370.0,,,False,0.0
-E00121,P04-018,Birchwood Terrace,018,2025-08-21,Renewed,Debra Christian,1665.37,1685.0,,,False,0.0
-E00122,P01-062,Cedar Commons,062,2025-08-21,Renewed,Victoria Garcia,2132.21,2220.0,,,False,0.0
-E00123,P07-052,Aspen Grove,052,2025-08-21,Renewed,Gary Jackson,1524.65,1535.0,,,False,0.0
-E00124,P12-025,Ironwood Residences,025,2025-08-21,Renewed,Randy Cannon,2085.98,2165.0,,,False,0.0
-E00125,P04-035,Birchwood Terrace,035,2025-08-22,Renewed,Dr. William Warren,1791.77,1855.0,,,False,0.0
-E00126,P09-003,Oakhaven Apartments,003,2025-08-22,Renewed,Robert Harrison,1388.73,1450.0,,,False,0.0
-E00127,P07-051,Aspen Grove,051,2025-08-22,Moved out,Kelli Bennett,1575.71,1575.0,2025-08-31,Safety / neighbors,True,0.0
-E00128,P06-022,Willow Park,022,2025-08-22,Renewed,Briana Murray,1670.49,1735.0,,,False,0.0
-E00129,P10-023,Stonebridge Villas,023,2025-08-23,Renewed,Julie Herrera,2434.88,2500.0,,,False,0.0
-E00130,P12-021,Ironwood Residences,021,2025-08-24,Renewed,Robert Reese,2162.25,2265.0,,,False,0.0
-E00131,P04-049,Birchwood Terrace,049,2025-08-24,Renewed,Elizabeth Oliver DDS,1628.75,1675.0,,,False,0.0
-E00132,P08-003,Riverbend Lofts,003,2025-08-24,Moved out,Tonya Vazquez,1809.69,1845.0,2025-10-02,Job / relocation,False,0.0
-E00133,P12-023,Ironwood Residences,023,2025-08-25,Moved out,Brent Ramos,2271.8,2365.0,2025-09-21,Job / relocation,False,0.0
-E00134,P03-009,Maple Court,009,2025-08-25,Moved out,Timothy Fowler,1216.72,1165.0,2025-09-30,Needed different size / location,False,0.0
-E00135,P08-010,Riverbend Lofts,010,2025-08-26,Renewed,Antonio Garcia,2190.86,2205.0,,,False,0.0
-E00136,P07-018,Aspen Grove,018,2025-08-26,Renewed,Kenneth Lewis,1639.36,1675.0,,,False,0.0
-E00137,P10-020,Stonebridge Villas,020,2025-08-26,Renewed,Mr. Alexander Landry MD,1761.02,1815.0,,,False,0.0
-E00138,P06-044,Willow Park,044,2025-08-27,Renewed,Dawn Summers,1849.95,1910.0,,,False,0.0
-E00139,P06-024,Willow Park,024,2025-08-27,Renewed,Stephanie Byrd,2177.64,2260.0,,,False,0.0
-E00140,P03-002,Maple Court,002,2025-08-27,Moved out,Martin Mitchell,2308.2,2285.0,2025-11-22,Needed different size / location,False,0.0
-E00141,P11-020,Meadowlark Place,020,2025-08-27,Moved out,Brad Miller,1271.35,1275.0,2025-11-28,Rent increase / price,True,4.1
-E00142,P08-024,Riverbend Lofts,024,2025-08-28,Moved out,Jon Smith,2531.94,2685.0,2025-09-15,Needed different size / location,False,0.0
-E00143,P01-049,Cedar Commons,049,2025-08-28,Renewed,Shane Henderson,1821.7,1885.0,,,False,0.0
-E00144,P01-037,Cedar Commons,037,2025-08-28,Renewed,Jeffrey Chavez,1798.15,1900.0,,,False,0.0
-E00145,P06-011,Willow Park,011,2025-08-28,Renewed,Nathan Malone,1839.74,1895.0,,,False,0.0
-E00146,P07-025,Aspen Grove,025,2025-08-31,Renewed,Debra White,1833.09,1895.0,,,False,0.0
-E00147,P06-027,Willow Park,027,2025-08-31,Renewed,Margaret Coleman,1485.37,1550.0,,,False,0.0
-E00148,P02-031,Harborview Flats,031,2025-09-01,Renewed,Denise Jacobs,2314.34,2410.0,,,False,0.0
-E00149,P04-016,Birchwood Terrace,016,2025-09-02,Renewed,Debra Morton,1737.27,1835.0,,,False,0.0
-E00150,P02-020,Harborview Flats,020,2025-09-02,Renewed,Mike Allen,2338.54,2410.0,,,False,0.0
-E00151,P11-006,Meadowlark Place,006,2025-09-02,Moved out,John Ware,1280.5,1250.0,2025-11-08,Job / relocation,False,0.0
-E00152,P03-037,Maple Court,037,2025-09-02,Renewed,Joyce Solis,1531.03,1595.0,,,False,0.0
-E00153,P08-026,Riverbend Lofts,026,2025-09-02,Renewed,Maria Henderson,2406.37,2505.0,,,False,0.0
-E00154,P07-032,Aspen Grove,032,2025-09-05,Renewed,Paula Bradley,1496.41,1555.0,,,False,0.0
-E00155,P07-060,Aspen Grove,060,2025-09-05,Moved out,Calvin Cervantes,2153.11,2140.0,2025-10-27,Management / service,True,0.0
-E00156,P06-078,Willow Park,078,2025-09-05,Moved out,Rhonda Chavez,1841.51,1825.0,2025-09-21,Job / relocation,False,6.6
-E00157,P05-036,Sunset Ridge,036,2025-09-05,Moved out,Kayla Mora,2306.92,2375.0,2025-09-28,Bought a home,False,0.0
-E00158,P06-031,Willow Park,031,2025-09-07,Moved out,Judith Hale,1770.56,1805.0,2025-11-01,Needed different size / location,False,5.3
-E00159,P02-043,Harborview Flats,043,2025-09-08,Moved out,Cesar Johnston,2719.07,2785.0,2025-10-08,Bought a home,False,7.2
-E00160,P04-013,Birchwood Terrace,013,2025-09-09,Renewed,Samantha Garcia,2351.44,2490.0,,,False,0.0
-E00161,P10-049,Stonebridge Villas,049,2025-09-10,Renewed,Christian Vaughn,1947.62,1995.0,,,False,0.0
-E00162,P08-008,Riverbend Lofts,008,2025-09-10,Renewed,Joanna Pacheco,2509.1,2570.0,,,False,0.0
-E00163,P06-013,Willow Park,013,2025-09-11,Renewed,Tammie Bright,1899.02,1945.0,,,False,0.0
-E00164,P06-020,Willow Park,020,2025-09-11,Moved out,Rodney Ward,1588.65,1600.0,2025-10-06,Needed different size / location,False,0.0
-E00165,P06-021,Willow Park,021,2025-09-11,Renewed,Lisa Allen,2102.52,2170.0,,,False,0.0
-E00166,P11-022,Meadowlark Place,022,2025-09-12,Moved out,Melissa Wallace,2044.54,2080.0,2025-10-06,Bought a home,False,0.0
-E00167,P03-023,Maple Court,023,2025-09-13,Moved out,Glenn Ramos,1701.44,1630.0,2025-09-25,Needed different size / location,False,0.0
-E00168,P01-004,Cedar Commons,004,2025-09-14,Renewed,Daniel Wagner,1588.51,1675.0,,,False,0.0
-E00169,P12-011,Ironwood Residences,011,2025-09-15,Renewed,Colleen Wright,2001.0,2020.0,,,False,0.0
-E00170,P02-018,Harborview Flats,018,2025-09-15,Renewed,Lisa Barnes,2623.53,2695.0,,,False,0.0
-E00171,P12-001,Ironwood Residences,001,2025-09-15,Renewed,David Molina,2032.5,2080.0,,,False,0.0
-E00172,P10-007,Stonebridge Villas,007,2025-09-16,Renewed,Donna Frye,1587.68,1680.0,,,False,0.0
-E00173,P04-045,Birchwood Terrace,045,2025-09-16,Moved out,Erica Campbell,1829.35,1905.0,2025-10-02,Needed different size / location,False,0.0
-E00174,P11-009,Meadowlark Place,009,2025-09-17,Moved out,Philip Miller,1241.96,1245.0,2025-10-12,Job / relocation,False,0.0
-E00175,P01-028,Cedar Commons,028,2025-09-18,Moved out,Rachel Nolan,2278.2,2320.0,2025-11-01,Rent increase / price,True,0.0
-E00176,P03-065,Maple Court,065,2025-09-18,Moved out,Steven Conley,1684.43,1720.0,2025-12-14,Management / service,True,0.0
-E00177,P04-037,Birchwood Terrace,037,2025-09-19,Moved out,Andrea Wilson,1889.29,1940.0,2025-11-02,Maintenance / unit condition,True,0.0
-E00178,P09-028,Oakhaven Apartments,028,2025-09-19,Moved out,Tracy Garrison,1484.35,1495.0,2025-12-18,Rent increase / price,True,0.0
-E00179,P08-029,Riverbend Lofts,029,2025-09-20,Renewed,Chad Jones,2308.78,2375.0,,,False,0.0
-E00180,P05-005,Sunset Ridge,005,2025-09-21,Moved out,Mathew Turner,2089.89,2185.0,2025-10-01,Job / relocation,False,0.0
-E00181,P07-035,Aspen Grove,035,2025-09-22,Renewed,Karla Ramos,1562.48,1605.0,,,False,0.0
-E00182,P03-014,Maple Court,014,2025-09-24,Renewed,April Frost,1405.47,1420.0,,,False,0.0
-E00183,P04-050,Birchwood Terrace,050,2025-09-24,Moved out,Alexander Cummings,1721.42,1745.0,2025-11-19,Rent increase / price,True,0.0
-E00184,P02-037,Harborview Flats,037,2025-09-24,Renewed,Jessica Smith,2423.35,2540.0,,,False,0.0
-E00185,P01-022,Cedar Commons,022,2025-09-25,Moved out,Tom Combs,1825.17,1795.0,2025-11-10,Maintenance / unit condition,True,0.0
-E00186,P02-006,Harborview Flats,006,2025-09-25,Renewed,James Brown,2758.69,2860.0,,,False,0.0
-E00187,P09-044,Oakhaven Apartments,044,2025-09-26,Renewed,Judith Carter,1637.09,1690.0,,,False,0.0
-E00188,P09-039,Oakhaven Apartments,039,2025-09-27,Moved out,Carl Gonzales,2213.2,2055.0,2025-12-01,Maintenance / unit condition,True,0.0
-E00189,P09-066,Oakhaven Apartments,066,2025-09-29,Moved out,Emily Johnson,1543.46,1550.0,2025-10-31,Bought a home,False,4.5
-E00190,P07-002,Aspen Grove,002,2025-09-29,Renewed,Kimberly Nguyen,1597.12,1645.0,,,False,0.0
-E00191,P07-054,Aspen Grove,054,2025-09-29,Moved out,Manuel Warren,1798.24,1860.0,2025-11-06,Needed different size / location,False,6.6
-E00192,P10-036,Stonebridge Villas,036,2025-09-30,Renewed,Nancy Evans MD,1579.69,1680.0,,,False,0.0
-E00193,P09-009,Oakhaven Apartments,009,2025-09-30,Moved out,Christopher Hall,1363.91,1390.0,2025-10-14,Other / personal,False,0.0
-E00194,P11-001,Meadowlark Place,001,2025-09-30,Renewed,Kelly Edwards,1801.64,1845.0,,,False,0.0
-E00195,P04-010,Birchwood Terrace,010,2025-09-30,Renewed,Lindsay Martinez,1677.45,1760.0,,,False,0.0
-E00196,P07-048,Aspen Grove,048,2025-10-01,Renewed,Robert Montgomery,1352.32,1380.0,,,False,0.0
-E00197,P10-017,Stonebridge Villas,017,2025-10-02,Moved out,Brandon Huff,2322.28,2395.0,2025-10-16,Job / relocation,False,0.0
-E00198,P01-048,Cedar Commons,048,2025-10-02,Renewed,John Pierce,1667.16,1730.0,,,False,0.0
-E00199,P07-055,Aspen Grove,055,2025-10-03,Moved out,David Green,1778.4,1810.0,2025-10-27,Rent increase / price,True,0.0
-E00200,P07-023,Aspen Grove,023,2025-10-03,Renewed,Sabrina Austin,1415.93,1440.0,,,False,0.0
-E00201,P01-051,Cedar Commons,051,2025-10-04,Moved out,Aaron Berger,1695.37,1775.0,2025-11-13,Bought a home,False,0.0
-E00202,P09-073,Oakhaven Apartments,073,2025-10-04,Renewed,Jodi Roach,1318.57,1350.0,,,False,0.0
-E00203,P04-026,Birchwood Terrace,026,2025-10-05,Renewed,Melissa Brewer,1755.19,1830.0,,,False,0.0
-E00204,P01-057,Cedar Commons,057,2025-10-06,Renewed,Michael Lewis,2100.08,2175.0,,,False,0.0
-E00205,P12-012,Ironwood Residences,012,2025-10-07,Renewed,Shelley Miller,1847.14,1905.0,,,False,0.0
-E00206,P06-072,Willow Park,072,2025-10-08,Moved out,John Conley,1274.15,1245.0,2025-11-22,Job / relocation,False,0.0
-E00207,P11-038,Meadowlark Place,038,2025-10-09,Moved out,Robert Williams,1571.92,1595.0,2025-11-04,Bought a home,False,0.0
-E00208,P03-022,Maple Court,022,2025-10-09,Renewed,Elizabeth Kelley,2146.14,2205.0,,,False,0.0
-E00209,P02-033,Harborview Flats,033,2025-10-10,Moved out,Christina Coleman,1983.37,2110.0,2025-11-03,Rent increase / price,True,0.0
-E00210,P12-036,Ironwood Residences,036,2025-10-12,Renewed,Jennifer Miranda,2323.74,2410.0,,,False,0.0
-E00211,P09-078,Oakhaven Apartments,078,2025-10-12,Moved out,Laura Oconnell,1836.8,1880.0,2025-11-30,Rent increase / price,True,0.0
-E00212,P12-057,Ironwood Residences,057,2025-10-13,Renewed,Michael Morrison,2548.89,2625.0,,,False,0.0
-E00213,P09-034,Oakhaven Apartments,034,2025-10-14,Renewed,Jeanette Harrison,1543.15,1620.0,,,False,0.0
-E00214,P11-025,Meadowlark Place,025,2025-10-14,Renewed,Sherry Woods,1805.92,1860.0,,,False,0.0
-E00215,P03-013,Maple Court,013,2025-10-15,Moved out,Stephen Lyons,1620.33,1665.0,2025-12-16,Maintenance / unit condition,True,0.0
-E00216,P11-023,Meadowlark Place,023,2025-10-15,Moved out,Jimmy Anthony,1694.72,1735.0,2025-11-15,Maintenance / unit condition,True,0.0
-E00217,P10-031,Stonebridge Villas,031,2025-10-15,Renewed,Nicole Gonzalez,1667.56,1705.0,,,False,0.0
-E00218,P02-029,Harborview Flats,029,2025-10-15,Renewed,Matthew Mcmillan,2640.1,2735.0,,,False,0.0
-E00219,P06-042,Willow Park,042,2025-10-15,Renewed,Carlos Ryan,1721.58,1755.0,,,False,0.0
-E00220,P03-052,Maple Court,052,2025-10-19,Moved out,James Gonzales,1399.3,1375.0,2025-12-30,Bought a home,False,0.0
-E00221,P07-008,Aspen Grove,008,2025-10-19,Moved out,Kayla Miller,1763.98,1710.0,2025-11-21,Maintenance / unit condition,True,0.0
-E00222,P11-032,Meadowlark Place,032,2025-10-20,Renewed,Casey Gillespie,2019.68,2075.0,,,False,0.0
-E00223,P04-031,Birchwood Terrace,031,2025-10-20,Moved out,Alexandra Edwards,2366.35,2325.0,2025-12-06,Maintenance / unit condition,True,0.0
-E00224,P09-032,Oakhaven Apartments,032,2025-10-20,Renewed,William Jones,1258.15,1320.0,,,False,0.0
-E00225,P12-043,Ironwood Residences,043,2025-10-21,Renewed,Kyle Chambers,2385.6,2475.0,,,False,0.0
-E00226,P10-026,Stonebridge Villas,026,2025-10-21,Renewed,Kelly Lee,1876.14,1940.0,,,False,0.0
-E00227,P02-024,Harborview Flats,024,2025-10-22,Moved out,Lauren Baker,3076.6,2980.0,2025-12-19,Rent increase / price,True,7.9
-E00228,P05-026,Sunset Ridge,026,2025-10-22,Moved out,Timothy Smith,2412.34,2415.0,2025-12-05,Needed different size / location,False,0.0
-E00229,P08-018,Riverbend Lofts,018,2025-10-22,Renewed,Mary Escobar,1948.45,2050.0,,,False,0.0
-E00230,P01-043,Cedar Commons,043,2025-10-23,Renewed,Fred Smith,1981.7,2060.0,,,False,0.0
-E00231,P02-046,Harborview Flats,046,2025-10-23,Moved out,Angel Warner,2601.18,2650.0,2025-11-21,Needed different size / location,False,0.0
-E00232,P03-019,Maple Court,019,2025-10-23,Moved out,Stephanie Hall,2205.06,2150.0,2026-01-09,Other / personal,False,0.0
-E00233,P10-021,Stonebridge Villas,021,2025-10-24,Renewed,Cindy Gomez,1735.66,1795.0,,,False,0.0
-E00234,P03-041,Maple Court,041,2025-10-24,Renewed,Stephanie Manning,2060.48,2155.0,,,False,0.0
-E00235,P03-035,Maple Court,035,2025-10-25,Renewed,Christopher Rubio,1671.16,1770.0,,,False,0.0
-E00236,P02-011,Harborview Flats,011,2025-10-26,Renewed,Brittney Phillips,2292.16,2370.0,,,False,0.0
-E00237,P04-041,Birchwood Terrace,041,2025-10-26,Renewed,Julie Alexander,2172.42,2230.0,,,False,0.0
-E00238,P03-066,Maple Court,066,2025-10-27,Renewed,Jamie Walton,1656.89,1730.0,,,False,0.0
-E00239,P05-038,Sunset Ridge,038,2025-10-27,Moved out,Debra Schultz,2291.71,2310.0,2025-11-02,Rent increase / price,True,0.0
-E00240,P09-006,Oakhaven Apartments,006,2025-10-27,Renewed,Tracy Montoya,1716.76,1770.0,,,False,0.0
-E00241,P09-007,Oakhaven Apartments,007,2025-10-28,Moved out,Nancy Ballard,1891.47,1875.0,2025-11-28,Needed different size / location,False,0.0
-E00242,P01-029,Cedar Commons,029,2025-10-28,Moved out,Joseph Haynes,2327.77,2275.0,2025-11-12,Needed different size / location,False,0.0
-E00243,P01-064,Cedar Commons,064,2025-10-29,Renewed,Connor West,1947.81,2000.0,,,False,0.0
-E00244,P01-026,Cedar Commons,026,2025-10-29,Renewed,Matthew Foster,2220.58,2280.0,,,False,0.0
-E00245,P11-027,Meadowlark Place,027,2025-10-29,Moved out,Stephanie Collins,1887.87,1935.0,2025-11-29,Rent increase / price,True,0.0
-E00246,P03-056,Maple Court,056,2025-10-29,Moved out,Donna Estrada,1573.36,1535.0,2026-01-09,Rent increase / price,True,0.0
-E00247,P03-044,Maple Court,044,2025-10-30,Moved out,Christopher Mays,1922.29,1940.0,2025-12-17,Maintenance / unit condition,True,0.0
-E00248,P05-006,Sunset Ridge,006,2025-10-30,Renewed,Kathryn Snyder,2296.69,2380.0,,,False,0.0
-E00249,P03-069,Maple Court,069,2025-10-30,Moved out,Angela Shannon,1550.9,1570.0,2025-12-29,Rent increase / price,True,0.0
-E00250,P03-016,Maple Court,016,2025-10-31,Renewed,Helen Jones,1402.23,1465.0,,,False,0.0
-E00251,P04-042,Birchwood Terrace,042,2025-10-31,Moved out,Kristin Glass,2178.3,2060.0,2025-11-26,Safety / neighbors,True,0.0
-E00252,P12-003,Ironwood Residences,003,2025-10-31,Moved out,Robert Sanchez,2377.38,2400.0,2025-11-19,Needed different size / location,False,0.0
-E00253,P12-020,Ironwood Residences,020,2025-11-01,Renewed,Robert Cummings,1448.79,1480.0,,,False,0.0
-E00254,P01-001,Cedar Commons,001,2025-11-01,Moved out,Michael Thomas,2068.38,2125.0,2025-11-18,Job / relocation,False,0.0
-E00255,P09-061,Oakhaven Apartments,061,2025-11-02,Moved out,Gregory Martin,1339.47,1370.0,2026-01-28,Job / relocation,False,5.9
-E00256,P12-030,Ironwood Residences,030,2025-11-03,Moved out,Samantha Simpson,1899.57,1915.0,2025-12-08,Other / personal,False,0.0
-E00257,P04-047,Birchwood Terrace,047,2025-11-03,Renewed,Courtney Mills,2026.12,2095.0,,,False,0.0
-E00258,P07-007,Aspen Grove,007,2025-11-03,Renewed,Jesse Perry,1630.4,1680.0,,,False,0.0
-E00259,P12-018,Ironwood Residences,018,2025-11-04,Renewed,Rhonda Chavez,2548.11,2645.0,,,False,0.0
-E00260,P12-056,Ironwood Residences,056,2025-11-04,Moved out,Ann Miller,1994.58,2020.0,2025-12-02,Needed different size / location,False,0.0
-E00261,P02-019,Harborview Flats,019,2025-11-06,Moved out,Daniel Reyes,2526.65,2585.0,2025-11-26,Needed different size / location,False,0.0
-E00262,P05-009,Sunset Ridge,009,2025-11-07,Renewed,Sara Johnston,2385.82,2495.0,,,False,0.0
-E00263,P06-057,Willow Park,057,2025-11-07,Moved out,Dana Patterson,1850.45,1905.0,2025-12-06,Other / personal,False,0.0
-E00264,P01-013,Cedar Commons,013,2025-11-08,Renewed,Lisa Hensley,2032.5,2110.0,,,False,0.0
-E00265,P02-030,Harborview Flats,030,2025-11-09,Renewed,Brian Rodriguez,2530.92,2605.0,,,False,0.0
-E00266,P11-044,Meadowlark Place,044,2025-11-09,Renewed,Franklin Wright,1785.81,1870.0,,,False,0.0
-E00267,P09-094,Oakhaven Apartments,094,2025-11-10,Renewed,Krista Martinez,1344.56,1385.0,,,False,0.0
-E00268,P09-033,Oakhaven Apartments,033,2025-11-12,Moved out,Michelle Turner,1817.88,1765.0,2025-12-07,Management / service,True,0.0
-E00269,P10-045,Stonebridge Villas,045,2025-11-12,Renewed,Lauren Jackson,1748.93,1820.0,,,False,0.0
-E00270,P03-036,Maple Court,036,2025-11-13,Moved out,Zachary Allen,1798.38,1735.0,2026-03-01,Safety / neighbors,True,0.0
-E00271,P08-007,Riverbend Lofts,007,2025-11-15,Renewed,Julian Conner,2073.55,2130.0,,,False,0.0
-E00272,P03-011,Maple Court,011,2025-11-16,Renewed,Jeffrey Chandler,1771.35,1840.0,,,False,0.0
-E00273,P03-046,Maple Court,046,2025-11-17,Moved out,Michelle Meadows,1619.26,1575.0,2026-03-24,Needed different size / location,False,0.0
-E00274,P03-054,Maple Court,054,2025-11-17,Moved out,Michael Tucker,2049.61,1990.0,2025-12-23,Other / personal,False,0.0
-E00275,P08-036,Riverbend Lofts,036,2025-11-18,Renewed,Jeremy Mitchell,2239.52,2365.0,,,False,0.0
-E00276,P07-022,Aspen Grove,022,2025-11-19,Renewed,Renee Bruce,1524.81,1595.0,,,False,0.0
-E00277,P08-027,Riverbend Lofts,027,2025-11-19,Moved out,Yvette Lewis,2349.67,2395.0,2025-12-25,Safety / neighbors,True,0.0
-E00278,P09-027,Oakhaven Apartments,027,2025-11-20,Renewed,Riley Bryant,1035.18,1085.0,,,False,0.0
-E00279,P05-021,Sunset Ridge,021,2025-11-20,Renewed,Isaiah Avila,1739.89,1800.0,,,False,0.0
-E00280,P11-035,Meadowlark Place,035,2025-11-20,Renewed,Keith Rodriguez,1583.88,1665.0,,,False,0.0
-E00281,P07-053,Aspen Grove,053,2025-11-21,Moved out,Jesus Benjamin,2022.62,2070.0,2025-12-30,Job / relocation,False,0.0
-E00282,P06-049,Willow Park,049,2025-11-21,Renewed,Tracy Ballard,1320.42,1365.0,,,False,0.0
-E00283,P11-043,Meadowlark Place,043,2025-11-21,Renewed,Michael Lopez,2348.32,2445.0,,,False,0.0
-E00284,P03-031,Maple Court,031,2025-11-21,Moved out,Cynthia Ford,1490.75,1400.0,2026-02-01,Rent increase / price,True,7.0
-E00285,P12-042,Ironwood Residences,042,2025-11-21,Renewed,Robert Dennis,1981.44,2025.0,,,False,0.0
-E00286,P02-012,Harborview Flats,012,2025-11-22,Renewed,Lauren Daniels,2463.2,2560.0,,,False,0.0
-E00287,P01-052,Cedar Commons,052,2025-11-22,Renewed,Jessica Holmes,1532.13,1605.0,,,False,0.0
-E00288,P09-025,Oakhaven Apartments,025,2025-11-22,Renewed,Kelsey Rodriguez,1988.21,2045.0,,,False,0.0
-E00289,P03-038,Maple Court,038,2025-11-22,Renewed,Victoria Larson,1433.99,1485.0,,,False,0.0
-E00290,P12-005,Ironwood Residences,005,2025-11-23,Renewed,Jonathan Jacobson,1844.71,1900.0,,,False,0.0
-E00291,P04-038,Birchwood Terrace,038,2025-11-24,Renewed,Denise Mccann,1350.65,1390.0,,,False,0.0
-E00292,P12-034,Ironwood Residences,034,2025-11-24,Moved out,Melanie Stevenson,2625.25,2710.0,2025-12-04,Management / service,True,7.1
-E00293,P09-059,Oakhaven Apartments,059,2025-11-25,Renewed,Heather Bolton,1550.75,1645.0,,,False,0.0
-E00294,P12-017,Ironwood Residences,017,2025-11-25,Moved out,Kimberly Smith,2024.66,1995.0,2025-12-24,Needed different size / location,False,0.0
-E00295,P12-026,Ironwood Residences,026,2025-11-25,Renewed,Maria Fisher,1826.06,1880.0,,,False,0.0
-E00296,P03-042,Maple Court,042,2025-11-25,Renewed,David Wright,1310.39,1345.0,,,False,0.0
-E00297,P11-036,Meadowlark Place,036,2025-11-26,Renewed,Mrs. Virginia Daniels,1553.57,1640.0,,,False,0.0
-E00298,P06-045,Willow Park,045,2025-11-26,Renewed,Dr. Paul Morgan,1746.06,1815.0,,,False,0.0
-E00299,P01-063,Cedar Commons,063,2025-11-26,Renewed,Gerald Hensley,1908.53,1980.0,,,False,0.0
-E00300,P04-008,Birchwood Terrace,008,2025-11-27,Moved out,Lori Morris,1326.52,1335.0,2026-01-04,Bought a home,False,0.0
-E00301,P07-014,Aspen Grove,014,2025-11-27,Moved out,Autumn Mccormick,1453.86,1495.0,2025-12-11,Other / personal,False,0.0
-E00302,P12-006,Ironwood Residences,006,2025-11-28,Renewed,Emily Wilson,2378.4,2420.0,,,False,0.0
-E00303,P12-032,Ironwood Residences,032,2025-11-28,Renewed,Edwin Nunez,2216.51,2320.0,,,False,0.0
-E00304,P07-057,Aspen Grove,057,2025-11-28,Moved out,Michael Freeman,1498.38,1520.0,2026-01-04,Bought a home,False,0.0
-E00305,P08-031,Riverbend Lofts,031,2025-11-29,Moved out,Scott Gould,1941.07,1905.0,2025-12-15,Maintenance / unit condition,True,0.0
-E00306,P01-032,Cedar Commons,032,2025-12-01,Moved out,Kevin Richardson,2058.41,2095.0,2026-01-14,Bought a home,False,0.0
-E00307,P06-071,Willow Park,071,2025-12-01,Renewed,Dana Martinez,2323.36,2380.0,,,False,0.0
-E00308,P12-059,Ironwood Residences,059,2025-12-01,Moved out,Dustin Cox,1709.01,1695.0,2025-12-23,Needed different size / location,False,0.0
-E00309,P08-017,Riverbend Lofts,017,2025-12-03,Renewed,Michael Mitchell,2121.02,2185.0,,,False,0.0
-E00310,P07-015,Aspen Grove,015,2025-12-06,Renewed,Nicole Parrish,1753.54,1860.0,,,False,0.0
-E00311,P06-052,Willow Park,052,2025-12-07,Renewed,Lauren Carson,1577.11,1630.0,,,False,0.0
-E00312,P03-034,Maple Court,034,2025-12-07,Renewed,Patricia Rodriguez,1482.46,1570.0,,,False,0.0
-E00313,P12-054,Ironwood Residences,054,2025-12-08,Moved out,Tanya Marshall,1966.76,2015.0,2026-01-13,Job / relocation,False,0.0
-E00314,P11-034,Meadowlark Place,034,2025-12-09,Moved out,Tammy Hunt,1674.8,1660.0,2026-01-16,Needed different size / location,False,0.0
-E00315,P10-044,Stonebridge Villas,044,2025-12-09,Moved out,Wanda Nichols,1732.82,1725.0,2026-01-29,Rent increase / price,True,4.2
-E00316,P09-002,Oakhaven Apartments,002,2025-12-09,Moved out,Jennifer Bass,1741.8,1690.0,2026-01-23,Needed different size / location,False,0.0
-E00317,P04-015,Birchwood Terrace,015,2025-12-11,Renewed,Jessica Gross,2292.59,2365.0,,,False,0.0
-E00318,P05-008,Sunset Ridge,008,2025-12-11,Moved out,Cindy Martinez,2154.31,2190.0,2026-01-10,Bought a home,False,0.0
-E00319,P06-037,Willow Park,037,2025-12-11,Renewed,Megan Le,1721.26,1800.0,,,False,0.0
-E00320,P09-084,Oakhaven Apartments,084,2025-12-11,Renewed,Dr. Kelly Hammond DVM,1461.91,1485.0,,,False,0.0
-E00321,P03-021,Maple Court,021,2025-12-11,Moved out,John Murray,1719.05,1660.0,2026-02-10,Rent increase / price,True,0.0
-E00322,P03-048,Maple Court,048,2025-12-12,Moved out,David Keith,2174.96,2195.0,2025-12-27,Other / personal,False,0.0
-E00323,P06-030,Willow Park,030,2025-12-12,Moved out,Devon Foster,1633.9,1650.0,2025-12-23,Bought a home,False,0.0
-E00324,P11-040,Meadowlark Place,040,2025-12-12,Moved out,Deborah Rodgers,1446.82,1520.0,2026-01-29,Maintenance / unit condition,True,0.0
-E00325,P03-060,Maple Court,060,2025-12-14,Renewed,John Anderson,1354.57,1420.0,,,False,0.0
-E00326,P10-048,Stonebridge Villas,048,2025-12-15,Moved out,Craig Anderson,1919.43,1925.0,2026-01-01,Other / personal,False,0.0
-E00327,P03-018,Maple Court,018,2025-12-15,Renewed,Michelle Evans,1157.7,1190.0,,,False,0.0
-E00328,P10-037,Stonebridge Villas,037,2025-12-15,Renewed,Kim Erickson,1843.44,1880.0,,,False,0.0
-E00329,P01-019,Cedar Commons,019,2025-12-15,Moved out,Raymond Harper MD,2120.58,2220.0,2026-01-18,Job / relocation,False,0.0
-E00330,P03-024,Maple Court,024,2025-12-15,Moved out,Charles Brock,1830.47,1880.0,2026-03-24,Job / relocation,False,5.6
-E00331,P11-014,Meadowlark Place,014,2025-12-17,Renewed,Dwayne Klein,1429.26,1495.0,,,False,0.0
-E00332,P01-021,Cedar Commons,021,2025-12-17,Renewed,Carla Gray,1977.16,2035.0,,,False,0.0
-E00333,P07-028,Aspen Grove,028,2025-12-18,Renewed,Charles Schultz,1243.81,1290.0,,,False,0.0
-E00334,P12-009,Ironwood Residences,009,2025-12-18,Renewed,Lisa Perry,1948.41,2010.0,,,False,0.0
-E00335,P09-071,Oakhaven Apartments,071,2025-12-18,Renewed,Zachary Mitchell,2021.09,2120.0,,,False,0.0
-E00336,P06-088,Willow Park,088,2025-12-19,Renewed,Theodore Jones Jr.,1789.07,1850.0,,,False,0.0
-E00337,P12-048,Ironwood Residences,048,2025-12-20,Renewed,William David DDS,2104.56,2220.0,,,False,0.0
-E00338,P07-004,Aspen Grove,004,2025-12-20,Moved out,Lisa Williams,1281.46,1255.0,2026-01-21,Rent increase / price,True,0.0
-E00339,P09-046,Oakhaven Apartments,046,2025-12-20,Moved out,Nathaniel Johnston,1686.56,1605.0,2026-02-28,Bought a home,False,0.0
-E00340,P02-034,Harborview Flats,034,2025-12-21,Renewed,Anna Henderson,2209.27,2320.0,,,False,0.0
-E00341,P06-004,Willow Park,004,2025-12-21,Renewed,Jonathan Lawrence,1485.78,1520.0,,,False,0.0
-E00342,P05-032,Sunset Ridge,032,2025-12-21,Moved out,Marcus Flores,2507.43,2580.0,2026-01-08,Rent increase / price,True,0.0
-E00343,P02-035,Harborview Flats,035,2025-12-23,Moved out,James Murphy,2613.59,2645.0,2026-01-14,Bought a home,False,0.0
-E00344,P07-036,Aspen Grove,036,2025-12-23,Moved out,Teresa Howard,1697.66,1675.0,2026-01-22,Maintenance / unit condition,True,0.0
-E00345,P09-089,Oakhaven Apartments,089,2025-12-23,Renewed,Vincent Reynolds,1671.46,1755.0,,,False,0.0
-E00346,P11-042,Meadowlark Place,042,2025-12-25,Renewed,Samantha Robertson,1571.02,1645.0,,,False,0.0
-E00347,P11-039,Meadowlark Place,039,2025-12-26,Moved out,Matthew Wolfe,1971.64,1925.0,2026-02-03,Maintenance / unit condition,True,0.0
-E00348,P09-035,Oakhaven Apartments,035,2025-12-27,Moved out,Dr. Elizabeth Anderson,1836.3,1845.0,2026-01-21,Needed different size / location,False,0.0
-E00349,P02-048,Harborview Flats,048,2025-12-27,Renewed,Sharon Cochran,2283.74,2385.0,,,False,0.0
-E00350,P06-053,Willow Park,053,2025-12-28,Renewed,Ashley Hall,1587.23,1640.0,,,False,0.0
-E00351,P07-011,Aspen Grove,011,2025-12-28,Renewed,Ronald Davis,1919.03,2010.0,,,False,0.0
-E00352,P01-033,Cedar Commons,033,2025-12-29,Moved out,Larry Costa,2664.9,2610.0,2026-03-26,Needed different size / location,False,0.0
-E00353,P03-012,Maple Court,012,2025-12-29,Renewed,Larry Dixon,1341.43,1430.0,,,False,0.0
-E00354,P02-044,Harborview Flats,044,2025-12-29,Moved out,Christina Williams,2214.15,2225.0,2026-01-16,Bought a home,False,0.0
-E00355,P02-027,Harborview Flats,027,2025-12-30,Renewed,Lisa Archer,2548.79,2690.0,,,False,0.0
-E00356,P06-034,Willow Park,034,2025-12-31,Renewed,Amber Obrien,1582.43,1635.0,,,False,0.0
-E00357,P09-063,Oakhaven Apartments,063,2025-12-31,Renewed,Lawrence Harrington,1395.45,1430.0,,,False,0.0
-E00358,P05-001,Sunset Ridge,001,2026-01-01,Renewed,Jessica Stephens,2738.56,2830.0,,,False,0.0
-E00359,P09-087,Oakhaven Apartments,087,2026-01-01,Moved out,Bryce Miller,1142.22,1090.0,2026-02-18,Job / relocation,False,0.0
-E00360,P04-028,Birchwood Terrace,028,2026-01-01,Moved out,Darlene Holt,1432.86,1440.0,2026-01-27,Rent increase / price,True,0.0
-E00361,P01-055,Cedar Commons,055,2026-01-02,Renewed,Mark Perez,1396.23,1435.0,,,False,0.0
-E00362,P04-014,Birchwood Terrace,014,2026-01-02,Renewed,Madison Poole,2036.07,2115.0,,,False,0.0
-E00363,P07-042,Aspen Grove,042,2026-01-02,Moved out,Lance Smith,1490.46,1540.0,2026-03-04,Needed different size / location,False,0.0
-E00364,P05-003,Sunset Ridge,003,2026-01-03,Renewed,Christopher Parker,1926.82,2020.0,,,False,0.0
-E00365,P12-007,Ironwood Residences,007,2026-01-03,Renewed,Elizabeth Mendez,2103.18,2185.0,,,False,0.0
-E00366,P06-033,Willow Park,033,2026-01-05,Renewed,Keith Jennings,1203.01,1250.0,,,False,0.0
-E00367,P06-040,Willow Park,040,2026-01-06,Renewed,Kevin Oconnor,1581.52,1640.0,,,False,0.0
-E00368,P06-028,Willow Park,028,2026-01-06,Moved out,Timothy Garza,2022.18,2010.0,2026-02-23,Job / relocation,False,0.0
-E00369,P09-064,Oakhaven Apartments,064,2026-01-06,Renewed,Austin Osborne,1320.31,1355.0,,,False,0.0
-E00370,P07-024,Aspen Grove,024,2026-01-06,Renewed,Allison Hickman,1514.85,1565.0,,,False,0.0
-E00371,P12-015,Ironwood Residences,015,2026-01-07,Renewed,Laura Hernandez,1930.32,2005.0,,,False,0.0
-E00372,P10-025,Stonebridge Villas,025,2026-01-07,Renewed,Pamela Diaz,1548.95,1610.0,,,False,0.0
-E00373,P01-015,Cedar Commons,015,2026-01-08,Moved out,Nicole Hamilton,1542.75,1595.0,2026-02-16,Management / service,True,0.0
-E00374,P06-010,Willow Park,010,2026-01-08,Renewed,Shannon James,1788.48,1835.0,,,False,0.0
-E00375,P05-027,Sunset Ridge,027,2026-01-08,Renewed,Kristen Davis,1922.43,2005.0,,,False,0.0
-E00376,P03-039,Maple Court,039,2026-01-10,Renewed,Stephanie Salazar,1461.13,1510.0,,,False,0.0
-E00377,P08-034,Riverbend Lofts,034,2026-01-11,Moved out,Bruce Lawson,2471.76,2555.0,2026-01-19,Job / relocation,False,0.0
-E00378,P07-043,Aspen Grove,043,2026-01-11,Renewed,Sandra Drake,1528.97,1570.0,,,False,0.0
-E00379,P09-085,Oakhaven Apartments,085,2026-01-11,Renewed,William Day,1842.89,1925.0,,,False,0.0
-E00380,P01-007,Cedar Commons,007,2026-01-14,Renewed,Abigail Shaffer,1796.71,1835.0,,,False,0.0
-E00381,P06-076,Willow Park,076,2026-01-14,Moved out,Pamela Simmons,1680.51,1720.0,2026-02-07,Needed different size / location,False,0.0
-E00382,P06-056,Willow Park,056,2026-01-14,Renewed,Susan Turner,1309.47,1340.0,,,False,0.0
-E00383,P06-009,Willow Park,009,2026-01-14,Renewed,Marie Christian,2262.06,2330.0,,,False,0.0
-E00384,P01-018,Cedar Commons,018,2026-01-14,Moved out,Brendan Hunt,1860.12,1880.0,2026-03-04,Safety / neighbors,True,0.0
-E00385,P09-030,Oakhaven Apartments,030,2026-01-15,Moved out,Douglas Shaw,2034.82,2030.0,2026-02-15,Bought a home,False,0.0
-E00386,P03-005,Maple Court,005,2026-01-15,Moved out,Sarah Bishop,2146.94,2175.0,2026-02-14,Rent increase / price,True,7.3
-E00387,P07-003,Aspen Grove,003,2026-01-16,Moved out,Keith Miller,1618.06,1645.0,2026-02-09,Bought a home,False,0.0
-E00388,P01-060,Cedar Commons,060,2026-01-16,Renewed,Brent Jordan,1823.01,1900.0,,,False,0.0
-E00389,P02-007,Harborview Flats,007,2026-01-17,Renewed,William Baker,2216.68,2300.0,,,False,0.0
-E00390,P09-015,Oakhaven Apartments,015,2026-01-17,Moved out,Adrian Gross,1328.25,1365.0,2026-03-06,Needed different size / location,False,0.0
-E00391,P05-034,Sunset Ridge,034,2026-01-18,Renewed,Timothy Romero,2111.06,2160.0,,,False,0.0
-E00392,P05-025,Sunset Ridge,025,2026-01-18,Renewed,Barbara Dudley,1992.92,2025.0,,,False,0.0
-E00393,P10-014,Stonebridge Villas,014,2026-01-19,Moved out,Stacey Nichols,1907.03,1935.0,2026-02-02,Job / relocation,False,0.0
-E00394,P06-077,Willow Park,077,2026-01-20,Moved out,William Wright,2080.82,2085.0,2026-03-07,Needed different size / location,False,0.0
-E00395,P04-056,Birchwood Terrace,056,2026-01-20,Moved out,David Landry,1917.32,1920.0,2026-02-23,Bought a home,False,6.9
-E00396,P09-047,Oakhaven Apartments,047,2026-01-22,Moved out,Amy Smith,1496.51,1475.0,2026-02-14,Job / relocation,False,0.0
-E00397,P12-014,Ironwood Residences,014,2026-01-22,Renewed,Amy Kelley,1689.1,1745.0,,,False,0.0
-E00398,P10-024,Stonebridge Villas,024,2026-01-22,Renewed,Jessica Khan,2266.25,2365.0,,,False,0.0
-E00399,P05-030,Sunset Ridge,030,2026-01-22,Moved out,Caroline Lee,3076.31,3005.0,2026-02-06,Other / personal,False,0.0
-E00400,P12-049,Ironwood Residences,049,2026-01-22,Renewed,Emma Butler,2278.45,2365.0,,,False,0.0
-E00401,P03-047,Maple Court,047,2026-01-23,Moved out,Jonathan Mcintyre,1647.72,1535.0,2026-02-21,Job / relocation,False,0.0
-E00402,P07-001,Aspen Grove,001,2026-01-23,Moved out,Robert Bell,1239.93,1275.0,2026-03-26,Needed different size / location,False,0.0
-E00403,P06-063,Willow Park,063,2026-01-23,Renewed,Brett Burns,1599.79,1670.0,,,False,0.0
-E00404,P03-059,Maple Court,059,2026-01-24,Renewed,Michael Powell,2052.08,2120.0,,,False,0.0
-E00405,P07-038,Aspen Grove,038,2026-01-24,Renewed,Mr. Andrew Foster,1650.31,1710.0,,,False,0.0
-E00406,P04-039,Birchwood Terrace,039,2026-01-26,Renewed,Melissa Martinez,1317.52,1360.0,,,False,0.0
-E00407,P08-013,Riverbend Lofts,013,2026-01-26,Renewed,Jeffrey Mills,1992.58,2105.0,,,False,0.0
-E00408,P12-052,Ironwood Residences,052,2026-01-26,Renewed,Renee Melendez,2527.78,2595.0,,,False,0.0
-E00409,P03-051,Maple Court,051,2026-01-26,Moved out,Christian Steele,1666.02,1655.0,2026-03-02,Needed different size / location,False,0.0
-E00410,P10-012,Stonebridge Villas,012,2026-01-27,Renewed,Bianca Wood,1672.42,1710.0,,,False,0.0
-E00411,P01-046,Cedar Commons,046,2026-01-28,Renewed,Angelica Tucker,1711.96,1780.0,,,False,0.0
-E00412,P03-070,Maple Court,070,2026-01-28,Renewed,Nicole Herring,1644.24,1695.0,,,False,0.0
-E00413,P03-030,Maple Court,030,2026-01-28,Renewed,David Alvarez,1552.63,1600.0,,,False,0.0
-E00414,P01-016,Cedar Commons,016,2026-01-28,Renewed,Brian Ramirez,1992.5,2085.0,,,False,0.0
-E00415,P03-028,Maple Court,028,2026-01-29,Moved out,Jillian Collins,1766.1,1820.0,2026-03-16,Maintenance / unit condition,True,0.0
-E00416,P03-032,Maple Court,032,2026-01-29,Renewed,Cheyenne Horton,1484.61,1535.0,,,False,0.0
-E00417,P07-033,Aspen Grove,033,2026-01-30,Renewed,Anthony Moore,1501.65,1610.0,,,False,0.0
-E00418,P06-058,Willow Park,058,2026-01-30,Moved out,Jamie Murphy,2061.4,2085.0,2026-02-23,Needed different size / location,False,0.0
-E00419,P09-079,Oakhaven Apartments,079,2026-01-30,Renewed,Rebecca Hicks,1359.75,1415.0,,,False,0.0
-E00420,P06-067,Willow Park,067,2026-01-30,Renewed,Vanessa Howard,2010.39,2035.0,,,False,0.0
-E00421,P12-055,Ironwood Residences,055,2026-01-31,Moved out,Morgan Williams,2205.9,2175.0,2026-02-18,Job / relocation,False,0.0
-E00422,P06-014,Willow Park,014,2026-02-01,Moved out,Christopher Alexander,1689.77,1665.0,2026-02-19,Needed different size / location,False,0.0
-E00423,P03-058,Maple Court,058,2026-02-01,Moved out,Michael Becker,1523.07,1490.0,2026-04-13,Needed different size / location,False,0.0
-E00424,P01-056,Cedar Commons,056,2026-02-02,Renewed,Shannon Jones,1672.36,1720.0,,,False,0.0
-E00425,P04-034,Birchwood Terrace,034,2026-02-02,Renewed,Cathy Robinson,1890.74,1980.0,,,False,0.0
-E00426,P12-033,Ironwood Residences,033,2026-02-02,Renewed,Kim Morrow,2329.97,2375.0,,,False,0.0
-E00427,P04-040,Birchwood Terrace,040,2026-02-03,Moved out,Michael Harris,2137.61,2155.0,2026-03-30,Rent increase / price,True,0.0
-E00428,P04-027,Birchwood Terrace,027,2026-02-03,Moved out,Joel Martinez,1676.39,1695.0,2026-03-12,Bought a home,False,0.0
-E00429,P10-033,Stonebridge Villas,033,2026-02-03,Renewed,Gary Wells,1585.99,1655.0,,,False,0.0
-E00430,P08-001,Riverbend Lofts,001,2026-02-04,Renewed,Lori Hernandez,2546.25,2660.0,,,False,0.0
-E00431,P05-035,Sunset Ridge,035,2026-02-04,Renewed,Diane Evans,2310.89,2395.0,,,False,0.0
-E00432,P01-024,Cedar Commons,024,2026-02-04,Moved out,Scott Silva,2074.8,2015.0,2026-03-26,Job / relocation,False,0.0
-E00433,P03-062,Maple Court,062,2026-02-05,Renewed,Alyssa Long,1610.03,1650.0,,,False,0.0
-E00434,P09-023,Oakhaven Apartments,023,2026-02-06,Moved out,Tiffany Hill,1714.38,1660.0,2026-03-13,Maintenance / unit condition,True,0.0
-E00435,P12-035,Ironwood Residences,035,2026-02-07,Renewed,Molly Rodriguez,1828.99,1900.0,,,False,0.0
-E00436,P08-015,Riverbend Lofts,015,2026-02-07,Renewed,George Harper,2464.7,2520.0,,,False,0.0
-E00437,P05-010,Sunset Ridge,010,2026-02-08,Moved out,Kelly Campbell,1874.85,1950.0,2026-03-31,Rent increase / price,True,0.0
-E00438,P11-016,Meadowlark Place,016,2026-02-10,Renewed,Dale Ryan,2075.35,2150.0,,,False,0.0
-E00439,P08-005,Riverbend Lofts,005,2026-02-11,Renewed,Angela Lin,2239.75,2305.0,,,False,0.0
-E00440,P10-038,Stonebridge Villas,038,2026-02-11,Moved out,Gregory Johnson,2172.18,2160.0,2026-02-22,Rent increase / price,True,0.0
-E00441,P12-019,Ironwood Residences,019,2026-02-12,Renewed,Joyce Brown,2328.38,2380.0,,,False,0.0
-E00442,P04-053,Birchwood Terrace,053,2026-02-12,Moved out,Lonnie Brown,1583.88,1630.0,2026-03-13,Safety / neighbors,True,0.0
-E00443,P12-041,Ironwood Residences,041,2026-02-12,Moved out,Linda Parker,1849.32,1855.0,2026-03-01,Rent increase / price,True,7.8
-E00444,P09-056,Oakhaven Apartments,056,2026-02-12,Moved out,Emily Miller,1691.53,1665.0,2026-03-31,Rent increase / price,True,0.0
-E00445,P03-064,Maple Court,064,2026-02-12,Moved out,Bradley Rivera,1181.42,1205.0,2026-04-11,Bought a home,False,0.0
-E00446,P10-052,Stonebridge Villas,052,2026-02-12,Moved out,Ryan Lawson,1778.55,1835.0,2026-03-07,Rent increase / price,True,0.0
-E00447,P05-004,Sunset Ridge,004,2026-02-13,Renewed,Laura Roberts,2405.98,2505.0,,,False,0.0
-E00448,P08-022,Riverbend Lofts,022,2026-02-13,Moved out,Lawrence Compton,2103.28,2105.0,2026-03-19,Bought a home,False,0.0
-E00449,P03-020,Maple Court,020,2026-02-13,Moved out,Miss Monica Black,1639.69,1570.0,2026-03-13,Management / service,True,5.7
-E00450,P04-007,Birchwood Terrace,007,2026-02-14,Renewed,Tina Sanders,2095.14,2165.0,,,False,0.0
-E00451,P04-009,Birchwood Terrace,009,2026-02-14,Moved out,Jennifer Burton,1745.51,1750.0,2026-04-05,Job / relocation,False,0.0
-E00452,P08-012,Riverbend Lofts,012,2026-02-14,Moved out,Kevin Alvarado,2465.65,2525.0,2026-03-12,Rent increase / price,True,0.0
-E00453,P02-021,Harborview Flats,021,2026-02-14,Moved out,Courtney Ellis MD,2950.66,2880.0,2026-03-11,Needed different size / location,False,0.0
-E00454,P08-025,Riverbend Lofts,025,2026-02-14,Renewed,Nancy Jennings,2509.33,2595.0,,,False,0.0
-E00455,P06-080,Willow Park,080,2026-02-16,Moved out,Erin Barrera,2128.33,2145.0,2026-03-09,Job / relocation,False,6.6
-E00456,P01-039,Cedar Commons,039,2026-02-17,Renewed,Cassandra Gaines,2320.94,2405.0,,,False,0.0
-E00457,P12-031,Ironwood Residences,031,2026-02-17,Renewed,Courtney Smith,2238.33,2340.0,,,False,0.0
-E00458,P09-042,Oakhaven Apartments,042,2026-02-17,Moved out,Nichole Walton,1608.95,1555.0,2026-03-19,Bought a home,False,0.0
-E00459,P01-014,Cedar Commons,014,2026-02-19,Moved out,Jaime Phelps,1779.25,1815.0,2026-03-13,Job / relocation,False,0.0
-E00460,P11-024,Meadowlark Place,024,2026-02-19,Renewed,Tanya Russell,1362.01,1415.0,,,False,0.0
-E00461,P07-020,Aspen Grove,020,2026-02-20,Renewed,Courtney Rodriguez,1754.22,1830.0,,,False,0.0
-E00462,P02-042,Harborview Flats,042,2026-02-21,Renewed,Christine Wright,2264.05,2355.0,,,False,0.0
-E00463,P03-026,Maple Court,026,2026-02-23,Renewed,Rebecca Jackson,1018.75,1055.0,,,False,0.0
-E00464,P06-012,Willow Park,012,2026-02-24,Moved out,Alyssa Lloyd,2296.87,2405.0,2026-03-23,Maintenance / unit condition,True,0.0
-E00465,P10-022,Stonebridge Villas,022,2026-02-25,Renewed,Johnny Khan,2139.95,2200.0,,,False,0.0
-E00466,P10-004,Stonebridge Villas,004,2026-02-26,Renewed,Angel May,1941.45,2040.0,,,False,0.0
-E00467,P11-028,Meadowlark Place,028,2026-02-26,Renewed,Susan Davis,1534.55,1585.0,,,False,0.0
-E00468,P09-029,Oakhaven Apartments,029,2026-02-26,Moved out,Kevin Shaw,1368.41,1360.0,2026-04-21,Maintenance / unit condition,True,4.4
-E00469,P12-066,Ironwood Residences,066,2026-02-26,Renewed,Joseph Howard,2574.45,2650.0,,,False,0.0
-E00470,P06-039,Willow Park,039,2026-02-26,Renewed,Maria Parker,1771.52,1835.0,,,False,0.0
-E00471,P12-004,Ironwood Residences,004,2026-02-27,Renewed,Bryan Parker,1972.47,2015.0,,,False,0.0
-E00472,P06-050,Willow Park,050,2026-02-28,Renewed,Richard Smith,1494.95,1565.0,,,False,0.0
-E00473,P07-021,Aspen Grove,021,2026-03-03,Moved out,Shane Reyes,1945.44,1900.0,2026-05-14,Job / relocation,False,0.0
-E00474,P05-016,Sunset Ridge,016,2026-03-03,Renewed,Donna Landry,2144.2,2250.0,,,False,0.0
-E00475,P10-018,Stonebridge Villas,018,2026-03-03,Renewed,Kenneth Edwards,1370.35,1425.0,,,False,0.0
-E00476,P02-022,Harborview Flats,022,2026-03-04,Moved out,Joshua Austin,2679.03,2825.0,2026-03-28,Bought a home,False,0.0
-E00477,P11-013,Meadowlark Place,013,2026-03-04,Renewed,Tina Ballard,1555.21,1620.0,,,False,0.0
-E00478,P08-019,Riverbend Lofts,019,2026-03-04,Moved out,Jason Flynn,2027.69,2070.0,2026-03-26,Rent increase / price,True,0.0
-E00479,P01-031,Cedar Commons,031,2026-03-05,Renewed,Anthony Rodriguez,2130.49,2175.0,,,False,0.0
-E00480,P08-032,Riverbend Lofts,032,2026-03-05,Renewed,Ralph Anderson,2284.22,2315.0,,,False,0.0
-E00481,P05-037,Sunset Ridge,037,2026-03-05,Renewed,Joshua Reed,2621.76,2710.0,,,False,0.0
-E00482,P06-038,Willow Park,038,2026-03-06,Moved out,Stephanie Rogers,1890.41,1900.0,2026-05-23,Other / personal,False,0.0
-E00483,P10-027,Stonebridge Villas,027,2026-03-07,Renewed,Angel Gordon,1799.56,1845.0,,,False,0.0
-E00484,P02-003,Harborview Flats,003,2026-03-08,Moved out,Sarah Vincent,2807.73,2770.0,2026-03-29,Rent increase / price,True,0.0
-E00485,P12-063,Ironwood Residences,063,2026-03-09,Moved out,Christina Dudley,2584.15,2685.0,2026-04-06,Job / relocation,False,0.0
-E00486,P04-044,Birchwood Terrace,044,2026-03-09,Moved out,Wendy Howard,1987.06,1945.0,2026-03-28,Job / relocation,False,7.9
-E00487,P01-008,Cedar Commons,008,2026-03-09,Renewed,Gina Moore,1966.94,1995.0,,,False,0.0
-E00488,P06-069,Willow Park,069,2026-03-10,Renewed,Jordan Bates,1262.28,1290.0,,,False,0.0
-E00489,P06-005,Willow Park,005,2026-03-10,Moved out,William Russo,1642.92,1635.0,2026-05-07,Needed different size / location,False,0.0
-E00490,P11-033,Meadowlark Place,033,2026-03-10,Renewed,Jennifer Simpson DVM,1565.39,1605.0,,,False,0.0
-E00491,P12-039,Ironwood Residences,039,2026-03-10,Moved out,Nicole Wilcox,2285.75,2340.0,2026-04-29,Bought a home,False,0.0
-E00492,P02-004,Harborview Flats,004,2026-03-10,Moved out,Michael Davis,2803.98,2765.0,2026-04-10,Bought a home,False,0.0
-E00493,P02-001,Harborview Flats,001,2026-03-11,Moved out,Kathleen Pineda,2934.77,2985.0,2026-04-11,Needed different size / location,False,0.0
-E00494,P09-083,Oakhaven Apartments,083,2026-03-11,Renewed,Angelica Parker,1300.81,1320.0,,,False,0.0
-E00495,P05-023,Sunset Ridge,023,2026-03-11,Moved out,Karen Scott,2167.08,2220.0,2026-03-24,Job / relocation,False,0.0
-E00496,P10-016,Stonebridge Villas,016,2026-03-12,Renewed,James Gilbert,1681.72,1710.0,,,False,0.0
-E00497,P04-043,Birchwood Terrace,043,2026-03-15,Renewed,Rodney Morales,1602.96,1700.0,,,False,0.0
-E00498,P09-026,Oakhaven Apartments,026,2026-03-15,Moved out,Brian Rivera,1330.58,1240.0,2026-04-08,Safety / neighbors,True,0.0
-E00499,P10-011,Stonebridge Villas,011,2026-03-15,Moved out,Robert Kirk,2482.59,2490.0,2026-04-05,Needed different size / location,False,0.0
-E00500,P09-060,Oakhaven Apartments,060,2026-03-15,Moved out,Angel Johnson,1449.91,1450.0,2026-05-04,Management / service,True,0.0
-E00501,P12-050,Ironwood Residences,050,2026-03-15,Renewed,James Webster,1886.37,1965.0,,,False,0.0
-E00502,P02-013,Harborview Flats,013,2026-03-17,Moved out,Susan Murphy,2443.73,2515.0,2026-04-21,Needed different size / location,False,0.0
-E00503,P07-059,Aspen Grove,059,2026-03-18,Moved out,Jordan Johnson,1513.93,1535.0,2026-04-04,Bought a home,False,0.0
-E00504,P10-051,Stonebridge Villas,051,2026-03-18,Moved out,Alexis Davis,1481.73,1480.0,2026-04-17,Maintenance / unit condition,True,0.0
-E00505,P12-013,Ironwood Residences,013,2026-03-19,Renewed,Michael Miller,1728.19,1795.0,,,False,0.0
-E00506,P08-006,Riverbend Lofts,006,2026-03-20,Renewed,Lisa Hunter,1984.01,2085.0,,,False,0.0
-E00507,P02-041,Harborview Flats,041,2026-03-21,Renewed,Rebecca Valencia,2247.89,2310.0,,,False,0.0
-E00508,P08-035,Riverbend Lofts,035,2026-03-22,Renewed,Jason Rhodes,2163.98,2230.0,,,False,0.0
-E00509,P04-006,Birchwood Terrace,006,2026-03-22,Moved out,Donald Franklin,1905.88,1890.0,2026-05-13,Job / relocation,False,0.0
-E00510,P06-003,Willow Park,003,2026-03-23,Renewed,Veronica Simpson,2162.33,2260.0,,,False,0.0
-E00511,P05-015,Sunset Ridge,015,2026-03-23,Moved out,Michael Griffith,2615.09,2590.0,2026-05-10,Job / relocation,False,0.0
-E00512,P12-067,Ironwood Residences,067,2026-03-23,Renewed,Jose Crawford,1833.58,1900.0,,,False,0.0
-E00513,P07-034,Aspen Grove,034,2026-03-24,Renewed,Megan Nelson,2105.68,2215.0,,,False,0.0
-E00514,P02-016,Harborview Flats,016,2026-03-24,Moved out,Tina Walker,2743.88,2740.0,2026-05-18,Maintenance / unit condition,True,0.0
-E00515,P09-005,Oakhaven Apartments,005,2026-03-24,Moved out,Nichole Wade,1103.89,1090.0,2026-05-10,Maintenance / unit condition,True,0.0
-E00516,P10-028,Stonebridge Villas,028,2026-03-24,Renewed,Diana Hays,1420.17,1495.0,,,False,0.0
-E00517,P07-058,Aspen Grove,058,2026-03-24,Renewed,Kathleen Webster,2169.35,2280.0,,,False,0.0
-E00518,P09-011,Oakhaven Apartments,011,2026-03-25,Renewed,Brittany Kim,1611.32,1700.0,,,False,0.0
-E00519,P05-011,Sunset Ridge,011,2026-03-25,Renewed,Andrew Avila,2616.9,2690.0,,,False,0.0
-E00520,P06-016,Willow Park,016,2026-03-25,Renewed,Stephanie Williams,1553.1,1630.0,,,False,0.0
-E00521,P09-057,Oakhaven Apartments,057,2026-03-26,Renewed,Lance Simmons,1438.91,1465.0,,,False,0.0
-E00522,P06-035,Willow Park,035,2026-03-28,Moved out,Hannah Monroe,2096.64,2120.0,2026-05-05,Needed different size / location,False,4.1
-E00523,P01-059,Cedar Commons,059,2026-03-28,Moved out,Stephanie Dyer MD,1731.97,1725.0,2026-04-10,Maintenance / unit condition,True,0.0
-E00524,P06-017,Willow Park,017,2026-03-28,Renewed,Elaine Brooks,1677.85,1770.0,,,False,0.0
-E00525,P05-018,Sunset Ridge,018,2026-03-29,Moved out,Dylan Robles,2267.03,2315.0,2026-04-24,Maintenance / unit condition,True,0.0
-E00526,P01-030,Cedar Commons,030,2026-03-29,Moved out,Ryan Norman,2180.34,2200.0,2026-04-21,Needed different size / location,False,0.0
-E00527,P01-040,Cedar Commons,040,2026-03-30,Moved out,Cameron Miller,2227.18,2205.0,2026-04-16,Bought a home,False,0.0
-E00528,P06-061,Willow Park,061,2026-03-31,Moved out,Fernando Wilson,1403.32,1400.0,2026-04-30,Needed different size / location,False,0.0
-E00529,P08-014,Riverbend Lofts,014,2026-03-31,Renewed,Jake Campbell,2751.43,2825.0,,,False,0.0
-E00530,P01-034,Cedar Commons,034,2026-03-31,Moved out,Ashley Simpson,1546.11,1570.0,2026-04-28,Rent increase / price,True,5.2
-E00531,P02-038,Harborview Flats,038,2026-04-01,Renewed,Stephen Mckee,2751.25,2825.0,,,False,0.0
-E00532,P05-013,Sunset Ridge,013,2026-04-02,Moved out,Hunter Yu,2521.84,2555.0,2026-05-01,Needed different size / location,False,0.0
-E00533,P10-043,Stonebridge Villas,043,2026-04-02,Renewed,John Coffey,1871.1,1960.0,,,False,0.0
-E00534,P04-011,Birchwood Terrace,011,2026-04-02,Moved out,Mary Stevens,1795.82,1745.0,2026-04-28,Needed different size / location,False,0.0
-E00535,P12-051,Ironwood Residences,051,2026-04-03,Renewed,Samuel Turner,1558.06,1610.0,,,False,0.0
-E00536,P11-019,Meadowlark Place,019,2026-04-03,Renewed,Laurie Sanchez,1569.25,1595.0,,,False,0.0
-E00537,P01-006,Cedar Commons,006,2026-04-04,Renewed,Connie Lawrence,1648.83,1685.0,,,False,0.0
-E00538,P12-047,Ironwood Residences,047,2026-04-05,Moved out,Benjamin Osborn,2374.15,2420.0,2026-05-09,Needed different size / location,False,0.0
-E00539,P06-064,Willow Park,064,2026-04-05,Renewed,Trevor Johnson,1666.53,1740.0,,,False,0.0
-E00540,P01-003,Cedar Commons,003,2026-04-06,Moved out,Michael Mcguire,2463.78,2480.0,2026-04-27,Maintenance / unit condition,True,0.0
-E00541,P10-039,Stonebridge Villas,039,2026-04-07,Moved out,Sarah Hoffman MD,1638.63,,,Rent increase / price,True,0.0
-E00542,P03-008,Maple Court,008,2026-04-08,Moved out,Kelly Andrews,1749.54,1735.0,2026-05-11,Rent increase / price,True,0.0
-E00543,P07-010,Aspen Grove,010,2026-04-08,Moved out,Alan Nguyen,2270.29,2325.0,2026-05-09,Other / personal,False,5.7
-E00544,P09-092,Oakhaven Apartments,092,2026-04-08,Renewed,Hannah Everett,1292.49,1335.0,,,False,0.0
-E00545,P07-017,Aspen Grove,017,2026-04-08,Moved out,Kristin Walsh,1491.51,1475.0,2026-04-29,Other / personal,False,0.0
-E00546,P09-014,Oakhaven Apartments,014,2026-04-09,Renewed,Cynthia Vang,1210.01,1225.0,,,False,0.0
-E00547,P03-001,Maple Court,001,2026-04-09,Moved out,Daniel Blair,1922.07,1845.0,2026-05-29,Maintenance / unit condition,True,5.1
-E00548,P06-082,Willow Park,082,2026-04-10,Moved out,Sharon Gomez,2317.8,2320.0,2026-05-02,Rent increase / price,True,0.0
-E00549,P01-010,Cedar Commons,010,2026-04-10,Renewed,Ryan Munoz,2228.79,2300.0,,,False,0.0
-E00550,P06-087,Willow Park,087,2026-04-11,Moved out,Tony Graham,2063.21,2085.0,2026-05-23,Bought a home,False,0.0
-E00551,P09-048,Oakhaven Apartments,048,2026-04-12,Moved out,William Reed,1512.59,1455.0,2026-05-30,Maintenance / unit condition,True,0.0
-E00552,P03-017,Maple Court,017,2026-04-12,Renewed,Erin Edwards,1440.38,1540.0,,,False,0.0
-E00553,P08-028,Riverbend Lofts,028,2026-04-12,Moved out,James Bush,2654.83,2770.0,2026-04-25,Maintenance / unit condition,True,0.0
-E00554,P11-026,Meadowlark Place,026,2026-04-12,Moved out,Debra Rivera,1984.25,,,Bought a home,False,0.0
-E00555,P10-050,Stonebridge Villas,050,2026-04-13,Moved out,Sara Rogers,2056.38,2065.0,2026-05-14,Needed different size / location,False,0.0
-E00556,P11-021,Meadowlark Place,021,2026-04-14,Moved out,Elizabeth Reed,1875.06,,,Management / service,True,0.0
-E00557,P05-019,Sunset Ridge,019,2026-04-14,Renewed,Jose Travis,2804.29,2920.0,,,False,0.0
-E00558,P02-025,Harborview Flats,025,2026-04-14,Renewed,Shirley Suarez,2314.36,2390.0,,,False,0.0
-E00559,P10-042,Stonebridge Villas,042,2026-04-15,Moved out,Brooke Roberts,1749.24,1765.0,2026-05-30,Management / service,True,0.0
-E00560,P07-005,Aspen Grove,005,2026-04-15,Moved out,Edward Jordan,1900.31,1955.0,2026-05-15,Rent increase / price,True,0.0
-E00561,P09-095,Oakhaven Apartments,095,2026-04-15,Renewed,Joseph Shaw,1354.49,1420.0,,,False,0.0
-E00562,P06-081,Willow Park,081,2026-04-15,Moved out,Loretta Franco,1700.63,,,Other / personal,False,0.0
-E00563,P04-012,Birchwood Terrace,012,2026-04-18,Moved out,Christina Kim,2010.04,2070.0,2026-05-17,Other / personal,False,0.0
-E00564,P10-013,Stonebridge Villas,013,2026-04-20,Renewed,Emma Owens,2304.39,2335.0,,,False,0.0
-E00565,P03-029,Maple Court,029,2026-04-20,Renewed,Courtney Gonzalez,1114.42,1140.0,,,False,0.0
-E00566,P04-032,Birchwood Terrace,032,2026-04-20,Renewed,David Martinez,1899.44,1985.0,,,False,0.0
-E00567,P12-038,Ironwood Residences,038,2026-04-21,Moved out,Helen Simpson,1986.25,2035.0,2026-05-09,Maintenance / unit condition,True,0.0
-E00568,P06-023,Willow Park,023,2026-04-21,Renewed,David Smith,1916.13,2015.0,,,False,0.0
-E00569,P09-068,Oakhaven Apartments,068,2026-04-21,Renewed,Jennifer Banks,1173.66,1215.0,,,False,0.0
-E00570,P06-015,Willow Park,015,2026-04-21,Renewed,Shelia Wallace,1922.3,1990.0,,,False,0.0
-E00571,P06-032,Willow Park,032,2026-04-21,Moved out,Leslie Lloyd DVM,2452.45,2455.0,2026-05-17,Bought a home,False,0.0
-E00572,P01-044,Cedar Commons,044,2026-04-22,Renewed,Sherry Decker,2267.23,2310.0,,,False,0.0
-E00573,P02-032,Harborview Flats,032,2026-04-23,Moved out,Michael Martinez,2618.5,2735.0,2026-05-16,Rent increase / price,True,0.0
-E00574,P09-070,Oakhaven Apartments,070,2026-04-23,Moved out,Nicole Conrad,1667.24,1625.0,2026-05-22,Safety / neighbors,True,0.0
-E00575,P09-074,Oakhaven Apartments,074,2026-04-23,Renewed,Brandon Fleming,1320.65,1365.0,,,False,0.0
-E00576,P09-090,Oakhaven Apartments,090,2026-04-23,Renewed,Amy Martinez,1300.84,1375.0,,,False,0.0
-E00577,P12-010,Ironwood Residences,010,2026-04-25,Moved out,Kelly Simpson,1484.9,1485.0,2026-05-14,Other / personal,False,0.0
-E00578,P04-054,Birchwood Terrace,054,2026-04-25,Renewed,Michael Warner,1580.23,1645.0,,,False,0.0
-E00579,P10-030,Stonebridge Villas,030,2026-04-25,Renewed,Robert Morgan,2257.19,2370.0,,,False,0.0
-E00580,P10-047,Stonebridge Villas,047,2026-04-25,Moved out,Michael Schmitt,1967.42,2025.0,2026-05-26,Needed different size / location,False,6.3
-E00581,P09-062,Oakhaven Apartments,062,2026-04-26,Moved out,Melinda Hines,2028.72,2030.0,2026-05-27,Rent increase / price,True,5.5
-E00582,P01-020,Cedar Commons,020,2026-04-28,Moved out,Jamie Williams,2420.17,,,Other / personal,False,0.0
-E00583,P05-040,Sunset Ridge,040,2026-04-28,Renewed,Cynthia Rowe,2428.99,2515.0,,,False,0.0
-E00584,P03-033,Maple Court,033,2026-04-28,Renewed,David Douglas Jr.,1898.52,1925.0,,,False,0.0
-E00585,P09-036,Oakhaven Apartments,036,2026-04-29,Renewed,Richard Cooper,1360.98,1460.0,,,False,0.0
-E00586,P11-018,Meadowlark Place,018,2026-04-29,Renewed,Melissa Taylor,1991.25,2055.0,,,False,0.0
-E00587,P09-019,Oakhaven Apartments,019,2026-04-30,Moved out,Antonio Torres,1061.1,,,Other / personal,False,0.0
-E00588,P09-091,Oakhaven Apartments,091,2026-05-01,Moved out,Samantha Johnson,1676.75,1705.0,2026-05-25,Job / relocation,False,0.0
-E00589,P06-070,Willow Park,070,2026-05-01,Renewed,Linda Smith,1952.57,2000.0,,,False,0.0
-E00590,P01-012,Cedar Commons,012,2026-05-02,Renewed,Jamie Arnold,1806.2,1845.0,,,False,0.0
-E00591,P11-017,Meadowlark Place,017,2026-05-02,Moved out,Jeremiah Stone,1971.04,,,Needed different size / location,False,0.0
-E00592,P06-048,Willow Park,048,2026-05-03,Moved out,Samantha Wallace,1810.81,,,Safety / neighbors,True,0.0
-E00593,P04-033,Birchwood Terrace,033,2026-05-03,Moved out,Brandon Smith,2265.82,2260.0,2026-05-23,Bought a home,False,0.0
-E00594,P10-010,Stonebridge Villas,010,2026-05-04,Moved out,Joseph Nguyen,1780.28,1820.0,2026-05-24,Job / relocation,False,0.0
-E00595,P02-015,Harborview Flats,015,2026-05-04,Moved out,Michelle Hanna,2228.75,2315.0,2026-05-26,Bought a home,False,0.0
-E00596,P02-009,Harborview Flats,009,2026-05-04,Moved out,Laura Green,2817.95,,,Safety / neighbors,True,0.0
-E00597,P09-024,Oakhaven Apartments,024,2026-05-05,Moved out,Paula Williams,1758.11,,,Other / personal,False,0.0
-E00598,P06-029,Willow Park,029,2026-05-05,Moved out,Brittany Tucker,2009.94,,,Job / relocation,False,0.0
-E00599,P10-032,Stonebridge Villas,032,2026-05-05,Renewed,Kathryn Williams,2049.15,2110.0,,,False,0.0
-E00600,P07-045,Aspen Grove,045,2026-05-06,Renewed,Thomas Atkins,2191.02,2245.0,,,False,0.0
-E00601,P09-020,Oakhaven Apartments,020,2026-05-06,Moved out,Crystal Flowers,1747.48,,,Rent increase / price,True,0.0
-E00602,P07-056,Aspen Grove,056,2026-05-06,Moved out,Brandon Carey,1942.64,1930.0,2026-05-27,Maintenance / unit condition,True,0.0
-E00603,P06-026,Willow Park,026,2026-05-07,Moved out,Jacqueline West MD,1631.73,1725.0,2026-07-10,Bought a home,False,0.0
-E00604,P09-054,Oakhaven Apartments,054,2026-05-07,Renewed,Monica Miller,1717.44,1810.0,,,False,0.0
-E00605,P03-043,Maple Court,043,2026-05-08,Moved out,Stephen Kramer,2059.74,2210.0,2026-07-08,Management / service,True,0.0
-E00606,P03-004,Maple Court,004,2026-05-08,Moved out,Thomas Goodwin,1577.16,,,Maintenance / unit condition,True,0.0
-E00607,P10-006,Stonebridge Villas,006,2026-05-09,Renewed,Mark Jimenez,1954.53,1980.0,,,False,0.0
-E00608,P09-065,Oakhaven Apartments,065,2026-05-10,Renewed,James Bradley,1557.4,1620.0,,,False,0.0
-E00609,P09-008,Oakhaven Apartments,008,2026-05-10,Renewed,Shelly Spencer,1370.72,1435.0,,,False,0.0
-E00610,P09-082,Oakhaven Apartments,082,2026-05-11,Renewed,Robert Arnold,1652.71,1715.0,,,False,0.0
-E00611,P09-040,Oakhaven Apartments,040,2026-05-12,Renewed,Robin Thompson,1494.19,1545.0,,,False,0.0
-E00612,P07-030,Aspen Grove,030,2026-05-12,Moved out,Sarah Cruz MD,2197.85,2315.0,2026-07-14,Maintenance / unit condition,True,7.1
-E00613,P03-045,Maple Court,045,2026-05-12,Renewed,Denise Jones,1380.54,1440.0,,,False,0.0
-E00614,P05-012,Sunset Ridge,012,2026-05-12,Renewed,Matthew Moon,2715.12,2780.0,,,False,0.0
-E00615,P04-048,Birchwood Terrace,048,2026-05-13,Renewed,Jeremy Dalton,1359.21,1375.0,,,False,0.0
-E00616,P02-002,Harborview Flats,002,2026-05-13,Renewed,Jessica Callahan,2565.43,2680.0,,,False,0.0
-E00617,P10-015,Stonebridge Villas,015,2026-05-13,Moved out,Robert Gardner,1714.44,1820.0,2026-07-19,Needed different size / location,False,0.0
-E00618,P07-050,Aspen Grove,050,2026-05-14,Renewed,Dana Chapman,1535.93,1590.0,,,False,0.0
-E00619,P12-040,Ironwood Residences,040,2026-05-14,Moved out,Michael Townsend,2468.49,2460.0,2026-05-30,Maintenance / unit condition,True,6.3
-E00620,P03-061,Maple Court,061,2026-05-15,Moved out,Karen Clements,1098.33,,,Job / relocation,False,0.0
-E00621,P08-011,Riverbend Lofts,011,2026-05-15,Renewed,Gwendolyn Klein,2491.87,2535.0,,,False,0.0
-E00622,P03-006,Maple Court,006,2026-05-16,Renewed,Garrett Lin,1503.81,1560.0,,,False,0.0
-E00623,P09-075,Oakhaven Apartments,075,2026-05-17,Moved out,Teresa Garrett,1609.82,,,Management / service,True,0.0
-E00624,P02-028,Harborview Flats,028,2026-05-18,Renewed,Aimee Montoya,2263.75,2310.0,,,False,0.0
-E00625,P01-011,Cedar Commons,011,2026-05-18,Renewed,Monica Herrera,2088.68,2185.0,,,False,0.0
-E00626,P09-058,Oakhaven Apartments,058,2026-05-20,Renewed,Heather Williams,1679.13,1730.0,,,False,0.0
-E00627,P04-003,Birchwood Terrace,003,2026-05-20,Renewed,Michael Wang,1718.12,1795.0,,,False,0.0
-E00628,P09-038,Oakhaven Apartments,038,2026-05-20,Moved out,Lawrence Cortez,2047.62,,,Maintenance / unit condition,True,0.0
-E00629,P04-001,Birchwood Terrace,001,2026-05-20,Moved out,Amanda Rodriguez,1758.56,,,Bought a home,False,0.0
-E00630,P09-031,Oakhaven Apartments,031,2026-05-20,Renewed,Jason Beck,1437.78,1515.0,,,False,0.0
-E00631,P07-009,Aspen Grove,009,2026-05-21,Moved out,Patrick Johnson,1232.21,,,Needed different size / location,False,0.0
-E00632,P10-041,Stonebridge Villas,041,2026-05-22,Moved out,Joshua Peterson,1744.75,1840.0,2026-07-13,Needed different size / location,False,0.0
-E00633,P08-020,Riverbend Lofts,020,2026-05-22,Renewed,Gregory Ponce,2231.94,2280.0,,,False,0.0
-E00634,P07-044,Aspen Grove,044,2026-05-22,Renewed,Scott Williams,1242.39,1290.0,,,False,0.0
-E00635,P07-016,Aspen Grove,016,2026-05-23,Moved out,Jennifer Blackwell,1561.19,,,Needed different size / location,False,0.0
-E00636,P09-088,Oakhaven Apartments,088,2026-05-23,Moved out,Scott Oliver,1625.59,,,Other / personal,False,0.0
-E00637,P11-037,Meadowlark Place,037,2026-05-23,Renewed,Todd Rosales MD,1794.17,1820.0,,,False,0.0
-E00638,P03-071,Maple Court,071,2026-05-24,Moved out,Lisa Sanchez,1385.22,1475.0,2026-07-17,Bought a home,False,7.0
-E00639,P09-022,Oakhaven Apartments,022,2026-05-24,Renewed,Aaron Miller,950.83,985.0,,,False,0.0
-E00640,P06-075,Willow Park,075,2026-05-26,Moved out,Carlos Brown,1296.92,1425.0,2026-07-17,Other / personal,False,0.0
-E00641,P07-041,Aspen Grove,041,2026-05-26,Renewed,Adam Burgess,1788.79,1825.0,,,False,0.0
-E00642,P06-060,Willow Park,060,2026-05-26,Moved out,Emma Freeman,1331.03,,,Other / personal,False,0.0
-E00643,P11-011,Meadowlark Place,011,2026-05-27,Renewed,Denise Martinez,1555.31,1615.0,,,False,0.0
-E00644,P06-086,Willow Park,086,2026-05-28,Renewed,Victor Brown,1552.92,1620.0,,,False,0.0
-E00645,P07-031,Aspen Grove,031,2026-05-28,Renewed,Glen Wood,1536.72,1580.0,,,False,0.0
-E00646,P02-047,Harborview Flats,047,2026-05-28,Renewed,Evelyn Galvan,2264.74,2335.0,,,False,0.0
-E00647,P07-019,Aspen Grove,019,2026-05-29,Moved out,Charles Nolan,1854.35,,,Rent increase / price,True,0.0
-E00648,P12-027,Ironwood Residences,027,2026-05-30,Renewed,Janet Kane DVM,2162.12,2245.0,,,False,0.0
-E00649,P01-036,Cedar Commons,036,2026-05-30,Renewed,Debra Davidson,2086.42,2150.0,,,False,0.0
-E00650,P07-029,Aspen Grove,029,2026-05-30,Renewed,Paul Lewis,2017.31,2100.0,,,False,0.0
-E00651,P08-016,Riverbend Lofts,016,2026-05-30,Renewed,Maria Jones,1866.99,1935.0,,,False,0.0
-E00652,P09-017,Oakhaven Apartments,017,2026-05-31,Moved out,Rachel Wood,2032.54,,,Rent increase / price,True,0.0
-E00653,P12-061,Ironwood Residences,061,2026-05-31,Moved out,Gary Cruz,2167.24,,,Rent increase / price,True,0.0
-E00654,P04-051,Birchwood Terrace,051,2026-05-31,Renewed,Matthew Moore,1412.03,1425.0,,,False,0.0
-E00655,P09-045,Oakhaven Apartments,045,2026-05-31,Moved out,Sara Oconnor,1173.01,1230.0,2026-07-16,Rent increase / price,True,6.5
-E00656,P09-093,Oakhaven Apartments,093,2026-05-31,Renewed,Sarah King,1645.73,1690.0,,,False,0.0
-E00657,P06-074,Willow Park,074,2026-05-31,Renewed,Charles Lester,1381.41,1435.0,,,False,0.0
-E00658,P05-024,Sunset Ridge,024,2026-06-01,Moved out,Rebecca Hughes,2744.56,2945.0,2026-07-16,Management / service,True,0.0
-E00659,P06-019,Willow Park,019,2026-06-01,Moved out,Joshua Graves,1696.73,1780.0,2026-07-12,Rent increase / price,True,0.0
-E00660,P03-049,Maple Court,049,2026-06-03,Moved out,Kaylee Anderson,1668.11,1800.0,2026-07-15,Other / personal,False,0.0
-E00661,P11-029,Meadowlark Place,029,2026-06-05,Moved out,David Hoffman,1952.41,2065.0,2026-07-09,Maintenance / unit condition,True,0.0
-E00662,P09-043,Oakhaven Apartments,043,2026-06-07,Moved out,Martin Phillips,2081.23,,,Bought a home,False,0.0
-E00663,P09-001,Oakhaven Apartments,001,2026-06-10,Moved out,Jason Gonzalez,1536.71,,,Maintenance / unit condition,True,0.0
-E00664,P10-001,Stonebridge Villas,001,2026-06-10,Moved out,Caitlyn Roberts,1652.7,1800.0,2026-07-11,Bought a home,False,5.0
-E00665,P11-003,Meadowlark Place,003,2026-06-14,Moved out,Michael Hutchinson,1715.16,1740.0,2026-07-17,Bought a home,False,0.0
-E00666,P04-030,Birchwood Terrace,030,2026-06-15,Moved out,Kelly Hall,1933.84,1995.0,2026-07-05,Bought a home,False,0.0
-E00667,P03-050,Maple Court,050,2026-06-16,Moved out,Elizabeth Todd,1429.32,,,Maintenance / unit condition,True,0.0
-E00668,P08-021,Riverbend Lofts,021,2026-06-17,Moved out,Andre English,1721.23,,,Other / personal,False,0.0
-E00669,P11-007,Meadowlark Place,007,2026-06-18,Moved out,Douglas Whitaker,1912.05,2010.0,2026-07-04,Other / personal,False,0.0
+E00001,P09-093,Oakhaven Apartments,093,2025-04-16,Moved out,Melinda Hines,1280.5,1550.0,2025-07-14,Maintenance / unit condition,True,0.0
+E00002,P01-035,Cedar Commons,035,2025-05-03,Moved out,Ashley Simpson,3046.64,3080.0,2025-07-05,Bought a home,False,2.1
+E00003,P09-005,Oakhaven Apartments,005,2025-05-18,Moved out,Dennis Rogers,1391.2,1670.0,2025-07-21,Needed different size / location,False,0.0
+E00004,P01-047,Cedar Commons,047,2025-05-23,Moved out,Brittany Aguirre,2617.98,2660.0,2025-07-14,Management / service,True,2.6
+E00005,P06-017,Willow Park,017,2025-05-25,Moved out,Elizabeth Ramsey,1965.44,1965.0,2025-07-17,Rent increase / price,True,0.0
+E00006,P06-083,Willow Park,083,2025-06-04,Moved out,Christine Smith DDS,2499.89,2530.0,2025-07-06,Bought a home,False,4.7
+E00007,P06-001,Willow Park,001,2025-06-07,Moved out,Kayla Kim,2600.09,2560.0,2025-07-02,Management / service,True,0.0
+E00008,P01-017,Cedar Commons,017,2025-06-15,Moved out,Tom Combs,1595.21,1520.0,2025-07-02,Other / personal,False,0.0
+E00009,P09-077,Oakhaven Apartments,077,2025-06-16,Moved out,Nathaniel Johnston,655.61,805.0,2025-07-12,Bought a home,False,0.0
+E00010,P03-040,Maple Court,040,2025-06-17,Moved out,Cynthia Ford,1432.05,1570.0,2025-07-30,Rent increase / price,True,0.0
+E00011,P09-038,Oakhaven Apartments,038,2025-06-20,Moved out,Crystal Flowers,1576.4,1875.0,2025-08-01,Needed different size / location,False,0.0
+E00012,P12-064,Ironwood Residences,064,2025-06-21,Moved out,Benjamin Osborn,2748.02,2800.0,2025-07-11,Bought a home,False,4.5
+E00013,P07-043,Aspen Grove,043,2025-06-23,Moved out,Patrick Johnson,2020.92,2615.0,2025-07-04,Bought a home,False,0.0
+E00014,P04-035,Birchwood Terrace,035,2025-06-24,Moved out,Brittney Johnson,2193.15,2230.0,2025-07-28,Maintenance / unit condition,True,0.0
+E00015,P05-016,Sunset Ridge,016,2025-06-25,Moved out,Mathew Turner,3586.82,3595.0,2025-07-19,Job / relocation,False,0.0
+E00016,P01-058,Cedar Commons,058,2025-06-26,Moved out,Sarah Vincent,1877.37,1935.0,2025-07-18,Needed different size / location,False,0.0
+E00017,P12-021,Ironwood Residences,021,2025-06-26,Moved out,Tammy Hunt,3589.49,3500.0,2025-07-14,Other / personal,False,5.1
+E00018,P12-013,Ironwood Residences,013,2025-07-01,Renewed,Michael Stanley,3744.28,3865.0,,,False,0.0
+E00019,P01-062,Cedar Commons,062,2025-07-01,Moved out,Timothy Sullivan,2642.7,2575.0,2025-08-21,Maintenance / unit condition,True,0.0
+E00020,P03-062,Maple Court,062,2025-07-02,Renewed,Daniel Murphy,2683.48,2760.0,,,False,0.0
+E00021,P10-042,Stonebridge Villas,042,2025-07-02,Renewed,Kelly Edwards,2141.46,2200.0,,,False,0.0
+E00022,P07-059,Aspen Grove,059,2025-07-03,Renewed,Julian Conner,1547.37,1585.0,,,False,0.0
+E00023,P01-009,Cedar Commons,009,2025-07-03,Renewed,Gabrielle Davis,2397.29,2445.0,,,False,0.0
+E00024,P08-030,Riverbend Lofts,030,2025-07-04,Moved out,Tonya Vazquez,3129.14,3055.0,2025-07-21,Management / service,True,0.0
+E00025,P03-067,Maple Court,067,2025-07-04,Renewed,Nicole Herring,1587.08,1630.0,,,False,0.0
+E00026,P03-015,Maple Court,015,2025-07-04,Moved out,Kelly Andrews,1657.53,1965.0,2025-08-06,Safety / neighbors,True,0.0
+E00027,P01-005,Cedar Commons,005,2025-07-05,Renewed,Cristian Santos,2809.49,2915.0,,,False,0.0
+E00028,P06-086,Willow Park,086,2025-07-05,Renewed,Jesse Perez,2490.24,2565.0,,,False,0.0
+E00029,P12-063,Ironwood Residences,063,2025-07-05,Moved out,Darren Smith,3035.65,2965.0,2025-07-19,Bought a home,False,4.6
+E00030,P09-034,Oakhaven Apartments,034,2025-07-05,Renewed,Curtis Williams,1598.52,1660.0,,,False,0.0
+E00031,P03-045,Maple Court,045,2025-07-05,Moved out,Kelsey Williams,1439.65,1695.0,2025-07-22,Management / service,True,0.0
+E00032,P04-051,Birchwood Terrace,051,2025-07-06,Renewed,Michael Warner,2076.71,2130.0,,,False,0.0
+E00033,P03-049,Maple Court,049,2025-07-06,Renewed,Jason Stein,934.04,965.0,,,False,0.0
+E00034,P12-046,Ironwood Residences,046,2025-07-07,Renewed,Felicia Krueger,2760.32,2855.0,,,False,0.0
+E00035,P12-025,Ironwood Residences,025,2025-07-08,Renewed,Amber Yang,3202.63,3220.0,,,False,0.0
+E00036,P09-083,Oakhaven Apartments,083,2025-07-08,Renewed,Sarah King,1537.97,1590.0,,,False,0.0
+E00037,P06-060,Willow Park,060,2025-07-09,Renewed,Ariana Jennings,2422.45,2495.0,,,False,0.0
+E00038,P11-011,Meadowlark Place,011,2025-07-09,Renewed,Victor Morris,2014.24,2080.0,,,False,0.0
+E00039,P12-006,Ironwood Residences,006,2025-07-10,Renewed,Robert Reese,2877.32,2975.0,,,False,0.0
+E00040,P12-050,Ironwood Residences,050,2025-07-11,Renewed,Kristen Rowe,3300.65,3360.0,,,False,0.0
+E00041,P09-073,Oakhaven Apartments,073,2025-07-12,Moved out,Sara Oconnor,1367.61,1610.0,2025-07-26,Rent increase / price,True,0.0
+E00042,P01-053,Cedar Commons,053,2025-07-12,Moved out,Aaron Berger,2236.49,2220.0,2025-08-11,Bought a home,False,0.0
+E00043,P03-066,Maple Court,066,2025-07-12,Moved out,James Gonzales,1536.53,1775.0,2025-08-23,Needed different size / location,False,0.0
+E00044,P12-009,Ironwood Residences,009,2025-07-12,Moved out,Elizabeth Reed,2435.88,2475.0,2025-08-12,Needed different size / location,False,6.7
+E00045,P01-038,Cedar Commons,038,2025-07-12,Renewed,Sherri Baker,2647.53,2720.0,,,False,0.0
+E00046,P10-002,Stonebridge Villas,002,2025-07-12,Renewed,Morgan Valencia,1587.82,1610.0,,,False,0.0
+E00047,P12-002,Ironwood Residences,002,2025-07-13,Renewed,Kevin Davis,2674.52,2790.0,,,False,0.0
+E00048,P12-034,Ironwood Residences,034,2025-07-14,Moved out,Robert Sanchez,2746.99,2695.0,2025-08-07,Safety / neighbors,True,6.1
+E00049,P10-027,Stonebridge Villas,027,2025-07-15,Renewed,Kim Erickson,2941.74,3080.0,,,False,0.0
+E00050,P05-030,Sunset Ridge,030,2025-07-15,Renewed,Desiree Tyler,2400.11,2445.0,,,False,0.0
+E00051,P03-027,Maple Court,027,2025-07-15,Moved out,Miss Monica Black,1231.25,1435.0,2025-08-17,Rent increase / price,True,0.0
+E00052,P08-027,Riverbend Lofts,027,2025-07-15,Renewed,Jason Rhodes,3153.62,3155.0,,,False,0.0
+E00053,P02-014,Harborview Flats,014,2025-07-16,Renewed,Sarah Moore,2936.75,3005.0,,,False,0.0
+E00054,P04-054,Birchwood Terrace,054,2025-07-17,Renewed,Jessica Stephens,1721.75,1760.0,,,False,0.0
+E00055,P05-019,Sunset Ridge,019,2025-07-18,Moved out,Erik Gomez,3371.08,3265.0,2025-07-26,Job / relocation,False,0.0
+E00056,P06-039,Willow Park,039,2025-07-18,Renewed,Dr. Paul Morgan,2501.81,2545.0,,,False,0.0
+E00057,P05-013,Sunset Ridge,013,2025-07-20,Renewed,Donna Landry,2692.33,2785.0,,,False,0.0
+E00058,P07-046,Aspen Grove,046,2025-07-20,Renewed,Hannah Luna,2090.13,2150.0,,,False,0.0
+E00059,P04-007,Birchwood Terrace,007,2025-07-20,Moved out,Karen Clements,1473.18,1490.0,2025-08-13,Bought a home,False,0.0
+E00060,P04-026,Birchwood Terrace,026,2025-07-21,Moved out,Mary Stevens,1910.27,1885.0,2025-08-03,Needed different size / location,False,0.0
+E00061,P04-027,Birchwood Terrace,027,2025-07-21,Moved out,Christina Kim,2092.36,2085.0,2025-08-09,Job / relocation,False,0.0
+E00062,P06-082,Willow Park,082,2025-07-21,Renewed,Kimberly Nguyen,1891.53,1960.0,,,False,0.0
+E00063,P11-027,Meadowlark Place,027,2025-07-22,Renewed,Samantha Robertson,2089.1,2130.0,,,False,0.0
+E00064,P08-020,Riverbend Lofts,020,2025-07-22,Moved out,Jesus Benjamin,2926.98,2800.0,2025-07-30,Needed different size / location,False,0.0
+E00065,P01-045,Cedar Commons,045,2025-07-22,Renewed,Anthony Humphrey,2518.0,2590.0,,,False,0.0
+E00066,P09-007,Oakhaven Apartments,007,2025-07-23,Renewed,Marie Moody,1548.98,1600.0,,,False,0.0
+E00067,P05-038,Sunset Ridge,038,2025-07-23,Moved out,Mario Garcia,3146.6,2995.0,2025-08-08,Other / personal,False,0.0
+E00068,P02-039,Harborview Flats,039,2025-07-24,Renewed,Sandra Aguilar,2890.4,2950.0,,,False,0.0
+E00069,P06-006,Willow Park,006,2025-07-24,Moved out,Timothy Smith,1588.61,1555.0,2025-07-31,Rent increase / price,True,0.0
+E00070,P12-020,Ironwood Residences,020,2025-07-25,Moved out,Pamela Wilkerson,3682.71,3695.0,2025-08-05,Safety / neighbors,True,5.7
+E00071,P05-027,Sunset Ridge,027,2025-07-26,Renewed,Denise Davenport,3350.68,3420.0,,,False,0.0
+E00072,P09-010,Oakhaven Apartments,010,2025-07-27,Moved out,James Bush,1502.76,1795.0,2025-09-06,Bought a home,False,0.0
+E00073,P07-009,Aspen Grove,009,2025-07-27,Moved out,Pamela Simmons,1214.47,1395.0,2025-09-03,Other / personal,False,0.0
+E00074,P01-023,Cedar Commons,023,2025-07-29,Moved out,Ryan Norman,2558.6,2530.0,2025-08-24,Rent increase / price,True,3.9
+E00075,P02-026,Harborview Flats,026,2025-07-29,Moved out,Phillip Moore,2477.65,2430.0,2025-08-14,Bought a home,False,6.2
+E00076,P12-010,Ironwood Residences,010,2025-07-30,Moved out,Melissa Wallace,2726.75,2810.0,2025-08-27,Maintenance / unit condition,True,7.6
+E00077,P06-081,Willow Park,081,2025-07-31,Moved out,Mr. James Johnson,1829.93,1855.0,2025-08-27,Safety / neighbors,True,0.0
+E00078,P12-007,Ironwood Residences,007,2025-07-31,Renewed,Amber Cooper,2604.43,2635.0,,,False,0.0
+E00079,P12-003,Ironwood Residences,003,2025-08-01,Renewed,Rhonda Chavez,3775.59,3915.0,,,False,0.0
+E00080,P09-051,Oakhaven Apartments,051,2025-08-02,Renewed,Mark Cox,1692.62,1735.0,,,False,0.0
+E00081,P12-016,Ironwood Residences,016,2025-08-02,Renewed,Courtney Smith,2660.51,2790.0,,,False,0.0
+E00082,P02-023,Harborview Flats,023,2025-08-02,Moved out,Suzanne Callahan,2290.62,2320.0,2025-08-14,Maintenance / unit condition,True,4.2
+E00083,P06-034,Willow Park,034,2025-08-03,Moved out,Amber Jackson,2015.67,1995.0,2025-09-03,Other / personal,False,0.0
+E00084,P03-046,Maple Court,046,2025-08-04,Moved out,Stephen Kramer,1329.63,1405.0,2025-08-26,Needed different size / location,False,0.0
+E00085,P12-043,Ironwood Residences,043,2025-08-07,Renewed,Michael Morrison,2675.84,2735.0,,,False,0.0
+E00086,P03-052,Maple Court,052,2025-08-07,Moved out,Jonathan Mcintyre,1377.72,1630.0,2025-09-03,Maintenance / unit condition,True,0.0
+E00087,P01-041,Cedar Commons,041,2025-08-07,Renewed,Brittany Farmer,2011.36,2080.0,,,False,0.0
+E00088,P05-006,Sunset Ridge,006,2025-08-08,Renewed,Sara Johnston,2786.46,2890.0,,,False,0.0
+E00089,P09-041,Oakhaven Apartments,041,2025-08-08,Moved out,Brian Rivera,1492.95,1695.0,2025-09-26,Needed different size / location,False,0.0
+E00090,P12-033,Ironwood Residences,033,2025-08-08,Renewed,Lori Simmons,3831.86,3910.0,,,False,0.0
+E00091,P06-029,Willow Park,029,2025-08-08,Moved out,Christopher Alexander,2374.03,2355.0,2025-09-23,Safety / neighbors,True,0.0
+E00092,P09-069,Oakhaven Apartments,069,2025-08-09,Renewed,Rebecca Hicks,1518.4,1575.0,,,False,0.0
+E00093,P09-066,Oakhaven Apartments,066,2025-08-09,Renewed,Emma Reed,2395.59,2445.0,,,False,0.0
+E00094,P06-053,Willow Park,053,2025-08-10,Renewed,Brandy Chavez,1924.11,1980.0,,,False,0.0
+E00095,P11-031,Meadowlark Place,031,2025-08-10,Renewed,Elizabeth Sharp,2034.18,2095.0,,,False,0.0
+E00096,P06-044,Willow Park,044,2025-08-10,Renewed,Jordan Chambers,1976.8,2055.0,,,False,0.0
+E00097,P01-025,Cedar Commons,025,2025-08-11,Renewed,Tommy Walter,2106.65,2150.0,,,False,0.0
+E00098,P03-023,Maple Court,023,2025-08-11,Moved out,Stephanie Hall,1444.54,1805.0,2025-09-25,Bought a home,False,0.0
+E00099,P07-024,Aspen Grove,024,2025-08-13,Renewed,Anthony Moore,2189.87,2255.0,,,False,0.0
+E00100,P06-041,Willow Park,041,2025-08-13,Moved out,Timothy Garza,2936.28,2950.0,2025-09-04,Needed different size / location,False,2.1
+E00101,P06-010,Willow Park,010,2025-08-13,Moved out,Marcus Flores,2370.92,2310.0,2025-08-28,Bought a home,False,0.0
+E00102,P01-002,Cedar Commons,002,2025-08-14,Renewed,Noah Rhodes,2395.74,2495.0,,,False,0.0
+E00103,P11-024,Meadowlark Place,024,2025-08-14,Renewed,David Lopez,2146.12,2210.0,,,False,0.0
+E00104,P09-070,Oakhaven Apartments,070,2025-08-14,Moved out,Nichole Walton,1113.64,1235.0,2025-10-04,Other / personal,False,0.0
+E00105,P08-005,Riverbend Lofts,005,2025-08-15,Moved out,Charles Nolan,3403.55,3365.0,2025-09-10,Needed different size / location,False,7.0
+E00106,P03-003,Maple Court,003,2025-08-15,Renewed,Julia Torres,2340.38,2410.0,,,False,0.0
+E00107,P08-026,Riverbend Lofts,026,2025-08-15,Moved out,Jordan Johnson,3163.24,3080.0,2025-09-20,Maintenance / unit condition,True,5.1
+E00108,P07-037,Aspen Grove,037,2025-08-15,Renewed,Thomas Atkins,2628.17,2715.0,,,False,0.0
+E00109,P12-014,Ironwood Residences,014,2025-08-16,Moved out,Jimmy Anthony,3167.08,3205.0,2025-08-27,Rent increase / price,True,5.7
+E00110,P03-010,Maple Court,010,2025-08-16,Moved out,Elizabeth Castillo,2074.05,2085.0,2025-08-31,Maintenance / unit condition,True,0.0
+E00111,P12-041,Ironwood Residences,041,2025-08-16,Moved out,Kelly Simpson,3559.08,3585.0,2025-08-26,Management / service,True,7.1
+E00112,P03-051,Maple Court,051,2025-08-16,Moved out,Michelle Meadows,1091.98,1330.0,2025-12-30,Maintenance / unit condition,True,0.0
+E00113,P12-062,Ironwood Residences,062,2025-08-16,Moved out,Linda Parker,2887.8,2835.0,2025-09-05,Needed different size / location,False,0.0
+E00114,P04-008,Birchwood Terrace,008,2025-08-16,Moved out,Bradley Rivera,2066.69,2010.0,2025-09-07,Needed different size / location,False,2.1
+E00115,P08-023,Riverbend Lofts,023,2025-08-17,Moved out,David Green,3171.8,3255.0,2025-09-02,Other / personal,False,0.0
+E00116,P06-007,Willow Park,007,2025-08-17,Renewed,Shannon James,2383.74,2485.0,,,False,0.0
+E00117,P02-020,Harborview Flats,020,2025-08-17,Moved out,Courtney Ellis MD,2548.35,2425.0,2025-09-02,Rent increase / price,True,5.8
+E00118,P04-017,Birchwood Terrace,017,2025-08-17,Moved out,Benjamin Russo,1828.8,1835.0,2025-09-26,Job / relocation,False,3.3
+E00119,P01-013,Cedar Commons,013,2025-08-19,Moved out,Brendan Hunt,2445.28,2445.0,2025-11-08,Needed different size / location,False,0.0
+E00120,P05-040,Sunset Ridge,040,2025-08-19,Renewed,Veronica Simpson,2571.11,2605.0,,,False,0.0
+E00121,P09-064,Oakhaven Apartments,064,2025-08-19,Renewed,Jodi Roach,1500.57,1555.0,,,False,0.0
+E00122,P02-005,Harborview Flats,005,2025-08-20,Moved out,Cody Thompson,2344.97,2360.0,2025-09-04,Job / relocation,False,0.0
+E00123,P02-045,Harborview Flats,045,2025-08-20,Renewed,Sharon Cherry,2668.69,2715.0,,,False,0.0
+E00124,P10-036,Stonebridge Villas,036,2025-08-21,Moved out,Robert Gardner,2372.21,2375.0,2025-09-12,Rent increase / price,True,0.0
+E00125,P07-049,Aspen Grove,049,2025-08-21,Renewed,Mary Thompson,1581.73,1645.0,,,False,0.0
+E00126,P09-006,Oakhaven Apartments,006,2025-08-21,Moved out,Jon Smith,1942.52,2100.0,2025-09-30,Management / service,True,0.0
+E00127,P04-034,Birchwood Terrace,034,2025-08-22,Renewed,Christopher Smith,1902.24,1995.0,,,False,0.0
+E00128,P10-014,Stonebridge Villas,014,2025-08-22,Moved out,Lindsay Espinoza,2158.14,2225.0,2025-08-29,Management / service,True,0.0
+E00129,P06-066,Willow Park,066,2025-08-22,Moved out,Hannah Monroe,2281.31,2330.0,2025-09-21,Other / personal,False,0.0
+E00130,P10-024,Stonebridge Villas,024,2025-08-23,Moved out,Kenneth Salinas,3126.85,3095.0,2025-09-12,Job / relocation,False,4.5
+E00131,P09-044,Oakhaven Apartments,044,2025-08-23,Renewed,Monica Miller,1648.34,1690.0,,,False,0.0
+E00132,P09-002,Oakhaven Apartments,002,2025-08-24,Renewed,Brittany Kim,1802.29,1860.0,,,False,0.0
+E00133,P11-030,Meadowlark Place,030,2025-08-24,Moved out,Michael Hutchinson,1434.93,1755.0,2025-09-15,Bought a home,False,0.0
+E00134,P02-043,Harborview Flats,043,2025-08-24,Moved out,Christina Williams,2936.8,2935.0,2025-10-08,Rent increase / price,True,5.4
+E00135,P04-048,Birchwood Terrace,048,2025-08-24,Renewed,Matthew Moore,1706.61,1760.0,,,False,0.0
+E00136,P09-004,Oakhaven Apartments,004,2025-08-25,Renewed,Alexander Brown,1110.58,1155.0,,,False,0.0
+E00137,P05-001,Sunset Ridge,001,2025-08-25,Renewed,Laura Roberts,3289.27,3385.0,,,False,0.0
+E00138,P09-003,Oakhaven Apartments,003,2025-08-25,Moved out,Lawrence Compton,1129.96,1485.0,2025-09-16,Job / relocation,False,0.0
+E00139,P12-060,Ironwood Residences,060,2025-08-25,Moved out,Nicole Wilcox,3067.91,3045.0,2025-09-11,Job / relocation,False,0.0
+E00140,P09-074,Oakhaven Apartments,074,2025-08-26,Renewed,Angelica Parker,1900.4,1945.0,,,False,0.0
+E00141,P09-078,Oakhaven Apartments,078,2025-08-26,Renewed,Penny Bowman,2145.95,2200.0,,,False,0.0
+E00142,P07-015,Aspen Grove,015,2025-08-26,Renewed,Allison Hickman,2106.35,2175.0,,,False,0.0
+E00143,P06-063,Willow Park,063,2025-08-26,Renewed,Jordan Bates,2272.41,2340.0,,,False,0.0
+E00144,P08-007,Riverbend Lofts,007,2025-08-26,Renewed,George Harper,2762.45,2830.0,,,False,0.0
+E00145,P04-013,Birchwood Terrace,013,2025-08-27,Moved out,Jennifer Brown,2053.74,2060.0,2025-11-05,Job / relocation,False,0.0
+E00146,P03-041,Maple Court,041,2025-08-27,Moved out,Zachary Allen,2387.11,2455.0,2025-10-24,Other / personal,False,0.0
+E00147,P08-021,Riverbend Lofts,021,2025-08-28,Moved out,Manuel Warren,3627.72,3520.0,2025-09-15,Rent increase / price,True,0.0
+E00148,P01-037,Cedar Commons,037,2025-08-28,Renewed,Jeffrey Chavez,2088.91,2135.0,,,False,0.0
+E00149,P01-049,Cedar Commons,049,2025-08-28,Renewed,Shane Henderson,2061.14,2130.0,,,False,0.0
+E00150,P01-004,Cedar Commons,004,2025-08-29,Moved out,Jonathan Smith,1867.61,1790.0,2025-09-14,Rent increase / price,True,4.3
+E00151,P07-034,Aspen Grove,034,2025-08-30,Renewed,James Padilla,2126.37,2175.0,,,False,0.0
+E00152,P03-025,Maple Court,025,2025-08-31,Renewed,Daniel Kennedy,2567.31,2670.0,,,False,0.0
+E00153,P07-048,Aspen Grove,048,2025-08-31,Renewed,Craig Morrison,1730.36,1785.0,,,False,0.0
+E00154,P07-022,Aspen Grove,022,2025-08-31,Renewed,Glen Wood,2150.73,2225.0,,,False,0.0
+E00155,P02-031,Harborview Flats,031,2025-09-01,Renewed,Denise Jacobs,2391.74,2440.0,,,False,0.0
+E00156,P04-014,Birchwood Terrace,014,2025-09-02,Moved out,Angela Shannon,1893.91,1840.0,2025-10-04,Safety / neighbors,True,0.0
+E00157,P06-052,Willow Park,052,2025-09-02,Renewed,Johnathan Davis,1473.22,1500.0,,,False,0.0
+E00158,P03-037,Maple Court,037,2025-09-02,Renewed,Joyce Solis,1512.28,1570.0,,,False,0.0
+E00159,P09-009,Oakhaven Apartments,009,2025-09-04,Renewed,Brenda Thornton,1733.3,1790.0,,,False,0.0
+E00160,P09-008,Oakhaven Apartments,008,2025-09-04,Moved out,Yvette Lewis,1535.27,1905.0,2025-09-22,Other / personal,False,0.0
+E00161,P10-031,Stonebridge Villas,031,2025-09-05,Moved out,Caitlyn Roberts,3366.01,3355.0,2025-09-30,Rent increase / price,True,0.0
+E00162,P07-029,Aspen Grove,029,2025-09-05,Renewed,Douglas Gregory,1809.59,1850.0,,,False,0.0
+E00163,P05-004,Sunset Ridge,004,2025-09-05,Moved out,Erica Campbell,2554.47,2580.0,2025-10-01,Other / personal,False,0.0
+E00164,P11-036,Meadowlark Place,036,2025-09-05,Renewed,Elizabeth Mendez,2462.58,2540.0,,,False,0.0
+E00165,P01-057,Cedar Commons,057,2025-09-06,Moved out,Kathleen Pineda,2473.47,2515.0,2025-10-06,Needed different size / location,False,0.0
+E00166,P10-035,Stonebridge Villas,035,2025-09-07,Moved out,Stacey Nichols,2176.63,2195.0,2025-10-15,Rent increase / price,True,0.0
+E00167,P12-056,Ironwood Residences,056,2025-09-08,Renewed,Dean Donovan,2957.62,3015.0,,,False,0.0
+E00168,P10-018,Stonebridge Villas,018,2025-09-09,Moved out,Laura Oconnell,2214.79,2130.0,2025-09-30,Bought a home,False,4.1
+E00169,P10-045,Stonebridge Villas,045,2025-09-10,Renewed,Melissa Bishop,2497.02,2565.0,,,False,0.0
+E00170,P06-012,Willow Park,012,2025-09-11,Renewed,Shelia Wallace,2281.28,2365.0,,,False,0.0
+E00171,P11-020,Meadowlark Place,020,2025-09-14,Moved out,Sara Rogers,1613.55,1925.0,2025-10-14,Safety / neighbors,True,0.0
+E00172,P10-020,Stonebridge Villas,020,2025-09-15,Renewed,Robert Morgan,2682.37,2795.0,,,False,0.0
+E00173,P02-018,Harborview Flats,018,2025-09-15,Renewed,Lisa Barnes,2772.07,2865.0,,,False,0.0
+E00174,P06-022,Willow Park,022,2025-09-15,Moved out,Jodi Reese MD,2205.43,2180.0,2025-09-26,Management / service,True,0.0
+E00175,P04-024,Birchwood Terrace,024,2025-09-15,Renewed,Ricky Davis II,2255.55,2340.0,,,False,0.0
+E00176,P09-042,Oakhaven Apartments,042,2025-09-15,Renewed,Jasmine Beltran,1189.0,1215.0,,,False,0.0
+E00177,P10-004,Stonebridge Villas,004,2025-09-16,Renewed,Emma Owens,2042.98,2115.0,,,False,0.0
+E00178,P11-035,Meadowlark Place,035,2025-09-17,Renewed,Emily Wilson,1626.5,1680.0,,,False,0.0
+E00179,P11-041,Meadowlark Place,041,2025-09-17,Renewed,Shelley Miller,1899.04,1975.0,,,False,0.0
+E00180,P06-018,Willow Park,018,2025-09-20,Moved out,William Russo,2022.63,2020.0,2025-10-11,Management / service,True,2.5
+E00181,P12-053,Ironwood Residences,053,2025-09-21,Moved out,Melanie Stevenson,2685.28,2670.0,2025-10-21,Needed different size / location,False,0.0
+E00182,P03-018,Maple Court,018,2025-09-22,Moved out,Lisa Johnson,1018.65,1120.0,2025-12-15,Needed different size / location,False,0.0
+E00183,P07-032,Aspen Grove,032,2025-09-22,Renewed,Chad Scott,1743.59,1785.0,,,False,0.0
+E00184,P02-029,Harborview Flats,029,2025-09-22,Moved out,Christina Coleman,2975.31,2880.0,2025-10-15,Job / relocation,False,0.0
+E00185,P10-037,Stonebridge Villas,037,2025-09-23,Renewed,Ashley Smith,2312.97,2440.0,,,False,0.0
+E00186,P11-008,Meadowlark Place,008,2025-09-23,Renewed,Randy Smith,2073.2,2130.0,,,False,0.0
+E00187,P04-040,Birchwood Terrace,040,2025-09-23,Moved out,Darlene Holt,2560.3,2510.0,2025-10-26,Safety / neighbors,True,0.0
+E00188,P02-037,Harborview Flats,037,2025-09-24,Renewed,Jessica Smith,2591.28,2680.0,,,False,0.0
+E00189,P04-018,Birchwood Terrace,018,2025-09-24,Renewed,Daniel Salinas,1887.78,1945.0,,,False,0.0
+E00190,P04-005,Birchwood Terrace,005,2025-09-24,Moved out,Michael Becker,2299.14,2260.0,2025-10-13,Rent increase / price,True,0.0
+E00191,P03-014,Maple Court,014,2025-09-24,Renewed,April Frost,1216.35,1265.0,,,False,0.0
+E00192,P10-017,Stonebridge Villas,017,2025-09-24,Moved out,Sara Delacruz,2856.67,2795.0,2025-10-07,Bought a home,False,2.7
+E00193,P02-006,Harborview Flats,006,2025-09-25,Renewed,James Brown,2944.7,3035.0,,,False,0.0
+E00194,P01-027,Cedar Commons,027,2025-09-25,Renewed,Judy Baker,2872.7,2980.0,,,False,0.0
+E00195,P12-028,Ironwood Residences,028,2025-09-26,Moved out,Matthew Wolfe,3723.58,3755.0,2025-10-13,Job / relocation,False,0.0
+E00196,P12-032,Ironwood Residences,032,2025-09-27,Moved out,Jacqueline Butler,3305.42,3285.0,2025-10-25,Other / personal,False,0.0
+E00197,P05-035,Sunset Ridge,035,2025-09-28,Renewed,Kimberly Gibson,2786.29,2820.0,,,False,0.0
+E00198,P10-049,Stonebridge Villas,049,2025-09-30,Renewed,Gregory Peck,2395.36,2465.0,,,False,0.0
+E00199,P03-009,Maple Court,009,2025-09-30,Renewed,Ashley Waller,1133.33,1160.0,,,False,0.0
+E00200,P09-029,Oakhaven Apartments,029,2025-09-30,Moved out,Adrian Gross,941.35,1195.0,2025-10-20,Rent increase / price,True,0.0
+E00201,P09-024,Oakhaven Apartments,024,2025-09-30,Moved out,Nancy Ballard,885.61,1020.0,2025-11-20,Other / personal,False,0.0
+E00202,P07-045,Aspen Grove,045,2025-10-01,Renewed,Ashley Hicks,1690.06,1755.0,,,False,0.0
+E00203,P07-052,Aspen Grove,052,2025-10-01,Moved out,John Thompson,1757.04,1930.0,2025-10-27,Maintenance / unit condition,True,0.0
+E00204,P09-031,Oakhaven Apartments,031,2025-10-01,Moved out,Nancy Hall,1253.73,1540.0,2025-10-14,Needed different size / location,False,0.0
+E00205,P04-044,Birchwood Terrace,044,2025-10-02,Renewed,Courtney Mills,2002.61,2045.0,,,False,0.0
+E00206,P07-060,Aspen Grove,060,2025-10-02,Renewed,Joanna Pacheco,1361.19,1400.0,,,False,0.0
+E00207,P01-048,Cedar Commons,048,2025-10-02,Renewed,John Pierce,1859.88,1910.0,,,False,0.0
+E00208,P07-020,Aspen Grove,020,2025-10-03,Renewed,Charles Schultz,1556.58,1600.0,,,False,0.0
+E00209,P10-012,Stonebridge Villas,012,2025-10-03,Renewed,Johnny Khan,2121.97,2205.0,,,False,0.0
+E00210,P11-002,Meadowlark Place,002,2025-10-04,Renewed,Jeremy Scott,1721.15,1790.0,,,False,0.0
+E00211,P04-046,Birchwood Terrace,046,2025-10-04,Moved out,Brandon Smith,2321.97,2330.0,2025-11-03,Other / personal,False,0.0
+E00212,P08-015,Riverbend Lofts,015,2025-10-04,Moved out,Lance Smith,2592.99,2630.0,2025-10-22,Maintenance / unit condition,True,7.3
+E00213,P01-064,Cedar Commons,064,2025-10-04,Moved out,Laura Green,2193.49,2250.0,2025-10-29,Maintenance / unit condition,True,0.0
+E00214,P07-002,Aspen Grove,002,2025-10-05,Renewed,Ronald Davis,1991.43,2050.0,,,False,0.0
+E00215,P11-017,Meadowlark Place,017,2025-10-06,Renewed,Jennifer Simpson DVM,2369.84,2450.0,,,False,0.0
+E00216,P01-022,Cedar Commons,022,2025-10-08,Moved out,Joseph Haynes,1994.12,1985.0,2025-11-10,Rent increase / price,True,4.9
+E00217,P03-022,Maple Court,022,2025-10-09,Renewed,Elizabeth Kelley,2497.27,2565.0,,,False,0.0
+E00218,P02-011,Harborview Flats,011,2025-10-11,Moved out,Tina Walker,2388.17,2390.0,2025-10-26,Rent increase / price,True,0.0
+E00219,P08-033,Riverbend Lofts,033,2025-10-11,Moved out,Kevin Alvarado,3068.55,3075.0,2025-11-18,Other / personal,False,0.0
+E00220,P02-030,Harborview Flats,030,2025-10-12,Moved out,James Murphy,2813.35,2735.0,2025-11-09,Maintenance / unit condition,True,0.0
+E00221,P12-005,Ironwood Residences,005,2025-10-12,Moved out,Brad Miller,2413.46,2365.0,2025-10-23,Management / service,True,0.0
+E00222,P09-021,Oakhaven Apartments,021,2025-10-12,Renewed,Jeffrey Mendez,1596.6,1635.0,,,False,0.0
+E00223,P11-015,Meadowlark Place,015,2025-10-12,Moved out,Wanda Nichols,1456.93,1865.0,2025-11-28,Job / relocation,False,0.0
+E00224,P12-015,Ironwood Residences,015,2025-10-12,Moved out,Debra Rivera,3030.63,2945.0,2025-10-26,Needed different size / location,False,6.6
+E00225,P06-073,Willow Park,073,2025-10-13,Moved out,Jane Mccall,1520.67,1505.0,2025-11-02,Safety / neighbors,True,0.0
+E00226,P01-051,Cedar Commons,051,2025-10-14,Moved out,Joseph Ramos,1937.48,1980.0,2025-11-13,Bought a home,False,0.0
+E00227,P12-038,Ironwood Residences,038,2025-10-16,Renewed,Renee Melendez,2851.87,2970.0,,,False,0.0
+E00228,P03-011,Maple Court,011,2025-10-16,Moved out,Thomas Goodwin,1814.32,2035.0,2025-11-16,Job / relocation,False,0.0
+E00229,P06-080,Willow Park,080,2025-10-17,Moved out,Fernando Wilson,2104.65,2080.0,2025-11-10,Bought a home,False,4.9
+E00230,P10-032,Stonebridge Villas,032,2025-10-18,Renewed,Paula Lane,2400.96,2490.0,,,False,0.0
+E00231,P10-015,Stonebridge Villas,015,2025-10-20,Renewed,Pamela Diaz,1686.29,1730.0,,,False,0.0
+E00232,P09-030,Oakhaven Apartments,030,2025-10-21,Moved out,Rachel Wood,1691.28,2005.0,2025-12-07,Maintenance / unit condition,True,0.0
+E00233,P11-043,Meadowlark Place,043,2025-10-22,Moved out,Douglas Whitaker,1260.65,1375.0,2025-11-13,Maintenance / unit condition,True,0.0
+E00234,P01-043,Cedar Commons,043,2025-10-23,Renewed,Fred Smith,2297.53,2385.0,,,False,0.0
+E00235,P03-035,Maple Court,035,2025-10-25,Renewed,Christopher Rubio,1957.47,2020.0,,,False,0.0
+E00236,P07-057,Aspen Grove,057,2025-10-27,Renewed,Angela Lin,2238.11,2295.0,,,False,0.0
+E00237,P09-025,Oakhaven Apartments,025,2025-10-27,Moved out,Christopher Hall,1399.15,1720.0,2025-12-18,Management / service,True,0.0
+E00238,P03-065,Maple Court,065,2025-10-27,Renewed,Joshua Cooke,1714.1,1750.0,,,False,0.0
+E00239,P08-004,Riverbend Lofts,004,2025-10-27,Moved out,Kristin Walsh,2803.14,2735.0,2025-11-15,Job / relocation,False,4.1
+E00240,P04-010,Birchwood Terrace,010,2025-10-28,Renewed,Madison Poole,1934.5,2005.0,,,False,0.0
+E00241,P06-070,Willow Park,070,2025-10-28,Moved out,Samantha Wallace,1406.66,1390.0,2025-11-22,Job / relocation,False,0.0
+E00242,P01-026,Cedar Commons,026,2025-10-29,Renewed,Matthew Foster,2595.39,2700.0,,,False,0.0
+E00243,P05-005,Sunset Ridge,005,2025-10-30,Renewed,David Davis,2700.23,2820.0,,,False,0.0
+E00244,P09-063,Oakhaven Apartments,063,2025-10-31,Renewed,Katherine Martinez,1433.46,1485.0,,,False,0.0
+E00245,P03-016,Maple Court,016,2025-10-31,Renewed,Helen Jones,1578.64,1630.0,,,False,0.0
+E00246,P06-020,Willow Park,020,2025-11-01,Moved out,Michael Anderson,2517.45,2520.0,2025-12-09,Bought a home,False,3.4
+E00247,P01-028,Cedar Commons,028,2025-11-01,Renewed,Justin Baker,2665.47,2745.0,,,False,0.0
+E00248,P03-059,Maple Court,059,2025-11-02,Moved out,Kaylee Anderson,1285.64,1415.0,2025-12-14,Management / service,True,0.0
+E00249,P04-036,Birchwood Terrace,036,2025-11-02,Renewed,Melissa Martinez,2088.72,2160.0,,,False,0.0
+E00250,P05-037,Sunset Ridge,037,2025-11-02,Renewed,Cynthia Rowe,2639.22,2730.0,,,False,0.0
+E00251,P12-058,Ironwood Residences,058,2025-11-03,Renewed,James Whitaker,3380.24,3490.0,,,False,0.0
+E00252,P07-011,Aspen Grove,011,2025-11-03,Moved out,William Wright,1383.33,1635.0,2025-12-11,Safety / neighbors,True,0.0
+E00253,P03-013,Maple Court,013,2025-11-03,Moved out,Sarah Bishop,1518.75,1755.0,2025-12-16,Management / service,True,0.0
+E00254,P10-026,Stonebridge Villas,026,2025-11-03,Moved out,Scott Oliver,2940.99,2960.0,2025-12-12,Needed different size / location,False,0.0
+E00255,P02-033,Harborview Flats,033,2025-11-03,Renewed,John Whitehead,1976.15,2035.0,,,False,0.0
+E00256,P03-047,Maple Court,047,2025-11-03,Renewed,Michelle Brown,1784.6,1835.0,,,False,0.0
+E00257,P01-001,Cedar Commons,001,2025-11-04,Moved out,Michael Thomas,2418.01,2465.0,2025-11-18,Job / relocation,False,0.0
+E00258,P09-048,Oakhaven Apartments,048,2025-11-04,Renewed,Heather Williams,1409.51,1445.0,,,False,0.0
+E00259,P04-041,Birchwood Terrace,041,2025-11-05,Moved out,Kelly Hall,2285.87,2305.0,2025-11-26,Bought a home,False,0.0
+E00260,P11-033,Meadowlark Place,033,2025-11-05,Renewed,Bryan Parker,1903.67,1970.0,,,False,0.0
+E00261,P07-051,Aspen Grove,051,2025-11-06,Renewed,Joann Glass,2193.82,2250.0,,,False,0.0
+E00262,P04-011,Birchwood Terrace,011,2025-11-07,Moved out,Mark Harris,2040.24,2045.0,2025-12-15,Needed different size / location,False,0.0
+E00263,P05-008,Sunset Ridge,008,2025-11-07,Renewed,Andrew Avila,2920.74,3015.0,,,False,0.0
+E00264,P12-012,Ironwood Residences,012,2025-11-08,Renewed,Janet Kane DVM,2946.1,3030.0,,,False,0.0
+E00265,P11-022,Meadowlark Place,022,2025-11-08,Moved out,Ryan Lawson,2228.16,2330.0,2025-11-29,Other / personal,False,0.0
+E00266,P09-091,Oakhaven Apartments,091,2025-11-10,Renewed,Marilyn Wang,1514.17,1560.0,,,False,0.0
+E00267,P09-020,Oakhaven Apartments,020,2025-11-10,Renewed,Jose Allen,1377.0,1420.0,,,False,0.0
+E00268,P10-033,Stonebridge Villas,033,2025-11-10,Moved out,Joseph Nguyen,2638.03,2545.0,2025-12-11,Maintenance / unit condition,True,0.0
+E00269,P12-018,Ironwood Residences,018,2025-11-11,Moved out,Stephanie Collins,3336.67,3285.0,2025-11-29,Needed different size / location,False,0.0
+E00270,P01-029,Cedar Commons,029,2025-11-12,Renewed,Stephanie Ross,2576.91,2635.0,,,False,0.0
+E00271,P10-041,Stonebridge Villas,041,2025-11-12,Renewed,Daniel Nguyen,2219.61,2305.0,,,False,0.0
+E00272,P06-009,Willow Park,009,2025-11-13,Moved out,Caroline Lee,2181.45,2225.0,2026-01-08,Management / service,True,0.0
+E00273,P11-018,Meadowlark Place,018,2025-11-15,Renewed,Tammy Mcdowell,1856.38,1925.0,,,False,0.0
+E00274,P03-064,Maple Court,064,2025-11-16,Moved out,Christian Steele,1555.67,1685.0,2025-12-14,Rent increase / price,True,0.0
+E00275,P09-018,Oakhaven Apartments,018,2025-11-16,Renewed,Riley Bryant,2057.27,2130.0,,,False,0.0
+E00276,P04-002,Birchwood Terrace,002,2025-11-17,Renewed,Tina Sanders,2694.26,2775.0,,,False,0.0
+E00277,P06-032,Willow Park,032,2025-11-18,Renewed,Sara Fuller,2008.87,2055.0,,,False,0.0
+E00278,P04-049,Birchwood Terrace,049,2025-11-19,Renewed,Benjamin Smith,1790.69,1845.0,,,False,0.0
+E00279,P09-015,Oakhaven Apartments,015,2025-11-19,Renewed,Eric Williams,2329.0,2395.0,,,False,0.0
+E00280,P06-037,Willow Park,037,2025-11-19,Moved out,Rodney Ward,3018.09,3055.0,2026-01-03,Needed different size / location,False,3.0
+E00281,P07-019,Aspen Grove,019,2025-11-19,Renewed,Sergio Knight,1902.19,1965.0,,,False,0.0
+E00282,P05-020,Sunset Ridge,020,2025-11-20,Renewed,Tanya Kim,1975.39,2045.0,,,False,0.0
+E00283,P08-014,Riverbend Lofts,014,2025-11-20,Moved out,Joseph Ford,2882.2,2810.0,2025-12-03,Job / relocation,False,5.2
+E00284,P02-046,Harborview Flats,046,2025-11-21,Renewed,Sierra Johnson,2711.16,2780.0,,,False,0.0
+E00285,P06-047,Willow Park,047,2025-11-21,Renewed,Ashley Hall,1493.56,1555.0,,,False,0.0
+E00286,P02-012,Harborview Flats,012,2025-11-22,Renewed,Lauren Daniels,2621.18,2680.0,,,False,0.0
+E00287,P01-052,Cedar Commons,052,2025-11-22,Renewed,Jessica Holmes,1644.64,1710.0,,,False,0.0
+E00288,P09-022,Oakhaven Apartments,022,2025-11-22,Renewed,Jason Beck,2230.77,2320.0,,,False,0.0
+E00289,P03-002,Maple Court,002,2025-11-22,Renewed,Shannon Walker,2691.79,2740.0,,,False,0.0
+E00290,P03-038,Maple Court,038,2025-11-22,Renewed,Victoria Larson,1338.85,1390.0,,,False,0.0
+E00291,P09-081,Oakhaven Apartments,081,2025-11-23,Moved out,Amy Smith,1289.46,1585.0,2025-12-11,Rent increase / price,True,0.0
+E00292,P04-037,Birchwood Terrace,037,2025-11-24,Renewed,Katherine Salas,1327.51,1380.0,,,False,0.0
+E00293,P09-056,Oakhaven Apartments,056,2025-11-25,Renewed,James Bradley,1696.82,1730.0,,,False,0.0
+E00294,P03-042,Maple Court,042,2025-11-25,Renewed,David Wright,1132.62,1160.0,,,False,0.0
+E00295,P02-019,Harborview Flats,019,2025-11-26,Renewed,Kelly Donovan,2617.45,2645.0,,,False,0.0
+E00296,P01-063,Cedar Commons,063,2025-11-26,Renewed,Gerald Hensley,2134.32,2225.0,,,False,0.0
+E00297,P12-036,Ironwood Residences,036,2025-11-27,Renewed,James Webster,2685.71,2795.0,,,False,0.0
+E00298,P04-020,Birchwood Terrace,020,2025-11-27,Moved out,Rhonda Sandoval,2778.44,2700.0,2026-01-04,Job / relocation,False,0.0
+E00299,P06-075,Willow Park,075,2025-11-27,Renewed,Kayla Rodriguez,2969.15,3035.0,,,False,0.0
+E00300,P05-024,Sunset Ridge,024,2025-11-28,Moved out,Hunter Yu,2322.55,2330.0,2026-01-18,Needed different size / location,False,0.0
+E00301,P07-025,Aspen Grove,025,2025-11-28,Moved out,Tony Graham,1203.75,1450.0,2025-12-18,Maintenance / unit condition,True,0.0
+E00302,P12-042,Ironwood Residences,042,2025-11-30,Moved out,Karen Jones,3465.32,3405.0,2025-12-29,Bought a home,False,0.0
+E00303,P06-088,Willow Park,088,2025-11-30,Renewed,Jeffery Ortega,2739.72,2875.0,,,False,0.0
+E00304,P09-075,Oakhaven Apartments,075,2025-11-30,Renewed,Dr. Kelly Hammond DVM,1777.14,1820.0,,,False,0.0
+E00305,P04-022,Birchwood Terrace,022,2025-12-01,Renewed,Melissa Brewer,2223.02,2280.0,,,False,0.0
+E00306,P06-069,Willow Park,069,2025-12-01,Renewed,Scott Thomas,2851.13,2960.0,,,False,0.0
+E00307,P09-036,Oakhaven Apartments,036,2025-12-01,Renewed,Kaylee Hays,2312.13,2390.0,,,False,0.0
+E00308,P01-021,Cedar Commons,021,2025-12-03,Moved out,Rachel Nolan,2377.46,2345.0,2025-12-17,Rent increase / price,True,2.9
+E00309,P08-024,Riverbend Lofts,024,2025-12-03,Moved out,Brandon Carey,3113.89,3115.0,2025-12-25,Management / service,True,4.4
+E00310,P01-055,Cedar Commons,055,2025-12-05,Moved out,Becky Navarro,1524.09,1505.0,2026-01-02,Maintenance / unit condition,True,0.0
+E00311,P05-025,Sunset Ridge,025,2025-12-05,Renewed,Susan Murray MD,2793.73,2860.0,,,False,0.0
+E00312,P02-024,Harborview Flats,024,2025-12-05,Moved out,Lauren Baker,3409.58,3235.0,2025-12-19,Rent increase / price,True,0.0
+E00313,P02-034,Harborview Flats,034,2025-12-05,Moved out,Cesar Johnston,2359.47,2365.0,2025-12-21,Needed different size / location,False,6.5
+E00314,P04-030,Birchwood Terrace,030,2025-12-06,Renewed,Bryan Herrera,1373.28,1430.0,,,False,0.0
+E00315,P07-012,Aspen Grove,012,2025-12-06,Renewed,Renee Bruce,2222.99,2305.0,,,False,0.0
+E00316,P06-055,Willow Park,055,2025-12-06,Renewed,Patrick Moore,2208.38,2320.0,,,False,0.0
+E00317,P07-054,Aspen Grove,054,2025-12-06,Moved out,Autumn Mccormick,1298.32,1615.0,2026-01-04,Job / relocation,False,0.0
+E00318,P06-042,Willow Park,042,2025-12-06,Moved out,Brittany Tucker,2272.05,2180.0,2026-02-06,Maintenance / unit condition,True,0.0
+E00319,P09-043,Oakhaven Apartments,043,2025-12-07,Moved out,Tracy Garrison,1566.39,1545.0,2026-01-12,Job / relocation,False,0.0
+E00320,P06-050,Willow Park,050,2025-12-07,Renewed,Susan Turner,1868.68,1930.0,,,False,0.0
+E00321,P03-034,Maple Court,034,2025-12-07,Renewed,Patricia Rodriguez,1598.83,1650.0,,,False,0.0
+E00322,P06-085,Willow Park,085,2025-12-07,Moved out,John Conley,1904.79,1890.0,2026-01-10,Maintenance / unit condition,True,0.0
+E00323,P03-019,Maple Court,019,2025-12-10,Moved out,Stephen Lyons,2249.94,2565.0,2026-01-09,Safety / neighbors,True,0.0
+E00324,P05-002,Sunset Ridge,002,2025-12-10,Moved out,Wendy Howard,2353.38,2320.0,2026-01-03,Bought a home,False,6.9
+E00325,P10-044,Stonebridge Villas,044,2025-12-11,Moved out,Elizabeth Rodriguez,2389.82,2445.0,2026-01-01,Other / personal,False,0.0
+E00326,P02-048,Harborview Flats,048,2025-12-13,Moved out,Daniel Blair,2514.74,2405.0,2025-12-27,Bought a home,False,0.0
+E00327,P07-030,Aspen Grove,030,2025-12-14,Moved out,Edward Jordan,1520.16,1855.0,2026-01-30,Other / personal,False,0.0
+E00328,P11-039,Meadowlark Place,039,2025-12-15,Moved out,John Ware,1706.65,1850.0,2026-01-05,Rent increase / price,True,0.0
+E00329,P08-028,Riverbend Lofts,028,2025-12-15,Renewed,Jeremy Mitchell,2402.31,2440.0,,,False,0.0
+E00330,P12-065,Ironwood Residences,065,2025-12-16,Renewed,Ryan Landry,2797.54,2860.0,,,False,0.0
+E00331,P12-040,Ironwood Residences,040,2025-12-16,Renewed,David Harris,2826.67,2870.0,,,False,0.0
+E00332,P09-082,Oakhaven Apartments,082,2025-12-16,Moved out,William Reed,1938.76,2220.0,2026-01-11,Safety / neighbors,True,0.0
+E00333,P06-077,Willow Park,077,2025-12-16,Moved out,Emma Freeman,2982.4,3025.0,2026-01-03,Bought a home,False,0.0
+E00334,P04-003,Birchwood Terrace,003,2025-12-17,Moved out,Donna Estrada,1673.45,1730.0,2026-01-14,Bought a home,False,3.2
+E00335,P09-068,Oakhaven Apartments,068,2025-12-18,Renewed,Michelle Ho,2507.45,2605.0,,,False,0.0
+E00336,P06-003,Willow Park,003,2025-12-21,Renewed,Joyce Bowen,1719.67,1775.0,,,False,0.0
+E00337,P12-052,Ironwood Residences,052,2025-12-22,Moved out,Samantha Simpson,2358.53,2345.0,2026-01-23,Safety / neighbors,True,0.0
+E00338,P09-086,Oakhaven Apartments,086,2025-12-23,Renewed,Joseph Shaw,1826.6,1880.0,,,False,0.0
+E00339,P01-032,Cedar Commons,032,2025-12-23,Moved out,Larry Costa,2430.77,2415.0,2026-01-14,Rent increase / price,True,0.0
+E00340,P12-059,Ironwood Residences,059,2025-12-23,Renewed,Mr. Michael Scott PhD,3527.26,3625.0,,,False,0.0
+E00341,P12-031,Ironwood Residences,031,2025-12-23,Moved out,Albert Simon,2826.89,2850.0,2026-02-01,Other / personal,False,6.4
+E00342,P03-053,Maple Court,053,2025-12-23,Renewed,Jennifer Adkins,1905.79,1965.0,,,False,0.0
+E00343,P03-039,Maple Court,039,2025-12-23,Moved out,Jillian Collins,1413.71,1470.0,2026-01-10,Other / personal,False,0.0
+E00344,P01-060,Cedar Commons,060,2025-12-24,Moved out,Michael Davis,2182.05,2120.0,2026-01-16,Rent increase / price,True,0.0
+E00345,P12-068,Ironwood Residences,068,2025-12-26,Moved out,Tanya Marshall,3200.34,3105.0,2026-01-27,Job / relocation,False,0.0
+E00346,P06-051,Willow Park,051,2025-12-28,Renewed,Charles Shah,1871.68,1940.0,,,False,0.0
+E00347,P07-008,Aspen Grove,008,2025-12-28,Renewed,Tracy Burke,2484.46,2570.0,,,False,0.0
+E00348,P03-043,Maple Court,043,2025-12-29,Renewed,Pamela Boyd,2544.57,2620.0,,,False,0.0
+E00349,P03-068,Maple Court,068,2025-12-29,Renewed,Alex Hernandez,1630.29,1685.0,,,False,0.0
+E00350,P03-012,Maple Court,012,2025-12-29,Renewed,Larry Dixon,1299.79,1340.0,,,False,0.0
+E00351,P02-027,Harborview Flats,027,2025-12-30,Renewed,Lisa Archer,2759.68,2830.0,,,False,0.0
+E00352,P07-050,Aspen Grove,050,2025-12-30,Renewed,Kathleen Webster,2683.15,2785.0,,,False,0.0
+E00353,P05-033,Sunset Ridge,033,2025-12-30,Moved out,Jill Hamilton,2620.91,2555.0,2026-01-18,Bought a home,False,4.5
+E00354,P09-060,Oakhaven Apartments,060,2025-12-31,Renewed,Brian Fitzgerald,1521.79,1570.0,,,False,0.0
+E00355,P04-025,Birchwood Terrace,025,2025-12-31,Moved out,Jennifer Burton,2286.62,2325.0,2026-02-13,Safety / neighbors,True,0.0
+E00356,P10-025,Stonebridge Villas,025,2025-12-31,Moved out,Bryce Miller,2514.9,2570.0,2026-01-08,Needed different size / location,False,0.0
+E00357,P05-007,Sunset Ridge,007,2025-12-31,Moved out,Alexander Cummings,2523.24,2575.0,2026-01-10,Job / relocation,False,0.0
+E00358,P01-019,Cedar Commons,019,2026-01-01,Moved out,Scott Silva,2554.42,2550.0,2026-01-18,Bought a home,False,0.0
+E00359,P02-044,Harborview Flats,044,2026-01-01,Moved out,Michael Nelson,2174.57,2140.0,2026-01-16,Rent increase / price,True,0.0
+E00360,P04-056,Birchwood Terrace,056,2026-01-01,Renewed,Christopher Parker,2605.78,2700.0,,,False,0.0
+E00361,P04-038,Birchwood Terrace,038,2026-01-01,Moved out,Patricia Rodriguez,1381.86,1345.0,2026-01-26,Maintenance / unit condition,True,0.0
+E00362,P12-049,Ironwood Residences,049,2026-01-02,Moved out,Brent Ramos,3281.98,3210.0,2026-01-18,Rent increase / price,True,7.8
+E00363,P10-016,Stonebridge Villas,016,2026-01-02,Moved out,Teresa Garrett,2712.3,2680.0,2026-02-06,Other / personal,False,0.0
+E00364,P03-071,Maple Court,071,2026-01-03,Moved out,John Wong,1220.18,1470.0,2026-01-18,Safety / neighbors,True,0.0
+E00365,P01-056,Cedar Commons,056,2026-01-03,Moved out,Stephanie Dyer MD,1790.41,1840.0,2026-02-02,Management / service,True,0.0
+E00366,P10-011,Stonebridge Villas,011,2026-01-03,Moved out,Nicole Conrad,2556.26,2490.0,2026-02-02,Bought a home,False,0.0
+E00367,P09-084,Oakhaven Apartments,084,2026-01-04,Moved out,Cindy Romero,843.78,1015.0,2026-02-18,Rent increase / price,True,0.0
+E00368,P10-040,Stonebridge Villas,040,2026-01-04,Moved out,William Perez,2172.46,2185.0,2026-01-29,Job / relocation,False,0.0
+E00369,P09-050,Oakhaven Apartments,050,2026-01-04,Renewed,William Gould,1264.66,1310.0,,,False,0.0
+E00370,P12-054,Ironwood Residences,054,2026-01-05,Moved out,Helen Simpson,2829.82,2845.0,2026-02-10,Rent increase / price,True,0.0
+E00371,P04-021,Birchwood Terrace,021,2026-01-05,Moved out,Donald Franklin,2861.05,2840.0,2026-01-30,Rent increase / price,True,0.0
+E00372,P03-031,Maple Court,031,2026-01-05,Moved out,Glenn Ramos,1202.92,1465.0,2026-02-01,Safety / neighbors,True,0.0
+E00373,P06-023,Willow Park,023,2026-01-06,Moved out,Alyssa Lloyd,2931.11,2920.0,2026-02-04,Safety / neighbors,True,0.0
+E00374,P07-021,Aspen Grove,021,2026-01-06,Renewed,Paul Lewis,1840.19,1885.0,,,False,0.0
+E00375,P09-061,Oakhaven Apartments,061,2026-01-06,Renewed,Mr. Justin Green III,1268.37,1310.0,,,False,0.0
+E00376,P12-024,Ironwood Residences,024,2026-01-07,Moved out,Robert Williams,3327.68,3200.0,2026-01-25,Rent increase / price,True,0.0
+E00377,P08-035,Riverbend Lofts,035,2026-01-07,Renewed,Shelly Spencer,2545.29,2635.0,,,False,0.0
+E00378,P04-028,Birchwood Terrace,028,2026-01-07,Renewed,David Martinez,1687.32,1720.0,,,False,0.0
+E00379,P05-031,Sunset Ridge,031,2026-01-08,Renewed,Timothy Romero,3015.34,3120.0,,,False,0.0
+E00380,P05-026,Sunset Ridge,026,2026-01-08,Renewed,Kathleen Moran,2243.85,2290.0,,,False,0.0
+E00381,P08-029,Riverbend Lofts,029,2026-01-08,Moved out,Calvin Cervantes,3023.71,3005.0,2026-03-05,Job / relocation,False,0.0
+E00382,P10-019,Stonebridge Villas,019,2026-01-08,Moved out,Gerald Carney,2236.94,2235.0,2026-02-03,Maintenance / unit condition,True,4.5
+E00383,P03-055,Maple Court,055,2026-01-09,Renewed,Jeffrey Johnson,1537.46,1595.0,,,False,0.0
+E00384,P09-058,Oakhaven Apartments,058,2026-01-10,Moved out,Dr. Elizabeth Anderson,1101.43,1295.0,2026-01-28,Job / relocation,False,0.0
+E00385,P10-023,Stonebridge Villas,023,2026-01-10,Renewed,Gary Wells,2113.18,2155.0,,,False,0.0
+E00386,P04-016,Birchwood Terrace,016,2026-01-10,Moved out,Amanda Rodriguez,1629.26,1655.0,2026-01-31,Rent increase / price,True,0.0
+E00387,P07-040,Aspen Grove,040,2026-01-11,Renewed,Robert Montgomery,1729.39,1775.0,,,False,0.0
+E00388,P06-054,Willow Park,054,2026-01-14,Renewed,Natalie Bautista,1463.9,1515.0,,,False,0.0
+E00389,P01-007,Cedar Commons,007,2026-01-14,Renewed,Abigail Shaffer,1997.81,2055.0,,,False,0.0
+E00390,P02-035,Harborview Flats,035,2026-01-14,Renewed,Aaron Wise,2720.88,2805.0,,,False,0.0
+E00391,P06-008,Willow Park,008,2026-01-14,Renewed,Nathan Malone,2855.06,2900.0,,,False,0.0
+E00392,P11-042,Meadowlark Place,042,2026-01-15,Renewed,Michael Miller,2071.1,2130.0,,,False,0.0
+E00393,P03-036,Maple Court,036,2026-01-16,Moved out,Jacob Logan,1475.34,1695.0,2026-03-01,Job / relocation,False,0.0
+E00394,P02-007,Harborview Flats,007,2026-01-17,Renewed,William Baker,2288.8,2325.0,,,False,0.0
+E00395,P09-052,Oakhaven Apartments,052,2026-01-18,Renewed,Meghan Cisneros,1893.5,1945.0,,,False,0.0
+E00396,P01-039,Cedar Commons,039,2026-01-19,Moved out,Vincent Guzman,2931.78,2855.0,2026-02-17,Rent increase / price,True,0.0
+E00397,P04-052,Birchwood Terrace,052,2026-01-19,Moved out,Michael Harris,1648.46,1660.0,2026-03-13,Rent increase / price,True,0.0
+E00398,P08-031,Riverbend Lofts,031,2026-01-19,Renewed,Holly Valentine,3209.74,3315.0,,,False,0.0
+E00399,P06-076,Willow Park,076,2026-01-20,Moved out,Jamie Murphy,2048.81,2025.0,2026-02-14,Maintenance / unit condition,True,0.0
+E00400,P09-032,Oakhaven Apartments,032,2026-01-21,Renewed,Robin Brown,1785.42,1825.0,,,False,0.0
+E00401,P01-015,Cedar Commons,015,2026-01-22,Moved out,Jamie Williams,1724.84,1690.0,2026-02-16,Maintenance / unit condition,True,0.0
+E00402,P11-029,Meadowlark Place,029,2026-01-22,Renewed,Franklin Wright,1515.54,1570.0,,,False,0.0
+E00403,P07-033,Aspen Grove,033,2026-01-22,Renewed,Adam Burgess,1846.15,1920.0,,,False,0.0
+E00404,P11-034,Meadowlark Place,034,2026-01-23,Renewed,Jonathan Jacobson,1630.96,1670.0,,,False,0.0
+E00405,P06-061,Willow Park,061,2026-01-23,Renewed,Vanessa Howard,1908.32,1965.0,,,False,0.0
+E00406,P03-058,Maple Court,058,2026-01-24,Renewed,Alyssa Long,2461.04,2510.0,,,False,0.0
+E00407,P10-052,Stonebridge Villas,052,2026-01-24,Moved out,Gregory Johnson,2318.01,2275.0,2026-03-28,Needed different size / location,False,0.0
+E00408,P07-035,Aspen Grove,035,2026-01-24,Renewed,Sandra Drake,2131.19,2175.0,,,False,0.0
+E00409,P09-039,Oakhaven Apartments,039,2026-01-25,Moved out,Tiffany Hill,1468.15,1775.0,2026-03-19,Needed different size / location,False,0.0
+E00410,P08-010,Riverbend Lofts,010,2026-01-26,Renewed,Mary Escobar,2622.93,2710.0,,,False,0.0
+E00411,P10-009,Stonebridge Villas,009,2026-01-27,Renewed,Kathleen Robertson,2104.51,2165.0,,,False,0.0
+E00412,P03-030,Maple Court,030,2026-01-28,Renewed,David Alvarez,1706.73,1775.0,,,False,0.0
+E00413,P01-046,Cedar Commons,046,2026-01-28,Renewed,Angelica Tucker,1899.2,1980.0,,,False,0.0
+E00414,P03-069,Maple Court,069,2026-01-28,Renewed,Michael Elliott,1617.52,1655.0,,,False,0.0
+E00415,P01-016,Cedar Commons,016,2026-01-28,Renewed,Brian Ramirez,2377.28,2410.0,,,False,0.0
+E00416,P12-037,Ironwood Residences,037,2026-01-29,Moved out,Richard James,2939.61,2890.0,2026-03-01,Other / personal,False,0.0
+E00417,P04-055,Birchwood Terrace,055,2026-01-29,Moved out,Kristin Glass,2022.49,2065.0,2026-02-23,Safety / neighbors,True,0.0
+E00418,P03-032,Maple Court,032,2026-01-29,Renewed,Cheyenne Horton,1498.7,1550.0,,,False,0.0
+E00419,P06-065,Willow Park,065,2026-01-30,Renewed,Dana Martinez,2436.58,2500.0,,,False,0.0
+E00420,P01-014,Cedar Commons,014,2026-01-30,Moved out,Raymond Harper MD,2016.41,2025.0,2026-03-13,Safety / neighbors,True,0.0
+E00421,P03-070,Maple Court,070,2026-01-30,Renewed,Michael Wang,1574.4,1620.0,,,False,0.0
+E00422,P09-076,Oakhaven Apartments,076,2026-01-30,Renewed,William Day,1281.45,1320.0,,,False,0.0
+E00423,P10-021,Stonebridge Villas,021,2026-01-31,Renewed,Nicole Gonzalez,1683.08,1740.0,,,False,0.0
+E00424,P04-033,Birchwood Terrace,033,2026-02-02,Renewed,Brian Lee,2080.8,2140.0,,,False,0.0
+E00425,P01-006,Cedar Commons,006,2026-02-02,Moved out,Jaime Phelps,1857.38,1795.0,2026-04-04,Management / service,True,0.0
+E00426,P01-024,Cedar Commons,024,2026-02-03,Moved out,Kevin Richardson,2247.61,2325.0,2026-03-26,Other / personal,False,0.0
+E00427,P05-036,Sunset Ridge,036,2026-02-03,Moved out,Michael Griffith,3380.95,3335.0,2026-03-05,Needed different size / location,False,0.0
+E00428,P05-034,Sunset Ridge,034,2026-02-04,Renewed,Joshua Reed,2849.15,2890.0,,,False,0.0
+E00429,P09-047,Oakhaven Apartments,047,2026-02-04,Renewed,Lance Simmons,1133.9,1165.0,,,False,0.0
+E00430,P07-058,Aspen Grove,058,2026-02-04,Renewed,Lisa Hunter,2439.0,2515.0,,,False,0.0
+E00431,P03-061,Maple Court,061,2026-02-05,Renewed,Joel Williams,1581.68,1630.0,,,False,0.0
+E00432,P11-019,Meadowlark Place,019,2026-02-05,Moved out,Craig Anderson,1149.24,1495.0,2026-02-19,Management / service,True,0.0
+E00433,P11-014,Meadowlark Place,014,2026-02-06,Renewed,Susan Thompson,1442.7,1480.0,,,False,0.0
+E00434,P05-029,Sunset Ridge,029,2026-02-06,Renewed,Katie Suarez,3653.43,3690.0,,,False,0.0
+E00435,P12-030,Ironwood Residences,030,2026-02-07,Renewed,Eric Thomas,3138.42,3275.0,,,False,0.0
+E00436,P12-001,Ironwood Residences,001,2026-02-07,Moved out,Philip Miller,2668.96,2565.0,2026-02-19,Bought a home,False,4.3
+E00437,P07-017,Aspen Grove,017,2026-02-07,Moved out,Sharon Gomez,1763.5,1975.0,2026-02-20,Management / service,True,0.0
+E00438,P08-012,Riverbend Lofts,012,2026-02-07,Renewed,Gregory Ponce,3176.99,3275.0,,,False,0.0
+E00439,P03-028,Maple Court,028,2026-02-09,Moved out,John Murray,1565.75,1875.0,2026-03-16,Needed different size / location,False,0.0
+E00440,P04-012,Birchwood Terrace,012,2026-02-09,Renewed,Debra Morton,2424.78,2520.0,,,False,0.0
+E00441,P03-021,Maple Court,021,2026-02-10,Renewed,Megan Orr,1528.57,1570.0,,,False,0.0
+E00442,P08-002,Riverbend Lofts,002,2026-02-11,Renewed,Antonio Garcia,2918.6,2995.0,,,False,0.0
+E00443,P10-029,Stonebridge Villas,029,2026-02-11,Moved out,Samantha Johnson,2186.59,2180.0,2026-03-02,Rent increase / price,True,0.0
+E00444,P06-067,Willow Park,067,2026-02-13,Moved out,Alicia Weiss,1459.16,1460.0,2026-03-10,Other / personal,False,0.0
+E00445,P05-003,Sunset Ridge,003,2026-02-13,Renewed,Kathryn Snyder,2928.92,3015.0,,,False,0.0
+E00446,P01-018,Cedar Commons,018,2026-02-13,Moved out,Stephen Boyd,2052.53,2105.0,2026-03-04,Management / service,True,0.0
+E00447,P01-040,Cedar Commons,040,2026-02-13,Moved out,Cameron Miller,2481.88,2550.0,2026-04-16,Bought a home,False,0.0
+E00448,P08-022,Riverbend Lofts,022,2026-02-14,Renewed,Ashley Wise,3265.31,3380.0,,,False,0.0
+E00449,P12-044,Ironwood Residences,044,2026-02-14,Moved out,Kimberly Smith,3289.85,3335.0,2026-03-05,Rent increase / price,True,0.0
+E00450,P05-009,Sunset Ridge,009,2026-02-14,Moved out,Lonnie Brown,2280.59,2245.0,2026-03-31,Other / personal,False,0.0
+E00451,P03-005,Maple Court,005,2026-02-14,Renewed,Crystal Johnson,2186.98,2260.0,,,False,0.0
+E00452,P09-027,Oakhaven Apartments,027,2026-02-15,Renewed,Richard Cooper,2005.39,2070.0,,,False,0.0
+E00453,P07-056,Aspen Grove,056,2026-02-15,Moved out,Jennifer Blackwell,1447.87,1805.0,2026-04-04,Needed different size / location,False,0.0
+E00454,P04-006,Birchwood Terrace,006,2026-02-17,Renewed,Dr. Hannah Patterson,2804.88,2915.0,,,False,0.0
+E00455,P08-009,Riverbend Lofts,009,2026-02-17,Moved out,Lisa Ward,3263.5,3290.0,2026-03-12,Management / service,True,5.3
+E00456,P12-066,Ironwood Residences,066,2026-02-18,Renewed,Pamela Gutierrez,3057.25,3115.0,,,False,0.0
+E00457,P06-036,Willow Park,036,2026-02-19,Renewed,Carlos Ryan,2773.17,2805.0,,,False,0.0
+E00458,P03-044,Maple Court,044,2026-02-19,Renewed,Denise Jones,1650.38,1700.0,,,False,0.0
+E00459,P06-013,Willow Park,013,2026-02-19,Renewed,Stephanie Williams,1896.05,1970.0,,,False,0.0
+E00460,P11-013,Meadowlark Place,013,2026-02-20,Renewed,Kimberly Sharp,2321.55,2410.0,,,False,0.0
+E00461,P11-004,Meadowlark Place,004,2026-02-20,Moved out,Sarah Hoffman MD,1485.81,1715.0,2026-03-14,Needed different size / location,False,0.0
+E00462,P06-074,Willow Park,074,2026-02-21,Moved out,Dana Patterson,2473.55,2485.0,2026-04-05,Job / relocation,False,2.2
+E00463,P08-019,Riverbend Lofts,019,2026-02-21,Moved out,Kelli Bennett,2815.26,2705.0,2026-03-19,Bought a home,False,5.9
+E00464,P02-042,Harborview Flats,042,2026-02-21,Renewed,Christine Wright,2344.18,2400.0,,,False,0.0
+E00465,P06-056,Willow Park,056,2026-02-23,Renewed,Brett Burns,2520.57,2580.0,,,False,0.0
+E00466,P06-028,Willow Park,028,2026-02-23,Renewed,Amber Obrien,2747.9,2840.0,,,False,0.0
+E00467,P06-035,Willow Park,035,2026-02-23,Moved out,Joshua Graves,2190.44,2185.0,2026-03-24,Needed different size / location,False,0.0
+E00468,P03-026,Maple Court,026,2026-02-23,Renewed,Rebecca Jackson,949.05,965.0,,,False,0.0
+E00469,P04-001,Birchwood Terrace,001,2026-02-24,Moved out,Michael Tucker,2205.77,2230.0,2026-03-16,Safety / neighbors,True,0.0
+E00470,P05-010,Sunset Ridge,010,2026-02-26,Moved out,David Landry,3272.6,3245.0,2026-03-25,Bought a home,False,0.0
+E00471,P06-014,Willow Park,014,2026-02-26,Moved out,Kayla Mora,2465.86,2415.0,2026-04-21,Management / service,True,0.0
+E00472,P10-001,Stonebridge Villas,001,2026-02-26,Renewed,Mr. Lawrence Edwards,2547.68,2625.0,,,False,0.0
+E00473,P11-023,Meadowlark Place,023,2026-02-26,Renewed,Brian Martin,1404.08,1445.0,,,False,0.0
+E00474,P06-048,Willow Park,048,2026-02-28,Renewed,Stephen Hoffman,1783.19,1840.0,,,False,0.0
+E00475,P04-039,Birchwood Terrace,039,2026-03-01,Moved out,Joel Martinez,2466.43,2405.0,2026-03-30,Job / relocation,False,0.0
+E00476,P03-050,Maple Court,050,2026-03-02,Renewed,Melissa Gates,2692.69,2760.0,,,False,0.0
+E00477,P06-015,Willow Park,015,2026-03-02,Moved out,Debra Schultz,1904.37,1930.0,2026-03-25,Rent increase / price,True,0.0
+E00478,P11-001,Meadowlark Place,001,2026-03-02,Renewed,Dwayne Klein,2021.97,2075.0,,,False,0.0
+E00479,P05-015,Sunset Ridge,015,2026-03-03,Renewed,Frank Cordova,2564.75,2655.0,,,False,0.0
+E00480,P06-002,Willow Park,002,2026-03-03,Moved out,Karen Scott,2760.63,2805.0,2026-03-23,Needed different size / location,False,0.0
+E00481,P02-021,Harborview Flats,021,2026-03-03,Moved out,Joshua Austin,3151.9,3150.0,2026-03-11,Rent increase / price,True,4.2
+E00482,P04-042,Birchwood Terrace,042,2026-03-04,Moved out,Alexandra Edwards,1797.96,1820.0,2026-03-15,Rent increase / price,True,0.0
+E00483,P07-039,Aspen Grove,039,2026-03-04,Renewed,Brian Smith,1664.09,1720.0,,,False,0.0
+E00484,P06-031,Willow Park,031,2026-03-05,Renewed,Megan Le,2283.22,2390.0,,,False,0.0
+E00485,P01-031,Cedar Commons,031,2026-03-05,Renewed,Anthony Rodriguez,2418.55,2525.0,,,False,0.0
+E00486,P09-089,Oakhaven Apartments,089,2026-03-05,Moved out,Angel Johnson,1171.65,1275.0,2026-04-08,Maintenance / unit condition,True,0.0
+E00487,P07-014,Aspen Grove,014,2026-03-06,Moved out,Erin Barrera,1285.19,1540.0,2026-04-29,Job / relocation,False,0.0
+E00488,P10-048,Stonebridge Villas,048,2026-03-07,Renewed,Daniel Bush,2244.5,2325.0,,,False,0.0
+E00489,P01-008,Cedar Commons,008,2026-03-09,Renewed,Gina Moore,2143.35,2230.0,,,False,0.0
+E00490,P08-011,Riverbend Lofts,011,2026-03-09,Moved out,Sarah Cruz MD,3773.28,3705.0,2026-03-31,Maintenance / unit condition,True,0.0
+E00491,P06-024,Willow Park,024,2026-03-10,Renewed,John Young,2605.93,2695.0,,,False,0.0
+E00492,P10-010,Stonebridge Villas,010,2026-03-11,Moved out,Charles Richardson,2999.94,3035.0,2026-04-20,Safety / neighbors,True,0.0
+E00493,P05-022,Sunset Ridge,022,2026-03-11,Moved out,Cindy Martinez,2659.79,2615.0,2026-03-24,Needed different size / location,False,0.0
+E00494,P09-080,Oakhaven Apartments,080,2026-03-11,Renewed,Amy Martinez,1203.07,1240.0,,,False,0.0
+E00495,P09-057,Oakhaven Apartments,057,2026-03-12,Moved out,Michelle Turner,1536.2,1660.0,2026-05-04,Bought a home,False,0.0
+E00496,P09-001,Oakhaven Apartments,001,2026-03-12,Moved out,Andre English,1379.33,1490.0,2026-05-11,Bought a home,False,0.0
+E00497,P06-062,Willow Park,062,2026-03-12,Moved out,Leslie Lloyd DVM,2066.53,2080.0,2026-04-05,Other / personal,False,0.0
+E00498,P03-020,Maple Court,020,2026-03-13,Renewed,Cameron Fisher,1659.18,1700.0,,,False,0.0
+E00499,P09-062,Oakhaven Apartments,062,2026-03-14,Moved out,Lawrence Cortez,1348.68,1565.0,2026-05-10,Bought a home,False,0.0
+E00500,P05-012,Sunset Ridge,012,2026-03-16,Moved out,Herbert Parker,3034.24,3080.0,2026-05-01,Rent increase / price,True,8.0
+E00501,P06-038,Willow Park,038,2026-03-16,Moved out,Jacqueline West MD,1569.61,1530.0,2026-04-02,Needed different size / location,False,0.0
+E00502,P09-065,Oakhaven Apartments,065,2026-03-17,Moved out,Carl Gonzales,1104.87,1295.0,2026-04-21,Rent increase / price,True,0.0
+E00503,P09-028,Oakhaven Apartments,028,2026-03-18,Moved out,Audrey Farmer,1348.05,1665.0,2026-05-20,Bought a home,False,0.0
+E00504,P07-005,Aspen Grove,005,2026-03-18,Renewed,Bryan Gomez,3079.16,3155.0,,,False,0.0
+E00505,P03-033,Maple Court,033,2026-03-19,Moved out,Charles Brock,1834.62,2255.0,2026-04-28,Maintenance / unit condition,True,0.0
+E00506,P08-003,Riverbend Lofts,003,2026-03-20,Renewed,Gwendolyn Klein,2586.93,2675.0,,,False,0.0
+E00507,P06-087,Willow Park,087,2026-03-20,Renewed,Jesse Perry,2505.43,2565.0,,,False,0.0
+E00508,P11-012,Meadowlark Place,012,2026-03-20,Moved out,Brooke Roberts,1636.66,1780.0,2026-04-16,Needed different size / location,False,0.0
+E00509,P02-041,Harborview Flats,041,2026-03-21,Renewed,Rebecca Valencia,2272.15,2330.0,,,False,0.0
+E00510,P08-032,Riverbend Lofts,032,2026-03-22,Renewed,Mrs. Diane Reyes,2753.97,2870.0,,,False,0.0
+E00511,P06-011,Willow Park,011,2026-03-23,Renewed,Jessica Garcia,2916.89,3005.0,,,False,0.0
+E00512,P11-007,Meadowlark Place,007,2026-03-23,Renewed,Jason Love,1880.96,1925.0,,,False,0.0
+E00513,P09-023,Oakhaven Apartments,023,2026-03-24,Moved out,Nichole Wade,1152.05,1310.0,2026-04-08,Rent increase / price,True,0.0
+E00514,P10-039,Stonebridge Villas,039,2026-03-24,Moved out,Brandon Huff,2546.88,2520.0,2026-04-02,Rent increase / price,True,0.0
+E00515,P07-031,Aspen Grove,031,2026-03-24,Renewed,Aimee Turner,2521.21,2595.0,,,False,0.0
+E00516,P07-055,Aspen Grove,055,2026-03-24,Renewed,Anthony Romero,2847.02,2910.0,,,False,0.0
+E00517,P03-024,Maple Court,024,2026-03-24,Renewed,Mary Marshall,1999.75,2075.0,,,False,0.0
+E00518,P10-030,Stonebridge Villas,030,2026-03-25,Renewed,Molly Watts,2162.84,2240.0,,,False,0.0
+E00519,P03-017,Maple Court,017,2026-03-25,Moved out,Timothy Fowler,1428.31,1445.0,2026-04-12,Safety / neighbors,True,0.0
+E00520,P08-016,Riverbend Lofts,016,2026-03-26,Renewed,Nancy Jennings,2569.09,2655.0,,,False,0.0
+E00521,P08-025,Riverbend Lofts,025,2026-03-26,Moved out,Michael Freeman,3868.48,3635.0,2026-04-25,Rent increase / price,True,5.1
+E00522,P09-054,Oakhaven Apartments,054,2026-03-26,Renewed,Lawrence Harrington,1603.35,1645.0,,,False,0.0
+E00523,P01-033,Cedar Commons,033,2026-03-26,Renewed,James Ferrell,2989.97,3095.0,,,False,0.0
+E00524,P09-049,Oakhaven Apartments,049,2026-03-26,Moved out,Kevin Shaw,1856.93,2200.0,2026-05-06,Needed different size / location,False,0.0
+E00525,P07-003,Aspen Grove,003,2026-03-27,Renewed,Parker Cain,1954.64,2005.0,,,False,0.0
+E00526,P06-016,Willow Park,016,2026-03-28,Renewed,Carolyn Miller,2031.49,2105.0,,,False,0.0
+E00527,P02-022,Harborview Flats,022,2026-03-28,Renewed,Paul Jones,2891.14,2975.0,,,False,0.0
+E00528,P04-043,Birchwood Terrace,043,2026-03-28,Renewed,Bailey Duran DDS,2038.46,2100.0,,,False,0.0
+E00529,P10-013,Stonebridge Villas,013,2026-03-28,Renewed,Julie Herrera,2585.83,2700.0,,,False,0.0
+E00530,P02-003,Harborview Flats,003,2026-03-29,Renewed,Amber Kidd,2790.17,2940.0,,,False,0.0
+E00531,P12-051,Ironwood Residences,051,2026-03-29,Renewed,Joseph Howard,3077.0,3180.0,,,False,0.0
+E00532,P11-006,Meadowlark Place,006,2026-03-31,Moved out,Joshua Peterson,1570.46,1775.0,2026-05-04,Bought a home,False,0.0
+E00533,P02-038,Harborview Flats,038,2026-04-01,Renewed,Stephen Mckee,2869.11,2970.0,,,False,0.0
+E00534,P12-039,Ironwood Residences,039,2026-04-02,Renewed,Tracy Grant,2867.58,2990.0,,,False,0.0
+E00535,P03-057,Maple Court,057,2026-04-02,Moved out,David Keith,1144.98,1445.0,2026-04-13,Job / relocation,False,0.0
+E00536,P05-039,Sunset Ridge,039,2026-04-03,Moved out,Dylan Robles,3045.26,2990.0,2026-04-28,Management / service,True,0.0
+E00537,P10-008,Stonebridge Villas,008,2026-04-05,Renewed,Kenneth Edwards,3144.11,3240.0,,,False,0.0
+E00538,P10-028,Stonebridge Villas,028,2026-04-05,Renewed,Robert Richardson,2702.02,2775.0,,,False,0.0
+E00539,P04-015,Birchwood Terrace,015,2026-04-06,Moved out,Lisa Sanchez,2015.67,2000.0,2026-04-28,Other / personal,False,2.0
+E00540,P01-012,Cedar Commons,012,2026-04-07,Moved out,Samuel Wilkins,2096.96,2050.0,2026-05-02,Rent increase / price,True,3.2
+E00541,P03-072,Maple Court,072,2026-04-07,Renewed,Robert Oconnell,1795.13,1825.0,,,False,0.0
+E00542,P03-048,Maple Court,048,2026-04-07,Moved out,Christopher Mays,1258.15,1430.0,2026-05-27,Management / service,True,0.0
+E00543,P07-042,Aspen Grove,042,2026-04-09,Moved out,Kayla Miller,2541.39,2915.0,2026-05-06,Needed different size / location,False,0.0
+E00544,P11-026,Meadowlark Place,026,2026-04-09,Renewed,Casey Chase,1827.2,1890.0,,,False,0.0
+E00545,P01-059,Cedar Commons,059,2026-04-10,Renewed,Richard Aguirre,1851.88,1905.0,,,False,0.0
+E00546,P07-004,Aspen Grove,004,2026-04-10,Renewed,Laurie Hoffman,1526.31,1570.0,,,False,0.0
+E00547,P02-004,Harborview Flats,004,2026-04-10,Renewed,Tracy House,2819.57,2930.0,,,False,0.0
+E00548,P01-003,Cedar Commons,003,2026-04-10,Moved out,Michael Mcguire,2948.43,2950.0,2026-04-27,Maintenance / unit condition,True,0.0
+E00549,P01-010,Cedar Commons,010,2026-04-10,Renewed,Ryan Munoz,2582.77,2670.0,,,False,0.0
+E00550,P03-063,Maple Court,063,2026-04-11,Renewed,Jamie Walton,1002.12,1030.0,,,False,0.0
+E00551,P02-001,Harborview Flats,001,2026-04-11,Renewed,Donald Wright,3134.71,3240.0,,,False,0.0
+E00552,P06-004,Willow Park,004,2026-04-12,Moved out,Rebecca Hughes,1926.17,1930.0,2026-05-07,Other / personal,False,0.0
+E00553,P02-025,Harborview Flats,025,2026-04-14,Renewed,Shirley Suarez,2347.27,2420.0,,,False,0.0
+E00554,P04-029,Birchwood Terrace,029,2026-04-14,Moved out,Kari Smith,1763.16,,,Rent increase / price,True,0.0
+E00555,P11-021,Meadowlark Place,021,2026-04-14,Moved out,Alexis Davis,2275.16,,,Rent increase / price,True,0.0
+E00556,P06-068,Willow Park,068,2026-04-14,Moved out,Stephanie Rogers,2357.42,2440.0,2026-05-01,Safety / neighbors,True,0.0
+E00557,P05-018,Sunset Ridge,018,2026-04-14,Renewed,Isaiah Avila,3452.91,3595.0,,,False,0.0
+E00558,P09-092,Oakhaven Apartments,092,2026-04-15,Renewed,Mark Jimenez,1451.5,1495.0,,,False,0.0
+E00559,P09-085,Oakhaven Apartments,085,2026-04-15,Moved out,Emily Miller,1695.43,,,Rent increase / price,True,0.0
+E00560,P07-006,Aspen Grove,006,2026-04-15,Moved out,Carlos Brown,2670.34,,,Needed different size / location,False,0.0
+E00561,P06-040,Willow Park,040,2026-04-16,Renewed,Victor Taylor,1794.31,1860.0,,,False,0.0
+E00562,P04-023,Birchwood Terrace,023,2026-04-17,Moved out,Lori Morris,2596.14,,,Safety / neighbors,True,0.0
+E00563,P10-047,Stonebridge Villas,047,2026-04-17,Renewed,William Evans,1810.58,1825.0,,,False,0.0
+E00564,P11-032,Meadowlark Place,032,2026-04-19,Renewed,Matthew Schwartz,1237.82,1275.0,,,False,0.0
+E00565,P08-008,Riverbend Lofts,008,2026-04-19,Moved out,Shane Reyes,3315.08,3290.0,2026-05-15,Other / personal,False,0.0
+E00566,P04-031,Birchwood Terrace,031,2026-04-20,Renewed,Cathy Robinson,2122.39,2200.0,,,False,0.0
+E00567,P09-059,Oakhaven Apartments,059,2026-04-20,Moved out,Harold Castillo,2154.32,2390.0,2026-05-27,Maintenance / unit condition,True,0.0
+E00568,P11-009,Meadowlark Place,009,2026-04-20,Renewed,Tanya Russell,1436.81,1490.0,,,False,0.0
+E00569,P03-029,Maple Court,029,2026-04-20,Renewed,Courtney Gonzalez,1052.26,1070.0,,,False,0.0
+E00570,P01-030,Cedar Commons,030,2026-04-21,Renewed,Zachary Hicks,2508.58,2540.0,,,False,0.0
+E00571,P09-026,Oakhaven Apartments,026,2026-04-21,Renewed,Veronica King,1346.1,1385.0,,,False,0.0
+E00572,P08-036,Riverbend Lofts,036,2026-04-21,Moved out,Jason Flynn,3241.26,3100.0,2026-05-07,Maintenance / unit condition,True,6.3
+E00573,P02-013,Harborview Flats,013,2026-04-21,Renewed,Amy Silva,2534.55,2620.0,,,False,0.0
+E00574,P06-046,Willow Park,046,2026-04-21,Moved out,Devon Foster,2052.74,,,Job / relocation,False,0.0
+E00575,P12-022,Ironwood Residences,022,2026-04-21,Renewed,Jennifer Miranda,2774.6,2885.0,,,False,0.0
+E00576,P03-004,Maple Court,004,2026-04-22,Moved out,Martin Mitchell,1651.32,,,Bought a home,False,0.0
+E00577,P01-044,Cedar Commons,044,2026-04-22,Renewed,Sherry Decker,2571.07,2670.0,,,False,0.0
+E00578,P02-002,Harborview Flats,002,2026-04-23,Moved out,Susan Murphy,2840.87,2820.0,2026-05-13,Rent increase / price,True,5.0
+E00579,P08-018,Riverbend Lofts,018,2026-04-23,Moved out,Keith Lowery,2400.68,,,Bought a home,False,0.0
+E00580,P09-071,Oakhaven Apartments,071,2026-04-23,Renewed,Allison Spencer,1241.46,1290.0,,,False,0.0
+E00581,P02-009,Harborview Flats,009,2026-04-23,Moved out,Michelle Hanna,2811.6,,,Needed different size / location,False,0.0
+E00582,P09-087,Oakhaven Apartments,087,2026-04-23,Renewed,Todd Moore,1334.94,1370.0,,,False,0.0
+E00583,P07-026,Aspen Grove,026,2026-04-24,Moved out,Robert Bell,1964.91,2410.0,2026-05-30,Job / relocation,False,0.0
+E00584,P07-041,Aspen Grove,041,2026-04-24,Moved out,Rebecca Yang,1334.41,1720.0,2026-05-22,Rent increase / price,True,0.0
+E00585,P04-047,Birchwood Terrace,047,2026-04-24,Moved out,Andrea Wilson,1383.22,1355.0,2026-05-13,Bought a home,False,0.0
+E00586,P05-017,Sunset Ridge,017,2026-04-24,Renewed,Kimberly Gutierrez,2632.81,2740.0,,,False,0.0
+E00587,P09-090,Oakhaven Apartments,090,2026-04-25,Moved out,Gregory Martin,1415.91,1815.0,2026-05-31,Rent increase / price,True,0.0
+E00588,P04-053,Birchwood Terrace,053,2026-04-25,Renewed,Lori Guerrero,1723.36,1740.0,,,False,0.0
+E00589,P12-004,Ironwood Residences,004,2026-04-25,Moved out,Jeremiah Stone,2803.55,2815.0,2026-05-03,Job / relocation,False,0.0
+E00590,P09-017,Oakhaven Apartments,017,2026-04-26,Moved out,Jennifer Bass,1754.33,,,Other / personal,False,0.0
+E00591,P11-025,Meadowlark Place,025,2026-04-26,Renewed,Rachel Bradley,1461.07,1515.0,,,False,0.0
+E00592,P09-019,Oakhaven Apartments,019,2026-04-26,Renewed,Taylor Carlson,1130.65,1165.0,,,False,0.0
+E00593,P12-047,Ironwood Residences,047,2026-04-26,Moved out,William Rivera,3900.94,3790.0,2026-05-10,Maintenance / unit condition,True,6.3
+E00594,P07-047,Aspen Grove,047,2026-04-27,Moved out,Alan Nguyen,1573.81,1860.0,2026-05-14,Other / personal,False,0.0
+E00595,P03-060,Maple Court,060,2026-04-27,Moved out,Elizabeth Todd,901.15,,,Job / relocation,False,0.0
+E00596,P01-034,Cedar Commons,034,2026-04-28,Renewed,Tricia Valencia,1582.29,1645.0,,,False,0.0
+E00597,P08-017,Riverbend Lofts,017,2026-04-29,Moved out,Melanie Arnold,3023.23,2965.0,2026-05-22,Management / service,True,0.0
+E00598,P09-033,Oakhaven Apartments,033,2026-04-29,Renewed,Judith Carter,1423.08,1480.0,,,False,0.0
+E00599,P12-067,Ironwood Residences,067,2026-04-29,Renewed,Crystal Mann,2811.38,2925.0,,,False,0.0
+E00600,P06-059,Willow Park,059,2026-04-30,Renewed,Jeremy Sampson,1536.92,1600.0,,,False,0.0
+E00601,P01-036,Cedar Commons,036,2026-05-01,Moved out,Tina Espinoza,2605.28,2495.0,2026-05-30,Bought a home,False,0.0
+E00602,P01-011,Cedar Commons,011,2026-05-02,Moved out,Nicole Hamilton,2556.56,2525.0,2026-05-18,Rent increase / price,True,4.5
+E00603,P12-055,Ironwood Residences,055,2026-05-02,Renewed,Justin Walker,3501.75,3645.0,,,False,0.0
+E00604,P09-040,Oakhaven Apartments,040,2026-05-02,Moved out,Paula Williams,2629.91,,,Management / service,True,0.0
+E00605,P06-084,Willow Park,084,2026-05-03,Moved out,Kenneth Gentry,1551.55,1525.0,2026-05-23,Bought a home,False,0.0
+E00606,P07-028,Aspen Grove,028,2026-05-05,Moved out,Lisa Williams,1685.51,1845.0,2026-05-28,Safety / neighbors,True,0.0
+E00607,P08-013,Riverbend Lofts,013,2026-05-05,Moved out,Teresa Howard,2494.48,2455.0,2026-05-30,Bought a home,False,7.9
+E00608,P02-047,Harborview Flats,047,2026-05-06,Moved out,Angel Warner,2433.46,2370.0,2026-05-28,Maintenance / unit condition,True,5.1
+E00609,P01-020,Cedar Commons,020,2026-05-06,Moved out,Meghan Davis,2994.31,,,Bought a home,False,0.0
+E00610,P02-015,Harborview Flats,015,2026-05-07,Moved out,Daniel Reyes,2339.46,2335.0,2026-05-26,Needed different size / location,False,7.9
+E00611,P09-045,Oakhaven Apartments,045,2026-05-07,Renewed,Samantha Gardner,2454.15,2520.0,,,False,0.0
+E00612,P12-029,Ironwood Residences,029,2026-05-08,Moved out,Deborah Rodgers,4040.75,4010.0,2026-05-26,Rent increase / price,True,0.0
+E00613,P02-028,Harborview Flats,028,2026-05-08,Moved out,Michael Martinez,2366.69,2335.0,2026-05-18,Job / relocation,False,0.0
+E00614,P04-019,Birchwood Terrace,019,2026-05-08,Renewed,Spencer Haynes,2108.41,2205.0,,,False,0.0
+E00615,P11-044,Meadowlark Place,044,2026-05-08,Renewed,Laura Hernandez,1408.6,1450.0,,,False,0.0
+E00616,P10-003,Stonebridge Villas,003,2026-05-09,Renewed,Bianca Wood,2503.18,2540.0,,,False,0.0
+E00617,P07-007,Aspen Grove,007,2026-05-09,Renewed,Nicole Parrish,2974.63,3065.0,,,False,0.0
+E00618,P05-014,Sunset Ridge,014,2026-05-10,Renewed,Krista Gibson,3001.43,3125.0,,,False,0.0
+E00619,P10-043,Stonebridge Villas,043,2026-05-11,Moved out,Mark Lyons,2583.7,2605.0,2026-05-26,Rent increase / price,True,0.0
+E00620,P03-008,Maple Court,008,2026-05-11,Renewed,William Herrera,1540.17,1590.0,,,False,0.0
+E00621,P09-079,Oakhaven Apartments,079,2026-05-11,Renewed,Vincent Reynolds,1865.51,1935.0,,,False,0.0
+E00622,P05-011,Sunset Ridge,011,2026-05-12,Renewed,Brandon Bailey MD,3234.91,3370.0,,,False,0.0
+E00623,P09-037,Oakhaven Apartments,037,2026-05-12,Renewed,Dawn Mullins,1621.5,1675.0,,,False,0.0
+E00624,P10-051,Stonebridge Villas,051,2026-05-12,Moved out,Heather Rodriguez,2087.93,2140.0,2026-05-30,Rent increase / price,True,0.0
+E00625,P10-046,Stonebridge Villas,046,2026-05-14,Renewed,David Grant,2582.27,2655.0,,,False,0.0
+E00626,P09-035,Oakhaven Apartments,035,2026-05-14,Moved out,Antonio Torres,1904.08,,,Needed different size / location,False,0.0
+E00627,P10-022,Stonebridge Villas,022,2026-05-14,Moved out,Linda Gray,2853.01,2745.0,2026-05-30,Needed different size / location,False,0.0
+E00628,P07-001,Aspen Grove,001,2026-05-14,Renewed,Christian Leblanc,1570.9,1625.0,,,False,0.0
+E00629,P07-018,Aspen Grove,018,2026-05-14,Renewed,Ellen Morgan,2174.28,2245.0,,,False,0.0
+E00630,P02-032,Harborview Flats,032,2026-05-16,Renewed,Christina Walters,2767.8,2895.0,,,False,0.0
+E00631,P03-006,Maple Court,006,2026-05-16,Renewed,Garrett Lin,1757.43,1775.0,,,False,0.0
+E00632,P12-061,Ironwood Residences,061,2026-05-18,Moved out,Michael Townsend,3338.32,3450.0,2026-07-05,Needed different size / location,False,6.8
+E00633,P09-012,Oakhaven Apartments,012,2026-05-18,Renewed,Ruben Dunn,1429.65,1460.0,,,False,0.0
+E00634,P02-016,Harborview Flats,016,2026-05-18,Renewed,Megan Young,2850.2,2890.0,,,False,0.0
+E00635,P11-037,Meadowlark Place,037,2026-05-19,Renewed,Casey Hernandez,1586.81,1635.0,,,False,0.0
+E00636,P09-055,Oakhaven Apartments,055,2026-05-20,Renewed,Austin Osborne,1861.38,1935.0,,,False,0.0
+E00637,P04-009,Birchwood Terrace,009,2026-05-20,Moved out,Steven Conley,2251.87,2485.0,2026-07-12,Needed different size / location,False,0.0
+E00638,P11-040,Meadowlark Place,040,2026-05-21,Renewed,Colleen Wright,1980.87,2040.0,,,False,0.0
+E00639,P09-067,Oakhaven Apartments,067,2026-05-22,Renewed,Joshua Vance,1588.94,1630.0,,,False,0.0
+E00640,P04-032,Birchwood Terrace,032,2026-05-23,Renewed,Dr. William Warren,2435.43,2540.0,,,False,0.0
+E00641,P06-058,Willow Park,058,2026-05-24,Moved out,Judith Hale,1501.59,,,Rent increase / price,True,0.0
+E00642,P10-007,Stonebridge Villas,007,2026-05-24,Renewed,Sean Moore,2262.99,2295.0,,,False,0.0
+E00643,P09-088,Oakhaven Apartments,088,2026-05-25,Renewed,Michelle Jacobs,1735.58,1795.0,,,False,0.0
+E00644,P12-023,Ironwood Residences,023,2026-05-25,Renewed,Alexis Harris,2357.21,2420.0,,,False,0.0
+E00645,P07-038,Aspen Grove,038,2026-05-26,Renewed,Laura Mckinney,1845.0,1900.0,,,False,0.0
+E00646,P07-053,Aspen Grove,053,2026-05-27,Renewed,Lori Hernandez,2423.75,2510.0,,,False,0.0
+E00647,P07-027,Aspen Grove,027,2026-05-28,Moved out,Keith Miller,3062.9,3100.0,2026-07-03,Bought a home,False,0.0
+E00648,P03-001,Maple Court,001,2026-05-29,Renewed,Richard Rodriguez,1974.54,2020.0,,,False,0.0
+E00649,P09-094,Oakhaven Apartments,094,2026-05-30,Moved out,Emily Johnson,1425.75,,,Management / service,True,0.0
+E00650,P10-038,Stonebridge Villas,038,2026-05-30,Renewed,Christian Vaughn,3043.61,3100.0,,,False,0.0
+E00651,P06-025,Willow Park,025,2026-05-30,Renewed,Laura Haney,1521.53,1590.0,,,False,0.0
+E00652,P04-050,Birchwood Terrace,050,2026-05-31,Renewed,Kirk Carter,1383.84,1400.0,,,False,0.0
+E00653,P06-072,Willow Park,072,2026-05-31,Renewed,Cynthia Morris,1606.38,1640.0,,,False,0.0
+E00654,P09-014,Oakhaven Apartments,014,2026-06-06,Moved out,Bruce Lawson,2048.86,2620.0,2026-07-14,Needed different size / location,False,0.0
+E00655,P05-023,Sunset Ridge,023,2026-06-12,Moved out,Kelly Campbell,3679.51,3705.0,2026-07-11,Other / personal,False,0.0
+E00656,P11-016,Meadowlark Place,016,2026-06-13,Moved out,Michael Schmitt,1919.65,2445.0,2026-07-04,Rent increase / price,True,0.0
+E00657,P10-034,Stonebridge Villas,034,2026-06-15,Moved out,Robert Kirk,2439.41,2590.0,2026-07-07,Bought a home,False,0.0
+E00658,P12-019,Ironwood Residences,019,2026-06-15,Moved out,David Hoffman,3482.32,3760.0,2026-07-04,Rent increase / price,True,0.0
+E00659,P07-013,Aspen Grove,013,2026-06-18,Moved out,Rhonda Chavez,2094.02,,,Job / relocation,False,0.0
+E00660,P07-016,Aspen Grove,016,2026-06-19,Moved out,Loretta Franco,2039.49,2710.0,2026-07-19,Rent increase / price,True,0.0
+E00661,P09-011,Oakhaven Apartments,011,2026-06-20,Moved out,Scott Gould,1769.07,,,Maintenance / unit condition,True,0.0
+E00662,P09-072,Oakhaven Apartments,072,2026-06-20,Moved out,Martin Phillips,1942.95,,,Maintenance / unit condition,True,0.0
+E00663,P09-016,Oakhaven Apartments,016,2026-06-20,Moved out,Jason Gonzalez,1191.02,,,Management / service,True,0.0
+E00664,P09-053,Oakhaven Apartments,053,2026-06-21,Moved out,Douglas Shaw,1638.02,,,Job / relocation,False,0.0

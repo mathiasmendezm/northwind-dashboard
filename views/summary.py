@@ -6,6 +6,7 @@ import streamlit as st
 import metrics as m
 from constants import AS_OF
 from insights import CRITICAL, WARNING, WATCH, generate_recommendations
+from metrics import DEFAULT_TARGETS, Targets
 from ui.charts import waterfall
 from ui.theme import BAD, GOOD, MUTE, PRIMARY, WARN, action_card, kpi, md_money, money, page_head, section
 
@@ -18,13 +19,20 @@ _SEVERITY_STYLE = {
 _MONEY = st.column_config.NumberColumn(format="$%d")
 
 
-def _leak_table(name: str, df: pd.DataFrame) -> None:
+def _leak_table(name: str, df: pd.DataFrame, d: dict[str, pd.DataFrame]) -> None:
     """The units behind one bar of the waterfall, biggest dollar impact first."""
     if name == "Loss to lease":
-        show = df[["unit_id", "property", "tenant", "market_rent", "actual_rent", "gap"]]
-        cols = ["Unit ID", "Property", "Resident", "Market", "Paying", "Under market"]
-        note = ("occupied units renting below market — the renewal-pricing list, "
-                "within whatever increase local rent caps allow")
+        show = df[["unit_id", "property", "tenant", "market_rent", "actual_rent", "gap"]].copy()
+        if "properties" in d and "rent_stabilized" in d["properties"].columns:
+            rso = set(d["properties"].loc[d["properties"]["rent_stabilized"].astype(bool), "property"])
+            show["rso"] = ["RSO" if p in rso else "" for p in show["property"]]
+        else:
+            show["rso"] = ""
+        # Gaps that can be closed at renewal first; rent-stabilized gaps mostly wait for turnover.
+        show = show.sort_values(["rso", "gap"], ascending=[True, False])
+        cols = ["Unit ID", "Property", "Resident", "Market", "Paying", "Under market", "Rent-stabilized"]
+        note = ("occupied units renting below market — the renewal-pricing list. Non-stabilized "
+                "units come first: their gap can be closed at renewal, while RSO caps hold the rest")
     elif name == "Vacancy":
         show = df[["unit_id", "property", "status", "market_rent", "days_vacant"]]
         cols = ["Unit ID", "Property", "Status", "Market rent", "Days vacant"]
@@ -65,15 +73,15 @@ def _rent_waterfall(d: dict[str, pd.DataFrame]) -> None:
     tabs = st.tabs([f"{name} · {money(-value)}" for name, value in steps[1:-1]])
     for tab, (name, _) in zip(tabs, steps[1:-1], strict=True):
         with tab:
-            _leak_table(name, leaks[name])
+            _leak_table(name, leaks[name], d)
 
 
-def page_summary(d: dict[str, pd.DataFrame]) -> None:
+def page_summary(d: dict[str, pd.DataFrame], t: Targets = DEFAULT_TARGETS) -> None:
     page_head("Executive Summary",
               "Where the rent went this month and what needs attention first — across occupancy, "
               "collections, turnovers, retention, financials, maintenance and leasing")
 
-    recs = generate_recommendations(d)
+    recs = generate_recommendations(d, t)
     n_critical = sum(1 for r in recs if r["severity"] == CRITICAL)
     n_warning = sum(1 for r in recs if r["severity"] == WARNING)
     n_watch = sum(1 for r in recs if r["severity"] == WATCH)

@@ -4,8 +4,9 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
+from metrics import DEFAULT_TARGETS, Targets, grade_high
 from ui.charts import hbar, line_area
-from ui.theme import BAD, GOOD, PRIMARY, WARN, kpi, money, page_head, section
+from ui.theme import BAD, GOOD, PRIMARY, TONE, kpi, money, page_head, section
 
 OPEX_CATEGORIES = {
     "opex_property_tax": "Property tax",
@@ -18,7 +19,7 @@ OPEX_CATEGORIES = {
 }
 
 
-def page_financials(d: dict[str, pd.DataFrame]) -> None:
+def page_financials(d: dict[str, pd.DataFrame], t: Targets = DEFAULT_TARGETS) -> None:
     fin, props = d["financials_monthly"], d["properties"]
     page_head("Financials · NOI",
               "Net operating income, margin, and expense mix — the numbers that drive valuation")
@@ -44,8 +45,8 @@ def page_financials(d: dict[str, pd.DataFrame]) -> None:
         top=GOOD if noi_yoy >= 0 else BAD)
     kpi(c[1], "NOI margin", f"{noi_margin:.1f}%",
         f"{money(t12_opex)} opex on {money(t12_egi)} EGI",
-        GOOD if noi_margin >= 60 else WARN if noi_margin >= 50 else BAD,
-        top=GOOD if noi_margin >= 60 else WARN if noi_margin >= 50 else PRIMARY)
+        TONE[grade_high(noi_margin, t.noi_margin_good, t.noi_margin_warn)],
+        top=TONE[grade_high(noi_margin, t.noi_margin_good, t.noi_margin_warn)])
     kpi(c[2], "NOI per unit / mo", money(t12_noi / 12 / total_units), "per-door average")
     kpi(c[3], "Revenue per unit / mo", money(t12_egi / 12 / total_units), "effective gross income")
 
@@ -108,7 +109,7 @@ def page_financials(d: dict[str, pd.DataFrame]) -> None:
                .join(props.set_index("property")["unit_count"]))
     by_prop["margin"] = by_prop["noi"] / by_prop["egi"] * 100
     by_prop = by_prop.sort_values("noi")
-    colors = [GOOD if m >= 60 else WARN if m >= 50 else BAD for m in by_prop["margin"]]
+    colors = [TONE[grade_high(mg, t.noi_margin_good, t.noi_margin_warn)] for mg in by_prop["margin"]]
     fig4 = hbar(by_prop.index, by_prop["noi"], colors=colors,
                 text=[money(v) for v in by_prop["noi"]], textfont_size=10,
                 height=400, margin=dict(l=0, r=64, t=8, b=8),
@@ -116,5 +117,6 @@ def page_financials(d: dict[str, pd.DataFrame]) -> None:
                 customdata=by_prop["margin"],
                 hovertemplate="%{y}<br>NOI: %{x:$,.0f}<br>Margin: %{customdata:.1f}%<extra></extra>")
     st.plotly_chart(fig4, width="stretch", theme=None)
-    st.caption("Bar color reflects NOI margin — green ≥60%, amber 50-60%, red <50%. "
+    st.caption(f"Bar color reflects NOI margin — green ≥{t.noi_margin_good:g}%, amber "
+               f"{t.noi_margin_warn:g}-{t.noi_margin_good:g}%, red <{t.noi_margin_warn:g}%. "
               "Hover a bar for the exact margin.")

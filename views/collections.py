@@ -5,27 +5,28 @@ import streamlit as st
 
 import metrics as m
 from constants import AS_OF
+from metrics import DEFAULT_TARGETS, Targets
 from ui.charts import hbar, line_area, stacked_hbar
 from ui.theme import BAD, MUTE, PRIMARY, TONE, WARN, kpi, money, page_head, section
 
 AGING_COLORS = {"0–30 days": "#FBBF24", "31–60 days": WARN, "61–90 days": "#EA580C", "90+ days": BAD}
 
 
-def page_collections(d: dict[str, pd.DataFrame]) -> None:
+def page_collections(d: dict[str, pd.DataFrame], t: Targets = DEFAULT_TARGETS) -> None:
     rec, monthly = d["receivables"], d["collections_monthly"]
     month_label = pd.Timestamp(AS_OF).strftime("%B %Y")
     page_head("Collections",
               f"Rent collected in {month_label}, past-due balances by age, and who to call today")
 
     s = m.collections_summary(rec, monthly)
-    rate_tone = TONE[m.grade_high(s["rate"], m.COLLECTION_GOOD_PCT, m.COLLECTION_WARN_PCT)]
-    due_tone = TONE[m.grade_low(s["past_due_pct"], m.PAST_DUE_GOOD_PCT, m.PAST_DUE_WARN_PCT)]
-    debt_tone = TONE[m.grade_low(s["bad_debt_pct"], m.BAD_DEBT_GOOD_PCT, m.BAD_DEBT_WARN_PCT)]
+    rate_tone = TONE[m.grade_high(s["rate"], t.collection_good, t.collection_warn)]
+    due_tone = TONE[m.grade_low(s["past_due_pct"], t.past_due_good, t.past_due_warn)]
+    debt_tone = TONE[m.grade_low(s["bad_debt_pct"], t.bad_debt_good, t.bad_debt_warn)]
 
     section("This month")
     c = st.columns(4)
     kpi(c[0], "Collection rate", f"{s['rate']:.1f}%",
-        f"{money(s['collected'])} of {money(s['billed'])} billed · target {m.COLLECTION_GOOD_PCT:.0f}%",
+        f"{money(s['collected'])} of {money(s['billed'])} billed · target {t.collection_good:g}%",
         rate_tone, top=rate_tone)
     kpi(c[1], "Past-due balance", money(s["past_due"]),
         f"{s['past_due_pct']:.1f}% of a month's rent · {s['households_behind']} households",
@@ -34,24 +35,24 @@ def page_collections(d: dict[str, pd.DataFrame]) -> None:
         f"{s['evictions']} case{'s' if s['evictions'] != 1 else ''} filed",
         BAD if s["evictions"] else MUTE, top=BAD if s["evictions"] else PRIMARY)
     kpi(c[3], "Bad debt (12 mo)", f"{s['bad_debt_pct']:.1f}%",
-        f"{money(s['written_off'])} written off · target ≤ {m.BAD_DEBT_GOOD_PCT:.0f}%",
+        f"{money(s['written_off'])} written off · target ≤ {t.bad_debt_good:g}%",
         debt_tone, top=debt_tone)
 
     st.caption("Targets are demo defaults anchored to public figures: large apartment REITs report "
                "bad debt of 0.2–1% of revenue, and delinquency persistently above 3–5% is a common "
-               "warning sign. Sources in the README.")
+               "warning sign. Sources in the README; adjust targets in the sidebar.")
 
     by_prop = m.collections_by_property(rec)
 
     section("Collection rate by property")
     rates = by_prop.sort_values("rate", ascending=False)
-    colors = [TONE[m.grade_high(r, m.COLLECTION_GOOD_PCT, m.COLLECTION_WARN_PCT)] for r in rates["rate"]]
+    colors = [TONE[m.grade_high(r, t.collection_good, t.collection_warn)] for r in rates["rate"]]
     low = max(0, min(80, rates["rate"].min() - 5))
     fig = hbar(rates.index, rates["rate"], colors=colors,
                text=[f"{r:.1f}%" for r in rates["rate"]], height=420,
                xaxis_title="Collected ÷ billed (%)", xaxis_ticksuffix="%",
-               xaxis_range=[low, 101.5], vline_x=m.COLLECTION_GOOD_PCT,
-               vline_text=f"{m.COLLECTION_GOOD_PCT:.0f}% target")
+               xaxis_range=[low, 101.5], vline_x=t.collection_good,
+               vline_text=f"{t.collection_good:g}% target")
     st.plotly_chart(fig, width="stretch", theme=None)
 
     left, right = st.columns(2)
@@ -67,11 +68,11 @@ def page_collections(d: dict[str, pd.DataFrame]) -> None:
     with right:
         section("Collection rate, last 12 months")
         trend = m.collections_trend(monthly)
-        floor = min(trend["rate"].min(), m.COLLECTION_WARN_PCT) - 1
+        floor = min(trend["rate"].min(), t.collection_warn) - 1
         fig3 = line_area(trend["month"], trend["rate"], color=PRIMARY, height=380,
                          yaxis_title="Collected ÷ billed (%)", yaxis_ticksuffix="%",
-                         yaxis_range=[floor, 100], hline_y=m.COLLECTION_GOOD_PCT,
-                         hline_text=f"{m.COLLECTION_GOOD_PCT:.0f}% target", fill=False)
+                         yaxis_range=[floor, 100], hline_y=t.collection_good,
+                         hline_text=f"{t.collection_good:g}% target", fill=False)
         st.plotly_chart(fig3, width="stretch", theme=None)
 
     section("Who to call today")

@@ -16,6 +16,7 @@ import pandas as pd
 import streamlit as st
 
 from data_source import load_table, source_label
+from ui.targets_panel import target_controls
 from ui.theme import inject_css
 from views.collections import page_collections
 from views.financials import page_financials
@@ -89,13 +90,16 @@ def main() -> None:
                     unsafe_allow_html=True)
         st.markdown("<div style='height:14px'></div>", unsafe_allow_html=True)
         choice = st.radio("Navigate", list(PAGES.keys()), label_visibility="collapsed")
+        st.markdown("<div style='height:10px'></div>", unsafe_allow_html=True)
+    targets = target_controls()
+    with st.sidebar:
         st.markdown(
             f'<div class="foot">Data source: <b>{source_label()}</b><br>'
-            f'{len(data["rent_roll"])} units · {len(data["properties"])} properties'
+            f'{len(data["rent_roll"])} units · {len(data["properties"])} properties · Los Angeles'
             f'<br><br>Synthetic demo data. Not affiliated with any real company.</div>',
             unsafe_allow_html=True)
 
-    PAGES[choice](data)
+    PAGES[choice](data, targets)
 
 
 if __name__ == "__main__":

@@ -4,11 +4,12 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
+from metrics import DEFAULT_TARGETS, Targets
 from ui.charts import hbar, line_area
 from ui.theme import BORDER, PRIMARY, kpi, page_head, section
 
 
-def page_funnel(d: dict[str, pd.DataFrame]) -> None:
+def page_funnel(d: dict[str, pd.DataFrame], t: Targets = DEFAULT_TARGETS) -> None:
     fn, leads = d["leasing_funnel"], d["leads"]
     page_head("Leasing Funnel",
               "Lead-to-lease conversion and marketing source performance")
