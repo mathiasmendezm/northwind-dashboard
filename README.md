@@ -1,7 +1,7 @@
 # Northwind Residential | Property Operations Dashboard
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://northwind-dashboard-82q7dco7ckuydu5tfaqwh9.streamlit.app/)
-[![CI](https://github.com/mathiasmendezm/northwind-dashboard/actions/workflows/ci.yml/badge.svg)](https://github.com/mathiasmendezm/northwind-dashboard/actions/workflows/ci.yml)
+[![CI](https://github.com/mathiasmendezm/northwind-dashboard/actions/workflows/tests.yml/badge.svg)](https://github.com/mathiasmendezm/northwind-dashboard/actions/workflows/tests.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 **[Live demo →](https://northwind-dashboard-82q7dco7ckuydu5tfaqwh9.streamlit.app/)**
@@ -85,7 +85,7 @@ rent went.
   the cleaning pipeline, the data-source fallback logic, the synthetic-data
   generator (including the NOI math), and a full app-level smoke test that
   renders every page headlessly and fails the build if any of them raises;
-  [GitHub Actions](.github/workflows/ci.yml) runs lint (`ruff`), tests with a
+  [GitHub Actions](.github/workflows/tests.yml) runs lint (`ruff`), tests with a
   coverage gate, and a `pip-audit` dependency vulnerability scan on every push
   and pull request.
 
