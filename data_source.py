@@ -30,6 +30,10 @@ _DATE_COLUMNS = {
     "leasing_funnel": ["month"],
     "applications": ["submitted_date"],
     "leads": ["created_date"],
+    "lease_events": ["event_date", "move_in_date"],
+    "turns": ["move_out_date", "ready_date", "move_in_date"],
+    "receivables": ["last_payment_date"],
+    "collections_monthly": ["month"],
 }
 
 

@@ -20,7 +20,7 @@ import numpy as np
 import pandas as pd
 from faker import Faker
 
-from constants import AS_OF
+from constants import AS_OF, OCCUPIED_STATUSES
 
 SEED = 42
 DATA_DIR = "data"
@@ -358,6 +358,265 @@ def build_leads(props: pd.DataFrame) -> pd.DataFrame:
 
 
 # ---------------------------------------------------------------------------
+# 8) Lease events, unit turns, receivables, and monthly collections
+# ---------------------------------------------------------------------------
+# These four tables were added after the original seven. Each builder draws from
+# its own seeded generator instead of the module-level `rng`, so adding them
+# doesn't shift a single value in the tables above: every number the dashboard
+# showed before stays exactly the same.
+#
+# Distributions are tuned to 2025-2026 industry benchmarks (see the README's
+# "Benchmarks behind the thresholds" section): ~56% renewal conversion,
+# renewals at ~+3.5% vs. new leases at ~+2% (Class C negative), ~41 days vacant
+# between residents, concessions on 12-22% of new leases at ~6 weeks free, and
+# bad debt around 1% of rent billed.
+
+LEASE_WINDOW_DAYS = 365
+
+RENEWAL_PROB = {"A": 0.60, "B": 0.56, "C": 0.47}
+RENEWAL_INCREASE = {"A": (0.034, 0.010), "B": (0.036, 0.012), "C": (0.040, 0.014)}  # mean, sd
+NEW_LEASE_TRADEOUT = {"A": (0.015, 0.020), "B": (0.006, 0.022), "C": (-0.020, 0.025)}
+
+# Leasing days = time from rent-ready to move-in; make-ready time comes from the scope.
+LEASING_DAYS_MEAN = {"A": 18, "B": 27, "C": 38}
+TURN_SCOPES = {  # scope: (make-ready days low, high, turn cost mean, sd)
+    "Light":    (3, 7, 1100, 250),
+    "Standard": (6, 12, 2300, 450),
+    "Heavy":    (12, 24, 4800, 1100),
+}
+SCOPE_WEIGHTS = {
+    "A": {"Light": 0.45, "Standard": 0.45, "Heavy": 0.10},
+    "B": {"Light": 0.35, "Standard": 0.48, "Heavy": 0.17},
+    "C": {"Light": 0.25, "Standard": 0.45, "Heavy": 0.30},
+}
+
+# reason: (controllable by the manager?, weight for Class A/B, weight for Class C)
+MOVE_OUT_REASONS = {
+    "Rent increase / price":            (True,  0.20, 0.18),
+    "Maintenance / unit condition":     (True,  0.11, 0.18),
+    "Management / service":             (True,  0.07, 0.10),
+    "Safety / neighbors":               (True,  0.05, 0.08),
+    "Bought a home":                    (False, 0.18, 0.10),
+    "Job / relocation":                 (False, 0.15, 0.14),
+    "Needed different size / location": (False, 0.16, 0.14),
+    "Other / personal":                 (False, 0.08, 0.08),
+}
+
+CONCESSION_PROB = {"A": 0.13, "B": 0.15, "C": 0.22}  # share of new leases with a concession
+CONCESSION_WEEKS = (4.0, 8.0)                        # weeks free, amortized over the 12-month term
+
+DELINQUENT_PROB = {"A": 0.01, "B": 0.025, "C": 0.05}  # share of non-eviction households behind
+MONTHS_BEHIND_WEIGHTS = {1: 0.65, 2: 0.25, 3: 0.10}
+TURN_DELAY_PROB = 0.25   # open turns held up by a vendor, parts or an owner approval
+TURN_DELAY_DAYS = (10, 30)
+COLLECTION_STAGES = {
+    1: ["Reminder sent", "Late fee charged"],
+    2: ["Payment plan", "Pay-or-quit notice"],
+    3: ["Pay-or-quit notice", "Payment plan"],
+}
+BAD_DEBT_MEAN = {"A": 0.004, "B": 0.009, "C": 0.019}  # monthly write-offs as a share of rent billed
+COLLECTIONS_MONTHS = 12
+
+
+def _move_out_reason(g: np.random.Generator, cls: str) -> tuple[str, bool]:
+    col = 2 if cls == "C" else 1
+    names = list(MOVE_OUT_REASONS)
+    weights = np.array([MOVE_OUT_REASONS[n][col] for n in names])
+    name = str(g.choice(names, p=weights / weights.sum()))
+    return name, MOVE_OUT_REASONS[name][0]
+
+
+def build_lease_events_and_turns(props: pd.DataFrame,
+                                 rr: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Reconstruct the last year of lease decisions and the unit turns they caused.
+
+    Every lease_start in the rent roll within the last 12 months is explained as
+    either a renewal or a new move-in after a vacancy, and every vacant unit has
+    a recent move-out with a turn in progress. So the retention, turnover and
+    rent-roll pages all tell the same story about the same units.
+
+    lease_events: one row per decision. event_date is the renewal date for
+    "Renewed" and the move-out date for "Moved out".
+    turns: one row per move-out, with make-ready and leasing milestones.
+    """
+    g = np.random.default_rng(SEED + 1)
+    names = Faker("en_US")
+    names.seed_instance(SEED + 1)
+    today = pd.Timestamp(AS_OF)
+    cls_of = props.set_index("property")["class"]
+    scopes = list(TURN_SCOPES)
+
+    events, turns = [], []
+    for _, u in rr.iterrows():
+        cls = cls_of[u["property"]]
+        occupied = u["status"] in OCCUPIED_STATUSES
+        start = pd.Timestamp(u["lease_start"]) if occupied else pd.NaT
+        if occupied and (today - start).days > LEASE_WINDOW_DAYS:
+            continue  # signed before the window: no decision to record
+
+        base = {"unit_id": u["unit_id"], "property": u["property"], "unit": u["unit"]}
+        if occupied and g.random() < RENEWAL_PROB[cls]:
+            increase = g.normal(*RENEWAL_INCREASE[cls])
+            events.append({**base, "event_date": start.date(), "outcome": "Renewed",
+                           "resident": u["tenant"],
+                           "prior_rent": round(u["actual_rent"] / (1 + increase), 2),
+                           "new_rent": float(u["actual_rent"]), "move_in_date": pd.NaT,
+                           "move_out_reason": "", "controllable": False,
+                           "concession_weeks": 0.0})
+            continue
+
+        # A move-out, then a turn: make-ready, then leasing until the next move-in.
+        scope = str(g.choice(scopes, p=[SCOPE_WEIGHTS[cls][s] for s in scopes]))
+        lo, hi, cost_mean, cost_sd = TURN_SCOPES[scope]
+        make_ready = int(g.integers(lo, hi + 1))
+        if occupied:                               # re-leased: the current tenant moved in
+            move_in = start
+            leasing = max(1, int(round(g.gamma(2.5, LEASING_DAYS_MEAN[cls] / 2.5))))
+            move_out = move_in - timedelta(days=make_ready + leasing)
+            prior_rent = u["actual_rent"] / (1 + g.normal(*NEW_LEASE_TRADEOUT[cls]))
+            new_rent = float(u["actual_rent"])
+        else:                                      # vacant now: turn still open
+            age = int(g.integers(10, 60)) if u["status"] == "Vacant-Rented" else int(g.integers(4, 95))
+            move_out = today - timedelta(days=age)
+            prior_rent = u["market_rent"] * g.uniform(0.90, 1.00)
+            if u["status"] == "Vacant-Rented":
+                move_in = today + timedelta(days=int(g.integers(3, 22)))
+                new_rent = round(u["market_rent"] * g.uniform(0.97, 1.01) / 5) * 5
+            else:
+                move_in, new_rent = pd.NaT, np.nan
+            if g.random() < TURN_DELAY_PROB:
+                make_ready += int(g.integers(*TURN_DELAY_DAYS))
+
+        ready = move_out + timedelta(days=make_ready)
+        if ready > today:
+            ready = pd.NaT                         # still in make-ready
+        reason, controllable = _move_out_reason(g, cls)
+        has_new_lease = pd.notna(move_in)
+        concession = (round(float(g.uniform(*CONCESSION_WEEKS)), 1)
+                      if has_new_lease and g.random() < CONCESSION_PROB[cls] else 0.0)
+
+        events.append({**base, "event_date": move_out.date(), "outcome": "Moved out",
+                       "resident": names.name(), "prior_rent": round(prior_rent, 2),
+                       "new_rent": new_rent, "move_in_date": move_in,
+                       "move_out_reason": reason, "controllable": controllable,
+                       "concession_weeks": concession})
+
+        if pd.isna(ready):
+            status = "In make-ready"
+        elif not has_new_lease:
+            status = "Ready, not leased"
+        elif move_in > today:
+            status = "Pre-leased"
+        else:
+            status = "Leased"
+        turns.append({**base, "move_out_date": move_out.date(),
+                      "ready_date": ready.date() if pd.notna(ready) else pd.NaT,
+                      "move_in_date": move_in.date() if has_new_lease else pd.NaT,
+                      "scope": scope, "status": status,
+                      "turn_cost": round(max(400.0, g.normal(cost_mean, cost_sd)), 2)})
+
+    ev = pd.DataFrame(events).sort_values("event_date").reset_index(drop=True)
+    ev.insert(0, "event_id", [f"E{i + 1:05d}" for i in range(len(ev))])
+    tn = pd.DataFrame(turns).sort_values("move_out_date").reset_index(drop=True)
+    tn.insert(0, "turn_id", [f"T{i + 1:05d}" for i in range(len(tn))])
+    return ev, tn
+
+
+def build_receivables(props: pd.DataFrame, rr: pd.DataFrame,
+                      lease_events: pd.DataFrame) -> pd.DataFrame:
+    """Current-month ledger snapshot: one row per occupied unit.
+
+    billed = contract rent - monthly concession credit. Past-due balances sit in
+    the standard aging buckets (0-30, 31-60, 61-90, 90+ days). Units in the
+    rent roll's "Evict" status carry 90+ balances with an eviction on file.
+    """
+    g = np.random.default_rng(SEED + 2)
+    cls_of = props.set_index("property")["class"]
+    today = pd.Timestamp(AS_OF)
+    month_start = today.replace(day=1)
+
+    new_leases = lease_events[(lease_events["outcome"] == "Moved out")
+                              & (lease_events["concession_weeks"] > 0)]
+    weeks_free = dict(zip(new_leases["unit_id"], new_leases["concession_weeks"], strict=True))
+
+    rows = []
+    occupied = rr[rr["status"].isin(OCCUPIED_STATUSES)]
+    for _, u in occupied.iterrows():
+        cls = cls_of[u["property"]]
+        rent = float(u["actual_rent"])
+        concession = round(rent * weeks_free.get(u["unit_id"], 0.0) / 52, 2)
+        billed = round(rent - concession, 2)
+        b0 = b30 = b60 = b90 = 0.0
+        stage = "Current"
+        if u["status"] == "Evict":
+            b0 = b30 = billed
+            depth = g.random()
+            if depth < 0.35:                       # case filed a while ago: 90+ days behind
+                b60 = billed
+                b90 = round(billed * g.uniform(0.2, 1.0), 2)
+            elif depth < 0.75:
+                b60 = round(billed * g.uniform(0.2, 1.0), 2)
+            stage = "Eviction filed"
+            last_paid = today - timedelta(days=int(30 * (2 + (b60 > 0) + (b90 > 0)) + g.integers(5, 25)))
+        elif g.random() < DELINQUENT_PROB[cls]:
+            months = int(g.choice(list(MONTHS_BEHIND_WEIGHTS), p=list(MONTHS_BEHIND_WEIGHTS.values())))
+            if months == 1:
+                b0 = round(billed * g.uniform(0.25, 0.9), 2)
+            else:
+                b0 = billed
+                b30 = round(billed * g.uniform(0.3, 1.0), 2) if months == 2 else billed
+                if months == 3:
+                    b60 = round(billed * g.uniform(0.3, 1.0), 2)
+            stage = str(g.choice(COLLECTION_STAGES[months]))
+            last_paid = (month_start + timedelta(days=int(g.integers(0, 12))) if months == 1
+                         else today - timedelta(days=int(30 * (months - 1) + g.integers(5, 25))))
+        else:
+            last_paid = month_start + timedelta(days=int(g.choice([0, 0, 0, 1, 2, 3, 4])))
+
+        rows.append({
+            "unit_id": u["unit_id"], "property": u["property"], "unit": u["unit"],
+            "tenant": u["tenant"], "monthly_rent": rent, "concession": concession,
+            "billed": billed, "paid_this_month": round(billed - b0, 2),
+            "bal_0_30": b0, "bal_31_60": b30, "bal_61_90": b60, "bal_90_plus": b90,
+            "total_balance": round(b0 + b30 + b60 + b90, 2),
+            "last_payment_date": last_paid.date(), "collection_stage": stage,
+        })
+    return pd.DataFrame(rows)
+
+
+def build_collections_monthly(props: pd.DataFrame, receivables: pd.DataFrame) -> pd.DataFrame:
+    """Trailing 12 months of rent billed, collected and written off, per property.
+
+    The latest month is the receivables snapshot itself; earlier months drift
+    slightly better, so the trend chart shows collections softening this year.
+    """
+    g = np.random.default_rng(SEED + 3)
+    months = pd.date_range(end=pd.Timestamp(AS_OF).replace(day=1),
+                           periods=COLLECTIONS_MONTHS, freq="MS")
+    cls_of = props.set_index("property")["class"]
+    current = receivables.groupby("property").agg(billed=("billed", "sum"),
+                                                  paid=("paid_this_month", "sum"))
+    rows = []
+    for prop, cur in current.iterrows():
+        cls = cls_of[prop]
+        rate_now = cur["paid"] / cur["billed"]
+        for i, m in enumerate(months):
+            months_ago = len(months) - 1 - i
+            if months_ago == 0:
+                billed, collected = cur["billed"], cur["paid"]
+            else:
+                billed = cur["billed"] * g.uniform(0.97, 1.02)
+                drift = 0.0012 if cls == "C" else 0.0006
+                rate = np.clip(rate_now + drift * months_ago + g.normal(0, 0.004), 0.85, 1.0)
+                collected = billed * rate
+            written_off = billed * max(0.0, g.normal(BAD_DEBT_MEAN[cls], BAD_DEBT_MEAN[cls] / 3))
+            rows.append({"property": prop, "month": m.date(),
+                         "rent_billed": round(billed, 2), "rent_collected": round(collected, 2),
+                         "written_off": round(written_off, 2)})
+    return pd.DataFrame(rows)
+
+
+# ---------------------------------------------------------------------------
 # Orchestration
 # ---------------------------------------------------------------------------
 def main() -> None:
@@ -371,6 +630,9 @@ def main() -> None:
     funnel = build_funnel(props)
     apps = build_applications(rr)
     leads = build_leads(props)
+    lease_events, turns = build_lease_events_and_turns(props, rr)
+    receivables = build_receivables(props, rr, lease_events)
+    collections = build_collections_monthly(props, receivables)
 
     tables = {
         "properties": props,
@@ -380,6 +642,10 @@ def main() -> None:
         "leasing_funnel": funnel,
         "applications": apps,
         "leads": leads,
+        "lease_events": lease_events,
+        "turns": turns,
+        "receivables": receivables,
+        "collections_monthly": collections,
     }
     for name, df in tables.items():
         path = os.path.join(DATA_DIR, f"{name}.csv")

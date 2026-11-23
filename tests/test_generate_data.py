@@ -1,4 +1,7 @@
 
+import pandas as pd
+import pytest
+
 import generate_data as gd
 
 
@@ -91,6 +94,83 @@ class TestBuildFunnel:
         props = gd.build_properties()
         funnel = gd.build_funnel(props)
         assert funnel["month"].nunique() == 6
+
+
+class TestRoundOneTables:
+    """Lease events, turns, receivables and monthly collections."""
+
+    @staticmethod
+    def _build():
+        props = gd.build_properties()
+        rr = gd.build_rent_roll(props)
+        events, turns = gd.build_lease_events_and_turns(props, rr)
+        rec = gd.build_receivables(props, rr, events)
+        monthly = gd.build_collections_monthly(props, rec)
+        return props, rr, events, turns, rec, monthly
+
+    def test_new_builders_leave_the_shared_generator_untouched(self):
+        props = gd.build_properties()
+        rr = gd.build_rent_roll(props)
+        before = gd.rng.bit_generator.state
+        events, _ = gd.build_lease_events_and_turns(props, rr)
+        rec = gd.build_receivables(props, rr, events)
+        gd.build_collections_monthly(props, rec)
+        assert gd.rng.bit_generator.state == before
+
+    def test_every_recent_lease_is_a_renewal_or_a_move_in(self):
+        _, rr, events, _, _, _ = self._build()
+        today = pd.Timestamp(gd.AS_OF)
+        recent = rr[rr["status"].isin(gd.OCCUPIED_STATUSES)].copy()
+        recent["lease_start"] = pd.to_datetime(recent["lease_start"])
+        recent = recent[(today - recent["lease_start"]).dt.days <= gd.LEASE_WINDOW_DAYS]
+        renewals = events[events["outcome"] == "Renewed"]
+        move_ins = events[(events["outcome"] == "Moved out") & events["move_in_date"].notna()]
+        explained = (set(zip(renewals["unit_id"], pd.to_datetime(renewals["event_date"]), strict=True))
+                     | set(zip(move_ins["unit_id"], pd.to_datetime(move_ins["move_in_date"]), strict=True)))
+        assert set(zip(recent["unit_id"], recent["lease_start"], strict=True)) <= explained
+
+    def test_turn_milestones_are_in_order(self):
+        _, rr, _, turns, _, _ = self._build()
+        t = turns.copy()
+        for c in ["move_out_date", "ready_date", "move_in_date"]:
+            t[c] = pd.to_datetime(t[c])
+        ready = t[t["ready_date"].notna()]
+        assert (ready["ready_date"] >= ready["move_out_date"]).all()
+        leased = t[t["move_in_date"].notna() & t["ready_date"].notna()]
+        assert (leased["move_in_date"] > leased["ready_date"]).all()
+        vacant = set(rr.loc[~rr["status"].isin(gd.OCCUPIED_STATUSES), "unit_id"])
+        assert vacant <= set(t["unit_id"])
+
+    def test_receivables_balance(self):
+        _, rr, _, _, rec, _ = self._build()
+        assert len(rec) == rr["status"].isin(gd.OCCUPIED_STATUSES).sum()
+        buckets = rec[["bal_0_30", "bal_31_60", "bal_61_90", "bal_90_plus"]].sum(axis=1)
+        assert (buckets - rec["total_balance"]).abs().lt(0.05).all()
+        assert (rec["billed"] - rec["bal_0_30"] - rec["paid_this_month"]).abs().lt(0.05).all()
+        assert (rec["billed"] - (rec["monthly_rent"] - rec["concession"])).abs().lt(0.01).all()
+
+    def test_evictions_carry_old_balances(self):
+        _, rr, _, _, rec, _ = self._build()
+        evict_ids = set(rr.loc[rr["status"] == "Evict", "unit_id"])
+        evicts = rec[rec["unit_id"].isin(evict_ids)]
+        assert (evicts["collection_stage"] == "Eviction filed").all()
+        assert (evicts["bal_31_60"] > 0).all()
+
+    def test_latest_collections_month_is_the_ledger(self):
+        _, _, _, _, rec, monthly = self._build()
+        assert monthly.groupby("property")["month"].nunique().eq(gd.COLLECTIONS_MONTHS).all()
+        latest = monthly[monthly["month"] == monthly["month"].max()]
+        assert latest["rent_billed"].sum() == pytest.approx(rec["billed"].sum(), abs=1)
+        assert latest["rent_collected"].sum() == pytest.approx(rec["paid_this_month"].sum(), abs=1)
+
+    def test_rates_land_in_benchmark_ranges(self):
+        _, _, events, _, rec, monthly = self._build()
+        collection_rate = rec["paid_this_month"].sum() / rec["billed"].sum()
+        assert 0.93 < collection_rate < 0.995
+        bad_debt = monthly["written_off"].sum() / monthly["rent_billed"].sum()
+        assert 0.003 < bad_debt < 0.02
+        renewal_rate = (events["outcome"] == "Renewed").mean()
+        assert 0.45 < renewal_rate < 0.65
 
 
 class TestBuildLeadsAndApplications:

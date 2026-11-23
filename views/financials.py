@@ -39,7 +39,7 @@ def page_financials(d: dict[str, pd.DataFrame]) -> None:
 
     section("Trailing-12-month NOI")
     c = st.columns(4)
-    kpi(c[0], "NOI (T12)", money(t12_noi),
+    kpi(c[0], "NOI (T12)", f"${t12_noi / 1e6:,.2f}M",
         f"{noi_yoy:+.1f}% vs. prior 12mo", GOOD if noi_yoy >= 0 else BAD,
         top=GOOD if noi_yoy >= 0 else BAD)
     kpi(c[1], "NOI margin", f"{noi_margin:.1f}%",

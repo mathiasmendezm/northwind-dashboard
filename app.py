@@ -17,14 +17,17 @@ import streamlit as st
 
 from data_source import load_table, source_label
 from ui.theme import inject_css
+from views.collections import page_collections
 from views.financials import page_financials
 from views.funnel import page_funnel
 from views.leases import page_leases
 from views.maintenance import page_maintenance
 from views.occupancy import page_occupancy
 from views.overview import page_overview
+from views.retention import page_retention
 from views.search import page_search
 from views.summary import page_summary
+from views.turnovers import page_turnovers
 
 st.set_page_config(page_title="Northwind Residential — Ops", page_icon="◆",
                     layout="wide", initial_sidebar_state="expanded")
@@ -37,7 +40,8 @@ st.set_page_config(page_title="Northwind Residential — Ops", page_icon="◆",
 def get_data() -> dict[str, pd.DataFrame]:
     return {t: load_table(t) for t in
             ["properties", "rent_roll", "work_orders", "financials_monthly",
-             "leasing_funnel", "applications", "leads"]}
+             "leasing_funnel", "applications", "leads", "lease_events", "turns",
+             "receivables", "collections_monthly"]}
 
 
 # ───────────────────────────────────────────────────────────────────────────
@@ -47,7 +51,10 @@ PAGES = {
     "Executive Summary": page_summary,
     "Overview": page_overview,
     "Occupancy & Rent": page_occupancy,
+    "Collections": page_collections,
+    "Turnovers": page_turnovers,
     "Lease Management": page_leases,
+    "Retention": page_retention,
     "Financials · NOI": page_financials,
     "Leasing Funnel": page_funnel,
     "Maintenance": page_maintenance,

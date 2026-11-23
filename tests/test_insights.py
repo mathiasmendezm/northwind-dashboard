@@ -177,3 +177,126 @@ class TestOrdering:
         order = [CRITICAL, WARNING, WATCH]
         severities = [r["severity"] for r in generate_recommendations(data)]
         assert severities == sorted(severities, key=order.index)
+
+
+# ── Collections, turnovers, retention ───────────────────────────────────────
+def _receivables(rows: list[dict], n_current: int = 20) -> pd.DataFrame:
+    base = {"property": "Healthy Court", "unit": "001", "tenant": "Tenant",
+            "monthly_rent": 1000.0, "concession": 0.0, "billed": 1000.0,
+            "paid_this_month": 1000.0, "bal_0_30": 0.0, "bal_31_60": 0.0, "bal_61_90": 0.0,
+            "bal_90_plus": 0.0, "total_balance": 0.0, "last_payment_date": TODAY,
+            "collection_stage": "Current"}
+    all_rows = rows + [{} for _ in range(n_current)]
+    return pd.DataFrame([{**base, **r, "unit_id": f"U{i}"} for i, r in enumerate(all_rows)])
+
+
+def _collections(written_off_pct: float = 0.0) -> pd.DataFrame:
+    months = [TODAY.replace(day=1) - pd.DateOffset(months=11 - i) for i in range(12)]
+    return pd.DataFrame([{"property": "Healthy Court", "month": mth, "rent_billed": 20_000.0,
+                          "rent_collected": 20_000.0, "written_off": 20_000.0 * written_off_pct}
+                         for mth in months])
+
+
+def _turns(rows: list[dict]) -> pd.DataFrame:
+    base = {"property": "Healthy Court", "unit": "001", "scope": "Light", "status": "Leased",
+            "move_out_date": TODAY - timedelta(days=60), "ready_date": TODAY - timedelta(days=55),
+            "move_in_date": TODAY - timedelta(days=40), "turn_cost": 1200.0}
+    out = pd.DataFrame([{**base, "unit_id": f"U{i}", **r} for i, r in enumerate(rows)])
+    out.insert(0, "turn_id", [f"T{i}" for i in range(len(out))])
+    return out
+
+
+def _events(renewed: int = 6, moved: int = 4, controllable: bool = False) -> pd.DataFrame:
+    rows = [{"outcome": "Renewed", "prior_rent": 1000.0, "new_rent": 1035.0,
+             "move_out_reason": "", "controllable": False} for _ in range(renewed)]
+    rows += [{"outcome": "Moved out", "prior_rent": 1000.0, "new_rent": 1010.0,
+              "move_out_reason": "Rent increase / price" if controllable else "Bought a home",
+              "controllable": controllable} for _ in range(moved)]
+    for i, r in enumerate(rows):
+        r.update({"event_id": f"E{i}", "unit_id": f"U{i}", "property": "Healthy Court",
+                  "event_date": TODAY - timedelta(days=60), "concession_weeks": 0.0})
+    return pd.DataFrame(rows)
+
+
+def _healthy_round_one() -> dict[str, pd.DataFrame]:
+    data = _healthy_data()
+    data.update({"receivables": _receivables([]), "collections_monthly": _collections(),
+                 "turns": _turns([{}]), "lease_events": _events()})
+    return data
+
+
+def _area(recs: list[dict], area: str) -> list[dict]:
+    return [r for r in recs if r["area"] == area]
+
+
+class TestRoundOneHealthy:
+    def test_no_recommendations_when_new_tables_are_healthy(self):
+        assert generate_recommendations(_healthy_round_one()) == []
+
+
+class TestCollections:
+    def test_low_collection_rate_is_critical(self):
+        data = _healthy_round_one()
+        # 2 of 22 households paid nothing: ~91% collected, under the 96% warn line.
+        unpaid = {"paid_this_month": 0.0, "bal_0_30": 1000.0, "total_balance": 1000.0,
+                  "collection_stage": "Reminder sent"}
+        data["receivables"] = _receivables([unpaid, unpaid])
+        recs = _area(generate_recommendations(data), "Collections")
+        assert any(r["severity"] == CRITICAL and "unpaid rent" in r["title"].lower() for r in recs)
+
+    def test_eviction_balances_drive_past_due_warning(self):
+        data = _healthy_round_one()
+        evict = {"paid_this_month": 1000.0, "bal_31_60": 1000.0, "bal_61_90": 1000.0,
+                 "total_balance": 2000.0, "collection_stage": "Eviction filed"}
+        data["receivables"] = _receivables([evict], n_current=40)  # ~4.9% of a month's rent
+        recs = [r for r in _area(generate_recommendations(data), "Collections")
+                if "past-due" in r["title"].lower()]
+        assert recs and recs[0]["severity"] == WARNING
+        assert "1 eviction case" in recs[0]["detail"]
+
+    def test_high_bad_debt_is_critical(self):
+        data = _healthy_round_one()
+        data["collections_monthly"] = _collections(written_off_pct=0.03)
+        recs = _area(generate_recommendations(data), "Collections")
+        assert any(r["severity"] == CRITICAL and "write-off" in r["title"].lower() for r in recs)
+
+
+class TestTurnovers:
+    def test_unit_stuck_in_make_ready_is_flagged(self):
+        data = _healthy_round_one()
+        rows = [{"status": "Vacant-Unrented", "actual_rent": 0, "tenant": ""}] + [{} for _ in range(19)]
+        data["rent_roll"] = _rent_roll(rows)
+        data["turns"] = _turns([{"status": "In make-ready", "move_out_date": TODAY - timedelta(days=25),
+                                 "ready_date": pd.NaT, "move_in_date": pd.NaT}, {}])
+        recs = _area(generate_recommendations(data), "Turnovers")
+        assert any("make-ready" in r["title"].lower() and r["severity"] == WARNING for r in recs)
+
+    def test_long_vacancies_are_critical(self):
+        data = _healthy_round_one()
+        data["turns"] = _turns([{"move_out_date": TODAY - timedelta(days=100),
+                                 "ready_date": TODAY - timedelta(days=90)}])
+        recs = _area(generate_recommendations(data), "Turnovers")
+        assert any(r["severity"] == CRITICAL and "gap" in r["title"].lower() for r in recs)
+
+    def test_ready_units_unleased_for_a_month_are_watched(self):
+        data = _healthy_round_one()
+        rows = [{"status": "Vacant-Unrented", "actual_rent": 0, "tenant": ""}] + [{} for _ in range(19)]
+        data["rent_roll"] = _rent_roll(rows)
+        data["turns"] = _turns([{"status": "Ready, not leased", "move_out_date": TODAY - timedelta(days=45),
+                                 "ready_date": TODAY - timedelta(days=40), "move_in_date": pd.NaT}, {}])
+        recs = _area(generate_recommendations(data), "Turnovers")
+        assert any(r["severity"] == WATCH and "re-price" in r["title"].lower() for r in recs)
+
+
+class TestRetention:
+    def test_low_renewal_rate_is_critical(self):
+        data = _healthy_round_one()
+        data["lease_events"] = _events(renewed=3, moved=7)
+        recs = _area(generate_recommendations(data), "Retention")
+        assert any(r["severity"] == CRITICAL and "renewals" in r["title"].lower() for r in recs)
+
+    def test_controllable_move_outs_are_watched(self):
+        data = _healthy_round_one()
+        data["lease_events"] = _events(controllable=True)
+        recs = _area(generate_recommendations(data), "Retention")
+        assert any(r["severity"] == WATCH and "rent increase" in r["detail"] for r in recs)

@@ -17,6 +17,8 @@ INK, MUTE = "#0F172A", "#64748B"
 PRIMARY, PRIMARY_SOFT = "#1E40AF", "#EFF3FF"
 GOOD, WARN, BAD = "#059669", "#D97706", "#DC2626"
 BORDER, BG = "#E2E8F0", "#F8FAFC"
+# metrics.grade_high / grade_low return "good" / "warn" / "bad"; this maps them to colors.
+TONE = {"good": GOOD, "warn": WARN, "bad": BAD}
 
 # Plotly base theme: Inter, clean white, muted grid.
 pio.templates["nw"] = pio.templates["plotly_white"]
@@ -43,7 +45,11 @@ def inject_css() -> None:
       #MainMenu, footer {{ visibility: hidden; }}
       header[data-testid="stHeader"] {{ background: transparent; }}
       header[data-testid="stHeader"] [data-testid="stToolbar"] {{ visibility: hidden; }}
-      [data-testid="stSidebarCollapsedControl"] {{ visibility: visible !important; }}
+      /* Keep the "open sidebar" control visible while the toolbar is hidden.
+         Streamlit < 1.66 renders it as stSidebarCollapsedControl; newer versions
+         put stExpandSidebarButton inside the (hidden) toolbar itself. */
+      [data-testid="stSidebarCollapsedControl"],
+      [data-testid="stExpandSidebarButton"] {{ visibility: visible !important; }}
       .block-container {{ padding-top: 2.2rem; padding-bottom: 3rem; max-width: 1280px; }}
 
       /* Page title block */
@@ -111,6 +117,12 @@ def kpi(col, label: str, value: str, note: str = "", note_color: str = MUTE,
 
 def money(v: float) -> str:
     return f"${v:,.0f}"
+
+
+def md_money(v: float) -> str:
+    """money() for st.caption / st.markdown text: Streamlit reads two "$" in one
+    string as a LaTeX formula, so the sign is escaped."""
+    return "\\" + money(v)
 
 
 def action_card(color: str, chip_label: str, area: str, title: str, detail: str) -> None:

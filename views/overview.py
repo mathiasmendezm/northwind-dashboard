@@ -18,7 +18,11 @@ def page_overview(d: dict[str, pd.DataFrame]) -> None:
     occ_pct = occupied / total * 100
     monthly_actual = rr["actual_rent"].sum()
     market_potential = rr["market_rent"].sum()
-    econ_occ = monthly_actual / market_potential * 100
+    # Economic occupancy = rent actually collected ÷ market rent potential (NAA
+    # definition). Falls back to contract rent when no ledger is loaded.
+    collected = (d["receivables"]["paid_this_month"].sum() if "receivables" in d
+                 else monthly_actual)
+    econ_occ = collected / market_potential * 100
     open_wo = int((wo["status"] != "Completed").sum())
     emergency = int(((wo["status"] != "Completed") & (wo["priority"] == "Emergency")).sum())
 
@@ -27,9 +31,9 @@ def page_overview(d: dict[str, pd.DataFrame]) -> None:
     kpi(c[0], "Physical occupancy", f"{occ_pct:.1f}%",
         f"{occupied} of {total} units", GOOD if occ_pct >= 93 else WARN,
         top=GOOD if occ_pct >= 93 else WARN)
-    kpi(c[1], "Monthly rent roll", money(monthly_actual), "collected (actual)")
+    kpi(c[1], "Monthly rent roll", money(monthly_actual), "contract rent, occupied units")
     kpi(c[2], "Economic occupancy", f"{econ_occ:.1f}%",
-        f"{money(market_potential - monthly_actual)} gap to market")
+        f"collected ÷ market · {money(market_potential - collected)} gap")
     kpi(c[3], "Open work orders", f"{open_wo}",
         f"{emergency} emergency" if emergency else "none urgent",
         BAD if emergency else MUTE, top=BAD if emergency else PRIMARY)

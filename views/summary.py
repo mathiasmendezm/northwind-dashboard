@@ -3,8 +3,11 @@ from __future__ import annotations
 import pandas as pd
 import streamlit as st
 
+import metrics as m
+from constants import AS_OF
 from insights import CRITICAL, WARNING, WATCH, generate_recommendations
-from ui.theme import BAD, GOOD, MUTE, PRIMARY, WARN, action_card, kpi, page_head, section
+from ui.charts import waterfall
+from ui.theme import BAD, GOOD, MUTE, PRIMARY, WARN, action_card, kpi, md_money, money, page_head, section
 
 _SEVERITY_STYLE = {
     CRITICAL: (BAD, "CRITICAL"),
@@ -12,11 +15,61 @@ _SEVERITY_STYLE = {
     WATCH: (PRIMARY, "WATCH"),
 }
 
+_MONEY = st.column_config.NumberColumn(format="$%d")
+
+
+def _leak_table(name: str, df: pd.DataFrame) -> None:
+    """The units behind one bar of the waterfall, biggest dollar impact first."""
+    if name == "Loss to lease":
+        show = df[["unit_id", "property", "tenant", "market_rent", "actual_rent", "gap"]]
+        cols = ["Unit ID", "Property", "Resident", "Market", "Paying", "Under market"]
+        note = "occupied units renting below market — the renewal-pricing list"
+    elif name == "Vacancy":
+        show = df[["unit_id", "property", "status", "market_rent", "days_vacant"]]
+        cols = ["Unit ID", "Property", "Status", "Market rent", "Days vacant"]
+        note = "vacant units — status and timeline on the Turnovers page"
+    elif name == "Concessions":
+        show = df[["unit_id", "property", "tenant", "monthly_rent", "concession"]]
+        cols = ["Unit ID", "Property", "Resident", "Rent", "Concession / mo"]
+        note = "new leases signed with free weeks, spread across the lease term"
+    else:
+        show = df[["unit_id", "property", "tenant", "billed", "bal_0_30", "collection_stage"]]
+        cols = ["Unit ID", "Property", "Resident", "Billed", "Unpaid", "Stage"]
+        note = "households that haven't paid this month in full — the call list is on Collections"
+    show = show.head(10).copy()
+    show.columns = cols
+    st.caption(f"Top {len(show)} of {len(df)} {note}.")
+    st.dataframe(show, width="stretch", hide_index=True,
+                 column_config={c: _MONEY for c in cols
+                                if c in {"Market", "Paying", "Under market", "Market rent", "Rent",
+                                         "Concession / mo", "Billed", "Unpaid"}})
+
+
+def _rent_waterfall(d: dict[str, pd.DataFrame]) -> None:
+    rr, rec = d["rent_roll"], d["receivables"]
+    steps = m.revenue_waterfall(rr, rec)
+    potential, collected = steps[0][1], steps[-1][1]
+    month = pd.Timestamp(AS_OF).strftime("%B")
+
+    section(f"Where {month}'s rent went")
+    st.caption(f"Of {md_money(potential)} the portfolio could earn at market rent this month, "
+               f"{md_money(collected)} was collected — {collected / potential * 100:.1f}% economic "
+               f"occupancy. Each bar below is money that didn't arrive, and the tabs list "
+               "the units behind it.")
+    fig = waterfall(steps, total_color=PRIMARY, leak_color=BAD, height=360)
+    st.plotly_chart(fig, width="stretch", theme=None)
+
+    leaks = m.leakage_units(rr, rec, d["turns"])
+    tabs = st.tabs([f"{name} · {money(-value)}" for name, value in steps[1:-1]])
+    for tab, (name, _) in zip(tabs, steps[1:-1], strict=True):
+        with tab:
+            _leak_table(name, leaks[name])
+
 
 def page_summary(d: dict[str, pd.DataFrame]) -> None:
     page_head("Executive Summary",
-              "Rule-based highlights across occupancy, financials, maintenance, and "
-              "leasing — ranked by what needs attention first")
+              "Where the rent went this month and what needs attention first — across occupancy, "
+              "collections, turnovers, retention, financials, maintenance and leasing")
 
     recs = generate_recommendations(d)
     n_critical = sum(1 for r in recs if r["severity"] == CRITICAL)
@@ -31,6 +84,9 @@ def page_summary(d: dict[str, pd.DataFrame]) -> None:
         WARN if n_warning else MUTE, top=WARN if n_warning else PRIMARY)
     kpi(c[2], "Watch", f"{n_watch}", "keep an eye on it")
     kpi(c[3], "Total flagged", f"{len(recs)}", "actions across the portfolio")
+
+    if {"receivables", "turns"} <= d.keys():
+        _rent_waterfall(d)
 
     section("Recommended actions")
     if not recs:

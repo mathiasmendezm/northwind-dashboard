@@ -58,18 +58,68 @@ def overlay_hbar(labels: Sequence, series: dict[str, Sequence[float]],
 def line_area(x: Sequence, y: Sequence[float], *, color: str, name: str = "",
               height: int | None = None, yaxis_title: str = "",
               marker_size: int | None = None,
-              vline_x=None, vline_text: str = "") -> go.Figure:
+              vline_x=None, vline_text: str = "",
+              hline_y: float | None = None, hline_text: str = "",
+              yaxis_range: list | None = None, yaxis_ticksuffix: str = "",
+              fill: bool = True) -> go.Figure:
     marker = dict(size=marker_size) if marker_size is not None else {}
     fig = go.Figure(go.Scatter(
         x=x, y=y, mode="lines+markers", name=name,
         line=dict(color=color, width=3), marker=marker,
-        fill="tozeroy", fillcolor="rgba(30,64,175,0.08)"))
+        fill="tozeroy" if fill else None, fillcolor="rgba(30,64,175,0.08)"))
     if vline_x is not None:
         fig.add_vline(x=vline_x, line_dash="dot", line_color=MUTE,
                       annotation_text=vline_text, annotation_position="top left",
                       annotation_font=dict(size=10, color=MUTE))
+    if hline_y is not None:
+        fig.add_hline(y=hline_y, line_dash="dot", line_color=MUTE,
+                      annotation_text=hline_text, annotation_position="top left",
+                      annotation_font=dict(size=10, color=MUTE))
     fig.update_layout(height=height, margin=dict(l=0, r=10, t=8, b=8),
-                      xaxis=dict(title=""), yaxis=dict(title=yaxis_title))
+                      xaxis=dict(title=""),
+                      yaxis=dict(title=yaxis_title, range=yaxis_range,
+                                 ticksuffix=yaxis_ticksuffix))
+    return fig
+
+
+def stacked_hbar(labels: Sequence, series: dict[str, Sequence[float]],
+                 colors: dict[str, str], *, height: int | None = None,
+                 xaxis_title: str = "", vline_x: float | None = None,
+                 vline_text: str = "", hovertemplate: str | None = None) -> go.Figure:
+    fig = go.Figure()
+    for name, values in series.items():
+        fig.add_bar(y=labels, x=values, orientation="h", name=name,
+                    marker=dict(color=colors[name]), hovertemplate=hovertemplate)
+    if vline_x is not None:
+        fig.add_vline(x=vline_x, line_dash="dot", line_color=MUTE,
+                      annotation_text=vline_text, annotation_position="top left",
+                      annotation_font=dict(size=10, color=MUTE))
+    fig.update_layout(barmode="stack", height=height,
+                      margin=dict(l=0, r=20, t=8, b=8),
+                      legend=dict(orientation="h", y=1.08, x=0, traceorder="normal"),
+                      xaxis=dict(title=xaxis_title), yaxis=dict(title=""))
+    return fig
+
+
+def waterfall(steps: Sequence[tuple[str, float]], *, total_color: str, leak_color: str,
+              height: int | None = None) -> go.Figure:
+    """First step is the starting total, last is the ending total, the rest are leaks."""
+    labels = [s[0] for s in steps]
+    values = [s[1] for s in steps]
+    measure = ["absolute"] + ["relative"] * (len(steps) - 2) + ["total"]
+    text = [f"${abs(v) / 1000:,.0f}K" if m != "relative" else f"−${abs(v) / 1000:,.1f}K"
+            for v, m in zip(values, measure, strict=True)]
+    fig = go.Figure(go.Waterfall(
+        x=labels, y=values, measure=measure, text=text, textposition="outside",
+        connector=dict(line=dict(color="#CBD5E1", width=1)),
+        decreasing=dict(marker=dict(color=leak_color)),
+        increasing=dict(marker=dict(color=total_color)),
+        totals=dict(marker=dict(color=total_color)),
+        hovertemplate="%{x}: $%{y:,.0f}<extra></extra>"))
+    top = values[0] * 1.08
+    fig.update_layout(height=height, margin=dict(l=0, r=0, t=16, b=8), showlegend=False,
+                      yaxis=dict(title="Monthly rent ($)", range=[0, top]),
+                      xaxis=dict(title=""))
     return fig
 
 
