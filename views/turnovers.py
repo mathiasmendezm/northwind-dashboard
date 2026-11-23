@@ -25,11 +25,16 @@ def page_turnovers(d: dict[str, pd.DataFrame]) -> None:
         f"move-out → move-in, avg of {s['completed']} turns · target ≤ {m.DAYS_VACANT_GOOD}",
         vacant_tone, top=vacant_tone)
     kpi(c[1], "Make-ready days", f"{s['avg_make_ready']:.1f}",
-        f"move-out → rent-ready · target ≤ {m.MAKE_READY_GOOD_DAYS}", ready_tone, top=ready_tone)
+        f"move-out → rent-ready · target ≤ {m.MAKE_READY_GOOD_DAYS} · "
+        f"{s['slow_make_ready_pct']:.0f}% took over {m.MAKE_READY_WARN_DAYS}", ready_tone, top=ready_tone)
     kpi(c[2], "Vacant now", f"{s['vacant_now']}",
         f"{s['in_make_ready']} in make-ready · {s['ready_unleased']} ready · {s['pre_leased']} pre-leased",
         BAD if s["stuck"] else MUTE, top=BAD if s["stuck"] else PRIMARY)
     kpi(c[3], "Avg turn cost", money(s["avg_turn_cost"]), "paint, cleaning, repairs per unit")
+    st.caption("Targets are demo defaults anchored to public figures: about 7 working days to make a "
+               "unit ready is the common NAA guideline (~10 calendar days), and US apartments sat "
+               "vacant 41 days between residents on average in 2025 (RentCafe/Yardi). Sources in "
+               "the README.")
 
     section("Where the vacant days go, by property")
     by_prop = m.turns_by_property(turns).sort_values("days_vacant", ascending=True)

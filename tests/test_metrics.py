@@ -60,7 +60,7 @@ class TestWaterfall:
         leaks = m.leakage_units(data["rent_roll"], data["receivables"], data["turns"])
         steps = dict(m.revenue_waterfall(data["rent_roll"], data["receivables"]))
         assert leaks["Vacancy"]["market_rent"].sum() == pytest.approx(-steps["Vacancy"])
-        assert leaks["Unpaid rent"]["bal_0_30"].sum() == pytest.approx(-steps["Unpaid rent"])
+        assert leaks["Unpaid this month"]["bal_0_30"].sum() == pytest.approx(-steps["Unpaid this month"])
         assert leaks["Concessions"]["concession"].sum() == pytest.approx(-steps["Concessions"])
         assert leaks["Vacancy"]["days_vacant"].notna().all()
 
@@ -98,6 +98,7 @@ class TestTurns:
         s = m.turn_summary(data["turns"], data["rent_roll"])
         assert s["vacant_now"] == s["in_make_ready"] + s["ready_unleased"] + s["pre_leased"]
         assert s["stuck"] <= s["in_make_ready"]
+        assert 0 <= s["slow_make_ready_pct"] <= 100
 
 
 class TestRetention:

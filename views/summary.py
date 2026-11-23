@@ -23,7 +23,8 @@ def _leak_table(name: str, df: pd.DataFrame) -> None:
     if name == "Loss to lease":
         show = df[["unit_id", "property", "tenant", "market_rent", "actual_rent", "gap"]]
         cols = ["Unit ID", "Property", "Resident", "Market", "Paying", "Under market"]
-        note = "occupied units renting below market — the renewal-pricing list"
+        note = ("occupied units renting below market — the renewal-pricing list, "
+                "within whatever increase local rent caps allow")
     elif name == "Vacancy":
         show = df[["unit_id", "property", "status", "market_rent", "days_vacant"]]
         cols = ["Unit ID", "Property", "Status", "Market rent", "Days vacant"]
@@ -35,7 +36,8 @@ def _leak_table(name: str, df: pd.DataFrame) -> None:
     else:
         show = df[["unit_id", "property", "tenant", "billed", "bal_0_30", "collection_stage"]]
         cols = ["Unit ID", "Property", "Resident", "Billed", "Unpaid", "Stage"]
-        note = "households that haven't paid this month in full — the call list is on Collections"
+        note = ("households that haven't paid this month in full. This is still collectible, "
+                "unlike bad debt already written off — the full call list is on Collections")
     show = show.head(10).copy()
     show.columns = cols
     st.caption(f"Top {len(show)} of {len(df)} {note}.")

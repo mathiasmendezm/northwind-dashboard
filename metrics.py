@@ -66,7 +66,7 @@ def revenue_waterfall(rr: pd.DataFrame, rec: pd.DataFrame) -> list[tuple[str, fl
         ("Loss to lease", -float((occ["market_rent"] - occ["actual_rent"]).sum())),
         ("Vacancy", -float(vacant["market_rent"].sum())),
         ("Concessions", -float(rec["concession"].sum())),
-        ("Unpaid rent", -float(rec["bal_0_30"].sum())),
+        ("Unpaid this month", -float(rec["bal_0_30"].sum())),
         ("Rent collected", float(rec["paid_this_month"].sum())),
     ]
 
@@ -85,7 +85,7 @@ def leakage_units(rr: pd.DataFrame, rec: pd.DataFrame,
 
     conc = rec[rec["concession"] > 0].sort_values("concession", ascending=False)
     unpaid = rec[rec["bal_0_30"] > 0].sort_values("bal_0_30", ascending=False)
-    return {"Loss to lease": ltl, "Vacancy": vacant, "Concessions": conc, "Unpaid rent": unpaid}
+    return {"Loss to lease": ltl, "Vacancy": vacant, "Concessions": conc, "Unpaid this month": unpaid}
 
 
 # ── Collections ─────────────────────────────────────────────────────────────
@@ -157,6 +157,8 @@ def turn_summary(turns: pd.DataFrame, rr: pd.DataFrame) -> dict[str, float]:
         "avg_make_ready": float(done["make_ready_days"].mean()) if len(done) else 0.0,
         "avg_days_vacant": float(done["days_vacant"].mean()) if len(done) else 0.0,
         "avg_turn_cost": float(done["turn_cost"].mean()) if len(done) else 0.0,
+        "slow_make_ready_pct": _pct(int((done["make_ready_days"] > MAKE_READY_WARN_DAYS).sum()),
+                                    len(done)),
         "vacant_now": len(now),
         "in_make_ready": int((now["status"] == "In make-ready").sum()),
         "stuck": int(now["stuck"].sum()),

@@ -37,6 +37,10 @@ def page_collections(d: dict[str, pd.DataFrame]) -> None:
         f"{money(s['written_off'])} written off · target ≤ {m.BAD_DEBT_GOOD_PCT:.0f}%",
         debt_tone, top=debt_tone)
 
+    st.caption("Targets are demo defaults anchored to public figures: large apartment REITs report "
+               "bad debt of 0.2–1% of revenue, and delinquency persistently above 3–5% is a common "
+               "warning sign. Sources in the README.")
+
     by_prop = m.collections_by_property(rec)
 
     section("Collection rate by property")

@@ -29,6 +29,10 @@ def page_retention(d: dict[str, pd.DataFrame]) -> None:
     kpi(c[3], "Controllable move-outs", f"{s['controllable_pct']:.0f}%",
         "rent, maintenance, service or safety", WARN if ctrl_high else MUTE,
         top=WARN if ctrl_high else PRIMARY)
+    st.caption("Target is a demo default anchored to public figures: about 56% of US residents with "
+               "leases expiring in early 2026 renewed (RealPage). Rent changes aren't color-coded "
+               "because local rent caps set the ceiling for renewals in many markets. Sources in the "
+               "README.")
 
     section("Renewal rate by property")
     by_prop = m.retention_by_property(events).sort_values("rate", ascending=False)
