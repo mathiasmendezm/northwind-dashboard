@@ -6,7 +6,7 @@ import streamlit as st
 
 from metrics import DEFAULT_TARGETS, Targets, grade_high
 from ui.charts import hbar, line_area
-from ui.theme import BAD, GOOD, PRIMARY, TONE, kpi, money, page_head, section
+from ui.theme import BAD, GOOD, PRIMARY, TONE, kpi, md_money, money, page_head, section
 
 OPEX_CATEGORIES = {
     "opex_property_tax": "Property tax",
@@ -49,6 +49,14 @@ def page_financials(d: dict[str, pd.DataFrame], t: Targets = DEFAULT_TARGETS) ->
         top=TONE[grade_high(noi_margin, t.noi_margin_good, t.noi_margin_warn)])
     kpi(c[2], "NOI per unit / mo", money(t12_noi / 12 / total_units), "per-door average")
     kpi(c[3], "Revenue per unit / mo", money(t12_egi / 12 / total_units), "effective gross income")
+
+    if "rent_collected" in fin.columns:
+        latest = fin[fin["month"] == last_month]
+        rent, other = latest["rent_collected"].sum(), latest["other_income"].sum()
+        st.caption(f"Cash basis, like an owner statement. {last_month:%B %Y}: "
+                   f"{md_money(rent)} rent collected (the last bar of the Executive Summary "
+                   f"waterfall) + {md_money(other)} other income (parking, pets, laundry, fees) "
+                   f"= {md_money(rent + other)} effective gross income.")
 
     section("Implied portfolio valuation")
     v1, v2 = st.columns([1, 2])

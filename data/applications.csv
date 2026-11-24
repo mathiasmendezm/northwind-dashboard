@@ -1,68 +1,68 @@
 app_id,applicant,property,unit,submitted_date,status,screening_score,monthly_income
-A00001,Mary Jensen,Oakhaven Apartments,064,2026-06-30,Screening,669,4350
-A00002,Mr. Aaron Arnold,Meadowlark Place,040,2026-06-07,Screening,613,7550
-A00003,Joseph Hill,Willow Park,038,2026-06-26,Screening,648,8800
-A00004,Alicia Li,Willow Park,087,2026-06-14,Pending Docs,743,9000
-A00005,Renee Browning,Stonebridge Villas,015,2026-06-12,Approved,685,9250
-A00006,Brent Hernandez,Oakhaven Apartments,003,2026-06-29,Screening,690,8100
-A00007,Joseph Ochoa,Harborview Flats,020,2026-06-07,Approved,731,1150
-A00008,James Watson,Aspen Grove,017,2026-06-16,Pending Docs,662,5500
-A00009,Karl Branch,Maple Court,040,2026-06-26,Approved,646,6550
-A00010,Michael Abbott,Oakhaven Apartments,018,2026-06-29,Denied,801,10900
-A00011,Shannon Malone,Oakhaven Apartments,076,2026-06-27,Screening,686,6600
-A00012,James Tran,Stonebridge Villas,022,2026-06-11,Approved,731,8350
-A00013,Adam Jackson,Meadowlark Place,006,2026-06-24,Approved,662,8400
-A00014,Mr. Richard Knight PhD,Ironwood Residences,065,2026-06-24,Screening,663,9200
-A00015,Joseph Williams,Oakhaven Apartments,051,2026-06-08,Screening,607,9200
-A00016,Sean Clay,Harborview Flats,032,2026-06-21,Denied,663,10300
-A00017,Anthony Jones,Willow Park,086,2026-06-14,Screening,748,11500
-A00018,Stephanie Elliott,Willow Park,018,2026-06-23,Pending Docs,820,13300
-A00019,Timothy Edwards,Cedar Commons,027,2026-06-22,Pending Docs,760,10250
-A00020,Laurie Goodwin,Meadowlark Place,024,2026-06-13,Screening,614,3050
-A00021,Jennifer Jones,Stonebridge Villas,012,2026-06-15,Screening,739,6250
-A00022,David Davenport,Ironwood Residences,036,2026-06-11,Screening,820,4750
-A00023,Steven Rivera,Meadowlark Place,011,2026-06-11,Screening,727,8650
-A00024,Brenda Hinton,Maple Court,050,2026-06-11,Approved,599,8600
-A00025,Kathryn Mccann,Oakhaven Apartments,024,2026-06-18,Screening,637,8000
-A00026,Jeffrey Roberson,Maple Court,028,2026-06-07,Denied,675,6550
-A00027,Randy Friedman,Sunset Ridge,021,2026-06-15,Pending Docs,658,6300
-A00028,Raymond Johnson,Sunset Ridge,025,2026-06-25,Screening,578,8400
-A00029,Willie Henry,Willow Park,043,2026-06-29,Approved,760,6450
-A00030,Todd Reynolds,Birchwood Terrace,007,2026-06-16,Denied,792,13300
-A00031,Mary Miller,Meadowlark Place,023,2026-06-24,Approved,654,7650
-A00032,Rebecca Marquez,Meadowlark Place,038,2026-06-22,Approved,655,5600
-A00033,Christian Dawson,Meadowlark Place,036,2026-06-10,Approved,666,7400
-A00034,Nancy Stewart,Harborview Flats,017,2026-06-18,Denied,684,8500
-A00035,Aaron Parker,Birchwood Terrace,040,2026-06-27,Approved,611,9600
-A00036,Derrick Anderson,Meadowlark Place,016,2026-06-23,Approved,666,5850
-A00037,Jerry Peters,Willow Park,010,2026-06-09,Approved,664,8600
-A00038,Alexander Gomez,Sunset Ridge,017,2026-06-11,Denied,772,11450
-A00039,Kyle Nguyen,Riverbend Lofts,010,2026-06-25,Approved,649,7800
-A00040,Edgar Hughes,Oakhaven Apartments,014,2026-06-21,Denied,631,8950
-A00041,Steven Stein,Willow Park,082,2026-06-29,Approved,652,7700
-A00042,Laura Jackson,Stonebridge Villas,038,2026-06-10,Screening,741,5450
-A00043,Charles Turner,Maple Court,051,2026-06-21,Pending Docs,761,9200
-A00044,Arthur Hamilton MD,Willow Park,075,2026-06-15,Approved,757,9950
-A00045,Mr. David Wright,Stonebridge Villas,025,2026-06-21,Denied,735,8250
-A00046,Linda Gonzalez,Aspen Grove,010,2026-06-08,Denied,619,6800
-A00047,Eric Rush,Birchwood Terrace,034,2026-06-21,Denied,634,3650
-A00048,Manuel Brock,Meadowlark Place,026,2026-06-20,Approved,741,8000
-A00049,George Ochoa,Cedar Commons,031,2026-06-21,Approved,630,13150
-A00050,Valerie Taylor,Meadowlark Place,011,2026-06-24,Screening,820,5200
-A00051,Travis Harris,Cedar Commons,021,2026-06-19,Screening,666,7550
-A00052,Vincent Novak,Willow Park,032,2026-06-19,Screening,626,10600
-A00053,Michael Henry,Ironwood Residences,062,2026-06-29,Approved,567,12350
-A00054,Dana Bennett,Aspen Grove,023,2026-06-22,Approved,683,12900
-A00055,Jenna Wilson,Birchwood Terrace,032,2026-06-27,Approved,678,7500
-A00056,Leslie Gardner,Oakhaven Apartments,025,2026-06-15,Pending Docs,590,10800
-A00057,Krista Benton,Riverbend Lofts,002,2026-06-19,Denied,796,12350
-A00058,Michael Gonzales,Oakhaven Apartments,090,2026-06-11,Approved,586,11550
-A00059,Michael Fuentes,Ironwood Residences,053,2026-06-29,Denied,660,7900
-A00060,Jennifer Porter,Oakhaven Apartments,041,2026-06-21,Screening,658,6800
-A00061,Dana Hopkins,Riverbend Lofts,034,2026-06-16,Approved,667,5950
-A00062,Rachel Jones,Riverbend Lofts,009,2026-06-07,Pending Docs,764,9950
-A00063,Karen Morales DDS,Cedar Commons,021,2026-06-30,Denied,694,7350
-A00064,Melissa Stephens,Aspen Grove,043,2026-06-15,Screening,648,9300
-A00065,Heather Woodard,Oakhaven Apartments,018,2026-06-24,Pending Docs,696,11000
-A00066,Margaret Miller,Ironwood Residences,011,2026-06-11,Pending Docs,800,7000
-A00067,Mary Kelly,Willow Park,007,2026-06-20,Approved,644,9800
+A00001,Mary Jensen,Ironwood Residences,020,2026-06-12,Screening,652,7400
+A00002,Mr. Aaron Arnold,Willow Park,034,2026-06-16,Screening,677,7550
+A00003,Joseph Hill,Cedar Commons,030,2026-06-17,Approved,647,6350
+A00004,Alicia Li,Aspen Grove,013,2026-06-13,Screening,719,5500
+A00005,Renee Browning,Meadowlark Place,035,2026-06-13,Approved,679,11250
+A00006,Brent Hernandez,Birchwood Terrace,042,2026-06-17,Approved,705,4900
+A00007,Joseph Ochoa,Cedar Commons,022,2026-06-28,Pending Docs,669,8250
+A00008,James Watson,Cedar Commons,050,2026-06-22,Approved,634,9000
+A00009,Karl Branch,Willow Park,001,2026-06-28,Screening,661,9600
+A00010,Michael Abbott,Maple Court,021,2026-06-16,Screening,717,6800
+A00011,Shannon Malone,Ironwood Residences,008,2026-06-14,Denied,653,8050
+A00012,James Tran,Maple Court,048,2026-06-29,Approved,648,9600
+A00013,Adam Jackson,Aspen Grove,007,2026-06-09,Screening,712,9050
+A00014,Mr. Richard Knight PhD,Harborview Flats,036,2026-06-11,Pending Docs,637,4150
+A00015,Joseph Williams,Maple Court,049,2026-06-11,Approved,605,9750
+A00016,Sean Clay,Willow Park,052,2026-06-10,Approved,573,9300
+A00017,Anthony Jones,Ironwood Residences,042,2026-06-30,Denied,760,3300
+A00018,Stephanie Elliott,Harborview Flats,046,2026-06-13,Denied,647,7800
+A00019,Timothy Edwards,Oakhaven Apartments,084,2026-06-19,Approved,604,6200
+A00020,Laurie Goodwin,Cedar Commons,018,2026-06-27,Screening,606,7900
+A00021,Jennifer Jones,Maple Court,014,2026-06-21,Screening,820,7000
+A00022,David Davenport,Riverbend Lofts,019,2026-06-12,Pending Docs,788,5300
+A00023,Steven Rivera,Aspen Grove,021,2026-06-14,Denied,567,4300
+A00024,Brenda Hinton,Riverbend Lofts,014,2026-06-28,Screening,679,7550
+A00025,Kathryn Mccann,Oakhaven Apartments,014,2026-06-06,Approved,723,5250
+A00026,Jeffrey Roberson,Birchwood Terrace,010,2026-06-10,Approved,631,13050
+A00027,Randy Friedman,Riverbend Lofts,018,2026-06-23,Approved,741,7750
+A00028,Raymond Johnson,Willow Park,014,2026-06-22,Approved,735,7500
+A00029,Willie Henry,Cedar Commons,033,2026-06-21,Denied,704,10900
+A00030,Todd Reynolds,Aspen Grove,057,2026-06-25,Approved,651,7700
+A00031,Mary Miller,Ironwood Residences,030,2026-06-21,Screening,611,4250
+A00032,Rebecca Marquez,Oakhaven Apartments,091,2026-06-12,Screening,672,8850
+A00033,Christian Dawson,Stonebridge Villas,008,2026-06-07,Approved,793,8750
+A00034,Nancy Stewart,Oakhaven Apartments,088,2026-06-24,Screening,740,9250
+A00035,Aaron Parker,Aspen Grove,024,2026-06-23,Screening,570,8000
+A00036,Derrick Anderson,Oakhaven Apartments,082,2026-06-07,Pending Docs,714,9600
+A00037,Jerry Peters,Cedar Commons,024,2026-06-16,Denied,679,9150
+A00038,Alexander Gomez,Sunset Ridge,024,2026-06-06,Pending Docs,733,4650
+A00039,Kyle Nguyen,Oakhaven Apartments,079,2026-06-17,Screening,733,4250
+A00040,Edgar Hughes,Birchwood Terrace,010,2026-06-14,Approved,589,8500
+A00041,Steven Stein,Willow Park,015,2026-06-20,Denied,706,8150
+A00042,Laura Jackson,Stonebridge Villas,044,2026-06-30,Approved,615,5050
+A00043,Charles Turner,Birchwood Terrace,040,2026-06-26,Approved,685,15550
+A00044,Arthur Hamilton MD,Ironwood Residences,040,2026-06-06,Approved,672,7250
+A00045,Mr. David Wright,Aspen Grove,060,2026-06-29,Pending Docs,730,7750
+A00046,Linda Gonzalez,Cedar Commons,060,2026-06-06,Screening,595,7300
+A00047,Eric Rush,Oakhaven Apartments,023,2026-06-08,Denied,713,7600
+A00048,Manuel Brock,Ironwood Residences,003,2026-06-12,Screening,712,10000
+A00049,George Ochoa,Willow Park,014,2026-06-13,Screening,668,8150
+A00050,Valerie Taylor,Meadowlark Place,031,2026-06-07,Denied,661,9550
+A00051,Travis Harris,Willow Park,075,2026-06-10,Approved,659,9300
+A00052,Vincent Novak,Riverbend Lofts,021,2026-06-28,Approved,692,3650
+A00053,Michael Henry,Aspen Grove,037,2026-06-14,Pending Docs,710,8500
+A00054,Dana Bennett,Sunset Ridge,006,2026-06-25,Denied,756,5300
+A00055,Jenna Wilson,Sunset Ridge,036,2026-06-10,Screening,693,7050
+A00056,Leslie Gardner,Riverbend Lofts,008,2026-06-07,Approved,572,3250
+A00057,Krista Benton,Aspen Grove,046,2026-06-23,Pending Docs,770,8750
+A00058,Michael Gonzales,Cedar Commons,004,2026-06-20,Approved,666,4450
+A00059,Michael Fuentes,Aspen Grove,058,2026-06-23,Screening,766,6400
+A00060,Jennifer Porter,Willow Park,069,2026-06-27,Approved,696,8400
+A00061,Dana Hopkins,Harborview Flats,010,2026-06-07,Approved,797,8100
+A00062,Rachel Jones,Willow Park,001,2026-06-28,Denied,647,8800
+A00063,Karen Morales DDS,Meadowlark Place,031,2026-06-25,Approved,701,14850
+A00064,Melissa Stephens,Oakhaven Apartments,019,2026-06-29,Denied,676,5250
+A00065,Heather Woodard,Aspen Grove,029,2026-06-27,Pending Docs,656,8800
+A00066,Margaret Miller,Ironwood Residences,062,2026-06-29,Approved,705,4250
+A00067,Mary Kelly,Maple Court,011,2026-06-08,Approved,649,12700

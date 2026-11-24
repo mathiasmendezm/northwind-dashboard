@@ -3,7 +3,7 @@ from datetime import timedelta
 import pandas as pd
 
 from constants import AS_OF
-from insights import CRITICAL, WARNING, WATCH, generate_recommendations
+from insights import CRITICAL, WARNING, WATCH, generate_recommendations, top_actions
 from metrics import Targets
 
 TODAY = pd.Timestamp(AS_OF)
@@ -341,3 +341,32 @@ class TestEditableTargets:
         recs = _area(generate_recommendations(data, Targets(renewal_good=62, renewal_warn=40)),
                      "Retention")
         assert any("target 62%" in r["detail"] for r in recs)
+
+
+class TestTopActions:
+    @staticmethod
+    def _recs():
+        def mk(sev, area, n):
+            return {"severity": sev, "area": area, "title": f"{area} {n}", "detail": "d"}
+        return [mk(WATCH, "Leasing", 1), mk(WARNING, "Leases", 1), mk(CRITICAL, "Occupancy", 1),
+                mk(WARNING, "Occupancy", 2), mk(WARNING, "Leases", 2), mk(WARNING, "Financials", 1),
+                mk(CRITICAL, "Maintenance", 1), mk(WATCH, "Retention", 1)]
+
+    def test_one_card_per_area_with_nothing_dropped(self):
+        top, rest = top_actions(self._recs(), limit=10)
+        cards = top + rest
+        assert len({c["area"] for c in cards}) == len(cards) == 6
+        assert sum(1 + len(c["also"]) for c in cards) == len(self._recs())
+
+    def test_headline_is_the_most_severe_finding(self):
+        top, _ = top_actions(self._recs())
+        occ = next(c for c in top if c["area"] == "Occupancy")
+        assert occ["severity"] == CRITICAL and occ["also"][0]["severity"] == WARNING
+
+    def test_ordered_by_severity_then_size_and_limited(self):
+        top, rest = top_actions(self._recs(), limit=3)
+        assert [c["area"] for c in top] == ["Occupancy", "Maintenance", "Leases"]
+        assert [c["area"] for c in rest] == ["Financials", "Leasing", "Retention"]
+
+    def test_empty(self):
+        assert top_actions([]) == ([], [])

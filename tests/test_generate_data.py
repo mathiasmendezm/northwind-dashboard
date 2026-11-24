@@ -5,6 +5,11 @@ import pytest
 import generate_data as gd
 
 
+def _collections(props, rr):
+    events, _ = gd.build_lease_events_and_turns(props, rr)
+    return gd.build_collections_monthly(props, gd.build_receivables(props, rr, events))
+
+
 class TestBuildProperties:
     def test_shape_and_columns(self):
         props = gd.build_properties()
@@ -80,28 +85,28 @@ class TestBuildFinancialsMonthly:
     def test_24_months_per_property(self):
         props = gd.build_properties()
         rr = gd.build_rent_roll(props)
-        fin = gd.build_financials_monthly(props, rr)
+        fin = gd.build_financials_monthly(props, rr, _collections(props, rr))
         assert len(fin) == len(props) * gd.FINANCIALS_MONTHS
         assert fin.groupby("property")["month"].nunique().eq(gd.FINANCIALS_MONTHS).all()
 
     def test_noi_equals_egi_minus_total_opex(self):
         props = gd.build_properties()
         rr = gd.build_rent_roll(props)
-        fin = gd.build_financials_monthly(props, rr)
+        fin = gd.build_financials_monthly(props, rr, _collections(props, rr))
         expected = fin["effective_gross_income"] - fin["total_opex"]
         assert (fin["noi"] - expected).abs().lt(0.05).all()
 
     def test_total_opex_equals_sum_of_categories(self):
         props = gd.build_properties()
         rr = gd.build_rent_roll(props)
-        fin = gd.build_financials_monthly(props, rr)
+        fin = gd.build_financials_monthly(props, rr, _collections(props, rr))
         opex_cols = [f"opex_{cat}" for cat in gd.OPEX_BENCHMARKS]
         assert (fin["total_opex"] - fin[opex_cols].sum(axis=1)).abs().lt(0.05).all()
 
     def test_noi_margin_is_in_a_realistic_range(self):
         props = gd.build_properties()
         rr = gd.build_rent_roll(props)
-        fin = gd.build_financials_monthly(props, rr)
+        fin = gd.build_financials_monthly(props, rr, _collections(props, rr))
         margin = fin["noi"] / fin["effective_gross_income"]
         # Multifamily NOI margins typically land ~45-70% of EGI.
         assert margin.between(0.40, 0.75).all()
@@ -109,9 +114,29 @@ class TestBuildFinancialsMonthly:
     def test_egi_is_positive_and_no_negative_noi(self):
         props = gd.build_properties()
         rr = gd.build_rent_roll(props)
-        fin = gd.build_financials_monthly(props, rr)
+        fin = gd.build_financials_monthly(props, rr, _collections(props, rr))
         assert (fin["effective_gross_income"] > 0).all()
         assert (fin["noi"] > 0).all()
+
+
+    def test_latest_month_rent_ties_to_the_waterfall(self):
+        # The Financials page and the Executive Summary waterfall must agree:
+        # last month's rent collected is the receivables snapshot itself.
+        props = gd.build_properties()
+        rr = gd.build_rent_roll(props)
+        events, _ = gd.build_lease_events_and_turns(props, rr)
+        rec = gd.build_receivables(props, rr, events)
+        fin = gd.build_financials_monthly(props, rr, gd.build_collections_monthly(props, rec))
+        last = fin[fin["month"] == fin["month"].max()]
+        assert last["rent_collected"].sum() == pytest.approx(rec["paid_this_month"].sum(), abs=1)
+        assert last["gross_potential_rent"].sum() == pytest.approx(rr["market_rent"].sum(), abs=1)
+
+    def test_egi_is_rent_collected_plus_other_income(self):
+        props = gd.build_properties()
+        rr = gd.build_rent_roll(props)
+        fin = gd.build_financials_monthly(props, rr, _collections(props, rr))
+        expected = fin["rent_collected"] + fin["other_income"]
+        assert (fin["effective_gross_income"] - expected).abs().lt(0.05).all()
 
 
 class TestBuildFunnel:

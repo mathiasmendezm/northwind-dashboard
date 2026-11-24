@@ -242,46 +242,54 @@ CLASS_OPEX_ADJUST = {
 }
 
 
-def build_financials_monthly(props: pd.DataFrame, rr: pd.DataFrame) -> pd.DataFrame:
-    """Monthly property-level P&L: revenue, opex by category, and NOI.
+def build_financials_monthly(props: pd.DataFrame, rr: pd.DataFrame,
+                             collections: pd.DataFrame) -> pd.DataFrame:
+    """Monthly property-level P&L on a cash basis, like an owner statement:
+    rent collected + other income = EGI, minus opex = NOI.
 
-    Revenue is anchored to the current rent-roll snapshot (market rent,
-    collected rent, implied vacancy) and projected back across trailing
-    months with mild seasonal noise — winter months run a bit more vacant,
-    which is typical for multifamily leasing. Opex is modeled as a
-    class-adjusted share of EGI per category rather than flat dollars, which
-    is how operators actually budget and benchmark it.
+    Rent collected in the last 12 months comes straight from
+    collections_monthly, so the latest month's rent here is the same number as
+    the "Rent collected" bar on the Executive Summary waterfall, and the pages
+    can't disagree. The 12 months before that are the same calendar month a
+    year later, deflated by each property's in-place rent growth (renewal
+    increases) with a little noise. Opex is modeled as a class-adjusted share
+    of EGI per category rather than flat dollars, which is how operators
+    actually budget and benchmark it.
     """
+    g = np.random.default_rng(SEED + 4)
     months = pd.date_range(end=pd.Timestamp(AS_OF).replace(day=1),
                            periods=FINANCIALS_MONTHS, freq="MS")
+    collected = (collections.assign(month=pd.to_datetime(collections["month"]))
+                 .set_index(["property", "month"])["rent_collected"])
     rows = []
     for _, p in props.iterrows():
-        prop_units = rr[rr["property"] == p["property"]]
-        gpr_base = prop_units["market_rent"].sum()
-        egi_base = prop_units["actual_rent"].sum()
-        vacancy_base = max(0.02, (gpr_base - egi_base) / gpr_base) if gpr_base else 0.05
+        prop = p["property"]
+        gpr_now = float(rr.loc[rr["property"] == prop, "market_rent"].sum())
+        growth = g.uniform(0.01, 0.03)  # a year of renewal increases on in-place rent
         adjust = CLASS_OPEX_ADJUST[p["class"]]
 
         for m in months:
-            season = 1.15 if m.month in (12, 1, 2) else (1.05 if m.month == 11 else 1.0)
-            vacancy_pct = np.clip(vacancy_base * season * rng.uniform(0.85, 1.15), 0.01, 0.30)
-
-            gpr = gpr_base * rng.uniform(0.985, 1.015)
-            vacancy_loss = gpr * vacancy_pct
-            other_income = gpr * rng.uniform(0.02, 0.045)  # pet/parking/laundry/fees
-            egi = gpr - vacancy_loss + other_income
+            if (prop, m) in collected.index:
+                rent = float(collected[(prop, m)])
+                gpr = gpr_now if m == months[-1] else gpr_now * g.uniform(0.985, 1.015)
+            else:
+                year_later = float(collected[(prop, m + pd.DateOffset(years=1))])
+                rent = year_later / (1 + growth) * g.uniform(0.985, 1.015)
+                gpr = gpr_now / (1 + growth) * g.uniform(0.985, 1.015)
+            other_income = rent * g.uniform(0.02, 0.045)  # parking, pets, laundry, fees
+            egi = rent + other_income
 
             opex_amounts = {}
             for cat, (pct_mean, pct_sd) in OPEX_BENCHMARKS.items():
-                pct = max(0.005, rng.normal(pct_mean, pct_sd)) * adjust.get(cat, 1.0)
+                pct = max(0.005, g.normal(pct_mean, pct_sd)) * adjust.get(cat, 1.0)
                 opex_amounts[cat] = egi * pct
             total_opex = sum(opex_amounts.values())
 
             rows.append({
-                "property": p["property"],
+                "property": prop,
                 "month": m.date(),
                 "gross_potential_rent": round(gpr, 2),
-                "vacancy_loss": round(vacancy_loss, 2),
+                "rent_collected": round(rent, 2),
                 "other_income": round(other_income, 2),
                 "effective_gross_income": round(egi, 2),
                 **{f"opex_{cat}": round(amt, 2) for cat, amt in opex_amounts.items()},
@@ -649,13 +657,13 @@ def main() -> None:
     props = build_properties()
     rr = build_rent_roll(props)
     wo = build_work_orders(rr)
-    financials = build_financials_monthly(props, rr)
     funnel = build_funnel(props)
     apps = build_applications(rr)
     leads = build_leads(props)
     lease_events, turns = build_lease_events_and_turns(props, rr)
     receivables = build_receivables(props, rr, lease_events)
     collections = build_collections_monthly(props, receivables)
+    financials = build_financials_monthly(props, rr, collections)
 
     tables = {
         "properties": props,

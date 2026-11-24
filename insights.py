@@ -1,8 +1,8 @@
 """Rule-based recommendation engine for the Executive Summary page.
 
 Reuses the same thresholds already surfaced as color-coding elsewhere in the
-dashboard (93%/88% occupancy target, 60%/50% NOI margin) so "what's flagged
-here" always matches "what's shown red/amber on the other pages" — this is
+dashboard (metrics.Targets: occupancy, NOI margin, collections, turnovers,
+retention) so "what's flagged here" always matches "what's shown red/amber on the other pages" — this is
 deliberately NOT an LLM call. It's a small, deterministic, fully-testable
 scoring pass over the same tables every other page already reads, so it
 costs nothing to run and never varies between runs of the same data.
@@ -156,8 +156,11 @@ def _lease_recs(rr: pd.DataFrame) -> list[dict]:
 
     expiring_30 = leased[leased["days_to_expiry"].between(0, 30)]
     if len(expiring_30):
-        exposure = expiring_30["market_rent"].sum()
-        exposure_pct = exposure / rr["market_rent"].sum() * 100
+        # Rent at risk is what these residents pay today: the income that stops
+        # if they leave. Measured against the rent the whole portfolio pays.
+        exposure = expiring_30["actual_rent"].sum()
+        in_place = rr.loc[rr["status"].isin(OCCUPIED_STATUSES), "actual_rent"].sum()
+        exposure_pct = exposure / in_place * 100 if in_place else 0.0
         severity = (CRITICAL if exposure_pct > LEASE_EXPOSURE_CRITICAL_PCT
                     else WARNING if exposure_pct > LEASE_EXPOSURE_WARNING_PCT else WATCH)
         recs.append(_rec(
@@ -285,6 +288,22 @@ def _retention_recs(events: pd.DataFrame, t: m.Targets) -> list[dict]:
             f"{s['controllable_pct']:.0f}% of move-outs cited rent, maintenance, service or safety — "
             f"reasons the team can influence. Most common: {top.lower()}."))
     return recs
+
+
+def top_actions(recs: list[dict], limit: int = 5) -> tuple[list[dict], list[dict]]:
+    """Fold the findings into one card per area, most urgent first.
+
+    Each card keeps its area's most severe finding as the headline and carries
+    the others in "also", so nothing is dropped. Areas are ordered by that
+    headline's severity, then by how many findings they hold. Returns the first
+    `limit` cards and the rest.
+    """
+    by_area: dict[str, list[dict]] = {}
+    for r in sorted(recs, key=lambda r: _SEVERITY_ORDER[r["severity"]]):
+        by_area.setdefault(r["area"], []).append(r)
+    cards = [{**found[0], "also": found[1:]} for found in by_area.values()]
+    cards.sort(key=lambda c: (_SEVERITY_ORDER[c["severity"]], -len(c["also"])))
+    return cards[:limit], cards[limit:]
 
 
 def generate_recommendations(data: dict[str, pd.DataFrame],

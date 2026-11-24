@@ -37,7 +37,8 @@ rent went.
   60%/50% NOI margin, collection rate, past-due balances, bad debt, days
   vacant, units stuck in make-ready, renewal rate, work-order aging,
   lease-renewal exposure, funnel drop-off) and returns a prioritized,
-  plain-English action list for leadership. Deterministic and fully
+  plain-English action list for leadership: one card per area, the top five
+  first and the rest folded below. Deterministic and fully
   unit-tested — not an LLM call, so it's free to run and its output never
   varies between runs of the same data.
 - **Collections** — collection rate this month by property and over 12 months,
@@ -101,7 +102,7 @@ python generate_data.py     # writes synthetic CSVs into ./data
 streamlit run app.py
 ```
 
-The app opens on the Overview page. No credentials or setup required — it runs
+The app opens on the Executive Summary page. No credentials or setup required — it runs
 entirely on the local synthetic data.
 
 ## Testing
@@ -160,9 +161,11 @@ above and to published Los Angeles figures where they exist; where no LA
 figure was found (days vacant, turn cost), national benchmarks are used.
 
 The NOI model in `financials_monthly` is a simplified stand-in for a real
-operating statement: opex per category is generated as a class-adjusted share
-of effective gross income (industry rule-of-thumb ratios), not itemized
-ledger entries. It's built to demonstrate the *shape* of NOI analysis — trend,
+operating statement. It is cash basis, like an owner statement: rent collected
+comes from the same ledger as the Collections page, so the latest month ties to
+the Executive Summary waterfall, and opex per category is generated as a
+class-adjusted share of effective gross income (industry rule-of-thumb ratios),
+not itemized ledger entries. It's built to demonstrate the *shape* of NOI analysis — trend,
 margin, YoY, opex mix, cap-rate-implied valuation — not to model any specific
 property's actual books.
 

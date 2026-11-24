@@ -25,10 +25,10 @@ def page_leases(d: dict[str, pd.DataFrame], t: Targets = DEFAULT_TARGETS) -> Non
     section("Renewal exposure")
     c = st.columns(4)
     kpi(c[0], "Expiring ≤ 30 days", f"{len(expiring_30)}",
-        f"{money(expiring_30['market_rent'].sum())} monthly rent",
+        f"{money(expiring_30['actual_rent'].sum())}/mo these residents pay",
         BAD if len(expiring_30) else GOOD, top=BAD if len(expiring_30) else GOOD)
     kpi(c[1], "Expiring ≤ 90 days", f"{len(upcoming)}",
-        f"{money(upcoming['market_rent'].sum())} monthly rent at risk", WARN, top=WARN)
+        f"{money(upcoming['actual_rent'].sum())}/mo in rent at risk", WARN, top=WARN)
     kpi(c[2], "Holdover (past term)", f"{len(holdover)}",
         "still occupied, no active renewal" if len(holdover) else "none",
         WARN if len(holdover) else GOOD, top=WARN if len(holdover) else PRIMARY)
